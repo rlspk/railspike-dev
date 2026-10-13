@@ -6,4 +6,6 @@ This documentation-only census expands discovery beyond debug logs. It inventori
 - [All 349 candidate assignments](./candidates.md)
 - [Frozen provenance: 1,170 source fingerprints](./sources.md)
 
-Status: discovery frozen; six review batches and final reconciliation pending. Candidate counts include copies, incomplete plans and nonstandard documents. No completed-cycle total is claimed yet.
+Status: discovery frozen; review batches in progress, final reconciliation pending. Candidate counts include copies, incomplete plans and nonstandard documents. No completed-cycle total is claimed yet.
+
+- [Review batch 1](./batch-1.md): C001–C065.
