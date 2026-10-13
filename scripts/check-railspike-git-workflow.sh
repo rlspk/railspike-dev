@@ -36,14 +36,14 @@ refuse() {
   test "$(git -C "$repo" ls-files -s)" = "$before_index"
   test "$(git -C "$repo" status --porcelain --untracked-files=all)" = "$before_status"
 }
-git init -q --initial-branch=master "$upstream_work"
+git init -q --initial-branch=main "$upstream_work"
 configure_identity "$upstream_work"
 printf 'first\n' > "$upstream_work/README.md"
 git -C "$upstream_work" add README.md
 git -C "$upstream_work" commit -qm 'initial upstream'
 git clone -q --bare "$upstream_work" "$upstream_bare"
 git -C "$upstream_work" remote add origin "$upstream_bare"
-git init -q --initial-branch=master "$host"
+git init -q --initial-branch=main "$host"
 configure_identity "$host"
 printf 'host\n' > "$host/README.md"
 git -C "$host" add README.md
@@ -51,7 +51,7 @@ git -C "$host" commit -qm 'initial host'
 # Same one-command installation as the README, substituting the fixture upstream.
 git -C "$host" submodule add "$upstream_bare" docs/railspike >/dev/null 2>&1
 test -z "$(git -C "$host" config --file .gitmodules --get submodule.docs/railspike.branch || :)"
-test "$(git -C "$host/docs/railspike" branch --show-current)" = master
+test "$(git -C "$host/docs/railspike" branch --show-current)" = main
 test "$(git -C "$host" diff --cached --name-only | sort)" = $'.gitmodules\ndocs/railspike'
 git -C "$host" commit -qm 'add Railspike'
 initial_revision="$(git -C "$host/docs/railspike" rev-parse HEAD)"
@@ -61,7 +61,7 @@ if update "$clone"; then printf 'Uninitialized update should fail\n' >&2; exit 1
 # Advance upstream before initializing: init must still preserve the host pointer.
 printf 'second\n' >> "$upstream_work/README.md"
 git -C "$upstream_work" commit -am 'advance upstream' -q
-git -C "$upstream_work" push -q origin master
+git -C "$upstream_work" push -q origin main
 git -C "$clone" submodule update --init -- docs/railspike >/dev/null 2>&1
 test "$(git -C "$clone/docs/railspike" rev-parse HEAD)" = "$initial_revision"
 test -z "$(git -C "$clone/docs/railspike" branch --show-current)"
@@ -104,7 +104,7 @@ git -C "$host" commit -qm 'local pointer'
 refuse "$host" 'local history ahead'
 printf 'third\n' >> "$upstream_work/README.md"
 git -C "$upstream_work" commit -am 'diverge upstream' -q
-git -C "$upstream_work" push -q origin master
+git -C "$upstream_work" push -q origin main
 refuse "$host" 'divergent history'
 # Missing upstream: state stays intact and failure is visible.
 mv "$upstream_bare" "$fixture_dir/unavailable.git"
