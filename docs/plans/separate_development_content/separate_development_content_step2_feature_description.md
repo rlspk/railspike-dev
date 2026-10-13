@@ -38,3 +38,6 @@ Reuse `RAILSPIKE.md`, `WELCOME.md`, `docs/workflow/`, and `docs/failure-modes.md
 
 ## Success criteria
 Fresh installations contain zero upstream development records or tooling; all three installation forms retain required product files; a host-plan walkthrough succeeds without the companion checkout; migrated records are accounted for, live links and checks pass, and an existing-installation update demonstrates preservation and recovery.
+
+## User-specified website destination during Step 4
+The user supplied `https://github.com/rlspk/rlspk.github.io` as the third repository. Website source and publishing belong there, with the live site at `https://rlspk.github.io/`; `railspike-dev` retains development records and checks. This supersedes the companion-hosted website assumption without changing product or development destinations.

@@ -36,3 +36,6 @@ The first vertical slice should let a user obtain the lean product, complete wel
 
 ## User-specified destinations after Step 2 approval
 Use `https://github.com/rlspk/railspike` for the product and `https://github.com/rlspk/railspike-dev` for development. This retains Option B's separation but supersedes its assumption of an unchanged installation URL; include an explicit transition from `gulkily/railspike` while preserving local edits and provenance.
+
+## User-specified website destination during Step 4
+The user supplied `https://github.com/rlspk/rlspk.github.io` as the third repository. Website source and publishing belong there, with the live site at `https://rlspk.github.io/`; `railspike-dev` retains development records and checks. This supersedes the companion-hosted website assumption without changing product or development destinations.

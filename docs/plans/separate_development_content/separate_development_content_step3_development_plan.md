@@ -46,3 +46,6 @@ After approval: branch, organize/commit approved plans/log, then create summary.
 - Canonical components/API contracts touched: Both repositories; installation/update/recovery.
 
 Hosting reference: [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## User-specified website destination during Step 4
+The user supplied `https://github.com/rlspk/rlspk.github.io` as the third repository. Website source and publishing belong there, with the live site at `https://rlspk.github.io/`; `railspike-dev` retains development records and checks. This supersedes the companion-hosted website assumption without changing product or development destinations.
