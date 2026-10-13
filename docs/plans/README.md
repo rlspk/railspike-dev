@@ -13,3 +13,4 @@
 - [Installation process improvements](./installation_process_improvements/installation_process_improvements_step1_solution_assessment.md): reviewed copies by default, explicit submodules, recovery, and first-task planning.
 
 - [Separate development content](./separate_development_content/separate_development_content_step1_solution_assessment.md): split the product into `rlspk/railspike` and development records/checks into `rlspk/railspike-dev`, with the website in `rlspk/rlspk.github.io`.
+- [Historical cycle expansion](./historical_cycle_expansion/historical_cycle_expansion_step1_solution_assessment.md): census historical Railspike/FDP cycles before expanding outcome analysis.
