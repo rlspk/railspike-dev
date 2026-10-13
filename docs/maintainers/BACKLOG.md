@@ -2,7 +2,7 @@
 
 Track the current copy changes and deferred case studies in the [positioning checklist](./positioning-checklist.md).
 
-Current product: `rlspk/railspike`; website: `https://rlspk.github.io/` from `rlspk/rlspk.github.io`. Completed entries retain their historical context.
+Current product: `rlspk/railspike`; website: `https://railspike.dev/` from `rlspk/rlspk.github.io`. Completed entries retain their historical context.
 
 Maintainer follow-up work. Completed plans and superseded drafts remain available in Git history.
 
