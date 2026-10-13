@@ -9,3 +9,5 @@ This documentation-only census expands discovery beyond debug logs. It inventori
 Status: discovery frozen; review batches in progress, final reconciliation pending. Candidate counts include copies, incomplete plans and nonstandard documents. No completed-cycle total is claimed yet.
 
 - [Review batch 1](./batch-1.md): C001–C065.
+
+- [Review batch 2](./batch-2.md): C066–C130.

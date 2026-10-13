@@ -11,3 +11,8 @@ Debug mode: disabled
 - Changes: Reviewed C001–C065 (65 candidates), recording identity/status, task/era uncertainty, source mapping, original-study overlap and analysis disposition. Counts by status code: {'I': 9, 'D': 47, 'P': 2, 'U': 7}; labels appear in the batch.
 - Verification: Tool-assisted goal/stage/verification/correction screening and targeted source rereads support classifications; retained exact source-line excerpts checked. Every assigned candidate appears once with all source IDs; local plan/census paths and whitespace checked before commit. No runtime, UI, deployment or release checks apply.
 - Notes: Documentary status is not independently rerun application verification; uncertain completion/identity stays visible. Unrelated working-tree changes remain outside this commit.
+
+## Stage 3 - Review batch 2
+- Changes: Reviewed C066–C130 (65 candidates), recording identity/status, task/era uncertainty, source mapping, original-study overlap and analysis disposition. Counts by status code: {'D': 46, 'U': 1, 'I': 17, 'X': 1}; labels appear in the batch.
+- Verification: Tool-assisted goal/stage/verification/correction screening and targeted source rereads support classifications; retained exact source-line excerpts checked. Every assigned candidate appears once with all source IDs; local plan/census paths and whitespace checked before commit. No runtime, UI, deployment or release checks apply.
+- Notes: Documentary status is not independently rerun application verification; uncertain completion/identity stays visible. Unrelated working-tree changes remain outside this commit.
