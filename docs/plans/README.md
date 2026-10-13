@@ -14,3 +14,5 @@
 
 - [Separate development content](./separate_development_content/separate_development_content_step1_solution_assessment.md): split the product into `rlspk/railspike` and development records/checks into `rlspk/railspike-dev`, with the website in `rlspk/rlspk.github.io`.
 - [Historical cycle expansion](./historical_cycle_expansion/historical_cycle_expansion_step1_solution_assessment.md): census historical Railspike/FDP cycles before expanding outcome analysis.
+
+- [Historical outcome analysis](./historical_outcome_analysis/historical_outcome_analysis_step1_solution_assessment.md)
