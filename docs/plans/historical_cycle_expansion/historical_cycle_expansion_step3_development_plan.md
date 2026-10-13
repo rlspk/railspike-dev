@@ -58,3 +58,6 @@ Debug mode: disabled
 - Verification approach: reconcile candidate dispositions/canonical statuses separately; check citations, links, fingerprints, write scope, original-study preservation. Separate unrelated draft-link failures.
 - Risks or open questions: record drift; queue unresolved eligibility for adjudication instead of exclusion.
 - Canonical components/API contracts touched: census catalog/coverage and feature summary.
+
+## Execution sizing adjustment — Stage 1
+The approved broader-discovery check found 349 candidates, including 96 nonstandard planning families beyond the 253 numbered families. Under the approved split-before-execution allowance, retain Stages 1–5 as written; Stage 5 now handles its next <=65 groups rather than the remainder. Execute Stage 6 as batch 5 and Stage 7 as batch 6, with the same Goal/Dependencies/Expected changes/Verification/Risks/Canonical components contract as Stage 5. Execute the originally planned reconciliation Stage 6 as Stage 8. This uses the approved eight-stage/day ceiling without changing scope, dropping candidates, or adding detailed outcome analysis. Each batch remains <=65 groups and <=1 hour; re-scope if actual review cannot satisfy that bound.

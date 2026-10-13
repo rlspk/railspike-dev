@@ -1,0 +1,8 @@
+> **Feature plan:** [Step 1](./historical_cycle_expansion_step1_solution_assessment.md) · [Step 2](./historical_cycle_expansion_step2_feature_description.md) · [Step 3](./historical_cycle_expansion_step3_development_plan.md) · [Step 4](./historical_cycle_expansion_step4_implementation_summary.md)
+
+Debug mode: disabled
+
+## Stage 1 - Frozen discovery and review boundary
+- Changes: Created the census entry, rules, source register and 349-family assignment list. Broader scanning includes nonstandard archived plans/outlines; bare step filenames are grouped by their parent. Split four review batches into six under the approved sizing allowance; final reconciliation becomes Stage 8. Planning commit: `dad3731`.
+- Verification: Read-only Markdown/text filename/content screening covered both roots with no read errors; source counts reconcile (5,332 screened; 4,162 application-state text exclusions; 1,170 registered; 1,006 assigned sources; 349 candidates). Trial inspection found byte-identical installed summaries, a later corrected dependency-installer completion claim, pending homepage verification, and bare numbered-step files. Candidate IDs and source memberships checked; local census/plan links and whitespace checked before commit.
+- Notes: Numbered-step-only screening was insufficient; the 96 added nonstandard families remain candidates until reviewed. Eight stages maximum, each <=1 hour. No application/runtime/UI/deployment/migration/release checks apply to this documentation-only census. Original evidence stays read-only; no outcome or complete-cycle count is claimed at this stage.
