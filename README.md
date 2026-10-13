@@ -24,6 +24,9 @@ node scripts/check-markdown-links.mjs . docs/maintainers/historical-link-baselin
 python scripts/check-markdown-links.py ../railspike
 bash scripts/check-railspike-git-workflow.sh ../railspike
 git diff --check
+
+# Python 3: actual product installation and legacy migration/recovery fixtures.
+python3 scripts/check-repository-separation.py https://github.com/rlspk/railspike.git b59f7df89842ba17f710ae1f2dc955bb361cc620
 ```
 
 The Git fixture extracts the exact update block from the selected product README and uses disposable local repositories. It checks initialized and uninitialized submodules, dirty worktrees, unexpected configuration, and unavailable upstreams without changing the selected checkout. The three link checkers remain dependency-free; Python supports 2.7+ and 3.

@@ -19,3 +19,7 @@ Unrelated untracked planning drafts, `installation_log.txt`, `railspike.txt`, `t
 Future Railspike plans/logs live only in this development repository. Product and website edits go to their own checkouts; summaries record their revisions. There is no runtime or installation dependency on this checkout.
 
 Before removing or replacing content, verify its preservation commit and retain the previous usable revision. On partial publication, inspect all remote revisions and restore only owned, unchanged paths from that revision; preserve later edits for reconciliation. Do not reset or force-push a repository to recover. Existing consuming projects use the source-migration and update instructions in the product README.
+
+## Published result
+
+The product distribution at `59858599cf98d3d5e0502fc13e58a856e364df12` contains 16 files. Website commit `05aebc7` is live at `https://rlspk.github.io/`. The development README documents the actual-history installation/migration/recovery fixture; it uses temporary repositories and never modifies the supplied product source. The archived local recovery bundle remains available; historical source documents excluded from publication remain with the original owner.
