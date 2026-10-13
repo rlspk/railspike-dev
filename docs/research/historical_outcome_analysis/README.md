@@ -7,3 +7,5 @@ This local documentary analysis covers the first 25 of 216 eligible census candi
 Status: evidence boundary and rubric fixed; five review groups and final reconciliation pending.
 
 - [Review group 1](./review-1.md): five outcome records.
+
+- [Review group 2](./review-2.md): five outcome records.

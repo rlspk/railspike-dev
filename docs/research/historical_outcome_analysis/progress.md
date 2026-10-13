@@ -2,7 +2,7 @@
 
 [Entry](./README.md) · [Census coverage](../historical_cycle_expansion/coverage.md)
 
-5/25 records reviewed in this slice; 20 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
+10/25 records reviewed in this slice; 15 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
 
 ## Assigned records
 | ID | Task | Review |
@@ -12,11 +12,11 @@
 | C006 | installation_process_improvements | [record](./review-1.md#c006) |
 | C007 | instruction_debug_mode | [record](./review-1.md#c007) |
 | C008 | project_debug_default | [record](./review-1.md#c008) |
-| C009 | prompted_installation | pending |
-| C010 | quiet_debug_mode | pending |
-| C012 | readme_and_essay_homepage | pending |
-| C013 | repo_cleanup | pending |
-| C014 | separate_development_content | pending |
+| C009 | prompted_installation | [record](./review-2.md#c009) |
+| C010 | quiet_debug_mode | [record](./review-2.md#c010) |
+| C012 | readme_and_essay_homepage | [record](./review-2.md#c012) |
+| C013 | repo_cleanup | [record](./review-2.md#c013) |
+| C014 | separate_development_content | [record](./review-2.md#c014) |
 | C015 | website_redesign | pending |
 | C016 | examples_page | pending |
 | C017 | fdp_distribution_safety | pending |
