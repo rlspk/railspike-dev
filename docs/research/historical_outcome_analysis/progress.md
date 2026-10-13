@@ -2,16 +2,16 @@
 
 [Entry](./README.md) · [Census coverage](../historical_cycle_expansion/coverage.md)
 
-0/25 records reviewed in this slice; 25 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
+5/25 records reviewed in this slice; 20 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
 
 ## Assigned records
 | ID | Task | Review |
 | --- | --- | --- |
-| C002 | fdp_feature_integration | pending |
-| C005 | homepage_from_scratch | pending |
-| C006 | installation_process_improvements | pending |
-| C007 | instruction_debug_mode | pending |
-| C008 | project_debug_default | pending |
+| C002 | fdp_feature_integration | [record](./review-1.md#c002) |
+| C005 | homepage_from_scratch | [record](./review-1.md#c005) |
+| C006 | installation_process_improvements | [record](./review-1.md#c006) |
+| C007 | instruction_debug_mode | [record](./review-1.md#c007) |
+| C008 | project_debug_default | [record](./review-1.md#c008) |
 | C009 | prompted_installation | pending |
 | C010 | quiet_debug_mode | pending |
 | C012 | readme_and_essay_homepage | pending |
