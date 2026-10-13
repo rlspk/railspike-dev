@@ -1,21 +1,16 @@
 # Historical Railspike/FDP cycle census
 
-This documentation-only census expands discovery beyond debug logs. It inventories retained evidence, not experimentally verified outcomes. The original [protocol](../railspike_paper/protocol.md), [evidence](../railspike_paper/evidence.md), and [findings](../railspike_paper/findings.md) remain unchanged.
+A retained-evidence census across `~/railspike-dev` and `~/v3`, frozen at 2026-10-13T21:37:52.464783+00:00. This extends discovery beyond debug logs; it does not measure causal effectiveness or certify software outcomes. The original [protocol](../railspike_paper/protocol.md), [evidence](../railspike_paper/evidence.md), and [findings](../railspike_paper/findings.md) remain unchanged.
+
+1. Read the [coverage, gaps and complete analysis queues](./coverage.md).
+2. Find any of the 349 candidates in the [final disposition index](./dispositions.md).
+3. Follow its batch record to exact source-line excerpts and [fingerprints](./sources.md).
+4. Apply the [dated corrections](./corrections.md) when interpreting original batch classifications.
+
+**265 canonical cycles; 48 unresolved identities; 7 duplicate/companion families; 29 contextual exclusions.** 216 candidates are queued for later outcome analysis; 95 require adjudication or incomplete-work follow-up. Two research cycles are excluded from self-analysis. These are not success rates.
 
 - [Boundary, classification and correction rules](./protocol.md)
-- [All 349 candidate assignments](./candidates.md)
-- [Frozen provenance: 1,170 source fingerprints](./sources.md)
+- [Frozen candidate/source assignments](./candidates.md)
+- [Batch 1](./batch-1.md) · [Batch 2](./batch-2.md) · [Batch 3](./batch-3.md) · [Batch 4](./batch-4.md) · [Batch 5](./batch-5.md) · [Batch 6](./batch-6.md)
 
-Status: discovery frozen; review batches in progress, final reconciliation pending. Candidate counts include copies, incomplete plans and nonstandard documents. No completed-cycle total is claimed yet.
-
-- [Review batch 1](./batch-1.md): C001–C065.
-
-- [Review batch 2](./batch-2.md): C066–C130.
-
-- [Review batch 3](./batch-3.md): C131–C195.
-
-- [Review batch 4](./batch-4.md): C196–C260.
-
-- [Review batch 5](./batch-5.md): C261–C325.
-
-- [Review batch 6](./batch-6.md): C326–C349.
+Status: census and reconciliation complete; detailed outcome analysis, independent human review, experiments and publication remain later work.
