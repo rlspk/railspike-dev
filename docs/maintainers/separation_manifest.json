@@ -1,0 +1,307 @@
+{
+  "source_repository": "https://github.com/gulkily/railspike.git",
+  "source_revision": "b59f7df89842ba17f710ae1f2dc955bb361cc620",
+  "destination_repository": "https://github.com/rlspk/railspike-dev.git",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "8da33a6c6aa6c2df2a6a85b55ee2540b531741764feb754ee3bbaf2173e8a5e9"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d22459ed6cfd4f33084536facca0863b9bfc6a4677c9c0ef2b2db4369209f5f5"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "c9c8ae1cc6ef432a4529287624fa7ef1f5d8f999d7666a718f08f33bc5bab216"
+    },
+    {
+      "path": "docs/maintainers/BACKLOG.md",
+      "sha256": "8105f5ff32b3326b52adf3f1de5ab2bfd050258e14ec77c395db1a7bc9f04f4a"
+    },
+    {
+      "path": "docs/maintainers/RELEASES.md",
+      "sha256": "47348d19ee36e921d9f51bd49c3aaac3ba43b3f1b79972af1a578b49edcffb76"
+    },
+    {
+      "path": "docs/maintainers/case-study-candidates.md",
+      "sha256": "f33adba8986e101ad8847c5d53cb6737654ee2133f0c55b1af5c2a04d69dc6c3"
+    },
+    {
+      "path": "docs/maintainers/launch/HN_POST_DRAFT.md",
+      "sha256": "66293b500b26a35102005fc4ae2c51d97c7e5a5c6050d42d0a9babbee9889e2d"
+    },
+    {
+      "path": "docs/maintainers/launch/HN_WRITEUP_READINESS_CHECKLIST.md",
+      "sha256": "ac3397e14252cea820b315a6c34bab39b8bed8a0de522e9c0910b6fc9ddc23d3"
+    },
+    {
+      "path": "docs/maintainers/positioning-checklist.md",
+      "sha256": "eb9960cbc8688ca0277e0e4362a67db2d38c28905e846816af0261e6530a7791"
+    },
+    {
+      "path": "docs/plans/README.md",
+      "sha256": "cf4d644954cacb3e2c4e735be13af699ff2d939296e899aad07ba24063d294e4"
+    },
+    {
+      "path": "docs/plans/fdp_feature_integration/fdp_feature_integration_step1_solution_assessment.md",
+      "sha256": "8665fc48887c68b4077620d4fe2800b26a7a304db869c3ce5add5b0470fc217d"
+    },
+    {
+      "path": "docs/plans/fdp_feature_integration/fdp_feature_integration_step2_feature_description.md",
+      "sha256": "cba7efd55603b25b06000fa7e71652054718960d598da207852b73ecd3be7b5f"
+    },
+    {
+      "path": "docs/plans/fdp_feature_integration/fdp_feature_integration_step3_development_plan.md",
+      "sha256": "8d640c7850e54572354c08c7c0d7e194c79c60577143f740afe00e932f4216b5"
+    },
+    {
+      "path": "docs/plans/fdp_feature_integration/fdp_feature_integration_step4_implementation_summary.md",
+      "sha256": "5877a19f5824e7310620e9738e265207dde926c7ad9dbc5b4028480cd1ba787c"
+    },
+    {
+      "path": "docs/plans/homepage_from_scratch/homepage_from_scratch_debug_log.md",
+      "sha256": "d4002255f3517a63ebb3e1e444d8e3a56d5991b03e5dad99ec0bf71666ddc4c4"
+    },
+    {
+      "path": "docs/plans/homepage_from_scratch/homepage_from_scratch_step1_solution_assessment.md",
+      "sha256": "53eddb0de927673b34fb81eb32afbeba9c2c60e6923fcfad06ed58bfec883cb7"
+    },
+    {
+      "path": "docs/plans/homepage_from_scratch/homepage_from_scratch_step2_feature_description.md",
+      "sha256": "57ab39c728f10ae799ff00e66b48de27cd1942fd2d563b1a76bd35505abdc5fb"
+    },
+    {
+      "path": "docs/plans/homepage_from_scratch/homepage_from_scratch_step3_development_plan.md",
+      "sha256": "161d2c001baf8beeaf1af780bfba80553929bd11eb94a99c66f3389bdfabf2a8"
+    },
+    {
+      "path": "docs/plans/homepage_from_scratch/homepage_from_scratch_step4_implementation_summary.md",
+      "sha256": "612197fd95f97b3440a12380b97c9f82ba8addf3cd45b56cf2d1cb46f6e357b1"
+    },
+    {
+      "path": "docs/plans/installation_process_improvements/installation_process_improvements_failure_modes_checklist.md",
+      "sha256": "085b3652f21c87c6875eb67d9a524335c143ff79b2e768d2234edea9aefad8c3"
+    },
+    {
+      "path": "docs/plans/installation_process_improvements/installation_process_improvements_step1_solution_assessment.md",
+      "sha256": "2e88423b935476d8aebaaf73e96b4a58d543951df582c1dfb708d8530b675aac"
+    },
+    {
+      "path": "docs/plans/installation_process_improvements/installation_process_improvements_step2_feature_description.md",
+      "sha256": "eeb92882804f437c7cbf7b6a3f63e02dde3bee515c58dc6ae38101dca40723fd"
+    },
+    {
+      "path": "docs/plans/installation_process_improvements/installation_process_improvements_step3_development_plan.md",
+      "sha256": "1834ca6457d12ab295c292b36a9bbf59cb340628ec78a2ac36d0e1cccde2fcd2"
+    },
+    {
+      "path": "docs/plans/installation_process_improvements/installation_process_improvements_step4_implementation_summary.md",
+      "sha256": "40d66159c51119cdfdfa891eb5e59bee43f6b316bad9bfa7f262b14bc6ab9558"
+    },
+    {
+      "path": "docs/plans/instruction_debug_mode/instruction_debug_mode_step1_solution_assessment.md",
+      "sha256": "02d83fd669018416e46f7128c2be1882e0839d776375113b6133162f8416727d"
+    },
+    {
+      "path": "docs/plans/instruction_debug_mode/instruction_debug_mode_step2_feature_description.md",
+      "sha256": "1db6608e07a93fda354ce0f11e8e2c8e0d348cefcb856aab2cd0acd78dc5b463"
+    },
+    {
+      "path": "docs/plans/instruction_debug_mode/instruction_debug_mode_step3_development_plan.md",
+      "sha256": "374f3004dfa8946221432bcbe8dab1cdee63cb6056797ae08e9b722c3d36210b"
+    },
+    {
+      "path": "docs/plans/instruction_debug_mode/instruction_debug_mode_step4_implementation_summary.md",
+      "sha256": "c9eab50d0cea20559020021b5b51827ad79ce15e47911296cf36d456b8fa2674"
+    },
+    {
+      "path": "docs/plans/project_debug_default/project_debug_default_debug_log.md",
+      "sha256": "d7c95efe1225f118eab0f37c96dc5d3d652a1e27425497d42d1f01a7d90d48de"
+    },
+    {
+      "path": "docs/plans/project_debug_default/project_debug_default_step1_solution_assessment.md",
+      "sha256": "6c5e093c2a5f48f66c635fef191d86c13a44c1bffdc5d752f6836a218d2dd269"
+    },
+    {
+      "path": "docs/plans/project_debug_default/project_debug_default_step2_feature_description.md",
+      "sha256": "b91c0309ad422c18bf7ad695bd288d9783b006c86f33343c7339b5f2bdc1a86a"
+    },
+    {
+      "path": "docs/plans/project_debug_default/project_debug_default_step3_development_plan.md",
+      "sha256": "0ed58dadcf090fa9fa1c86171f3a68b19d25621731b7436aed51b00567cd1a2e"
+    },
+    {
+      "path": "docs/plans/project_debug_default/project_debug_default_step4_implementation_summary.md",
+      "sha256": "c305b951fa854e269ec4dfc1cb4e2f287a232918c29648a5cae7983a35a87a1e"
+    },
+    {
+      "path": "docs/plans/prompted_installation/prompted_installation_step1_solution_assessment.md",
+      "sha256": "b92cccb94258b6d199c3265042c95aca8e33c91434486eb44c536f3c40808db6"
+    },
+    {
+      "path": "docs/plans/prompted_installation/prompted_installation_step2_feature_description.md",
+      "sha256": "9bde87679b871e03e809de71280a2199202183b13a317f72d2254f21636bef2f"
+    },
+    {
+      "path": "docs/plans/prompted_installation/prompted_installation_step3_development_plan.md",
+      "sha256": "3119b3deb5451b857226c7992a6d997b6a3cb2b4bbcd6eec995b3a5c55ac78df"
+    },
+    {
+      "path": "docs/plans/prompted_installation/prompted_installation_step4_implementation_summary.md",
+      "sha256": "e1751318673e5325c616b0f73710cbba2d048e5edc43d05a34ee18d4e964e79a"
+    },
+    {
+      "path": "docs/plans/quiet_debug_mode/quiet_debug_mode_debug_log.md",
+      "sha256": "127d152c5b1942f5cbfbce5c982026de6abe84da75be60c9ce645c4462ee7e89"
+    },
+    {
+      "path": "docs/plans/quiet_debug_mode/quiet_debug_mode_step1_solution_assessment.md",
+      "sha256": "5cf1447825aefbf1480dbff620b31c8ba4729254ae4d9611d48df1a04d43e7bd"
+    },
+    {
+      "path": "docs/plans/quiet_debug_mode/quiet_debug_mode_step2_feature_description.md",
+      "sha256": "011f4d06b82bf24df3856f6f974e4e39bbc917cdc15027f6be505c3a06120d3a"
+    },
+    {
+      "path": "docs/plans/quiet_debug_mode/quiet_debug_mode_step3_development_plan.md",
+      "sha256": "4454c48ef99616c2b09c9ee4fa9e6f2af36a779b8ba8b698256b738d1cf4423e"
+    },
+    {
+      "path": "docs/plans/quiet_debug_mode/quiet_debug_mode_step4_implementation_summary.md",
+      "sha256": "339b4c6f247adaeaef23559fe8d81917f32e3ff1da51786cb1203ff52af93d0f"
+    },
+    {
+      "path": "docs/plans/railspike_paper/railspike_paper_step1_solution_assessment.md",
+      "sha256": "6d2fbffb1300079c393b5761f4e4709c47befaad64e6fd953e253bd160e85734"
+    },
+    {
+      "path": "docs/plans/railspike_paper/railspike_paper_step2_feature_description.md",
+      "sha256": "0dad0c7ce95f5c638b82b59b37debad38ac763f4007639d7b9d4c4f699029bdc"
+    },
+    {
+      "path": "docs/plans/railspike_paper/railspike_paper_step3_development_plan.md",
+      "sha256": "cd0139f20471beeb933a9b55cbff77cb5259f6b7ee4b5ddef33ad72c0425247d"
+    },
+    {
+      "path": "docs/plans/railspike_paper/railspike_paper_step4_implementation_summary.md",
+      "sha256": "30ff5c853cdbebcc83928acef42268995f3081b6df32e17b9ddc07c8ea3602ae"
+    },
+    {
+      "path": "docs/plans/readme_and_essay_homepage/readme_and_essay_homepage_debug_log.md",
+      "sha256": "8a1a5ee75a2cdfcb9aedad14e44eb5d180e74730abec7cdfd8ca36ba3a186967"
+    },
+    {
+      "path": "docs/plans/readme_and_essay_homepage/readme_and_essay_homepage_step1_solution_assessment.md",
+      "sha256": "60aaa0b8f61d40591f0c15033bfcc0d7c8bd8fd0802b56076dc942b9453872f6"
+    },
+    {
+      "path": "docs/plans/readme_and_essay_homepage/readme_and_essay_homepage_step2_feature_description.md",
+      "sha256": "9f76b71db7484d920e9c41c6dc7bddecc6a30f607665e1d68e5d7059ad4bfd19"
+    },
+    {
+      "path": "docs/plans/readme_and_essay_homepage/readme_and_essay_homepage_step3_development_plan.md",
+      "sha256": "18350e110417109988f68b344eb8320f734135a2ac703f2dded4ece1b49ab76d"
+    },
+    {
+      "path": "docs/plans/readme_and_essay_homepage/readme_and_essay_homepage_step4_implementation_summary.md",
+      "sha256": "ba8469dbe003d167535a303d757ce77aef09bc88cdaad8857d8e0f385be3a54b"
+    },
+    {
+      "path": "docs/plans/repo_cleanup/repo_cleanup_debug_log.md",
+      "sha256": "1cf76b539a447d965484b4b4d88ad8df3561dd905891abb436763b01caa49ec4"
+    },
+    {
+      "path": "docs/plans/repo_cleanup/repo_cleanup_step1_solution_assessment.md",
+      "sha256": "4ef6b96b59b597fd73267e8c3a2623eecba79649918f988e8ff5e78999c31c92"
+    },
+    {
+      "path": "docs/plans/repo_cleanup/repo_cleanup_step2_feature_description.md",
+      "sha256": "2df3bd0b9547e0b118fd3d07c32a2493ca57acd3e6150d23b256a49a633e4c84"
+    },
+    {
+      "path": "docs/plans/repo_cleanup/repo_cleanup_step3_development_plan.md",
+      "sha256": "a1b46fd0fc3379e2cf5de8ea4c302018ca443ba464c2657e8b29313bf100a71b"
+    },
+    {
+      "path": "docs/plans/repo_cleanup/repo_cleanup_step4_implementation_summary.md",
+      "sha256": "53e9488c0228d5bec81ce21ebbd9ffa589f2abaaa42b0ba5f179e580995cb538"
+    },
+    {
+      "path": "docs/plans/separate_development_content/separate_development_content_debug_log.md",
+      "sha256": "903bec0e78652f6a2931f30b200a79eb9def921fb05f249e5d8f2c52b1197183"
+    },
+    {
+      "path": "docs/plans/separate_development_content/separate_development_content_step1_solution_assessment.md",
+      "sha256": "af7d8203eb58180553e8115002ca5f74446b608bdded882944caa7eb1cdf3869"
+    },
+    {
+      "path": "docs/plans/separate_development_content/separate_development_content_step2_feature_description.md",
+      "sha256": "6625a255f6373b8fa70c5bcca07d692b026b9f36f6b4b16861686e4602d922ff"
+    },
+    {
+      "path": "docs/plans/separate_development_content/separate_development_content_step3_development_plan.md",
+      "sha256": "5b067d64d439b5c41a655031aaad7f9be0a98b9fcea2162d0f390f3357df5bd7"
+    },
+    {
+      "path": "docs/plans/website_redesign/website_redesign_debug_log.md",
+      "sha256": "5b31c5dc7b89b7272d402c68d37f692b12d7e253c42f4282b2c5e92bda08208f"
+    },
+    {
+      "path": "docs/plans/website_redesign/website_redesign_step1_solution_assessment.md",
+      "sha256": "9efe9fe49b5622950206eceef641c19fd287e39be58f94f368a66c923ba13130"
+    },
+    {
+      "path": "docs/plans/website_redesign/website_redesign_step2_feature_description.md",
+      "sha256": "81b7ce3bf84e45935128b298e7e2d5e5a72764bbce346f61e758f9418e81c9bf"
+    },
+    {
+      "path": "docs/plans/website_redesign/website_redesign_step3_development_plan.md",
+      "sha256": "41a81d4c04aab07e5413e2bfca7ec9691f5ac0846eef647ee3b07b4d20538e2c"
+    },
+    {
+      "path": "docs/plans/website_redesign/website_redesign_step4_implementation_summary.md",
+      "sha256": "680736f4dc7fe225b41a1b1ea8150ec3a0ff203279ce7a3b94e52a67d02fa63f"
+    },
+    {
+      "path": "docs/research/railspike_paper/evidence.md",
+      "sha256": "a02a11d9987ad0ca046eabe418dfa298c119708d191be3109e5158edff7cb645"
+    },
+    {
+      "path": "docs/research/railspike_paper/findings.md",
+      "sha256": "18681d43a77b8d26126e62cd5881828ff83b3d9031b93eaa5962629e2770ca89"
+    },
+    {
+      "path": "docs/research/railspike_paper/protocol.md",
+      "sha256": "c0d2ab7916166b9283b088e831b33adfa64470e2602e3e9146971c3936bb125c"
+    },
+    {
+      "path": "index.html",
+      "sha256": "48b301876b6e994990c45db6e5f6ab5a90da91c75cd827d86ac29ae484195219"
+    },
+    {
+      "path": "railspike-logo.png",
+      "sha256": "e77fa6678c3d96fbe8e7eef45a0c4aa99497ca1cdea9cd74e5df0ce062c75042"
+    },
+    {
+      "path": "scripts/check-markdown-links.mjs",
+      "sha256": "8d355722b133e74b38cbd45c2e1d9480e68565d30144451f65d2ead87cc6cfa6"
+    },
+    {
+      "path": "scripts/check-markdown-links.pl",
+      "sha256": "400c59b4a0637852bb07e142349950bd3219cc61a2af29f75364d5acd9adf339"
+    },
+    {
+      "path": "scripts/check-markdown-links.py",
+      "sha256": "6b6c25e48c54ee5adcca185e009e06d98b5b11a55de75e95ac4550029d43d83b"
+    },
+    {
+      "path": "scripts/check-railspike-git-workflow.sh",
+      "sha256": "bcdcc9abab71b9189f758c20d1300ff14aa57aa552c33cd5a747d463e5bca415"
+    }
+  ]
+}
