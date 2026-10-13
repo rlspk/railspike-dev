@@ -43,7 +43,16 @@ def target_is_external(target):
 
 
 def main():
-    root = os.path.abspath(os.getcwd())
+    if len(sys.argv) > 3:
+        raise SystemExit('Usage: check-markdown-links.py [ROOT [BASELINE]]')
+    root = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.getcwd())
+    if not os.path.isdir(root):
+        raise SystemExit('Not a directory: ' + root)
+    baseline = set()
+    if len(sys.argv) == 3:
+        with io.open(sys.argv[2], 'r', encoding='utf-8') as handle:
+            baseline = set(line.strip() for line in handle
+                           if line.strip() and not line.startswith('#'))
     files = markdown_files(root)
     failures = []
 
@@ -63,6 +72,12 @@ def main():
             if target and not os.path.exists(resolved):
                 failures.append('%s -> %s' % (os.path.relpath(path, root), original_target))
 
+    known = set(failures) & baseline
+    stale = baseline - set(failures)
+    failures = [failure for failure in failures if failure not in baseline]
+    failures.extend('Stale baseline entry: ' + item for item in sorted(stale))
+    if known:
+        print('Acknowledged %d historical link targets from explicit baseline.' % len(known))
     if failures:
         print('Broken local Markdown links:', file=sys.stderr)
         for failure in failures:

@@ -1,6 +1,6 @@
 # Installation process failure modes checklist
 
-Review of [installation_log.txt](../../../installation_log.txt), compared with the original installation/welcome rules; links now point to the revised [installation checks](../../../README.md#installation-checks) and [welcome instructions](../../../WELCOME.md). Line numbers refer to the supplied log. Checked items have a documentation/scenario-review disposition in the evidence below; they do not claim that every agent has executed the procedure successfully.
+Review of [installation_log.txt](../../../installation_log.txt), compared with the original installation/welcome rules; links now point to the revised [installation checks](../../../README.md#installation-checks) and [welcome instructions](https://github.com/rlspk/railspike/blob/main/WELCOME.md). Line numbers refer to the supplied log. Checked items have a documentation/scenario-review disposition in the evidence below; they do not claim that every agent has executed the procedure successfully.
 
 ## Observed failures and friction
 

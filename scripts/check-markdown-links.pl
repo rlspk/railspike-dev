@@ -8,7 +8,19 @@ use File::Basename qw(dirname);
 use File::Find;
 use File::Spec;
 
-my $root = abs_path(getcwd());
+die "Usage: check-markdown-links.pl [ROOT [BASELINE]]\n" if @ARGV > 2;
+my $root = abs_path(@ARGV ? shift @ARGV : getcwd());
+die "Not a directory\n" unless defined($root) && -d $root;
+my %baseline;
+if (@ARGV) {
+    open my $handle, '<', shift @ARGV or die "Cannot read baseline: $!\n";
+    while (my $line = <$handle>) {
+        next if $line =~ /^#/;
+        $line =~ s/^\s+|\s+$//g;
+        $baseline{$line} = 1 if length $line;
+    }
+    close $handle;
+}
 my %ignored_directories = map { $_ => 1 } qw(.git .idea node_modules);
 my @markdown_files;
 
@@ -20,7 +32,7 @@ find(
 
             return if -l $path;
             if (-d $path) {
-                $File::Find::prune = 1 if $ignored_directories{$_};
+                $File::Find::prune = 1 if $ignored_directories{(File::Spec->splitdir($path))[-1]};
                 return;
             }
 
@@ -56,6 +68,12 @@ for my $file (@markdown_files) {
     }
 }
 
+my %found = map { $_ => 1 } @failures;
+my @known = grep { $found{$_} } keys %baseline;
+my @stale = grep { !$found{$_} } keys %baseline;
+@failures = grep { !$baseline{$_} } @failures;
+push @failures, map { "Stale baseline entry: $_" } sort @stale;
+print 'Acknowledged ' . scalar(@known) . " historical link targets from explicit baseline.\n" if @known;
 if (@failures) {
     print STDERR "Broken local Markdown links:\n";
     print STDERR "- $_\n" for @failures;

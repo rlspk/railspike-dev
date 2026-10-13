@@ -1,10 +1,29 @@
 # Railspike development
 
-Development records, checks, research, and website sources for [Railspike](https://github.com/rlspk/railspike). Install the product repository in consuming projects.
+Plans, debug logs, research, maintainer records, and checks for [Railspike](https://github.com/rlspk/railspike). Install the product repository in consuming projects. Website sources live in [rlspk.github.io](https://github.com/rlspk/rlspk.github.io).
 
+- [Development documentation](./docs/README.md)
 - [Feature plans](./docs/plans/README.md)
-- [Maintainer backlog](./docs/maintainers/BACKLOG.md)
 - [Contributing](./CONTRIBUTING.md)
-- [Preservation manifest](./docs/maintainers/separation_manifest.json)
+- [Migration and preservation record](./docs/maintainers/REPOSITORY_SPLIT.md)
 
-This initial preservation snapshot precedes link and tooling adaptation. The manifest records the source revision and original file hashes; subsequent edits are ordinary development history. The product repository retains the original Git history.
+## Working on Railspike
+
+Keep separate checkouts of `railspike-dev`, `railspike`, and (when needed) `rlspk.github.io`. Read the product's `RAILSPIKE.md` for its workflow. Railspike's own plans and debug logs belong here in `docs/plans/`, even when implementation edits the product or website checkout. Commit stage summaries here and record paired repository commits before continuing. Consuming projects still keep their own plans in their own `docs/plans/`.
+
+## Checks
+
+The link checkers accept an explicit root and optional exact historical baseline. Choose any installed runtime; when changing shared behavior, run all three. Missing roots, new broken links, and stale baseline entries fail. The baseline is only for preserved research excerpts and references to untracked source material that was not migrated; never apply it to the product.
+
+```bash
+python scripts/check-markdown-links.py . docs/maintainers/historical-link-baseline.txt
+perl scripts/check-markdown-links.pl . docs/maintainers/historical-link-baseline.txt
+node scripts/check-markdown-links.mjs . docs/maintainers/historical-link-baseline.txt
+
+# Replace ../railspike with your product checkout.
+python scripts/check-markdown-links.py ../railspike
+bash scripts/check-railspike-git-workflow.sh ../railspike
+git diff --check
+```
+
+The Git fixture extracts the exact update block from the selected product README and uses disposable local repositories. It checks initialized and uninitialized submodules, dirty worktrees, unexpected configuration, and unavailable upstreams without changing the selected checkout. The three link checkers remain dependency-free; Python supports 2.7+ and 3.

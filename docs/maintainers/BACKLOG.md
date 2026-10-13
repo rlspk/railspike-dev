@@ -2,6 +2,8 @@
 
 Track the current copy changes and deferred case studies in the [positioning checklist](./positioning-checklist.md).
 
+Current product: `rlspk/railspike`; website: `https://rlspk.github.io/` from `rlspk/rlspk.github.io`. Completed entries retain their historical context.
+
 Maintainer follow-up work. Completed plans and superseded drafts remain available in Git history.
 
 - [x] Confirm GitHub Pages publishes `master` from `/` (root) with HTTPS at `https://gulkily.github.io/railspike/`; verify the live navigation, images, and external links.

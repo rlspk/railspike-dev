@@ -2,6 +2,8 @@
 
 Contributions are welcome when they make the workflow clearer, more testable, or easier to use without weakening its approval and evidence boundaries.
 
+Keep planning artifacts and verification records in this repository; edit product instructions in a separate `railspike` checkout and website sources in `rlspk.github.io`. Record paired commit IDs in the feature summary.
+
 1. Open an issue or discussion for a material workflow change before drafting it.
 2. Keep instruction-file changes small and explain the user-visible contract change.
 3. Preserve concise, copyable Markdown and relative links.

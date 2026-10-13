@@ -2,6 +2,8 @@
 
 Railspike uses semantic versioning for published releases.
 
+Current ownership: releases and tags belong to `rlspk/railspike`; development records/checks live in `rlspk/railspike-dev`; the website is `https://rlspk.github.io/`. The rename note below is historical; current installation is a reviewed copy by default, with submodules on explicit request.
+
 - **Patch:** clarifications, examples, and fixes that do not change the workflow contract.
 - **Minor:** backwards-compatible new guidance, templates, or optional workflow capabilities.
 - **Major:** a changed approval, artifact, branch, or commit requirement that requires consumers to alter their process.

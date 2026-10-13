@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Exercises the README's exact update block in local, disposable repositories.
 set -euo pipefail
-source_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+[ "$#" -eq 1 ] || { printf 'Usage: %s PRODUCT_CHECKOUT\n' "$0" >&2; exit 1; }
+source_root="$(cd -- "$1" && pwd)"
+[ -f "$source_root/README.md" ] || { printf 'Missing product README\n' >&2; exit 1; }
 fixture_dir="$(mktemp -d "${TMPDIR:-/tmp}/railspike-git-workflow.XXXXXX")"
 case "$fixture_dir" in
   "${TMPDIR:-/tmp}"/railspike-git-workflow.*) ;;
@@ -22,7 +24,7 @@ export GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=protocol.file.allow GIT_CONFIG_VALUE_
 awk '/<!-- railspike-update-start -->/{copy=1;next} /<!-- railspike-update-end -->/{copy=0} copy && !/^```/{print}' "$source_root/README.md" > "$fixture_dir/update.sh"
 test -s "$fixture_dir/update.sh"
 # Replace only the canonical network URL with this test's local upstream.
-sed -i "s|https://github.com/gulkily/railspike.git|$upstream_bare|g" "$fixture_dir/update.sh"
+sed -i -e "s|https://github.com/gulkily/railspike.git|$upstream_bare|g" -e "s|https://github.com/rlspk/railspike.git|$upstream_bare|g" "$fixture_dir/update.sh"
 update() { (cd "$1" && bash "$fixture_dir/update.sh") > "$fixture_dir/update.log" 2>&1; }
 refuse() {
   local repo="$1" before_head before_index before_status

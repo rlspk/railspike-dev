@@ -13,7 +13,7 @@ Railspike needs a self-contained whitepaper supported by systematic evidence bey
 
 ## Review Basis
 - Both repositories were inventoried and searched, with focused review of guidance, plans, failure modes, and supporting code/tests; this was not an exhaustive code audit.
-- The [README](../../../README.md), [current contract](../../../RAILSPIKE.md), and [essay](../../../railspike.txt) explain the method and motivation. Historical FDP artifacts differ from current rules.
+- The [README](../../../README.md), [current contract](https://github.com/rlspk/railspike/blob/main/RAILSPIKE.md), and [essay](../../../railspike.txt) explain the method and motivation. Historical FDP artifacts differ from current rules.
 - Existing debug logs and the [case-study shortlist](../../maintainers/case-study-candidates.md) provide exploratory material, not controlled comparisons. v3's missing-PHP fix has plans and delivery commits (`d84a47b9`/`2937b11b`); its HTTP probe verified startup, not full application behavior.
 
 ## Option A — Adapt the existing essay
