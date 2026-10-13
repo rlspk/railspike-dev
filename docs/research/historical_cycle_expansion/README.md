@@ -17,3 +17,5 @@ Status: discovery frozen; review batches in progress, final reconciliation pendi
 - [Review batch 4](./batch-4.md): C196–C260.
 
 - [Review batch 5](./batch-5.md): C261–C325.
+
+- [Review batch 6](./batch-6.md): C326–C349.
