@@ -6,7 +6,7 @@ Debug mode: disabled
 - Development branch: `feature/first-release`; planning commit: `c195ad9`.
 - Work type: release/distribution maintenance under approved Steps 2–3. No product or website changes, unrelated merges, or runtime changes.
 - Approved plans organized here with their substantive content preserved; maintainer links and plan index repaired. Unrelated local edits/untracked drafts remain outside this cycle's commits.
-- Status: Stage 1 complete following the maintainer-authorized policy revision permitting an unsigned annotated tag. Stages 2–3 pending; no product tags or GitHub releases created or published.
+- Status: Stages 1–2 complete; Stage 3 pending. No product tags or GitHub releases created or published. The maintainer-authorized policy permits an unsigned annotated tag.
 
 ## Stage 1 - Candidate and release capabilities
 - Changes: fetched product `origin/main` and tags; created clean detached worktree `/tmp/railspike-first-release-candidate` at `579c0c13956be36c308e50df60b1849f9e213da6`. The existing product branch/worktree was preserved.
@@ -19,6 +19,13 @@ Debug mode: disabled
 - Resolution: the maintainer explicitly authorized revising the release policy to allow an unsigned annotated tag and requested future signing setup in `todo.txt`. Updated `RELEASES.md`, active backlog wording, and appended superseding requirements to Steps 1–3 without removing their historical approved text. Both throwaway keys remain excluded.
 - Final verification: a disposable unsigned annotated Git tag had object type `tag` and peeled to its expected commit; repository push permissions remain confirmed, candidate worktree is clean, remote main remains the recorded ID, and no tags/releases exist. Stage 1's signing blocker is resolved by the authorized requirement change. Signing status and exact tag/commit identities remain required release evidence.
 - Stage commits: initial checkpoint `8173562`, access checkpoint `1b0d730`, throwaway-key exclusion `7a64e21`; the commit containing this resolution completes Stage 1.
+
+## Stage 2 - Candidate verification and release notes
+- Changes: prepared `docs/maintainers/releases/v0.1.0.md` for the exact candidate, including workflow guarantees/limitations, unsigned status, evolving compatibility, deliberate copy/submodule adoption, migration, recovery, and verification evidence.
+- Verification: product Markdown checker passed (14 files); README Git-workflow fixture passed; product and development whitespace checks passed. Repository-separation fixture passed against the published candidate `579c0c13956be36c308e50df60b1849f9e213da6`, reporting 16 product files and copy/submodule migration, local-edit preservation, rollback, and host isolation checks. Initial invocation incorrectly supplied the candidate as the legacy baseline and failed the legacy-tree assertion; corrected invocation used documented baseline `b59f7df89842ba17f710ae1f2dc955bb361cc620` and passed without changing the checker.
+- Evidence review: README installation, welcome, examples, approval/commit requirements, update/recovery, and legacy rename/source guidance reviewed against shipped instructions. Public website HTML has the current Railspike name, canonical product links, installation prompt, and accessible logo. Website, logo, three canonical repositories, contribution guidance, and every external release-note link returned HTTP 200.
+- Notes: feature-local and release-note local links pass. Full development link checker still reports six unrelated failures: three future-step links in the debug-process draft, two missing `installation_log.txt` references, and one missing `railspike.txt` reference. These do not occur in the product or release notes; no baseline exceptions added. UI/runtime checks are inapplicable to a Markdown-only product; no agent adherence guarantee is claimed.
+- Stage 1 completion commit: `0504f72`; Stage 2 commit is the commit containing this section. Stage 3 must make release notes/evidence public and read them back before tagging/publishing; final candidate/version identity checks remain required.
 
 ## Requests
 - Request: exclude the `testing` and `forum-user` throwaway keys from release signing. Disposition: in-scope signing-identity refinement; accepted on explicit maintainer instruction. Outcome: both excluded; maintainer key setup remains pending. The signed-tag requirement is unchanged; no keys were created, deleted, or registered.
