@@ -40,3 +40,26 @@ Debug mode: enabled, inherited from Step 2 and confirmed before handoff.
 - The <=1-hour review-stage estimates are planning estimates based on mapped source volume, not measured completion times. Stage 1 must recheck supplemental evidence needs before dependent work.
 
 Verification: seven stage sections have all six required fields; current-mode and existing plan navigation checks pass (Step 4 link intentionally pending). Representative completion/unmet-gate/nonstandard evidence was inspected without assigning new outcomes. All 102 mapped source paths exist and match the census SHA-256 values. No branch, commit, implementation, new runtime test or source edit performed.
+
+## 2026-10-14T00:06:59.464079+00:00 — Step 4 completed
+
+Debug mode: enabled, inherited from Step 3 and confirmed in the completed summary. No project marker or prior mode snapshot changed. This report follows all seven stage commits and is saved in a separate log-only handoff commit.
+
+### Necessary/useful instructions
+- Source: `railspike/docs/workflow/step4_implementation_before.md`, Planning Docs Commit Gate. Commit `22f0e17` contains approved plans, existing debug log and plan-index organization only; the summary starts in `47d704b`. This kept the unrelated README, maintainer modifications and draft assessments outside the feature. Retain the explicit staged-content gate.
+- Source: `railspike/docs/workflow/step4_implementation_do.md`, Stage Boundary Protocol. Seven stage-scoped commits each contain a summary update; source/path checks preceded each boundary. The final audit verified eight feature commits before this log-only report. Retain per-stage evidence and summary co-presence for auditable batch work.
+- Source: the same file, documentation-only evidence/document-integrity checks. Final assertions checked 25 complete records, 436 local paths/anchors, 102 unchanged source fingerprints, 25 pinned commit manifests and complete 191/95 deferred queues. Initial excerpt-range and whitespace checks caught a too-long quote range and blank blockquote trailing spaces before the first review commit; both were repaired before advancing. Retain checks proportional to the actual artifact.
+- Source: `railspike/docs/workflow/step4_implementation_after.md`, Contract and finalized-summary gates. The final package includes all 25 records, reported/missing evidence, corrected overlap/era wording and explicit census qualifications, rather than ending at the last review group. Retain a final reconciliation/handoff stage.
+
+### Redundant/unnecessary instructions
+No supported new findings beyond the repeated stage-field issue recorded in Step 3. Repetition alone during this execution does not establish that approval or evidence protections should be removed.
+
+### Inapplicable instructions
+- Source: `railspike/docs/workflow/step4_implementation_after.md`, UI/CLI and deployment/role/migration checks. No application behavior changed; performing historical tests would cross the approved research boundary. The summary records these as inapplicable while preserving the historical authors' reported runtime evidence. Retain the documentation-specific alternative.
+
+### Uncertain assessments
+- Source: `railspike/docs/workflow/step4_implementation_do.md`, “evidence-backed” findings. Mechanical checks establish paths, hashes and excerpt identity, not correctness of every interpretation. Final substantive review found C010's wrong overlap in one sentence and over-specific era labels for C028/C029; dated corrections preserve the original records. The gate is useful but should never imply independent human validation of agent-produced coding. This is a limit of this run, not evidence that the instruction caused the errors.
+- The resulting 13 reported-met, six unmet-gate and six unknown judgments are task-dependent documentary categories. No observed human review time, independent test reproduction or comparative baseline supports a claim that Railspike improved quality or speed in this research cycle.
+
+### Final verification and handoff
+All seven planned stages are complete. The first planning commit excludes implementation/summary; all seven later commits include their stage summary. Allowed file scope and document outcome pass; original census/study and mapped sources are unchanged. Independent reproduction and human coding review remain 0/25. No push or publication occurred. Unrelated working-tree changes remain untouched. The report and queues identify subsequent work without starting another cycle.
