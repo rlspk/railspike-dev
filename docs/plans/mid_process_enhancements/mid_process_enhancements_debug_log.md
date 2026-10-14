@@ -65,3 +65,19 @@ No supported findings.
 
 ### Uncertain assessments
 - **Source:** `RAILSPIKE.md`, Key Rules: “Flag scope creep early and bounce back to planning steps rather than improvising mid-implementation.” **Observation:** This sets a boundary but does not classify incidental refinements; that gap motivates the assessment. **Suggestion:** Define disposition criteria through the proposed workflow, subject to approval. No implementation scenario was executed, so actual agent behavior remains unverified.
+
+## 2026-10-14T22:48:59Z — Step 4
+
+### Necessary/useful instructions
+- **Source:** `docs/workflow/step4_implementation_before.md`, Planning Docs Commit Gate. **Observation:** Approved plans and existing log were organized and committed as `4d98f99` before the summary or product implementation. **Suggestion:** Retain the gate.
+- **Source:** `docs/workflow/step4_implementation_do.md`, Stage Boundary Protocol. **Observation:** Three product commits have paired development commits carrying verification summaries (`2b12ed3`, `f8a42f1`, `fa177a3`); each pair completed before the next stage. **Suggestion:** Retain cadence and clarify paired checkout evidence when developing Railspike itself.
+- **Source:** `docs/workflow/step4_implementation_after.md`, Final Verification. **Observation:** Product and feature links and Git fixture passed; nine unrelated development link failures are disclosed without suppressing them. **Suggestion:** Retain evidence and limitation reporting.
+
+### Redundant/unnecessary instructions
+No supported findings.
+
+### Inapplicable instructions
+- **Source:** `docs/workflow/step4_implementation_after.md`, runtime/deployment verification. **Observation:** Only approved Markdown guidance and development artifacts changed; no runtime, migration, deployment, or release behavior was changed. **Suggestion:** Retain the artifact-specific applicability exception.
+
+### Uncertain assessments
+- **Source:** `RAILSPIKE.md`, Enhancement Requests and Follow-up Cycles Before Merge (new guidance). **Observation:** Worked scenarios and consistency checks support the contract, but no live agent follow-up cycle was executed. **Suggestion:** Collect future usage evidence before claiming behavioral reliability.
