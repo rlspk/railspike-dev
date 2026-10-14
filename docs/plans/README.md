@@ -16,3 +16,5 @@
 - [Historical cycle expansion](./historical_cycle_expansion/historical_cycle_expansion_step1_solution_assessment.md): census historical Railspike/FDP cycles before expanding outcome analysis.
 
 - [Historical outcome analysis](./historical_outcome_analysis/historical_outcome_analysis_step1_solution_assessment.md)
+
+- [Task-relevant instruction summaries](./remove_instruction_reprints/remove_instruction_reprints_step1_solution_assessment.md): replace automatic instruction reprints with brief summaries of the next action, constraints, and approval gate.
