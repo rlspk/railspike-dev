@@ -6,7 +6,7 @@ Debug mode: disabled
 - Development branch: `feature/first-release`; planning commit: `c195ad9`.
 - Work type: release/distribution maintenance under approved Steps 2–3. No product or website changes, unrelated merges, or runtime changes.
 - Approved plans organized here with their substantive content preserved; maintainer links and plan index repaired. Unrelated local edits/untracked drafts remain outside this cycle's commits.
-- Status: Stages 1–2 complete; Stage 3 pending. No product tags or GitHub releases created or published. The maintainer-authorized policy permits an unsigned annotated tag.
+- Status: all three stages complete; `v0.1.0` published under the maintainer-authorized policy permitting an unsigned annotated tag. Future signing setup remains in `todo.txt`.
 
 ## Stage 1 - Candidate and release capabilities
 - Changes: fetched product `origin/main` and tags; created clean detached worktree `/tmp/railspike-first-release-candidate` at `579c0c13956be36c308e50df60b1849f9e213da6`. The existing product branch/worktree was preserved.
@@ -26,6 +26,19 @@ Debug mode: disabled
 - Evidence review: README installation, welcome, examples, approval/commit requirements, update/recovery, and legacy rename/source guidance reviewed against shipped instructions. Public website HTML has the current Railspike name, canonical product links, installation prompt, and accessible logo. Website, logo, three canonical repositories, contribution guidance, and every external release-note link returned HTTP 200.
 - Notes: feature-local and release-note local links pass. Full development link checker still reports six unrelated failures: three future-step links in the debug-process draft, two missing `installation_log.txt` references, and one missing `railspike.txt` reference. These do not occur in the product or release notes; no baseline exceptions added. UI/runtime checks are inapplicable to a Markdown-only product; no agent adherence guarantee is claimed.
 - Stage 1 completion commit: `0504f72`; Stage 2 commit is the commit containing this section. Stage 3 must make release notes/evidence public and read them back before tagging/publishing; final candidate/version identity checks remain required.
+
+## Stage 3 - Published release and final verification
+- Changes: published development notes/evidence on `feature/first-release` before releasing; created and pushed unsigned annotated product tag `v0.1.0`; reviewed a matching draft GitHub release and published it; completed the release backlog entry.
+- Product commit: `579c0c13956be36c308e50df60b1849f9e213da6`; annotated tag object: `ce20f28b4c1832989f55555e33a29d92cc913279`. Signing status: unsigned, explicitly permitted by maintainer revision; neither throwaway key used.
+- Release: [Railspike v0.1.0](https://github.com/rlspk/railspike/releases/tag/v0.1.0), GitHub release ID `413276971`, published `2026-10-14T23:42:29Z`; public, not draft, not prerelease.
+- Verification: clean exact candidate and unused version reconfirmed before mutation; public raw notes/policy/evidence matched local files at Stage 2 commit `e225bb7`. Local tag type and peeled commit checked before push; remote refs and tag API matched both recorded IDs. Draft body matched the notes before publishing. Unauthenticated public API/page readback confirmed release availability and tag identity; GitHub verification status is `unsigned`, as expected.
+- Tool recovery: installed GitHub CLI lacks `release create --verify-tag`; that command failed before creating a release, after the tag push. Inspected the remote tag type/object/peeled commit through the GitHub API, created the draft using the existing verified tag via API, reviewed its contents, and published by release ID. No tag recreation, replacement, or duplicate release occurred.
+- Notes: Stage 2 commit `e225bb7`; this stage's commit contains the final summary/backlog update. Development evidence is published on the dedicated branch; no development merge, product source change, website change, or unrelated local work published. Required release checks passed; the six unrelated development link failures remain disclosed above.
+
+## Completion
+- Contract fulfilled: one public first release and immutable annotated tag match the exact checked product revision; compatibility/adoption/recovery notes and verification evidence are public.
+- Development planning commit: `c195ad9`; Stage 1 completion: `0504f72` (earlier checkpoints retained); Stage 2: `e225bb7`; Stage 3: the commit containing this completion record.
+- Future work: establish a dedicated maintainer signing key and require signatures for future releases, without rewriting this published tag. No remaining blockers for the completed v0.1.0 release.
 
 ## Requests
 - Request: exclude the `testing` and `forum-user` throwaway keys from release signing. Disposition: in-scope signing-identity refinement; accepted on explicit maintainer instruction. Outcome: both excluded; maintainer key setup remains pending. The signed-tag requirement is unchanged; no keys were created, deleted, or registered.
