@@ -2,7 +2,7 @@
 
 [Entry](./README.md) · [Census coverage](../historical_cycle_expansion/coverage.md)
 
-15/25 records reviewed in this slice; 10 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
+20/25 records reviewed in this slice; 5 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
 
 ## Assigned records
 | ID | Task | Review |
@@ -22,11 +22,11 @@
 | C017 | fdp_distribution_safety | [record](./review-3.md#c017) |
 | C018 | fdp_installer | [record](./review-3.md#c018) |
 | C019 | instruction_debug_mode | [record](./review-3.md#c019) |
-| C020 | mermaid_diagram_improvement | pending |
-| C024 | activity_source_filename_commit_plan_v1 | pending |
-| C025 | activity_subsystem_extraction_plan_v1 | pending |
-| C028 | agent_reply_task_queue_merge | pending |
-| C029 | agent_response_direct_preflight | pending |
+| C020 | mermaid_diagram_improvement | [record](./review-4.md#c020) |
+| C024 | activity_source_filename_commit_plan_v1 | [record](./review-4.md#c024) |
+| C025 | activity_subsystem_extraction_plan_v1 | [record](./review-4.md#c025) |
+| C028 | agent_reply_task_queue_merge | [record](./review-4.md#c028) |
+| C029 | agent_response_direct_preflight | [record](./review-4.md#c029) |
 | C030 | agent_response_dropdown_viewport_fit | pending |
 | C031 | agent_response_harness_simplification | pending |
 | C032 | agent_response_modes | pending |
