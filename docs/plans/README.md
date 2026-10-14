@@ -18,3 +18,5 @@
 - [Historical outcome analysis](./historical_outcome_analysis/historical_outcome_analysis_step1_solution_assessment.md)
 
 - [Task-relevant instruction summaries](./remove_instruction_reprints/remove_instruction_reprints_step1_solution_assessment.md): replace automatic instruction reprints with brief summaries of the next action, constraints, and approval gate.
+
+- [Enhancement requests and follow-up cycles](./mid_process_enhancements/mid_process_enhancements_step1_solution_assessment.md): durable request dispositions and distinct cycles on an unmerged shared branch.
