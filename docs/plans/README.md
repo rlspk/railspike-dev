@@ -20,3 +20,5 @@
 - [Task-relevant instruction summaries](./remove_instruction_reprints/remove_instruction_reprints_step1_solution_assessment.md): replace automatic instruction reprints with brief summaries of the next action, constraints, and approval gate.
 
 - [Enhancement requests and follow-up cycles](./mid_process_enhancements/mid_process_enhancements_step1_solution_assessment.md): durable request dispositions and distinct cycles on an unmerged shared branch.
+
+- [First release](./first_release/first_release_step1_solution_assessment.md): verify and publish the initial signed v0.1.0 product release.
