@@ -38,3 +38,6 @@ Reuse the canonical [release policy](../../maintainers/RELEASES.md), product REA
 
 ## Success criteria
 One published `v0.1.0` release references one verified signed annotated tag resolving to the recorded full product commit ID. Required readiness checks pass for that revision, all release-note evidence links are public, adoption/recovery guidance is present, and the development summary records final publication identities and verification with no unresolved release blockers.
+
+## Maintainer-authorized signing policy revision
+The maintainer explicitly requested an unsigned annotated tag and deferred maintainer signing setup to `todo.txt`. This supersedes the signed-tag/signing-capability requirements above: verify the annotated tag object and exact peeled product commit, record that it is unsigned, and do not claim signer authentication. Stage 1 needs repository access and tag capability, not a signing key; Stage 3 uses an unsigned annotated tag. Scope additionally permits updating the canonical release policy, its backlog wording, and the requested signing follow-up in `todo.txt`. Prior approvals and completed records remain in history; this explicit instruction authorizes the revision and continuation.
