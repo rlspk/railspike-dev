@@ -2,7 +2,7 @@
 
 [Entry](./README.md) · [Census coverage](../historical_cycle_expansion/coverage.md)
 
-20/25 records reviewed in this slice; 5 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
+25/25 records reviewed in this slice; 0 assigned records pending. After this slice, 191 other eligible candidates remain. The total eligible population is 216; 95 adjudication cases remain separate. Queue order is administrative, not representative sampling.
 
 ## Assigned records
 | ID | Task | Review |
@@ -27,11 +27,11 @@
 | C025 | activity_subsystem_extraction_plan_v1 | [record](./review-4.md#c025) |
 | C028 | agent_reply_task_queue_merge | [record](./review-4.md#c028) |
 | C029 | agent_response_direct_preflight | [record](./review-4.md#c029) |
-| C030 | agent_response_dropdown_viewport_fit | pending |
-| C031 | agent_response_harness_simplification | pending |
-| C032 | agent_response_modes | pending |
-| C035 | approval_seed_immediate_refresh | pending |
-| C036 | activity_commit_file_manifest | pending |
+| C030 | agent_response_dropdown_viewport_fit | [record](./review-5.md#c030) |
+| C031 | agent_response_harness_simplification | [record](./review-5.md#c031) |
+| C032 | agent_response_modes | [record](./review-5.md#c032) |
+| C035 | approval_seed_immediate_refresh | [record](./review-5.md#c035) |
+| C036 | activity_commit_file_manifest | [record](./review-5.md#c036) |
 
 ## Remaining eligible — 191
 
