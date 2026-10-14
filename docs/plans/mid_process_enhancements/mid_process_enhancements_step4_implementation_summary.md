@@ -18,3 +18,15 @@ Debug mode: enabled
 - Verification: reviewed `search` then `search_filters` on `feature/search`: each owns separate artifacts and approvals and counts its own planning/stage commits. Merged branches require a new branch; uncertain eligibility requires clarification; naming collisions cannot overwrite plans. Product links and whitespace passed; scope is limited to approved documentation.
 - Notes: completed substantive history remains intact; new requests and backlinks are recorded separately. Stage 1 development commit: `2b12ed3`.
 - Product commit: `4a007b3`; development stage commit: the commit containing this section.
+
+## Stage 3 - User guidance and final verification
+- Changes: README distinguishes refinements from changed scope and explains per-cycle branch reuse, naming, records, and commits; canonical organization wording now refers to this cycle's planning commit.
+- Verification: product link checker passed (14 files); feature-local link checker passed (5 files); existing Git workflow fixture passed. Product and development whitespace checks passed. Cross-file search and review found no conflicting unconditional branch-creation or every-request-replanning rule. All request and two-cycle scenarios from Steps 2/3 were reviewed against final guidance; no actual agent execution guarantee is claimed.
+- Notes: full development link check reports nine unrelated existing links: six future-step links in other uncommitted drafts, two `installation_log.txt` references, and one `railspike.txt` reference. No baseline entries were added or failures suppressed. Runtime/UI/deployment/migration/release checks remain inapplicable to documentation-only changes. No merge or publication performed.
+- Product commit: `cf15508`; Stage 2 development commit: `f8a42f1`; development stage commit: the commit containing this section.
+
+## Completion
+- Three product stage commits: `e2ff56f`, `4a007b3`, `cf15508`.
+- Development planning commit: `4d98f99`; stage commits include their summary updates. Separate checkouts require paired commits rather than placing development summaries in the product.
+- Requests during this implementation: none beyond approved scope; no pending enhancements in this cycle.
+- Completed approved documentation contract; ready for user review with the unrelated development link failures above disclosed.
