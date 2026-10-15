@@ -22,3 +22,5 @@
 - [Enhancement requests and follow-up cycles](./mid_process_enhancements/mid_process_enhancements_step1_solution_assessment.md): durable request dispositions and distinct cycles on an unmerged shared branch.
 
 - [First release](./first_release/first_release_step1_solution_assessment.md): verify and publish the initial signed v0.1.0 product release.
+
+- [Railspike slides](./railspike_slides/railspike_slides_step1_solution_assessment.md): self-contained HTML slide deck explaining Railspike and how to use it; created in the website checkout, not yet linked or published.
