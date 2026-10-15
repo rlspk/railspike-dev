@@ -47,8 +47,29 @@ Debug mode: enabled
   - Slide 10 "Read the real thing" keeps the three links in the new voice.
   - New slide 11 "Write it down. Approve it. Build in checkpoints." with three bullets: the plan is a file you own; the agent stops until you approve; every stage leaves a record.
 - Verification:
-  -  shows counter ; print-to-PDF gives 11 pages; script parses.
-  - All three closing URLs returned 200. The  blob URL returned a single transient 503 on the first request and 200 on three retries and via the raw URL.
+  - `#11` shows counter `11 / 11`; print-to-PDF gives 11 pages; script parses.
+  - All three closing URLs returned 200. The `RAILSPIKE.md` blob URL returned a single transient 503 on the first request and 200 on three retries and via the raw URL.
   - Each conclusion bullet restates an existing source-map row (slides 1, 2/5 and 8); no new claims.
 - Notes:
   - Per Ernst and Winston the deck now ends on the conclusion, not links; the slide has no "questions" or "thank you" line.
+
+## Stage 5 - Source map, attribution and link checks
+- Changes:
+  - No site files changed in this stage; nothing links to the deck.
+  - Slide mapping against the predecessor's source map: slides 1-9 keep their numbers; old slide 10 (links) remains slide 10; slide 11 (conclusion) is new. The predecessor's table still applies by slide number, with these additions:
+
+    | Slide | Claim | Source |
+    |---|---|---|
+    | 1 | Promise: the agent writes the plan first and waits; builds after approval | README intro ("stops until you approve each one") |
+    | 11 | Plan is a file; agent stops until approval; each stage leaves a record | README "Why we built this", "How commits work", "Finish and verify each stage" |
+- Verification:
+  - Attribution search of the deck for names and quotation markers (`jobs`, `steve`, `winston`, `ernst`, `said`, `quote`, curly quotes): no matches. The one hit for `apple` is `-apple-system` in the font stack.
+  - Search of both checkouts for references to `slides/`: none outside the deck.
+  - Python, Perl and Node link checkers: "Checked 1 Markdown files: local links are valid" on `rlspk.github.io`; with the historical baseline on this repo, no findings mention the slides files.
+  - Opened `#1` to `#11` from a lone copy of `index.html` in a scratch directory: every title matched its slide (11 of 11).
+  - `git diff main --stat` in `rlspk.github.io`: one file, `slides/index.html`, 171 insertions.
+  - Deployment, publication and live-path checks: not applicable, because publication is deferred by the approved scope.
+- Notes:
+  - Correction to Stage 4: its first record had shell substitution drop two inline code spans; the text was repaired in this commit without amending the Stage 4 commit.
+  - Not exercised by hand: real touch swipe and dark mode on devices; fonts other than the sandbox's `system-ui` fallback.
+  - Deferred: linking from homepage/README, merge and publication, optional `.pptx` export.
