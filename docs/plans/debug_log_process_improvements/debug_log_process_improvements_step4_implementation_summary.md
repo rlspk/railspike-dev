@@ -6,7 +6,7 @@ Debug mode: enabled
 - `railspike-dev`: `feature/debug-log-process-improvements` from `main` (which was one local commit ahead of `origin/main`). Planning commit `bbe87cf`.
 - `railspike` (product): `feature/known-user-recovery` from `main`, verified equal to `origin/main` at `579c0c1` after fetch; the previously checked-out `feature/mid-process-enhancements` was already merged.
 - Allowed product files (Step 3 contract): `RAILSPIKE.md`, `docs/workflow/step2_feature_description.md`, `step3_development_plan_do.md`, `step3_development_plan_after.md`, `step4_implementation_after.md`, `docs/failure-modes.md`.
-- Product commits per stage: Stage 2 `0dcf862`.
+- Product commits per stage: Stage 2 `0dcf862`, Stage 3 `0cc24c7`.
 
 ## Stage 1 - Baseline and replay cases
 - Changes:
@@ -54,3 +54,14 @@ Debug mode: enabled
 - Notes:
   - The word "mismatch" is used for the Step 2 item; the Stage 3 acceptance wording reuses it.
   - Replay used the case text recorded in Stage 1, not a fresh run of an agent.
+
+## Stage 3 - Step 3 acceptance
+- Changes:
+  - `docs/workflow/step3_development_plan_do.md`: one requirement: when Step 2 states a known user or environment condition, include a stage replaying each reported failure; an installer or other-platform pass does not complete it; actionable manual guidance can satisfy it when automatic support is out of scope.
+  - `docs/workflow/step3_development_plan_after.md`: one sentence appended to checklist item 3 so the review verifies that stage exists. Net: +1 line in the Do file, 0 in the After file (17 lines).
+- Verification:
+  - Replay of V04's Step 3: its recorded risk ("Workspace inspection found Ubuntu 22.04/PHP 8.1, not the target") was answered by disposable Ubuntu 24.04 verification. Under the new text, with the Stage 2 condition present, that response alone fails the after-checklist; a stage replaying cases A and B on the 22.04 user's path is required.
+  - Preserved boundary: the wording permits manual guidance as the accepted outcome, so support limits are not widened.
+  - `git diff --check` clean; changed files are exactly two allowed files.
+- Notes:
+  - Cumulative net across stages 2-3: +3 lines to the allowed files (365 to 368 expected after stage 3).
