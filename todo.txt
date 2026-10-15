@@ -12,6 +12,13 @@ Remove the requirement to reprint step instructions
 
 Add prominent, clear, and easy uninstallation instructions.
 
+It would be nice if at the end of a cycle the user was reminded to start a new conversation to conserve context.
+
+Avoid giving time estimates, as they're meaningless
+	example: Goal: align user documentation and verify the complete contract (about one hour).
+	Instead, find some other meaningful/intuitive metric for amount of work and complexity
+		Should it be some kind of number/numbers?
+
 Set up a dedicated maintainer release-signing key and register its public key with GitHub.
 	Document key backup, rotation, and verification; then require signed annotated tags for future releases.
 	Do not use the throwaway testing or forum-user keys, or rewrite previously published tags.
