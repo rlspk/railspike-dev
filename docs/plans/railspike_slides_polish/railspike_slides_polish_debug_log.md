@@ -31,3 +31,21 @@
 
 **Uncertain assessments**
 - `docs/workflow/step3_development_plan_do.md`, "stages <=1 hour or <=50 lines" and `step4_implementation_do.md` "<2 hours": time-based sizing again conflicts with `todo.txt`; stages were sized by one concern each. Also inconsistent with each other (1 vs 2 hours); consolidate.
+
+## 2026-10-15T01:27:55Z — Step 4
+
+**Necessary/useful instructions**
+- `docs/workflow/step4_implementation_before.md`, Planning Docs Commit Gate: re-checking merged state and organizing plans into `railspike_slides_polish/` before the first stage kept the follow-up cycle's records separate from the predecessor's. Retain.
+- `docs/workflow/step4_implementation_do.md`, Stage Boundary Protocol: committing the website change before the summary let each summary record its own commit hash, fixing the one-stage lag seen in the prior cycle. Retain, and state the ordering in the protocol.
+- `RAILSPIKE.md`, Follow-up cycles: distinct prefix, predecessor link, and recorded branch reuse worked as written. Retain.
+
+**Redundant/unnecessary instructions**
+- No supported findings.
+
+**Inapplicable instructions**
+- `docs/workflow/step4_implementation_after.md`, deployment, role and migration verification: publication is deferred, so these were recorded as not applicable.
+
+**Uncertain assessments**
+- `docs/workflow/step4_implementation_do.md`, "do not amend completed commits": a stage summary written with an unquoted shell heredoc lost two code spans; the fix went into the next stage commit and was disclosed there. The protocol does not say how to handle corrections to a completed stage's record; clarify.
+- `docs/workflow/step4_implementation_do.md`, "<2 hours" and Step 3's "<=1 hour": time-based sizing conflicts with `todo.txt` and with each other; stages here were sized by one concern each.
+- The voice request (style of a real person) has no contract guidance; this run treated it as a copy-style enhancement with an explicit no-attribution requirement.
