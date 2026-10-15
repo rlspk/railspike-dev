@@ -6,7 +6,7 @@ Debug mode: enabled
 - `railspike-dev`: `feature/debug-log-process-improvements` from `main` (which was one local commit ahead of `origin/main`). Planning commit `bbe87cf`.
 - `railspike` (product): `feature/known-user-recovery` from `main`, verified equal to `origin/main` at `579c0c1` after fetch; the previously checked-out `feature/mid-process-enhancements` was already merged.
 - Allowed product files (Step 3 contract): `RAILSPIKE.md`, `docs/workflow/step2_feature_description.md`, `step3_development_plan_do.md`, `step3_development_plan_after.md`, `step4_implementation_after.md`, `docs/failure-modes.md`.
-- Product commits per stage: none yet.
+- Product commits per stage: Stage 2 `0dcf862`.
 
 ## Stage 1 - Baseline and replay cases
 - Changes:
@@ -41,3 +41,16 @@ Debug mode: enabled
   - No product files were edited in this stage; product working tree clean.
 - Notes:
   - The `railspike-dev` `main` branch was one commit ahead of `origin/main` (`3c58f0c`, the user's explanations commit); it is included in this branch's base and has not been pushed.
+
+## Stage 2 - Step 2 guidance
+- Changes:
+  - `docs/workflow/step2_feature_description.md`: new "Known user or environment" structure item (entry point, mismatch or failure, unaided next action, verify/retry, evidence); evidence from a different supported platform is stated not to satisfy it; omitted when no user or environment is named.
+  - `RAILSPIKE.md`: one matching Key Rules line.
+  - Net: +2 lines (`RAILSPIKE.md` 165 to 166, Step 2 file 41 to 42); no existing text removed or moved.
+- Verification:
+  - Replay of case A and B against the new text: V04's Step 2 said only "Unsupported platforms receive actionable manual guidance". The item now requires naming the Ubuntu 22.04 user's entry (`./v3 start`), the missing-PHP failure, the next action with an observable package-level step, how to retry, and evidence, so the quoted sentence alone no longer satisfies Step 2.
+  - Applicability check: for "fix a typo in the README" no user or environment is named, so the item is omitted and adds no section.
+  - `git diff --check` clean; changed files are exactly the two allowed files.
+- Notes:
+  - The word "mismatch" is used for the Step 2 item; the Stage 3 acceptance wording reuses it.
+  - Replay used the case text recorded in Stage 1, not a fresh run of an agent.
