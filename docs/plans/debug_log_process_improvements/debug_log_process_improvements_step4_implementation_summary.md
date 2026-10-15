@@ -6,7 +6,7 @@ Debug mode: enabled
 - `railspike-dev`: `feature/debug-log-process-improvements` from `main` (which was one local commit ahead of `origin/main`). Planning commit `bbe87cf`.
 - `railspike` (product): `feature/known-user-recovery` from `main`, verified equal to `origin/main` at `579c0c1` after fetch; the previously checked-out `feature/mid-process-enhancements` was already merged.
 - Allowed product files (Step 3 contract): `RAILSPIKE.md`, `docs/workflow/step2_feature_description.md`, `step3_development_plan_do.md`, `step3_development_plan_after.md`, `step4_implementation_after.md`, `docs/failure-modes.md`.
-- Product commits per stage: Stage 2 `0dcf862`, Stage 3 `0cc24c7`.
+- Product commits per stage: Stage 2 `0dcf862`, Stage 3 `0cc24c7`, Stage 4 `4f03dd2`.
 
 ## Stage 1 - Baseline and replay cases
 - Changes:
@@ -65,3 +65,17 @@ Debug mode: enabled
   - `git diff --check` clean; changed files are exactly two allowed files.
 - Notes:
   - Cumulative net across stages 2-3: +3 lines to the allowed files (365 to 368 expected after stage 3).
+
+## Stage 4 - Qualified completion reporting
+- Changes:
+  - `docs/workflow/step4_implementation_after.md`: new checklist item 7: five check categories with a reason for anything other than passed; reproduced baseline failures identified; a focused pass never reported as a full-suite or user-outcome result; the handoff opens with anything unverified, including a stated known user's recovery condition.
+  - `RAILSPIKE.md`: one matching Key Rules line. Net +1 line each (167 and 22 lines).
+- Verification:
+  - Sample handoff written under the new wording (one blocked and one pending check):
+    > Unverified: Ubuntu 22.04 recovery journey (blocked: no 22.04 environment available); live deployment (pending: not published). Passed: 39 installer cases on 24.04 (focused). Failed: none. Baseline failures reproduced: none. Inapplicable: database migration.
+    It leads with what is unverified and labels the pass as focused, so it cannot be read as an unqualified success.
+  - Replay of F01's handoff ("Step 4 is complete" with test counts): item 7 requires it to open with the unverified 22.04 recovery condition and to label the 39 cases and 31 runtime checks as focused, so the completion claim could not stand unqualified.
+  - Brevity check: the sample is 3 lines; categories are required only where a check applies.
+  - `git diff --check` clean; changed files are exactly two allowed files.
+- Notes:
+  - Cumulative net across stages 2-4: +5 lines to the allowed files (365 to 370 expected after stage 4: 167 + 42 + 61 + 17 + 22 + 61).
