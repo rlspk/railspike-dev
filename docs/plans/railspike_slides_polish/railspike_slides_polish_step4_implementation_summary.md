@@ -5,7 +5,7 @@ Debug mode: enabled
 ## Cycle and branches
 - Follow-up to [Railspike slides](../railspike_slides/railspike_slides_step4_implementation_summary.md), whose records are unchanged.
 - Reused branches (confirmed unmerged): `feature/railspike-slides` in `railspike-dev` and in `rlspk.github.io`. Planning commit `2aa20ea`. Deck: `slides/index.html`, still not linked or published.
-- Website commits per stage: Stage 1 `c2a989e`, Stage 2 `0a3efa0`, Stage 3 `19e6eb6`.
+- Website commits per stage: Stage 1 `c2a989e`, Stage 2 `0a3efa0`, Stage 3 `19e6eb6`, Stage 4 `ffc6b8c`.
 
 ## Stage 1 - Sans-serif type
 - Changes:
@@ -41,3 +41,14 @@ Debug mode: enabled
   - Deck still 10 slides; script parses.
 - Notes:
   - "Approve Step 3, and the plans get committed" compresses the README's branch-then-planning-commit sequence; the branch creation is not stated on the slide.
+
+## Stage 4 - Links slide and conclusion
+- Changes:
+  - Slide 10 "Read the real thing" keeps the three links in the new voice.
+  - New slide 11 "Write it down. Approve it. Build in checkpoints." with three bullets: the plan is a file you own; the agent stops until you approve; every stage leaves a record.
+- Verification:
+  -  shows counter ; print-to-PDF gives 11 pages; script parses.
+  - All three closing URLs returned 200. The  blob URL returned a single transient 503 on the first request and 200 on three retries and via the raw URL.
+  - Each conclusion bullet restates an existing source-map row (slides 1, 2/5 and 8); no new claims.
+- Notes:
+  - Per Ernst and Winston the deck now ends on the conclusion, not links; the slide has no "questions" or "thank you" line.
