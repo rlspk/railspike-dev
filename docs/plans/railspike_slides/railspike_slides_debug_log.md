@@ -55,3 +55,21 @@ Supersedes the Step 3 entry's plan content only; findings above stand. The user 
 
 **Uncertain assessments**
 - `RAILSPIKE.md`, Plan review / Enhancement Requests: the request narrowed an already-approved Step 2. The contract requires renewed approval for changed requirements but does not say whether Step 2 must be re-approved explicitly or whether `Approved Step 3` suffices. This run treated `Approved Step 3` as renewing both; clarify.
+
+## 2026-10-15T00:57:44Z — Step 4
+
+**Necessary/useful instructions**
+- `docs/workflow/step4_implementation_before.md`, Planning Docs Commit Gate: checking branch merge state exposed that `feature/first-release` was already merged and `main` was ahead, so the gate's "create the branch" step produced a clean branch from `main`. Retain.
+- `docs/workflow/step4_implementation_do.md`, Stage Boundary Protocol: the per-stage verify/summary/commit loop made the stage summaries a usable audit trail. Retain.
+- `RAILSPIKE.md`, Documentation-only vs application scope: classifying this as an application change (website page) gave the right verification set (render, print, offline). Retain.
+
+**Redundant/unnecessary instructions**
+- No supported findings.
+
+**Inapplicable instructions**
+- `docs/workflow/step4_implementation_after.md`, "scoped deployment, release, external-system, role, migration" checks: deferred publication made these not applicable; recorded as such. Retain the explicit not-applicable recording.
+
+**Uncertain assessments**
+- `RAILSPIKE.md`, Step 4 commit cadence for work across two repositories: stage commits exist in both, but Stages 5–6 changed only this repo, so the website branch has fewer commits than `1 + stages`. The contract counts the planning workspace; clarify how paired repositories should count.
+- `docs/workflow/step4_implementation_do.md`, "keep each stage <2 hours": a time estimate, in tension with `todo.txt`; stages were sized by concern. Evaluate replacing it.
+- Stage summaries recorded the preceding stage's website commit hash one stage late, because the summary is committed before the paired website commit. A consistent ordering rule would remove this lag.
