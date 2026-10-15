@@ -4,7 +4,7 @@ Debug mode: enabled
 
 ## Branches and commits
 - `railspike-dev`: `feature/railspike-slides`, created from `main` (the stale `feature/first-release` was already merged). Planning commit `7a00aa9`.
-- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`.
+- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`, Stage 2 `48952b2`.
 
 ## Stage 1 - Deck shell
 - Changes:
@@ -32,3 +32,15 @@ Debug mode: enabled
 - Notes:
   - Logo path `../railspike-logo.png` works on the site and in the checkout; a lone saved copy shows alt text only. Accepted, because the deck has no other assets.
   - Stage 2 website commit recorded in the next stage's summary update.
+
+## Stage 3 - Slides 1-5
+- Changes:
+  - Replaced placeholders with five slides: what it is, why plans live in files, install prompt, four steps, approval gate.
+  - Wording follows the product README (tagline, install prompt verbatim, four-step table, `Approved Step N` section).
+- Verification:
+  - Each claim was compared with the README text read this session; the gate slide states these are agent instructions, not technical enforcement, matching the README caveat.
+  - Install slide rendered in a 390px frame without clipping; the prompt wraps inside its box.
+  - Print-to-PDF produced 5 pages for 5 slides; the file has no external requests (the only `https://` is the displayed prompt text).
+- Notes:
+  - Slide 5 also states that building starts only after `Approved Step 3`, from the README commit section.
+  - Stage 3 website commit is recorded in the next stage's summary update.
