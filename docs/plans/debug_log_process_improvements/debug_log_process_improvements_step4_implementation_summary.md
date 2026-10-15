@@ -6,7 +6,7 @@ Debug mode: enabled
 - `railspike-dev`: `feature/debug-log-process-improvements` from `main` (which was one local commit ahead of `origin/main`). Planning commit `bbe87cf`.
 - `railspike` (product): `feature/known-user-recovery` from `main`, verified equal to `origin/main` at `579c0c1` after fetch; the previously checked-out `feature/mid-process-enhancements` was already merged.
 - Allowed product files (Step 3 contract): `RAILSPIKE.md`, `docs/workflow/step2_feature_description.md`, `step3_development_plan_do.md`, `step3_development_plan_after.md`, `step4_implementation_after.md`, `docs/failure-modes.md`.
-- Product commits per stage: Stage 2 `0dcf862`, Stage 3 `0cc24c7`, Stage 4 `4f03dd2`.
+- Product commits per stage: Stage 2 `0dcf862`, Stage 3 `0cc24c7`, Stage 4 `4f03dd2`, Stage 5 `9774132`.
 
 ## Stage 1 - Baseline and replay cases
 - Changes:
@@ -79,3 +79,19 @@ Debug mode: enabled
   - `git diff --check` clean; changed files are exactly two allowed files.
 - Notes:
   - Cumulative net across stages 2-4: +5 lines to the allowed files (365 to 370 expected after stage 4: 167 + 42 + 61 + 17 + 22 + 61).
+
+## Stage 5 - Failure mode and final verification
+- Changes:
+  - `docs/failure-modes.md`: new section "Passing tests did not establish the user's recovery" (signal and recovery), placed after the missing-verification section and reusing the new Step 2-4 wording.
+  - Final length: allowed files total 376 lines against the 365-line baseline: +11 (`RAILSPIKE.md` +2, Step 2 file +1, Step 3 do +1, Step 3 after 0, Step 4 after +1, failure modes +6). No duplicate text was removed or consolidated in this cycle; consolidation remains the separate Option A follow-up.
+- Verification:
+  - `git diff --check` clean on the product branch.
+  - `git diff --name-only main` lists exactly the six allowed product files.
+  - Link checker on the product checkout: "Checked 14 Markdown files: local links are valid."; Git workflow fixture passed.
+  - This repo's checker, with the historical baseline: findings mentioning this feature are limited to the known `debug_log_process_improvements_step4_implementation_summary.md` links, which now resolve because the summary exists.
+  - Final replay against the committed text: cases A and B are stopped at Step 2 (condition must be stated), Step 3 (replay stage required) and Step 4 (unverified item leads the handoff); case C's "Step 4 is complete" cannot stand unqualified; case D's pending live checks are reported as pending. Applicability checks (small fix, documentation-only) add no required items.
+  - Runtime, UI, deployment, migration and release checks: not applicable (instruction files only; not released in this cycle).
+- Notes:
+  - Evidence is a replay of recorded cases against the wording, not a measured effect on agent behavior.
+  - Merging and releasing the product branch are separate decisions; no branch has been merged or pushed.
+  - Open follow-ups from the ledger: Option A consolidation (priorities 3-4), scope/approval clarifications (priority 5), and the process notes in the debug log.
