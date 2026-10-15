@@ -4,7 +4,7 @@ Debug mode: enabled
 
 ## Branches and commits
 - `railspike-dev`: `feature/railspike-slides`, created from `main` (the stale `feature/first-release` was already merged). Planning commit `7a00aa9`.
-- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`, Stage 2 `48952b2`, Stage 3 `74642e0`, Stage 4 `9461f9a`.
+- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`, Stage 2 `48952b2`, Stage 3 `74642e0`, Stage 4 `9461f9a`. The website branch has no Stage 5/6 commits because those stages changed no site files. Final website tip: `9461f9a`.
 
 ## Stage 1 - Deck shell
 - Changes:
@@ -81,3 +81,16 @@ Debug mode: enabled
   - Checkers only cover Markdown; the deck's one relative asset (`../railspike-logo.png`) was confirmed to exist.
 - Notes:
   - The README was read earlier this session. If it changes before release, re-run this map.
+
+## Stage 6 - Review and handoff (not published, not linked)
+- Changes:
+  - No file changes in the website repo. The deck is unmerged on `rlspk.github.io` branch `feature/railspike-slides`, and `main` was not touched.
+- Verification:
+  - Copied `slides/index.html` alone to a scratch directory and opened each of `#1` to `#10` offline over `file://`: the correct slide was current each time (titles: Railspike, Why plans live in files, Install by asking your agent, Four steps, You approve each step, A worked exchange, You shape the plan, Build in checkpoints, Optional debug mode, Where to go next).
+  - Print to PDF gave 10 pages for 10 slides (Stage 4).
+  - `git diff main --stat` in the website repo: one file, `slides/index.html`, 163 insertions.
+  - Deployment, publication, and live-path checks: not applicable, because publication is deferred by the approved scope.
+- Notes:
+  - Not exercised by hand: real touch swipe, and dark mode on an actual device.
+  - Deferred follow-ups: link from homepage/README, merge and publish per `docs/maintainers/RELEASES.md`, optional `.pptx` export.
+  - Offline saved copies show the logo's alt text, not the image.
