@@ -4,7 +4,7 @@ Debug mode: enabled
 
 ## Branches and commits
 - `railspike-dev`: `feature/railspike-slides`, created from `main` (the stale `feature/first-release` was already merged). Planning commit `7a00aa9`.
-- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`, Stage 2 `48952b2`.
+- `rlspk.github.io`: `feature/railspike-slides`, created from `main`. Deck path: `slides/index.html`. Not linked, not published. Stage commits: Stage 1 `87749a9`, Stage 2 `48952b2`, Stage 3 `74642e0`.
 
 ## Stage 1 - Deck shell
 - Changes:
@@ -44,3 +44,15 @@ Debug mode: enabled
 - Notes:
   - Slide 5 also states that building starts only after `Approved Step 3`, from the README commit section.
   - Stage 3 website commit is recorded in the next stage's summary update.
+
+## Stage 4 - Slides 6-10
+- Changes:
+  - Added five slides: worked exchange, shaping the plan, build checkpoints, optional debug mode, where to go next.
+  - Worked example and shaping prompt reuse the README's sample phrasing; closing links point to the live site, the product repository, and `RAILSPIKE.md` on GitHub.
+- Verification:
+  - Walked to slide 10 via `#10`: counter read `10 / 10`; the deck has 10 slides and prints to 10 PDF pages.
+  - The three external closing URLs each returned HTTP 200.
+  - The README sample phrasing was used instead of `WELCOME.md`'s `[describe my change]` template, so the example matches what the README shows readers.
+- Notes:
+  - The deck's closing links go out to the site and GitHub; nothing links in to the deck.
+  - Stage 4 website commit is recorded in the next stage's summary update.
