@@ -11,3 +11,7 @@ Remove the requirement to reprint step instructions
 	Reprinting duplicates content already read into context, wasting tokens and cluttering the conversation.
 
 Add prominent, clear, and easy uninstallation instructions.
+
+Set up a dedicated maintainer release-signing key and register its public key with GitHub.
+	Document key backup, rotation, and verification; then require signed annotated tags for future releases.
+	Do not use the throwaway testing or forum-user keys, or rewrite previously published tags.

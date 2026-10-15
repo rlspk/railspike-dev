@@ -8,7 +8,7 @@ Current ownership: releases and tags belong to `rlspk/railspike`; development re
 - **Minor:** backwards-compatible new guidance, templates, or optional workflow capabilities.
 - **Major:** a changed approval, artifact, branch, or commit requirement that requires consumers to alter their process.
 
-Publish a signed annotated Git tag as `vMAJOR.MINOR.PATCH` after the README links, examples, and Markdown checks pass. Create a GitHub release from that tag with a concise list of workflow-contract changes and any migration note. Consumers pinned through a submodule choose when to update; they should review release notes before updating.
+Publish an annotated Git tag as `vMAJOR.MINOR.PATCH` after the README links, examples, and Markdown checks pass. Signing is optional until a maintainer signing identity is established; an unsigned annotated tag is permitted. Record whether the tag is signed, its object ID, and the exact product commit ID. An unsigned tag identifies a revision but does not provide cryptographic signer authentication. Create a GitHub release from that tag with a concise list of workflow-contract changes and any migration note. Consumers pinned through a submodule choose when to update; they should review release notes before updating.
 
 At the repository separation on 2026-10-13, no public release tags existed. Check the remote tags before choosing a version; the first release requires the public repository and its linked evidence to be available to readers.
 
@@ -48,16 +48,18 @@ Keep each repository's changes in its own commits. Store the feature summary in 
 
    Resolve failures and confirm the product checkout is clean. When shared checker behavior changes, also run all three runtime variants as documented in the [development README](../../README.md#checks). For installation or source-migration changes, run the repository-separation fixture documented there against the published candidate revision. These checks do not require copying development files into the product.
 
-4. Choose the version using the policy above and write release notes in `railspike-dev` describing user-visible changes, compatibility, and any migration steps. Tag the exact product commit that passed verification with a signed annotated tag. For example, **only if `v0.1.0` is the chosen, unused version** and signing is configured:
+4. Choose the version using the policy above and write release notes in `railspike-dev` describing user-visible changes, compatibility, any migration steps, and signing status. Tag the exact product commit that passed verification with an annotated tag. For example, **only if `v0.1.0` is the chosen, unused version**, create an unsigned annotated tag:
 
    ```bash
    cd ~/railspike
-   git tag -s v0.1.0 HEAD -m "Railspike v0.1.0"
-   git tag -v v0.1.0
+   git -c tag.gpgSign=false tag -a v0.1.0 HEAD -m "Railspike v0.1.0"
+   git cat-file -t refs/tags/v0.1.0
+   git rev-parse refs/tags/v0.1.0
+   git rev-parse 'refs/tags/v0.1.0^{commit}'
    git push origin v0.1.0
    ```
 
-   Confirm `HEAD` is still the reviewed commit on published `main` before tagging. Do not reuse or move a published tag; publish a new version for corrections. If publication is interrupted, inspect the remote tag and release before retrying.
+   Before pushing, confirm the object type is `tag` and the peeled commit matches the reviewed commit on published `main`; record both object IDs. If using an established maintainer signing key, use `git tag -s -u <fingerprint>` instead and require `git tag -v` to pass before pushing. Do not reuse or move a published tag; publish a new version for corrections. If publication is interrupted, inspect the remote tag and release before retrying.
 
 5. In **`rlspk/railspike` → Releases**, create a release using the existing tag and the prepared notes. Review it before publishing. See [GitHub's release instructions](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). If using the CLI, authenticate it separately and use `gh release create --verify-tag` so it requires the already-pushed tag; see the [CLI reference](https://cli.github.com/manual/gh_release_create).
 
