@@ -5,6 +5,7 @@ Plans, debug logs, research, maintainer records, and checks for [Railspike](http
 - [Development documentation](./docs/README.md)
 - [Feature plans](./docs/plans/README.md)
 - [Contributing](./CONTRIBUTING.md)
+- [A prayer for the first commit](./PRAYER.txt)
 - [Development locations and release procedure](./docs/maintainers/RELEASES.md)
 - [Migration and preservation record](./docs/maintainers/REPOSITORY_SPLIT.md)
 
