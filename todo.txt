@@ -15,3 +15,5 @@ Add prominent, clear, and easy uninstallation instructions.
 Set up a dedicated maintainer release-signing key and register its public key with GitHub.
 	Document key backup, rotation, and verification; then require signed annotated tags for future releases.
 	Do not use the throwaway testing or forum-user keys, or rewrite previously published tags.
+
+How do we estimate development time/effort better so that we can give a more useful estimate than "hours of work" at step 3?
