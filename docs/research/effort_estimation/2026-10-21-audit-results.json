@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-21T17:59:16.754121+00:00",
+  "historical_sources_verified": 30,
+  "historical_cases_with_recomputed_net_and_stage_numstat": [
+    "thread_card_remove_preview",
+    "mitrapclub_about_copy",
+    "qdb_numeric_permalinks",
+    "qdb_score_display_emphasis",
+    "toolbar_identity_status",
+    "startup_dependency_recovery",
+    "private_message_history_sync",
+    "image_content",
+    "compose_thread_declutter",
+    "local_server_dependency_install"
+  ],
+  "stage_commits_checked": 50,
+  "roots_inspected": 6,
+  "unique_trial_ledger_versions_before_edit": 1,
+  "prospective_candidates": 7,
+  "proposed_candidates": 6,
+  "technically_completed_reduced_scopes": 1,
+  "maintainer_accepted_outcomes": 0,
+  "E07_source_artifacts_unchanged": true,
+  "application_tests_rerun": false,
+  "independent_ratings_collected": false
+}

@@ -1,0 +1,61 @@
+Hello, Railspike development agent!
+
+This handoff comes from a backlog-triage exercise in the v3-codex-3 project.
+We have been looking for a useful measure of complexity and implementation
+effort, and tried estimating work in fractional Railspike cycles. The user
+asked us to bring the results here so you can help refine the idea.
+
+The report below captures the experiment, preferences, and open design
+questions. Please use it as input to the normal Railspike planning process.
+The full worked example is available locally at:
+/home/wsl/agent/v3-codex-3/docs/plans/zenmemes_meta_feedback_summary.md
+
+Railspike implementation effort estimation
+
+Purpose
+Refine a lightweight way to estimate complexity and implementation effort in
+Railspike cycles, useful for backlog triage and deciding how to split work.
+
+Trial and user preferences
+We summarized 129 imported Zenmemes posts across 24 meta threads into 54 items:
+34 feature groups, 11 bug groups, and 9 other groups. Each item received a
+numerical estimate in a Railspike cycles column. The worked example is
+docs/plans/zenmemes_meta_feedback_summary.md in the v3-codex-3 checkout.
+
+The scale began at 0-1. The user then requested an uncapped 0-to-infinity scale
+while keeping decimals. They prefer freeform decimal estimates rather than
+fixed quarter-cycle increments, and explicitly requested numbers without
+per-item explanations. Current examples: retry wording 0.02, Copy All 0.15,
+compose reply context 0.2, notifications plus mentions 2.5, and ActivityPub
+exploration 3.0. These are preliminary judgments from feedback, not validated
+implementation estimates.
+
+Proposed meaning
+A score estimates the amount of implementation work relative to one typical
+Railspike cycle. Fractions represent smaller work; values above one suggest
+multiple cycles. Zero currently covers both non-actionable material and an
+issue reported fixed. A fractional score does not authorize skipping approval
+gates. Scores express effort, not priority, value, or permission to implement.
+
+What needs refinement
+- Define the reference cycle so different agents can estimate consistently.
+  Railspike already describes a cycle-sized feature as a releasable vertical
+  slice, with work kept within a day or eight Step 3 stages; decide how those
+  constraints should inform the unit without implying fixed elapsed time.
+- Decide whether the number measures effort alone or also complexity and
+  uncertainty. The trial mixes these; poorly defined requests scored higher.
+- Establish how bundled requests should be split before scoring, and how to
+  handle overlap between feature requests and bug reports without double counting.
+- Preserve freeform decimals while avoiding claims of precise measurement.
+- Distinguish zero remaining effort from non-actionable content through existing
+  status/category information, without requiring explanations beside each score.
+- Decide when to revise estimates after code inspection and planning, and compare
+  estimates with completed work to calibrate the scale. Summing trial scores is
+  not yet a reliable delivery forecast.
+
+Suggested next step
+Develop a concise rubric and try independent ratings on a small shared set of
+scoped examples. Compare disagreements, refine the cycle definition, and check
+estimates against actual completed cycles before adopting the metric broadly.
+Keep the visible backlog interface to a numerical column. This handoff requests
+design refinement; it does not approve changes to Railspike itself.

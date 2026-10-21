@@ -1,0 +1,3404 @@
+{
+  "review_date": "2026-10-18",
+  "captured_at_utc": "2026-10-18T22:55:30.454272+00:00",
+  "source_manifest_sha256": "ab10d37861696a0e8cfeee6bdc371adb0d436646d07b0067c77578316522b15b",
+  "v3_head": "bb62f96d4d88feb7e8a7ecd4690d392161a0f9a3",
+  "method": "Static inspection of selected stage production patches for all ten cases, combined endpoints and representative test changes; no historical runtime tests rerun. All test patch inventories screened; private-history and image test bodies selectively inspected. Counts are unweighted Git numstat, not effort. Stage sums include repeated edits; endpoint changes include selected path union only.",
+  "cases": [
+    {
+      "name": "thread_card_remove_preview",
+      "base_commit": "d9df76e6388d48a5b059fcb2c1a5f7fac2110052",
+      "end_commit": "04d263334cc073660f7e49d58c203679daca6f4e",
+      "selected_commits": [
+        "40ce2f04d40f7ff6e38913993c5777244ba7a325",
+        "04d263334cc073660f7e49d58c203679daca6f4e"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 3,
+          "deletions": 0,
+          "files": [
+            "templates/partials/thread_card.php"
+          ]
+        },
+        "tests": {
+          "additions": 47,
+          "deletions": 0,
+          "files": [
+            "tests/LocalAppSmokeTest.php"
+          ]
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "planning_and_summaries": {
+          "additions": 26,
+          "deletions": 0,
+          "files": [
+            "docs/plans/thread_card_remove_preview_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 3,
+          "deletions": 0
+        },
+        "tests": {
+          "additions": 47,
+          "deletions": 0
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "planning_and_summaries": {
+          "additions": 26,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "40ce2f04d40f7ff6e38913993c5777244ba7a325",
+          "subject": "feat(stage 1): hide thread card preview when it duplicates the title",
+          "changes": {
+            "production": {
+              "additions": 3,
+              "deletions": 0,
+              "files": [
+                "templates/partials/thread_card.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 12,
+              "deletions": 0,
+              "files": [
+                "docs/plans/thread_card_remove_preview_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "04d263334cc073660f7e49d58c203679daca6f4e",
+          "subject": "feat(stage 2): add test coverage for thread card preview dedupe",
+          "changes": {
+            "production": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "tests": {
+              "additions": 47,
+              "deletions": 0,
+              "files": [
+                "tests/LocalAppSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 14,
+              "deletions": 0,
+              "files": [
+                "docs/plans/thread_card_remove_preview_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.1,
+      "revised_score": 0.1,
+      "production_and_test_patch_paths": [
+        "templates/partials/thread_card.php",
+        "tests/LocalAppSmokeTest.php"
+      ],
+      "production_and_test_stage_patch_sha256": "c54f458fa99aae83dcaf3bb3ec73970efa8a81908774fd10e520a856f00918fe",
+      "production_and_test_endpoint_patch_sha256": "f67ee6849888a22b23d349cdef3b93c3fd0c67a8f2b3066d4212ee5249ffc212"
+    },
+    {
+      "name": "mitrapclub_about_copy",
+      "base_commit": "60cead23141facbc05f64ad5b643cde7634d995c",
+      "end_commit": "b4f11535c3222f166d32511cc6f6e7f2b95c92ba",
+      "selected_commits": [
+        "5785d828a23705775457d5457ab21eba06b5037b",
+        "b4f11535c3222f166d32511cc6f6e7f2b95c92ba"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 94,
+          "deletions": 13,
+          "files": [
+            "src/ForumRewrite/ProfilePresentationContent.php",
+            "templates/pages/about.php"
+          ]
+        },
+        "tests": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "planning_and_summaries": {
+          "additions": 23,
+          "deletions": 0,
+          "files": [
+            "docs/plans/mitrapclub_about_copy_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 94,
+          "deletions": 13
+        },
+        "tests": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "planning_and_summaries": {
+          "additions": 23,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "5785d828a23705775457d5457ab21eba06b5037b",
+          "subject": "feat(stage 1): add per-profile about-page intro and section content",
+          "changes": {
+            "production": {
+              "additions": 74,
+              "deletions": 4,
+              "files": [
+                "src/ForumRewrite/ProfilePresentationContent.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 13,
+              "deletions": 0,
+              "files": [
+                "docs/plans/mitrapclub_about_copy_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "b4f11535c3222f166d32511cc6f6e7f2b95c92ba",
+          "subject": "feat(stage 2): switch about-page sections to per-profile content",
+          "changes": {
+            "production": {
+              "additions": 20,
+              "deletions": 9,
+              "files": [
+                "templates/pages/about.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 10,
+              "deletions": 0,
+              "files": [
+                "docs/plans/mitrapclub_about_copy_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.2,
+      "revised_score": 0.2,
+      "production_and_test_patch_paths": [
+        "src/ForumRewrite/ProfilePresentationContent.php",
+        "templates/pages/about.php"
+      ],
+      "production_and_test_stage_patch_sha256": "1bf02429186a08c1e1b2ed38722f5606aaf14d7f544d0a1f6ddaf677518c13c8",
+      "production_and_test_endpoint_patch_sha256": "47b685a01039a4ab867e272d5405e192006e664c8bcbe3694482d37da2fd0b69"
+    },
+    {
+      "name": "qdb_numeric_permalinks",
+      "base_commit": "117137151892effa41589a0771b3940dcc106a24",
+      "end_commit": "3bc6044517262b2296a5c3dad0a88c1f1392e38b",
+      "selected_commits": [
+        "fae0c63fec66bd96922ab6197c50c2bac46a34b7",
+        "3bc6044517262b2296a5c3dad0a88c1f1392e38b"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 37,
+          "deletions": 11,
+          "files": [
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/ReadModel/ThreadRepository.php",
+            "templates/partials/quote_card.php"
+          ]
+        },
+        "tests": {
+          "additions": 122,
+          "deletions": 0,
+          "files": [
+            "tests/QuoteCardDisplayNumberTest.php"
+          ]
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "planning_and_summaries": {
+          "additions": 79,
+          "deletions": 0,
+          "files": [
+            "docs/plans/qdb_numeric_permalinks_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 37,
+          "deletions": 11
+        },
+        "tests": {
+          "additions": 122,
+          "deletions": 0
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "planning_and_summaries": {
+          "additions": 79,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "fae0c63fec66bd96922ab6197c50c2bac46a34b7",
+          "subject": "feat(stage 1): resolve bare numeric paths to qdb quote permalinks",
+          "changes": {
+            "production": {
+              "additions": 29,
+              "deletions": 3,
+              "files": [
+                "src/ForumRewrite/Application.php",
+                "src/ForumRewrite/ReadModel/ThreadRepository.php"
+              ]
+            },
+            "tests": {
+              "additions": 47,
+              "deletions": 0,
+              "files": [
+                "tests/QuoteCardDisplayNumberTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 40,
+              "deletions": 0,
+              "files": [
+                "docs/plans/qdb_numeric_permalinks_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "3bc6044517262b2296a5c3dad0a88c1f1392e38b",
+          "subject": "feat(stage 2): link qdb quote cards to the short numeric permalink",
+          "changes": {
+            "production": {
+              "additions": 8,
+              "deletions": 8,
+              "files": [
+                "templates/partials/quote_card.php"
+              ]
+            },
+            "tests": {
+              "additions": 75,
+              "deletions": 0,
+              "files": [
+                "tests/QuoteCardDisplayNumberTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 39,
+              "deletions": 0,
+              "files": [
+                "docs/plans/qdb_numeric_permalinks_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.25,
+      "revised_score": 0.25,
+      "production_and_test_patch_paths": [
+        "src/ForumRewrite/Application.php",
+        "src/ForumRewrite/ReadModel/ThreadRepository.php",
+        "templates/partials/quote_card.php",
+        "tests/QuoteCardDisplayNumberTest.php"
+      ],
+      "production_and_test_stage_patch_sha256": "440011d141836f0966f96d6772203a269556dc2d1f1408c45fb03a0e9f2fa0cf",
+      "production_and_test_endpoint_patch_sha256": "eea4f4f33d60316ead0ad8d18088cd964abd1d05468ddbe45d621ef157cca85e"
+    },
+    {
+      "name": "qdb_score_display_emphasis",
+      "base_commit": "a8e8afb48dda7cc3b20fb4794cf30d31be82da1c",
+      "end_commit": "59ff6bf771fd7d7719349c4068f824cd103aa16f",
+      "selected_commits": [
+        "f3f0bb1739b146f02871ee4b6f2125aaf6abd06a",
+        "31564ab4046e583a858f30227dc2458cd8420876",
+        "59ff6bf771fd7d7719349c4068f824cd103aa16f"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 57,
+          "deletions": 4,
+          "files": [
+            "public/assets/theme-qdb.css",
+            "public/assets/thread_reactions.js",
+            "templates/partials/quote_card.php",
+            "templates/partials/thread_root_card.php"
+          ]
+        },
+        "tests": {
+          "additions": 123,
+          "deletions": 4,
+          "files": [
+            "tests/BrowserSigningNormalizationTest.php",
+            "tests/QuoteCardDisplayNumberTest.php"
+          ]
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "planning_and_summaries": {
+          "additions": 59,
+          "deletions": 0,
+          "files": [
+            "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 59,
+          "deletions": 6
+        },
+        "tests": {
+          "additions": 123,
+          "deletions": 4
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "planning_and_summaries": {
+          "additions": 59,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "f3f0bb1739b146f02871ee4b6f2125aaf6abd06a",
+          "subject": "feat(stage 1): emphasize qdb score values",
+          "changes": {
+            "production": {
+              "additions": 8,
+              "deletions": 4,
+              "files": [
+                "public/assets/theme-qdb.css",
+                "templates/partials/quote_card.php",
+                "templates/partials/thread_root_card.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 22,
+              "deletions": 0,
+              "files": [
+                "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "31564ab4046e583a858f30227dc2458cd8420876",
+          "subject": "feat(stage 2): preserve qdb score refresh structure",
+          "changes": {
+            "production": {
+              "additions": 47,
+              "deletions": 0,
+              "files": [
+                "public/assets/thread_reactions.js"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 15,
+              "deletions": 0,
+              "files": [
+                "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "59ff6bf771fd7d7719349c4068f824cd103aa16f",
+          "subject": "test(stage 3): cover qdb score emphasis",
+          "changes": {
+            "production": {
+              "additions": 4,
+              "deletions": 2,
+              "files": [
+                "templates/partials/quote_card.php",
+                "templates/partials/thread_root_card.php"
+              ]
+            },
+            "tests": {
+              "additions": 123,
+              "deletions": 4,
+              "files": [
+                "tests/BrowserSigningNormalizationTest.php",
+                "tests/QuoteCardDisplayNumberTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 22,
+              "deletions": 0,
+              "files": [
+                "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.3,
+      "revised_score": 0.3,
+      "production_and_test_patch_paths": [
+        "public/assets/theme-qdb.css",
+        "public/assets/thread_reactions.js",
+        "templates/partials/quote_card.php",
+        "templates/partials/thread_root_card.php",
+        "tests/BrowserSigningNormalizationTest.php",
+        "tests/QuoteCardDisplayNumberTest.php"
+      ],
+      "production_and_test_stage_patch_sha256": "482a2fbee36c511b11c3f00ccb48d51970144399112fe32ace90f8d9647d3de9",
+      "production_and_test_endpoint_patch_sha256": "dad976567cb959a84f1abd01861d92b44af4d5f24ab5afeef1fe487f678134aa"
+    },
+    {
+      "name": "toolbar_identity_status",
+      "base_commit": "dd2198e2b24d02e5dbc6f87dddefa19f0f5a70c1",
+      "end_commit": "d3d4fc98197d8924e30caee9186fc37ad59bbf05",
+      "selected_commits": [
+        "31d3038872f1deb71729c71b9cf0284ad95c9669",
+        "bbd324e974786ca43f6fd8c4819be299a22dbec9",
+        "20f44bb1dc7af0aac8942a9202303b279b0ee7f8",
+        "e2f27c5b10400a9cf51db3cf6169cf1bb040123e",
+        "d3d4fc98197d8924e30caee9186fc37ad59bbf05"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 104,
+          "deletions": 3,
+          "files": [
+            "public/assets/forte.css",
+            "public/assets/toolbar_identity_status.js",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Http/ForteActivityController.php",
+            "src/ForumRewrite/Http/ForteBoardController.php",
+            "src/ForumRewrite/Http/ForteUserDirectoryController.php",
+            "src/ForumRewrite/Http/RouteServices.php",
+            "templates/partials/paned_toolbar.php"
+          ]
+        },
+        "tests": {
+          "additions": 2,
+          "deletions": 0,
+          "files": [
+            "tests/LocalAppSmokeTest.php"
+          ]
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "planning_and_summaries": {
+          "additions": 55,
+          "deletions": 0,
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 107,
+          "deletions": 6
+        },
+        "tests": {
+          "additions": 2,
+          "deletions": 0
+        },
+        "documentation": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "planning_and_summaries": {
+          "additions": 55,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "31d3038872f1deb71729c71b9cf0284ad95c9669",
+          "subject": "feat(stage 1): inject viewer identity status into Forte page data",
+          "changes": {
+            "production": {
+              "additions": 23,
+              "deletions": 0,
+              "files": [
+                "src/ForumRewrite/Application.php",
+                "src/ForumRewrite/Http/ForteBoardController.php",
+                "src/ForumRewrite/Http/RouteServices.php"
+              ]
+            },
+            "tests": {
+              "additions": 2,
+              "deletions": 0,
+              "files": [
+                "tests/LocalAppSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 15,
+              "deletions": 0,
+              "files": [
+                "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "bbd324e974786ca43f6fd8c4819be299a22dbec9",
+          "subject": "feat(stage 2): render identity status badge in Forte toolbar",
+          "changes": {
+            "production": {
+              "additions": 20,
+              "deletions": 0,
+              "files": [
+                "public/assets/forte.css",
+                "templates/partials/paned_toolbar.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 9,
+              "deletions": 0,
+              "files": [
+                "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "20f44bb1dc7af0aac8942a9202303b279b0ee7f8",
+          "subject": "feat(stage 3): correct toolbar identity badge from local keypair state",
+          "changes": {
+            "production": {
+              "additions": 41,
+              "deletions": 3,
+              "files": [
+                "public/assets/toolbar_identity_status.js",
+                "src/ForumRewrite/Http/ForteActivityController.php",
+                "src/ForumRewrite/Http/ForteBoardController.php",
+                "src/ForumRewrite/Http/ForteUserDirectoryController.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 10,
+              "deletions": 0,
+              "files": [
+                "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "e2f27c5b10400a9cf51db3cf6169cf1bb040123e",
+          "subject": "feat(stage 4): keep toolbar identity badge live across tabs",
+          "changes": {
+            "production": {
+              "additions": 1,
+              "deletions": 0,
+              "files": [
+                "public/assets/toolbar_identity_status.js"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 8,
+              "deletions": 0,
+              "files": [
+                "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "d3d4fc98197d8924e30caee9186fc37ad59bbf05",
+          "subject": "style: restyle toolbar identity indicator as an icon link",
+          "changes": {
+            "production": {
+              "additions": 22,
+              "deletions": 3,
+              "files": [
+                "public/assets/forte.css",
+                "public/assets/toolbar_identity_status.js",
+                "templates/partials/paned_toolbar.php"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 13,
+              "deletions": 0,
+              "files": [
+                "docs/plans/toolbar_identity_status_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.35,
+      "revised_score": 0.35,
+      "production_and_test_patch_paths": [
+        "public/assets/forte.css",
+        "public/assets/toolbar_identity_status.js",
+        "src/ForumRewrite/Application.php",
+        "src/ForumRewrite/Http/ForteActivityController.php",
+        "src/ForumRewrite/Http/ForteBoardController.php",
+        "src/ForumRewrite/Http/ForteUserDirectoryController.php",
+        "src/ForumRewrite/Http/RouteServices.php",
+        "templates/partials/paned_toolbar.php",
+        "tests/LocalAppSmokeTest.php"
+      ],
+      "production_and_test_stage_patch_sha256": "7e95c6dfb738f29db74d7bf056dcbda8b2012685c96b89d0c677702e8417adf0",
+      "production_and_test_endpoint_patch_sha256": "df13a0e15289dad3497020c117d0185e43edd62449644d1dd94a8ac00d628a54"
+    },
+    {
+      "name": "startup_dependency_recovery",
+      "base_commit": "71b7c8ba9a983aa1305de63d0f6eb1e45119af94",
+      "end_commit": "097ff5a6e75484993c9385bf4898077ee49d5fa8",
+      "selected_commits": [
+        "f20b1a6d30ef62bd07a5c401bca7859abd0a4103",
+        "f20d9ff932970c43edac2307f973d39d65273e3b",
+        "411bfab6693eee296df05265a9ba2355a5dea60c",
+        "a04444197cb78065c79f985092947b32a9cd2b02",
+        "097ff5a6e75484993c9385bf4898077ee49d5fa8"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 197,
+          "deletions": 66,
+          "files": [
+            "scripts/check_local_server_dependencies.php",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "scripts/php_setup_guidance.sh",
+            "v3"
+          ]
+        },
+        "tests": {
+          "additions": 451,
+          "deletions": 24,
+          "files": [
+            "tests/local_server_dependency_checks_test.sh",
+            "tests/local_server_dependency_install_confirmation_test.py",
+            "tests/local_server_dependency_install_integration_test.py",
+            "tests/local_server_dependency_install_test.sh",
+            "tests/local_server_dependency_runtime_test.py",
+            "tests/missing_php_startup_test.sh",
+            "tests/startup_dependency_recovery_failure_test.py",
+            "tests/startup_dependency_recovery_integration_test.py",
+            "tests/startup_dependency_recovery_manual_test.py"
+          ]
+        },
+        "documentation": {
+          "additions": 69,
+          "deletions": 26,
+          "files": [
+            "README.md",
+            "docs/reference/v3_cli.md"
+          ]
+        },
+        "planning_and_summaries": {
+          "additions": 201,
+          "deletions": 2,
+          "files": [
+            "docs/plans/README.md",
+            "docs/plans/local_server_dependency_recovery_checklist.md",
+            "docs/plans/startup_dependency_recovery/acceptance_evidence.md",
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 1168,
+          "deletions": 0,
+          "files": [
+            "docs/plans/startup_dependency_recovery/acceptance_evidence.json"
+          ]
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 204,
+          "deletions": 73
+        },
+        "tests": {
+          "additions": 458,
+          "deletions": 31
+        },
+        "documentation": {
+          "additions": 69,
+          "deletions": 26
+        },
+        "planning_and_summaries": {
+          "additions": 202,
+          "deletions": 3
+        },
+        "recorded_evidence": {
+          "additions": 1168,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "f20b1a6d30ef62bd07a5c401bca7859abd0a4103",
+          "subject": "feat(stage 1): provide runtime-specific dependency recovery guidance",
+          "changes": {
+            "production": {
+              "additions": 71,
+              "deletions": 30,
+              "files": [
+                "scripts/check_local_server_dependencies.php",
+                "scripts/local_server_dependencies.sh",
+                "scripts/local_server_dependency_install.sh",
+                "scripts/php_setup_guidance.sh"
+              ]
+            },
+            "tests": {
+              "additions": 4,
+              "deletions": 8,
+              "files": [
+                "tests/local_server_dependency_runtime_test.py",
+                "tests/missing_php_startup_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 10,
+              "deletions": 0,
+              "files": [
+                "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "f20d9ff932970c43edac2307f973d39d65273e3b",
+          "subject": "feat(stage 2): support confirmed dependency installation on Ubuntu 22.04",
+          "changes": {
+            "production": {
+              "additions": 21,
+              "deletions": 20,
+              "files": [
+                "scripts/local_server_dependency_install.sh",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 14,
+              "deletions": 5,
+              "files": [
+                "tests/local_server_dependency_install_integration_test.py",
+                "tests/local_server_dependency_install_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "411bfab6693eee296df05265a9ba2355a5dea60c",
+          "subject": "feat(stage 3): recover missing dependencies and resume terminal startup",
+          "changes": {
+            "production": {
+              "additions": 71,
+              "deletions": 12,
+              "files": [
+                "scripts/local_server_dependencies.sh",
+                "scripts/local_server_dependency_install.sh",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 182,
+              "deletions": 0,
+              "files": [
+                "tests/startup_dependency_recovery_integration_test.py"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "a04444197cb78065c79f985092947b32a9cd2b02",
+          "subject": "fix(stage 4): enforce cancellation and failed startup recovery boundaries",
+          "changes": {
+            "production": {
+              "additions": 26,
+              "deletions": 4,
+              "files": [
+                "scripts/local_server_dependencies.sh",
+                "scripts/local_server_dependency_install.sh",
+                "scripts/php_setup_guidance.sh"
+              ]
+            },
+            "tests": {
+              "additions": 157,
+              "deletions": 18,
+              "files": [
+                "tests/local_server_dependency_install_confirmation_test.py",
+                "tests/local_server_dependency_install_integration_test.py",
+                "tests/startup_dependency_recovery_failure_test.py",
+                "tests/startup_dependency_recovery_integration_test.py"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "097ff5a6e75484993c9385bf4898077ee49d5fa8",
+          "subject": "feat(stage 5): verify and document complete startup dependency recovery",
+          "changes": {
+            "production": {
+              "additions": 15,
+              "deletions": 7,
+              "files": [
+                "scripts/local_server_dependencies.sh",
+                "scripts/local_server_dependency_install.sh",
+                "scripts/php_setup_guidance.sh",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 101,
+              "deletions": 0,
+              "files": [
+                "tests/local_server_dependency_checks_test.sh",
+                "tests/local_server_dependency_install_confirmation_test.py",
+                "tests/startup_dependency_recovery_manual_test.py"
+              ]
+            },
+            "documentation": {
+              "additions": 69,
+              "deletions": 26,
+              "files": [
+                "README.md",
+                "docs/reference/v3_cli.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 177,
+              "deletions": 3,
+              "files": [
+                "docs/plans/README.md",
+                "docs/plans/local_server_dependency_recovery_checklist.md",
+                "docs/plans/startup_dependency_recovery/acceptance_evidence.md",
+                "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 1168,
+              "deletions": 0,
+              "files": [
+                "docs/plans/startup_dependency_recovery/acceptance_evidence.json"
+              ]
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 1.0,
+      "revised_score": 1.0,
+      "production_and_test_patch_paths": [
+        "scripts/check_local_server_dependencies.php",
+        "scripts/local_server_dependencies.sh",
+        "scripts/local_server_dependency_install.sh",
+        "scripts/php_setup_guidance.sh",
+        "tests/local_server_dependency_checks_test.sh",
+        "tests/local_server_dependency_install_confirmation_test.py",
+        "tests/local_server_dependency_install_integration_test.py",
+        "tests/local_server_dependency_install_test.sh",
+        "tests/local_server_dependency_runtime_test.py",
+        "tests/missing_php_startup_test.sh",
+        "tests/startup_dependency_recovery_failure_test.py",
+        "tests/startup_dependency_recovery_integration_test.py",
+        "tests/startup_dependency_recovery_manual_test.py",
+        "v3"
+      ],
+      "production_and_test_stage_patch_sha256": "15fd11431dd1dc4c38efce2fae579b501906dcbceeacf34d01902903fa4efc33",
+      "production_and_test_endpoint_patch_sha256": "708386b4a00db5ee619c2cd273547e12cac369f9546a6d4a463e3af3ac52618e"
+    },
+    {
+      "name": "private_message_history_sync",
+      "base_commit": "d7e89582042a8da66f3848c2633a8a31dd25fc6e",
+      "end_commit": "ed36a0696481c00ef523b3c443cfdf284ebe3b6f",
+      "selected_commits": [
+        "8ab040a20b1646267eeacbb4af90082fedb26426",
+        "6c6d677e4355822a5b18c153a42d239f0b9473f8",
+        "43fdf56c99114f56fedf5630a4c355cf989f3295",
+        "af7b956ba0a31f438a4b33553cce1070839d5088",
+        "acf4b50167a57a81af47ac6d01b9c477d441f826",
+        "752e1114392a551508c9d0554074c6834b827442",
+        "5e2299c2ef480732776c7ee9e9e0b047585ea973",
+        "39219b48a87f608d1c6003d7c8ed7823b57c7985",
+        "ed36a0696481c00ef523b3c443cfdf284ebe3b6f"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 600,
+          "deletions": 5,
+          "files": [
+            "public/assets/private_message_conversation.js",
+            "public/assets/private_message_history_crypto.js",
+            "public/assets/private_message_history_sync.js",
+            "public/assets/private_message_list.js",
+            "public/assets/private_message_reader.js",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Http/ApiTextController.php",
+            "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncDatabaseConfig.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+            "src/ForumRewrite/Messaging/PrivateMessageStore.php",
+            "src/ForumRewrite/Support/PrivateConfigSchema.php",
+            "src/ForumRewrite/View/TemplateRenderer.php"
+          ]
+        },
+        "tests": {
+          "additions": 579,
+          "deletions": 9,
+          "files": [
+            "tests/PrivateMessageHistoryCryptoTest.php",
+            "tests/PrivateMessageHistorySyncTest.php",
+            "tests/PrivateMessageReleaseIsolationTest.php",
+            "tests/Support/private_message_history_sync_fixture.php",
+            "tests/browser/private_message_history_crypto.cjs",
+            "tests/browser/private_message_history_donor.cjs",
+            "tests/browser/private_message_history_reader.cjs",
+            "tests/browser/private_message_history_sync_browser.mjs",
+            "tests/browser/private_message_list_browser.mjs",
+            "tests/browser/private_message_seen_recovery.mjs",
+            "tests/browser/private_message_unavailable.mjs",
+            "tests/run.php"
+          ]
+        },
+        "documentation": {
+          "additions": 21,
+          "deletions": 9,
+          "files": [
+            "docs/runbooks/production_deploy.md"
+          ]
+        },
+        "planning_and_summaries": {
+          "additions": 233,
+          "deletions": 27,
+          "files": [
+            "docs/plans/README.md",
+            "docs/plans/instance_portability_gap_assessment.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_rollout.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step1_solution_assessment.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_storage_findings.md",
+            "docs/plans/private_messaging_usability_master_checklist.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 765,
+          "deletions": 0,
+          "files": [
+            "docs/plans/private_message_history_sync/evidence/browser_journey_results.json",
+            "docs/plans/private_message_history_sync/evidence/lock_probe_results.json",
+            "docs/plans/private_message_history_sync/evidence/release_verification_results.json",
+            "docs/plans/private_message_history_sync/evidence/storage_challenge_assessment.json"
+          ]
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 663,
+          "deletions": 68
+        },
+        "tests": {
+          "additions": 597,
+          "deletions": 27
+        },
+        "documentation": {
+          "additions": 21,
+          "deletions": 9
+        },
+        "planning_and_summaries": {
+          "additions": 241,
+          "deletions": 35
+        },
+        "recorded_evidence": {
+          "additions": 765,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "8ab040a20b1646267eeacbb4af90082fedb26426",
+          "subject": "feat(stage 1): validate encrypted history session-key transfers",
+          "changes": {
+            "production": {
+              "additions": 74,
+              "deletions": 0,
+              "files": [
+                "public/assets/private_message_history_crypto.js"
+              ]
+            },
+            "tests": {
+              "additions": 46,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageHistoryCryptoTest.php",
+                "tests/browser/private_message_history_crypto.cjs",
+                "tests/run.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 100,
+              "deletions": 8,
+              "files": [
+                "docs/plans/README.md",
+                "docs/plans/instance_portability_gap_assessment.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step1_solution_assessment.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_storage_findings.md",
+                "docs/plans/private_messaging_usability_master_checklist.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 694,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/evidence/lock_probe_results.json",
+                "docs/plans/private_message_history_sync/evidence/storage_challenge_assessment.json"
+              ]
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "6c6d677e4355822a5b18c153a42d239f0b9473f8",
+          "subject": "feat(stage 2): discover bounded history work in separate private storage",
+          "changes": {
+            "production": {
+              "additions": 171,
+              "deletions": 0,
+              "files": [
+                "src/ForumRewrite/Application.php",
+                "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncDatabaseConfig.php",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+                "src/ForumRewrite/Messaging/PrivateMessageStore.php",
+                "src/ForumRewrite/Support/PrivateConfigSchema.php"
+              ]
+            },
+            "tests": {
+              "additions": 69,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageHistorySyncTest.php",
+                "tests/run.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "43fdf56c99114f56fedf5630a4c355cf989f3295",
+          "subject": "feat(stage 3): retain authenticated history transfers and target receipts",
+          "changes": {
+            "production": {
+              "additions": 139,
+              "deletions": 3,
+              "files": [
+                "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php"
+              ]
+            },
+            "tests": {
+              "additions": 77,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageHistorySyncTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "af7b956ba0a31f438a4b33553cce1070839d5088",
+          "subject": "feat(stage 4): contribute encrypted history on authenticated visits",
+          "changes": {
+            "production": {
+              "additions": 101,
+              "deletions": 1,
+              "files": [
+                "public/assets/private_message_history_sync.js",
+                "src/ForumRewrite/View/TemplateRenderer.php"
+              ]
+            },
+            "tests": {
+              "additions": 38,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageHistoryCryptoTest.php",
+                "tests/PrivateMessageReleaseIsolationTest.php",
+                "tests/browser/private_message_history_donor.cjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "acf4b50167a57a81af47ac6d01b9c477d441f826",
+          "subject": "feat(stage 5): restore original messages through the shared reader",
+          "changes": {
+            "production": {
+              "additions": 70,
+              "deletions": 9,
+              "files": [
+                "public/assets/private_message_history_sync.js",
+                "public/assets/private_message_list.js",
+                "public/assets/private_message_reader.js"
+              ]
+            },
+            "tests": {
+              "additions": 53,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageHistoryCryptoTest.php",
+                "tests/browser/private_message_history_reader.cjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "752e1114392a551508c9d0554074c6834b827442",
+          "subject": "feat(stage 6): reconcile partial donors and interrupted history sync",
+          "changes": {
+            "production": {
+              "additions": 32,
+              "deletions": 12,
+              "files": [
+                "public/assets/private_message_history_sync.js",
+                "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php"
+              ]
+            },
+            "tests": {
+              "additions": 53,
+              "deletions": 2,
+              "files": [
+                "tests/PrivateMessageHistorySyncTest.php",
+                "tests/browser/private_message_history_donor.cjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "5e2299c2ef480732776c7ee9e9e0b047585ea973",
+          "subject": "feat(stage 7): show history recovery status and preserve reading state",
+          "changes": {
+            "production": {
+              "additions": 75,
+              "deletions": 2,
+              "files": [
+                "public/assets/private_message_conversation.js",
+                "public/assets/private_message_history_status.js",
+                "public/assets/private_message_list.js",
+                "public/assets/private_message_reader.js",
+                "src/ForumRewrite/View/TemplateRenderer.php",
+                "templates/pages/private_message_conversation.php",
+                "templates/pages/private_message_list.php",
+                "templates/partials/private_message_history_status.php"
+              ]
+            },
+            "tests": {
+              "additions": 38,
+              "deletions": 9,
+              "files": [
+                "tests/PrivateMessageReleaseIsolationTest.php",
+                "tests/browser/private_message_list_browser.mjs",
+                "tests/browser/private_message_seen_recovery.mjs",
+                "tests/browser/private_message_unavailable.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "39219b48a87f608d1c6003d7c8ed7823b57c7985",
+          "subject": "test(stage 8): verify approved-device history recovery and private storage operations",
+          "changes": {
+            "production": {
+              "additions": 1,
+              "deletions": 0,
+              "files": [
+                "src/ForumRewrite/Http/ApiTextController.php"
+              ]
+            },
+            "tests": {
+              "additions": 204,
+              "deletions": 0,
+              "files": [
+                "tests/PrivateMessageReleaseIsolationTest.php",
+                "tests/Support/private_message_history_sync_fixture.php",
+                "tests/browser/private_message_history_sync_browser.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 21,
+              "deletions": 9,
+              "files": [
+                "docs/runbooks/production_deploy.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 91,
+              "deletions": 20,
+              "files": [
+                "docs/plans/instance_portability_gap_assessment.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_rollout.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+                "docs/plans/private_messaging_usability_master_checklist.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 71,
+              "deletions": 0,
+              "files": [
+                "docs/plans/private_message_history_sync/evidence/browser_journey_results.json",
+                "docs/plans/private_message_history_sync/evidence/release_verification_results.json"
+              ]
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "ed36a0696481c00ef523b3c443cfdf284ebe3b6f",
+          "subject": "fix: remove global private history sync messaging",
+          "changes": {
+            "production": {
+              "additions": 0,
+              "deletions": 41,
+              "files": [
+                "public/assets/private_message_history_status.js",
+                "public/assets/private_message_list.js",
+                "public/assets/private_message_reader.js",
+                "src/ForumRewrite/View/TemplateRenderer.php",
+                "templates/pages/private_message_conversation.php",
+                "templates/pages/private_message_list.php",
+                "templates/partials/private_message_history_status.php"
+              ]
+            },
+            "tests": {
+              "additions": 19,
+              "deletions": 16,
+              "files": [
+                "tests/PrivateMessageReleaseIsolationTest.php",
+                "tests/browser/private_message_history_sync_browser.mjs",
+                "tests/browser/private_message_list_browser.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 14,
+              "deletions": 7,
+              "files": [
+                "docs/plans/private_message_history_sync/private_message_history_sync_rollout.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+                "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 1.2,
+      "revised_score": 1.2,
+      "production_and_test_patch_paths": [
+        "public/assets/private_message_conversation.js",
+        "public/assets/private_message_history_crypto.js",
+        "public/assets/private_message_history_status.js",
+        "public/assets/private_message_history_sync.js",
+        "public/assets/private_message_list.js",
+        "public/assets/private_message_reader.js",
+        "src/ForumRewrite/Application.php",
+        "src/ForumRewrite/Http/ApiTextController.php",
+        "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+        "src/ForumRewrite/Messaging/PrivateMessageHistorySyncDatabaseConfig.php",
+        "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+        "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+        "src/ForumRewrite/Messaging/PrivateMessageStore.php",
+        "src/ForumRewrite/Support/PrivateConfigSchema.php",
+        "src/ForumRewrite/View/TemplateRenderer.php",
+        "templates/pages/private_message_conversation.php",
+        "templates/pages/private_message_list.php",
+        "templates/partials/private_message_history_status.php",
+        "tests/PrivateMessageHistoryCryptoTest.php",
+        "tests/PrivateMessageHistorySyncTest.php",
+        "tests/PrivateMessageReleaseIsolationTest.php",
+        "tests/Support/private_message_history_sync_fixture.php",
+        "tests/browser/private_message_history_crypto.cjs",
+        "tests/browser/private_message_history_donor.cjs",
+        "tests/browser/private_message_history_reader.cjs",
+        "tests/browser/private_message_history_sync_browser.mjs",
+        "tests/browser/private_message_list_browser.mjs",
+        "tests/browser/private_message_seen_recovery.mjs",
+        "tests/browser/private_message_unavailable.mjs",
+        "tests/run.php"
+      ],
+      "production_and_test_stage_patch_sha256": "e559df458d31cd698a08c653cd79bcb4a32bcd1d71884c8ff2f75ef4d05f56cf",
+      "production_and_test_endpoint_patch_sha256": "edd05e7f9dda6b195fef30b6c274d57682b0daa9bc2c692b85671623ede49f4a"
+    },
+    {
+      "name": "image_content",
+      "base_commit": "ce5f847b345394ea98ad1fb8a68aa252c89dae83",
+      "end_commit": "f84fb41f5812e444dccd8d698dc91763a736e8aa",
+      "selected_commits": [
+        "3f5f16cbb14c48b709ea921b36235fe12525db41",
+        "b7a70493e49c36d600e6a6bb01f9a7b302c8fac9",
+        "dd80b84ce19344b130d02d2d9ce20ef8ebd771fb",
+        "0618e6459afbf751b711984b1f52fc900a2d458c",
+        "b6823a516d1ccbaa52faa73033bf7d1d1570b923",
+        "c804f199b4f68dba19f176e7cadd653762bcafaf",
+        "0a4ce8c8c357614ef27de052bca7e50598a3ba43",
+        "1e6ee048670566f53bff97d452c2e39cb05cab79",
+        "f84fb41f5812e444dccd8d698dc91763a736e8aa"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 782,
+          "deletions": 64,
+          "files": [
+            "public/.htaccess",
+            "public/assets/browser_signing.js",
+            "public/assets/lazy_compose_signing.js",
+            "public/assets/offline_reader.js",
+            "public/assets/outbox_compose.js",
+            "scripts/import_instance.php",
+            "scripts/import_repository_archive.php",
+            "scripts/restore_images.php",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Host/FrontController.php",
+            "src/ForumRewrite/Http/ApiTextController.php",
+            "src/ForumRewrite/Http/ImageController.php",
+            "src/ForumRewrite/Http/InstancePageController.php",
+            "src/ForumRewrite/Http/RssFeed.php",
+            "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+            "src/ForumRewrite/Images/ImageBackup.php",
+            "src/ForumRewrite/Images/ImageReference.php",
+            "src/ForumRewrite/Images/ImageRestore.php",
+            "src/ForumRewrite/Images/ImageStore.php",
+            "src/ForumRewrite/Import/ContentImportRunner.php",
+            "src/ForumRewrite/Support/FeatureFlags/FeatureFlagRegistry.php",
+            "src/ForumRewrite/View/MediaEmbedRenderer.php",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "src/ForumRewrite/Write/LocalWriteService.php",
+            "v3",
+            "templates/layout.php",
+            "templates/pages/instance.php",
+            "templates/pages/offline_reader.php",
+            "templates/pages/sqlite_viewer.php",
+            "templates/partials/image_compose_fields.php",
+            "templates/partials/reply_form.php",
+            "templates/partials/thread_compose_form.php",
+            "templates/standalone_layout.php"
+          ]
+        },
+        "tests": {
+          "additions": 538,
+          "deletions": 10,
+          "files": [
+            "tests/FeatureFlagEvaluatorTest.php",
+            "tests/ImageContentTest.php",
+            "tests/LocalAppSmokeTest.php",
+            "tests/OfflineSnapshotPresentationTest.php",
+            "tests/Support/image_browser_fixture.php",
+            "tests/Support/image_browser_router.php",
+            "tests/WebServerRoutingTest.php",
+            "tests/WriteApiSmokeTest.php",
+            "tests/browser/image_compose_transport.cjs",
+            "tests/browser/image_content_browser.mjs",
+            "tests/image_content_apache_test.py",
+            "tests/run.php"
+          ]
+        },
+        "documentation": {
+          "additions": 145,
+          "deletions": 18,
+          "files": [
+            "README.md",
+            "docs/examples/env.production.example",
+            "docs/reference/v3_cli.md",
+            "docs/runbooks/image_backup.md",
+            "docs/runbooks/production_deploy.md",
+            "docs/specs/canonical_post_record_v1.md"
+          ]
+        },
+        "planning_and_summaries": {
+          "additions": 50,
+          "deletions": 0,
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 798,
+          "deletions": 80
+        },
+        "tests": {
+          "additions": 542,
+          "deletions": 14
+        },
+        "documentation": {
+          "additions": 147,
+          "deletions": 20
+        },
+        "planning_and_summaries": {
+          "additions": 50,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "3f5f16cbb14c48b709ea921b36235fe12525db41",
+          "subject": "feat(images): add portable references private store and flag",
+          "changes": {
+            "production": {
+              "additions": 194,
+              "deletions": 0,
+              "files": [
+                "src/ForumRewrite/Images/ImageReference.php",
+                "src/ForumRewrite/Images/ImageStore.php",
+                "src/ForumRewrite/Support/FeatureFlags/FeatureFlagRegistry.php"
+              ]
+            },
+            "tests": {
+              "additions": 66,
+              "deletions": 0,
+              "files": [
+                "tests/FeatureFlagEvaluatorTest.php",
+                "tests/ImageContentTest.php",
+                "tests/run.php"
+              ]
+            },
+            "documentation": {
+              "additions": 15,
+              "deletions": 0,
+              "files": [
+                "docs/specs/canonical_post_record_v1.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 8,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "b7a70493e49c36d600e6a6bb01f9a7b302c8fac9",
+          "subject": "feat(images): bind attachments to verified signed publication",
+          "changes": {
+            "production": {
+              "additions": 59,
+              "deletions": 8,
+              "files": [
+                "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+                "src/ForumRewrite/Write/LocalWriteService.php"
+              ]
+            },
+            "tests": {
+              "additions": 47,
+              "deletions": 0,
+              "files": [
+                "tests/WriteApiSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "dd80b84ce19344b130d02d2d9ce20ef8ebd771fb",
+          "subject": "feat(images): add shared signed image compose flow",
+          "changes": {
+            "production": {
+              "additions": 84,
+              "deletions": 5,
+              "files": [
+                "public/assets/browser_signing.js",
+                "public/assets/lazy_compose_signing.js",
+                "public/assets/outbox_compose.js",
+                "src/ForumRewrite/View/TemplateRenderer.php",
+                "templates/partials/image_compose_fields.php",
+                "templates/partials/reply_form.php",
+                "templates/partials/thread_compose_form.php"
+              ]
+            },
+            "tests": {
+              "additions": 31,
+              "deletions": 0,
+              "files": [
+                "tests/browser/image_compose_transport.cjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "0618e6459afbf751b711984b1f52fc900a2d458c",
+          "subject": "feat(images): protect image delivery and gate generated rendering",
+          "changes": {
+            "production": {
+              "additions": 79,
+              "deletions": 39,
+              "files": [
+                "public/.htaccess",
+                "src/ForumRewrite/Application.php",
+                "src/ForumRewrite/Host/FrontController.php",
+                "src/ForumRewrite/Http/ImageController.php",
+                "src/ForumRewrite/View/MediaEmbedRenderer.php",
+                "src/ForumRewrite/View/TemplateRenderer.php",
+                "templates/layout.php"
+              ]
+            },
+            "tests": {
+              "additions": 29,
+              "deletions": 8,
+              "files": [
+                "tests/ImageContentTest.php",
+                "tests/LocalAppSmokeTest.php",
+                "tests/WebServerRoutingTest.php",
+                "tests/WriteApiSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "b6823a516d1ccbaa52faa73033bf7d1d1570b923",
+          "subject": "feat(images): export complete revision-bound backup pairs",
+          "changes": {
+            "production": {
+              "additions": 182,
+              "deletions": 6,
+              "files": [
+                "src/ForumRewrite/Application.php",
+                "src/ForumRewrite/Http/InstancePageController.php",
+                "src/ForumRewrite/Images/ImageBackup.php",
+                "templates/pages/instance.php"
+              ]
+            },
+            "tests": {
+              "additions": 36,
+              "deletions": 0,
+              "files": [
+                "tests/ImageContentTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "c804f199b4f68dba19f176e7cadd653762bcafaf",
+          "subject": "feat(images): verify and restore portable image backup pairs",
+          "changes": {
+            "production": {
+              "additions": 148,
+              "deletions": 0,
+              "files": [
+                "scripts/restore_images.php",
+                "src/ForumRewrite/Images/ImageRestore.php",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 17,
+              "deletions": 0,
+              "files": [
+                "tests/ImageContentTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 112,
+              "deletions": 0,
+              "files": [
+                "docs/reference/v3_cli.md",
+                "docs/runbooks/image_backup.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "0a4ce8c8c357614ef27de052bca7e50598a3ba43",
+          "subject": "feat(images): explain media availability across imports and offline views",
+          "changes": {
+            "production": {
+              "additions": 19,
+              "deletions": 5,
+              "files": [
+                "public/assets/offline_reader.js",
+                "scripts/import_instance.php",
+                "scripts/import_repository_archive.php",
+                "src/ForumRewrite/Http/ApiTextController.php",
+                "src/ForumRewrite/Http/RssFeed.php",
+                "src/ForumRewrite/Import/ContentImportRunner.php",
+                "templates/pages/offline_reader.php",
+                "templates/pages/sqlite_viewer.php"
+              ]
+            },
+            "tests": {
+              "additions": 5,
+              "deletions": 2,
+              "files": [
+                "tests/OfflineSnapshotPresentationTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 17,
+              "deletions": 18,
+              "files": [
+                "README.md",
+                "docs/examples/env.production.example",
+                "docs/runbooks/production_deploy.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 5,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "1e6ee048670566f53bff97d452c2e39cb05cab79",
+          "subject": "test(images): verify browser publication backup recovery and Apache gates",
+          "changes": {
+            "production": {
+              "additions": 20,
+              "deletions": 4,
+              "files": [
+                "public/assets/browser_signing.js",
+                "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+                "src/ForumRewrite/Images/ImageStore.php",
+                "src/ForumRewrite/Write/LocalWriteService.php",
+                "templates/standalone_layout.php"
+              ]
+            },
+            "tests": {
+              "additions": 304,
+              "deletions": 2,
+              "files": [
+                "tests/ImageContentTest.php",
+                "tests/Support/image_browser_fixture.php",
+                "tests/Support/image_browser_router.php",
+                "tests/browser/image_compose_transport.cjs",
+                "tests/browser/image_content_browser.mjs",
+                "tests/image_content_apache_test.py"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 8,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "f84fb41f5812e444dccd8d698dc91763a736e8aa",
+          "subject": "fix(images): make attachment descriptions optional",
+          "changes": {
+            "production": {
+              "additions": 13,
+              "deletions": 13,
+              "files": [
+                "public/assets/browser_signing.js",
+                "public/assets/offline_reader.js",
+                "src/ForumRewrite/Images/ImageReference.php",
+                "src/ForumRewrite/View/MediaEmbedRenderer.php",
+                "templates/partials/image_compose_fields.php"
+              ]
+            },
+            "tests": {
+              "additions": 7,
+              "deletions": 2,
+              "files": [
+                "tests/ImageContentTest.php",
+                "tests/browser/image_compose_transport.cjs",
+                "tests/browser/image_content_browser.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 3,
+              "deletions": 2,
+              "files": [
+                "docs/runbooks/image_backup.md",
+                "docs/specs/canonical_post_record_v1.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 4,
+              "deletions": 0,
+              "files": [
+                "docs/plans/image_content/image_content_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 1.2,
+      "revised_score": 1.2,
+      "production_and_test_patch_paths": [
+        "public/.htaccess",
+        "public/assets/browser_signing.js",
+        "public/assets/lazy_compose_signing.js",
+        "public/assets/offline_reader.js",
+        "public/assets/outbox_compose.js",
+        "scripts/import_instance.php",
+        "scripts/import_repository_archive.php",
+        "scripts/restore_images.php",
+        "src/ForumRewrite/Application.php",
+        "src/ForumRewrite/Host/FrontController.php",
+        "src/ForumRewrite/Http/ApiTextController.php",
+        "src/ForumRewrite/Http/ImageController.php",
+        "src/ForumRewrite/Http/InstancePageController.php",
+        "src/ForumRewrite/Http/RssFeed.php",
+        "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+        "src/ForumRewrite/Images/ImageBackup.php",
+        "src/ForumRewrite/Images/ImageReference.php",
+        "src/ForumRewrite/Images/ImageRestore.php",
+        "src/ForumRewrite/Images/ImageStore.php",
+        "src/ForumRewrite/Import/ContentImportRunner.php",
+        "src/ForumRewrite/Support/FeatureFlags/FeatureFlagRegistry.php",
+        "src/ForumRewrite/View/MediaEmbedRenderer.php",
+        "src/ForumRewrite/View/TemplateRenderer.php",
+        "src/ForumRewrite/Write/LocalWriteService.php",
+        "templates/layout.php",
+        "templates/pages/instance.php",
+        "templates/pages/offline_reader.php",
+        "templates/pages/sqlite_viewer.php",
+        "templates/partials/image_compose_fields.php",
+        "templates/partials/reply_form.php",
+        "templates/partials/thread_compose_form.php",
+        "templates/standalone_layout.php",
+        "tests/FeatureFlagEvaluatorTest.php",
+        "tests/ImageContentTest.php",
+        "tests/LocalAppSmokeTest.php",
+        "tests/OfflineSnapshotPresentationTest.php",
+        "tests/Support/image_browser_fixture.php",
+        "tests/Support/image_browser_router.php",
+        "tests/WebServerRoutingTest.php",
+        "tests/WriteApiSmokeTest.php",
+        "tests/browser/image_compose_transport.cjs",
+        "tests/browser/image_content_browser.mjs",
+        "tests/image_content_apache_test.py",
+        "tests/run.php",
+        "v3"
+      ],
+      "production_and_test_stage_patch_sha256": "63de016ecc2f43736c335a9db1efdcb409e266ea1e0220c207c828b3b29db914",
+      "production_and_test_endpoint_patch_sha256": "c7ea4989e15eb95aa8767f6e57306ec54790adbc3fa0ed48565ccecb86853298"
+    },
+    {
+      "name": "compose_thread_declutter",
+      "base_commit": "750222d42b6066f3f0729f520e5ed2da57b2507f",
+      "end_commit": "b2480422902b9159a11f28a33ad16fb02d37b916",
+      "selected_commits": [
+        "439314d0fb9e8b3361c20ccbc7e92967729ac9f0",
+        "9936523158d44de746b75d0b94c943a25b836140",
+        "4275936dfed6036e5be6c106dd02cead57ecdc45",
+        "c2cfabe71aa4dd7d104c86ecec05aa71895a7017",
+        "eb4e961f4b4f54266d88929231f2f8d5827cd274",
+        "bf668ed42160a1760c15a369db9a657da67a64bb",
+        "ebda5135b89ecb8b932ce09dffa32993c22d86ee",
+        "b2480422902b9159a11f28a33ad16fb02d37b916"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 191,
+          "deletions": 41,
+          "files": [
+            "public/assets/compose.css",
+            "public/assets/compose_disclosure.js",
+            "public/assets/image_upload.js",
+            "public/assets/outbox_compose.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/layout.php",
+            "templates/pages/compose_thread.php",
+            "templates/partials/image_compose_fields.php",
+            "templates/partials/thread_compose_form.php"
+          ]
+        },
+        "tests": {
+          "additions": 60,
+          "deletions": 3,
+          "files": [
+            "tests/LocalAppSmokeTest.php",
+            "tests/Support/ProfileRegressionContract.php",
+            "tests/browser/compose_disclosure.mjs",
+            "tests/browser/image_content_browser.mjs"
+          ]
+        },
+        "documentation": {
+          "additions": 1,
+          "deletions": 1,
+          "files": [
+            "todo.txt"
+          ]
+        },
+        "planning_and_summaries": {
+          "additions": 101,
+          "deletions": 0,
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 198,
+          "deletions": 48
+        },
+        "tests": {
+          "additions": 61,
+          "deletions": 4
+        },
+        "documentation": {
+          "additions": 1,
+          "deletions": 1
+        },
+        "planning_and_summaries": {
+          "additions": 101,
+          "deletions": 0
+        },
+        "recorded_evidence": {
+          "additions": 0,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "439314d0fb9e8b3361c20ccbc7e92967729ac9f0",
+          "subject": "feat(stage 1): trim compose thread header and intro",
+          "changes": {
+            "production": {
+              "additions": 2,
+              "deletions": 2,
+              "files": [
+                "templates/pages/compose_thread.php"
+              ]
+            },
+            "tests": {
+              "additions": 1,
+              "deletions": 1,
+              "files": [
+                "tests/Support/ProfileRegressionContract.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 12,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "9936523158d44de746b75d0b94c943a25b836140",
+          "subject": "feat(stage 2): collapse tags and subject under the body",
+          "changes": {
+            "production": {
+              "additions": 39,
+              "deletions": 18,
+              "files": [
+                "public/assets/compose.css",
+                "templates/partials/thread_compose_form.php"
+              ]
+            },
+            "tests": {
+              "additions": 6,
+              "deletions": 0,
+              "files": [
+                "tests/LocalAppSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 12,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "4275936dfed6036e5be6c106dd02cead57ecdc45",
+          "subject": "feat(stage 3): collapse event fields into an expando",
+          "changes": {
+            "production": {
+              "additions": 10,
+              "deletions": 4,
+              "files": [
+                "templates/partials/thread_compose_form.php"
+              ]
+            },
+            "tests": {
+              "additions": 3,
+              "deletions": 0,
+              "files": [
+                "tests/LocalAppSmokeTest.php"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 10,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "c2cfabe71aa4dd7d104c86ecec05aa71895a7017",
+          "subject": "feat(stage 4): auto-open and summarize compose expandos",
+          "changes": {
+            "production": {
+              "additions": 77,
+              "deletions": 0,
+              "files": [
+                "public/assets/compose_disclosure.js",
+                "src/ForumRewrite/View/TemplateRenderer.php",
+                "templates/layout.php"
+              ]
+            },
+            "tests": {
+              "additions": 32,
+              "deletions": 0,
+              "files": [
+                "tests/LocalAppSmokeTest.php",
+                "tests/browser/compose_disclosure.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 12,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "eb4e961f4b4f54266d88929231f2f8d5827cd274",
+          "subject": "feat(stage 5): compact image widget and remove optional labels",
+          "changes": {
+            "production": {
+              "additions": 17,
+              "deletions": 19,
+              "files": [
+                "public/assets/compose.css",
+                "public/assets/image_upload.js",
+                "templates/pages/compose_thread.php",
+                "templates/partials/image_compose_fields.php",
+                "templates/partials/thread_compose_form.php"
+              ]
+            },
+            "tests": {
+              "additions": 5,
+              "deletions": 2,
+              "files": [
+                "tests/browser/image_content_browser.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 16,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "bf668ed42160a1760c15a369db9a657da67a64bb",
+          "subject": "feat(stage 6): move secondary compose actions into a ... menu",
+          "changes": {
+            "production": {
+              "additions": 50,
+              "deletions": 3,
+              "files": [
+                "public/assets/compose.css",
+                "public/assets/compose_disclosure.js",
+                "templates/partials/thread_compose_form.php"
+              ]
+            },
+            "tests": {
+              "additions": 14,
+              "deletions": 1,
+              "files": [
+                "tests/LocalAppSmokeTest.php",
+                "tests/browser/compose_disclosure.mjs",
+                "tests/browser/image_content_browser.mjs"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 16,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "ebda5135b89ecb8b932ce09dffa32993c22d86ee",
+          "subject": "feat(stage 7): verify compose surfaces and move outbox action into menu",
+          "changes": {
+            "production": {
+              "additions": 2,
+              "deletions": 1,
+              "files": [
+                "public/assets/compose.css",
+                "public/assets/outbox_compose.js"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 1,
+              "deletions": 1,
+              "files": [
+                "todo.txt"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 15,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "b2480422902b9159a11f28a33ad16fb02d37b916",
+          "subject": "fix: keep the ... menu last in compose action rows",
+          "changes": {
+            "production": {
+              "additions": 1,
+              "deletions": 1,
+              "files": [
+                "public/assets/compose.css"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 8,
+              "deletions": 0,
+              "files": [
+                "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 1.1,
+      "revised_score": 0.6,
+      "production_and_test_patch_paths": [
+        "public/assets/compose.css",
+        "public/assets/compose_disclosure.js",
+        "public/assets/image_upload.js",
+        "public/assets/outbox_compose.js",
+        "src/ForumRewrite/View/TemplateRenderer.php",
+        "templates/layout.php",
+        "templates/pages/compose_thread.php",
+        "templates/partials/image_compose_fields.php",
+        "templates/partials/thread_compose_form.php",
+        "tests/LocalAppSmokeTest.php",
+        "tests/Support/ProfileRegressionContract.php",
+        "tests/browser/compose_disclosure.mjs",
+        "tests/browser/image_content_browser.mjs"
+      ],
+      "production_and_test_stage_patch_sha256": "30988a3a8ea0c1f381f92b83908511f515a8e505305a7b7305f6283b6f8a8285",
+      "production_and_test_endpoint_patch_sha256": "98ff9dc48a737c3ce2a92437d7627efc57bdad87acf0f1cc09ce0c6d0dff6f66"
+    },
+    {
+      "name": "local_server_dependency_install",
+      "base_commit": "e261361cf9567291e7e026881cee1930b8edd2a6",
+      "end_commit": "f9a30c78bfe3857b7002bdd2383aca87c4761bf8",
+      "selected_commits": [
+        "f58f25e9cd01bb8bf5b437be4536a177c92445ad",
+        "e266a5bb9287be1018c49aa9155605920e0f9923",
+        "1b1d80e51f0c3b16fe4d153fffcf21a0e6beab0e",
+        "9fc56c4980db8e7f4183a3249b0a01af87cd9f0f",
+        "f9a30c78bfe3857b7002bdd2383aca87c4761bf8"
+      ],
+      "other_interval_commits_touching_selected_paths": [],
+      "net_changes": {
+        "production": {
+          "additions": 345,
+          "deletions": 8,
+          "files": [
+            "scripts/check_local_server_dependencies.php",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "v3"
+          ]
+        },
+        "tests": {
+          "additions": 417,
+          "deletions": 0,
+          "files": [
+            "tests/local_server_dependency_install_confirmation_test.py",
+            "tests/local_server_dependency_install_integration_test.py",
+            "tests/local_server_dependency_install_test.sh"
+          ]
+        },
+        "documentation": {
+          "additions": 79,
+          "deletions": 9,
+          "files": [
+            "README.md",
+            "docs/reference/v3_cli.md"
+          ]
+        },
+        "planning_and_summaries": {
+          "additions": 121,
+          "deletions": 3,
+          "files": [
+            "docs/plans/README.md",
+            "docs/plans/dependency_fallback_checklist.md",
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "docs/plans/local_server_dependency_install/local_server_dependency_platform_support_checklist.md"
+          ]
+        },
+        "recorded_evidence": {
+          "additions": 211,
+          "deletions": 0,
+          "files": [
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_test_evidence.json"
+          ]
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0,
+          "files": []
+        }
+      },
+      "sum_of_stage_changes": {
+        "production": {
+          "additions": 368,
+          "deletions": 31
+        },
+        "tests": {
+          "additions": 417,
+          "deletions": 0
+        },
+        "documentation": {
+          "additions": 79,
+          "deletions": 9
+        },
+        "planning_and_summaries": {
+          "additions": 125,
+          "deletions": 7
+        },
+        "recorded_evidence": {
+          "additions": 211,
+          "deletions": 0
+        },
+        "other": {
+          "additions": 0,
+          "deletions": 0
+        }
+      },
+      "stages": [
+        {
+          "commit": "f58f25e9cd01bb8bf5b437be4536a177c92445ad",
+          "subject": "feat(stage 1): review verified local dependency package batches",
+          "changes": {
+            "production": {
+              "additions": 161,
+              "deletions": 3,
+              "files": [
+                "scripts/check_local_server_dependencies.php",
+                "scripts/local_server_dependency_install.sh",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 53,
+              "deletions": 0,
+              "files": [
+                "tests/local_server_dependency_install_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 16,
+              "deletions": 0,
+              "files": [
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "e266a5bb9287be1018c49aa9155605920e0f9923",
+          "subject": "feat(stage 2): confirm install and recheck required dependencies",
+          "changes": {
+            "production": {
+              "additions": 104,
+              "deletions": 5,
+              "files": [
+                "scripts/local_server_dependency_install.sh"
+              ]
+            },
+            "tests": {
+              "additions": 19,
+              "deletions": 0,
+              "files": [
+                "tests/local_server_dependency_install_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 7,
+              "deletions": 1,
+              "files": [
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "1b1d80e51f0c3b16fe4d153fffcf21a0e6beab0e",
+          "subject": "feat(stage 3): select optional packages and report interrupted recovery",
+          "changes": {
+            "production": {
+              "additions": 64,
+              "deletions": 8,
+              "files": [
+                "scripts/local_server_dependency_install.sh"
+              ]
+            },
+            "tests": {
+              "additions": 15,
+              "deletions": 0,
+              "files": [
+                "tests/local_server_dependency_install_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 6,
+              "deletions": 1,
+              "files": [
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "9fc56c4980db8e7f4183a3249b0a01af87cd9f0f",
+          "subject": "test(stage 4): prove disposable dependency installation and server recovery",
+          "changes": {
+            "production": {
+              "additions": 28,
+              "deletions": 10,
+              "files": [
+                "scripts/local_server_dependency_install.sh"
+              ]
+            },
+            "tests": {
+              "additions": 330,
+              "deletions": 0,
+              "files": [
+                "tests/local_server_dependency_install_confirmation_test.py",
+                "tests/local_server_dependency_install_integration_test.py",
+                "tests/local_server_dependency_install_test.sh"
+              ]
+            },
+            "documentation": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "planning_and_summaries": {
+              "additions": 7,
+              "deletions": 1,
+              "files": [
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 211,
+              "deletions": 0,
+              "files": [
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_test_evidence.json"
+              ]
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        },
+        {
+          "commit": "f9a30c78bfe3857b7002bdd2383aca87c4761bf8",
+          "subject": "docs(stage 5): publish dependency installation recovery and evidence",
+          "changes": {
+            "production": {
+              "additions": 11,
+              "deletions": 5,
+              "files": [
+                "scripts/local_server_dependencies.sh",
+                "v3"
+              ]
+            },
+            "tests": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "documentation": {
+              "additions": 79,
+              "deletions": 9,
+              "files": [
+                "README.md",
+                "docs/reference/v3_cli.md"
+              ]
+            },
+            "planning_and_summaries": {
+              "additions": 89,
+              "deletions": 4,
+              "files": [
+                "docs/plans/README.md",
+                "docs/plans/dependency_fallback_checklist.md",
+                "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+                "docs/plans/local_server_dependency_install/local_server_dependency_platform_support_checklist.md"
+              ]
+            },
+            "recorded_evidence": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            },
+            "other": {
+              "additions": 0,
+              "deletions": 0,
+              "files": []
+            }
+          }
+        }
+      ],
+      "initial_score": 0.9,
+      "revised_score": 0.9,
+      "production_and_test_patch_paths": [
+        "scripts/check_local_server_dependencies.php",
+        "scripts/local_server_dependencies.sh",
+        "scripts/local_server_dependency_install.sh",
+        "tests/local_server_dependency_install_confirmation_test.py",
+        "tests/local_server_dependency_install_integration_test.py",
+        "tests/local_server_dependency_install_test.sh",
+        "v3"
+      ],
+      "production_and_test_stage_patch_sha256": "8675f5aab83f88054569edbac7030a6785a65be89c9b0210ed8c14f5bc537d04",
+      "production_and_test_endpoint_patch_sha256": "9dec3b5f79038021724dabb7238c7440ee43e02d4467317ae56d26cceb1c537f"
+    }
+  ],
+  "classification": "production: src/, public/, scripts/, templates/, v3; tests: tests/; documentation: other docs/, README.md, todo.txt; plans/summaries: docs/plans/ except JSON; recorded evidence: docs/plans/*.json. Source comments, literal copy and mechanical edits remain unweighted in their file category.",
+  "patch_hash_recipe": {
+    "stage_series": "UTF-8 of newline-joined git show --format=fuller --find-renames --unified=3 COMMIT -- production_and_test_patch_paths, in selected_commits order; each command retains its trailing newline.",
+    "endpoint": "UTF-8 of git diff --find-renames --unified=3 base_commit end_commit -- production_and_test_patch_paths, retaining trailing newline."
+  }
+}

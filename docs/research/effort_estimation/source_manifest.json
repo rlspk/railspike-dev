@@ -1,0 +1,910 @@
+{
+  "study_date": "2026-10-18",
+  "captured_at_utc": "2026-10-18T16:23:58.791140+00:00",
+  "v3_head": "bb62f96d4d88feb7e8a7ecd4690d392161a0f9a3",
+  "v3_tracked_status": "",
+  "definition": "1.0 is the largest well-scoped releasable slice we would comfortably approve for one Railspike cycle, including required verification and documentation.",
+  "score_status": "Single-analyst retrospective proposed anchors; not measured effort or independently rated estimates.",
+  "cases": [
+    {
+      "name": "thread_card_remove_preview",
+      "proposed_score": 0.1,
+      "planned_stages": 2,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/thread_card_remove_preview/thread_card_remove_preview_step2_feature_description.md",
+          "sha256": "3d3b72d528ccf3a31e74a15cf75b17ad9087845efd219f6f75ee1853ac386102",
+          "lines": 30
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/thread_card_remove_preview/thread_card_remove_preview_step3_development_plan.md",
+          "sha256": "1fb385c38f16215091fa8b63732f4e336f9470937eee7b59487aa6237f667f7b",
+          "lines": 19
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/thread_card_remove_preview/thread_card_remove_preview_step4_implementation_summary.md",
+          "sha256": "4f63b8db3e84a393f0630670af295efb2c3df1db2616de7a5d3a68210414bdb1",
+          "lines": 26
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "40ce2f04d40f7ff6e38913993c5777244ba7a325",
+          "subject": "feat(stage 1): hide thread card preview when it duplicates the title",
+          "files": [
+            "docs/plans/thread_card_remove_preview_step4_implementation_summary.md",
+            "templates/partials/thread_card.php"
+          ]
+        },
+        {
+          "commit": "04d263334cc073660f7e49d58c203679daca6f4e",
+          "subject": "feat(stage 2): add test coverage for thread card preview dedupe",
+          "files": [
+            "docs/plans/thread_card_remove_preview_step4_implementation_summary.md",
+            "tests/LocalAppSmokeTest.php"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 3
+    },
+    {
+      "name": "mitrapclub_about_copy",
+      "proposed_score": 0.2,
+      "planned_stages": 2,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/mitrapclub_about_copy/mitrapclub_about_copy_step2_feature_description.md",
+          "sha256": "b82b78493e4d709ea8ea557477b8c1814d42c2dd957ea016cca4a681d9f95e80",
+          "lines": 55
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/mitrapclub_about_copy/mitrapclub_about_copy_step3_development_plan.md",
+          "sha256": "8b1f7abb70e74520d57338fa40fbea3964762afe9f06221043df5114531ba8fc",
+          "lines": 52
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/mitrapclub_about_copy/mitrapclub_about_copy_step4_implementation_summary.md",
+          "sha256": "a972ce3c58e59064045f9049c88079f4774ad3be9830a25e50d4b47f0e15d3d7",
+          "lines": 23
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "5785d828a23705775457d5457ab21eba06b5037b",
+          "subject": "feat(stage 1): add per-profile about-page intro and section content",
+          "files": [
+            "docs/plans/mitrapclub_about_copy_step4_implementation_summary.md",
+            "src/ForumRewrite/ProfilePresentationContent.php"
+          ]
+        },
+        {
+          "commit": "b4f11535c3222f166d32511cc6f6e7f2b95c92ba",
+          "subject": "feat(stage 2): switch about-page sections to per-profile content",
+          "files": [
+            "docs/plans/mitrapclub_about_copy_step4_implementation_summary.md",
+            "templates/pages/about.php"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 3
+    },
+    {
+      "name": "qdb_numeric_permalinks",
+      "proposed_score": 0.25,
+      "planned_stages": 2,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_numeric_permalinks/qdb_numeric_permalinks_step2_feature_description.md",
+          "sha256": "b7c9fb812987095f8774fc3293683daee1fa81b16d999dfb3af22d822676bcb3",
+          "lines": 103
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_numeric_permalinks/qdb_numeric_permalinks_step3_development_plan.md",
+          "sha256": "b7c8dd10afc55f63fac1b2424ff059c4e71ebc3739bb7f0ba839e07afa79bf7e",
+          "lines": 92
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_numeric_permalinks/qdb_numeric_permalinks_step4_implementation_summary.md",
+          "sha256": "daecc0fd7e8380e9228f1e1c5d57714cf88a979b18b427dec49d5b5ca4b6bf29",
+          "lines": 79
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "fae0c63fec66bd96922ab6197c50c2bac46a34b7",
+          "subject": "feat(stage 1): resolve bare numeric paths to qdb quote permalinks",
+          "files": [
+            "docs/plans/qdb_numeric_permalinks_step4_implementation_summary.md",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/ReadModel/ThreadRepository.php",
+            "tests/QuoteCardDisplayNumberTest.php"
+          ]
+        },
+        {
+          "commit": "3bc6044517262b2296a5c3dad0a88c1f1392e38b",
+          "subject": "feat(stage 2): link qdb quote cards to the short numeric permalink",
+          "files": [
+            "docs/plans/qdb_numeric_permalinks_step4_implementation_summary.md",
+            "templates/partials/quote_card.php",
+            "tests/QuoteCardDisplayNumberTest.php"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 5
+    },
+    {
+      "name": "qdb_score_display_emphasis",
+      "proposed_score": 0.3,
+      "planned_stages": 3,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_score_display_emphasis/qdb_score_display_emphasis_step2_feature_description.md",
+          "sha256": "e654fd229a86481b8fec9ad039cd69e723f5ffd4e2e49bd67fbfcfba68973a69",
+          "lines": 85
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_score_display_emphasis/qdb_score_display_emphasis_step3_development_plan.md",
+          "sha256": "4c604768107131760b34c3d4d14a478c95d01bcc7870f562154748fc55d0d2c4",
+          "lines": 86
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/qdb_score_display_emphasis/qdb_score_display_emphasis_step4_implementation_summary.md",
+          "sha256": "65be075ba3f11421d3ae43d57544a6a2a2df93ededa2c3c931863b07dbeeb349",
+          "lines": 59
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "f3f0bb1739b146f02871ee4b6f2125aaf6abd06a",
+          "subject": "feat(stage 1): emphasize qdb score values",
+          "files": [
+            "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md",
+            "public/assets/theme-qdb.css",
+            "templates/partials/quote_card.php",
+            "templates/partials/thread_root_card.php"
+          ]
+        },
+        {
+          "commit": "31564ab4046e583a858f30227dc2458cd8420876",
+          "subject": "feat(stage 2): preserve qdb score refresh structure",
+          "files": [
+            "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md",
+            "public/assets/thread_reactions.js"
+          ]
+        },
+        {
+          "commit": "59ff6bf771fd7d7719349c4068f824cd103aa16f",
+          "subject": "test(stage 3): cover qdb score emphasis",
+          "files": [
+            "docs/plans/qdb_score_display_emphasis_step4_implementation_summary.md",
+            "templates/partials/quote_card.php",
+            "templates/partials/thread_root_card.php",
+            "tests/BrowserSigningNormalizationTest.php",
+            "tests/QuoteCardDisplayNumberTest.php"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 7
+    },
+    {
+      "name": "toolbar_identity_status",
+      "proposed_score": 0.35,
+      "planned_stages": 4,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/toolbar_identity_status/toolbar_identity_status_step2_feature_description.md",
+          "sha256": "08b4a49fe17ac28a9be2b688ac4efa0ed59185fee3b97679ea95096e59fae946",
+          "lines": 38
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/toolbar_identity_status/toolbar_identity_status_step3_development_plan.md",
+          "sha256": "d0bfdc024d790a87f92a8c12b4244eebdc3c5d618a821758ee87ba49fcfad534",
+          "lines": 58
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/toolbar_identity_status/toolbar_identity_status_step4_implementation_summary.md",
+          "sha256": "b6f8d63dcd7689cf5fc6ec7f29d669b11b7e2b9a2404cf4acda99cd7794e061c",
+          "lines": 55
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "31d3038872f1deb71729c71b9cf0284ad95c9669",
+          "subject": "feat(stage 1): inject viewer identity status into Forte page data",
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Http/ForteBoardController.php",
+            "src/ForumRewrite/Http/RouteServices.php",
+            "tests/LocalAppSmokeTest.php"
+          ]
+        },
+        {
+          "commit": "bbd324e974786ca43f6fd8c4819be299a22dbec9",
+          "subject": "feat(stage 2): render identity status badge in Forte toolbar",
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md",
+            "public/assets/forte.css",
+            "templates/partials/paned_toolbar.php"
+          ]
+        },
+        {
+          "commit": "20f44bb1dc7af0aac8942a9202303b279b0ee7f8",
+          "subject": "feat(stage 3): correct toolbar identity badge from local keypair state",
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md",
+            "public/assets/toolbar_identity_status.js",
+            "src/ForumRewrite/Http/ForteActivityController.php",
+            "src/ForumRewrite/Http/ForteBoardController.php",
+            "src/ForumRewrite/Http/ForteUserDirectoryController.php"
+          ]
+        },
+        {
+          "commit": "e2f27c5b10400a9cf51db3cf6169cf1bb040123e",
+          "subject": "feat(stage 4): keep toolbar identity badge live across tabs",
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md",
+            "public/assets/toolbar_identity_status.js"
+          ]
+        },
+        {
+          "commit": "d3d4fc98197d8924e30caee9186fc37ad59bbf05",
+          "subject": "style: restyle toolbar identity indicator as an icon link",
+          "files": [
+            "docs/plans/toolbar_identity_status_step4_implementation_summary.md",
+            "public/assets/forte.css",
+            "public/assets/toolbar_identity_status.js",
+            "templates/partials/paned_toolbar.php"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 10
+    },
+    {
+      "name": "startup_dependency_recovery",
+      "proposed_score": 1.0,
+      "planned_stages": 5,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/startup_dependency_recovery/startup_dependency_recovery_step2_feature_description.md",
+          "sha256": "9971ebb7f209af881accf271589c43c463a9b472f527013cfbfb6a53b6526778",
+          "lines": 52
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/startup_dependency_recovery/startup_dependency_recovery_step3_development_plan.md",
+          "sha256": "783f3847d97707e55e8982bba6c3e7a78c502ad306e8fa56515b6d515cb6716c",
+          "lines": 55
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+          "sha256": "1b7deb3d5067375708dc0129fd2d4825576110b516c63a2c33ed3db873cdda07",
+          "lines": 36
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "f20b1a6d30ef62bd07a5c401bca7859abd0a4103",
+          "subject": "feat(stage 1): provide runtime-specific dependency recovery guidance",
+          "files": [
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+            "scripts/check_local_server_dependencies.php",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "scripts/php_setup_guidance.sh",
+            "tests/local_server_dependency_runtime_test.py",
+            "tests/missing_php_startup_test.sh"
+          ]
+        },
+        {
+          "commit": "f20d9ff932970c43edac2307f973d39d65273e3b",
+          "subject": "feat(stage 2): support confirmed dependency installation on Ubuntu 22.04",
+          "files": [
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+            "scripts/local_server_dependency_install.sh",
+            "tests/local_server_dependency_install_integration_test.py",
+            "tests/local_server_dependency_install_test.sh",
+            "v3"
+          ]
+        },
+        {
+          "commit": "411bfab6693eee296df05265a9ba2355a5dea60c",
+          "subject": "feat(stage 3): recover missing dependencies and resume terminal startup",
+          "files": [
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "tests/startup_dependency_recovery_integration_test.py",
+            "v3"
+          ]
+        },
+        {
+          "commit": "a04444197cb78065c79f985092947b32a9cd2b02",
+          "subject": "fix(stage 4): enforce cancellation and failed startup recovery boundaries",
+          "files": [
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "scripts/php_setup_guidance.sh",
+            "tests/local_server_dependency_install_confirmation_test.py",
+            "tests/local_server_dependency_install_integration_test.py",
+            "tests/startup_dependency_recovery_failure_test.py",
+            "tests/startup_dependency_recovery_integration_test.py"
+          ]
+        },
+        {
+          "commit": "097ff5a6e75484993c9385bf4898077ee49d5fa8",
+          "subject": "feat(stage 5): verify and document complete startup dependency recovery",
+          "files": [
+            "README.md",
+            "docs/plans/README.md",
+            "docs/plans/local_server_dependency_recovery_checklist.md",
+            "docs/plans/startup_dependency_recovery/acceptance_evidence.json",
+            "docs/plans/startup_dependency_recovery/acceptance_evidence.md",
+            "docs/plans/startup_dependency_recovery/startup_dependency_recovery_step4_implementation_summary.md",
+            "docs/reference/v3_cli.md",
+            "scripts/local_server_dependencies.sh",
+            "scripts/local_server_dependency_install.sh",
+            "scripts/php_setup_guidance.sh",
+            "tests/local_server_dependency_checks_test.sh",
+            "tests/local_server_dependency_install_confirmation_test.py",
+            "tests/startup_dependency_recovery_manual_test.py",
+            "v3"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 21
+    },
+    {
+      "name": "private_message_history_sync",
+      "proposed_score": 1.2,
+      "planned_stages": 8,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+          "sha256": "21481b1a929908125c501b46e6f0e850cfdf38126d226ace7dba22ce9ae48265",
+          "lines": 54
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+          "sha256": "74a30f4445b3a792311a4577e52834cc547d3386a0c101ec603d6482119ff505",
+          "lines": 101
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+          "sha256": "fa8b04dacca3720d837f910be7d78da9b7499bbec02b69d2eec68f8e5055ca53",
+          "lines": 73
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "8ab040a20b1646267eeacbb4af90082fedb26426",
+          "subject": "feat(stage 1): validate encrypted history session-key transfers",
+          "files": [
+            "docs/plans/README.md",
+            "docs/plans/instance_portability_gap_assessment.md",
+            "docs/plans/private_message_history_sync/evidence/lock_probe_results.json",
+            "docs/plans/private_message_history_sync/evidence/storage_challenge_assessment.json",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step1_solution_assessment.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_storage_findings.md",
+            "docs/plans/private_messaging_usability_master_checklist.md",
+            "public/assets/private_message_history_crypto.js",
+            "tests/PrivateMessageHistoryCryptoTest.php",
+            "tests/browser/private_message_history_crypto.cjs",
+            "tests/run.php"
+          ]
+        },
+        {
+          "commit": "6c6d677e4355822a5b18c153a42d239f0b9473f8",
+          "subject": "feat(stage 2): discover bounded history work in separate private storage",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncDatabaseConfig.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+            "src/ForumRewrite/Messaging/PrivateMessageStore.php",
+            "src/ForumRewrite/Support/PrivateConfigSchema.php",
+            "tests/PrivateMessageHistorySyncTest.php",
+            "tests/run.php"
+          ]
+        },
+        {
+          "commit": "43fdf56c99114f56fedf5630a4c355cf989f3295",
+          "subject": "feat(stage 3): retain authenticated history transfers and target receipts",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "src/ForumRewrite/Http/PrivateMessageHistorySyncController.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncService.php",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+            "tests/PrivateMessageHistorySyncTest.php"
+          ]
+        },
+        {
+          "commit": "af7b956ba0a31f438a4b33553cce1070839d5088",
+          "subject": "feat(stage 4): contribute encrypted history on authenticated visits",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "public/assets/private_message_history_sync.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "tests/PrivateMessageHistoryCryptoTest.php",
+            "tests/PrivateMessageReleaseIsolationTest.php",
+            "tests/browser/private_message_history_donor.cjs"
+          ]
+        },
+        {
+          "commit": "acf4b50167a57a81af47ac6d01b9c477d441f826",
+          "subject": "feat(stage 5): restore original messages through the shared reader",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "public/assets/private_message_history_sync.js",
+            "public/assets/private_message_list.js",
+            "public/assets/private_message_reader.js",
+            "tests/PrivateMessageHistoryCryptoTest.php",
+            "tests/browser/private_message_history_reader.cjs"
+          ]
+        },
+        {
+          "commit": "752e1114392a551508c9d0554074c6834b827442",
+          "subject": "feat(stage 6): reconcile partial donors and interrupted history sync",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "public/assets/private_message_history_sync.js",
+            "src/ForumRewrite/Messaging/PrivateMessageHistorySyncStore.php",
+            "tests/PrivateMessageHistorySyncTest.php",
+            "tests/browser/private_message_history_donor.cjs"
+          ]
+        },
+        {
+          "commit": "5e2299c2ef480732776c7ee9e9e0b047585ea973",
+          "subject": "feat(stage 7): show history recovery status and preserve reading state",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "public/assets/private_message_conversation.js",
+            "public/assets/private_message_history_status.js",
+            "public/assets/private_message_list.js",
+            "public/assets/private_message_reader.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/pages/private_message_conversation.php",
+            "templates/pages/private_message_list.php",
+            "templates/partials/private_message_history_status.php",
+            "tests/PrivateMessageReleaseIsolationTest.php",
+            "tests/browser/private_message_list_browser.mjs",
+            "tests/browser/private_message_seen_recovery.mjs",
+            "tests/browser/private_message_unavailable.mjs"
+          ]
+        },
+        {
+          "commit": "39219b48a87f608d1c6003d7c8ed7823b57c7985",
+          "subject": "test(stage 8): verify approved-device history recovery and private storage operations",
+          "files": [
+            "docs/plans/instance_portability_gap_assessment.md",
+            "docs/plans/private_message_history_sync/evidence/browser_journey_results.json",
+            "docs/plans/private_message_history_sync/evidence/release_verification_results.json",
+            "docs/plans/private_message_history_sync/private_message_history_sync_rollout.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "docs/plans/private_messaging_usability_master_checklist.md",
+            "docs/runbooks/production_deploy.md",
+            "src/ForumRewrite/Http/ApiTextController.php",
+            "tests/PrivateMessageReleaseIsolationTest.php",
+            "tests/Support/private_message_history_sync_fixture.php",
+            "tests/browser/private_message_history_sync_browser.mjs"
+          ]
+        },
+        {
+          "commit": "ed36a0696481c00ef523b3c443cfdf284ebe3b6f",
+          "subject": "fix: remove global private history sync messaging",
+          "files": [
+            "docs/plans/private_message_history_sync/private_message_history_sync_rollout.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step2_feature_description.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step3_development_plan.md",
+            "docs/plans/private_message_history_sync/private_message_history_sync_step4_implementation_summary.md",
+            "public/assets/private_message_history_status.js",
+            "public/assets/private_message_list.js",
+            "public/assets/private_message_reader.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/pages/private_message_conversation.php",
+            "templates/pages/private_message_list.php",
+            "templates/partials/private_message_history_status.php",
+            "tests/PrivateMessageReleaseIsolationTest.php",
+            "tests/browser/private_message_history_sync_browser.mjs",
+            "tests/browser/private_message_list_browser.mjs"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 44
+    },
+    {
+      "name": "image_content",
+      "proposed_score": 1.2,
+      "planned_stages": 8,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/image_content/image_content_step2_feature_description.md",
+          "sha256": "21539c5a2566c622a66003da5b08170a418a312d815ffdcc0a6564f353e424ea",
+          "lines": 50
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/image_content/image_content_step3_development_plan.md",
+          "sha256": "36cad660f35ed640c59b5a68e17dca2ef144f4eb0b991192a558adf41c83a017",
+          "lines": 77
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/image_content/image_content_step4_implementation_summary.md",
+          "sha256": "644205687bf24d0588536a917785c731ea4581d41ea22a4195c1dbe756fbfe09",
+          "lines": 50
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "3f5f16cbb14c48b709ea921b36235fe12525db41",
+          "subject": "feat(images): add portable references private store and flag",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "docs/specs/canonical_post_record_v1.md",
+            "src/ForumRewrite/Images/ImageReference.php",
+            "src/ForumRewrite/Images/ImageStore.php",
+            "src/ForumRewrite/Support/FeatureFlags/FeatureFlagRegistry.php",
+            "tests/FeatureFlagEvaluatorTest.php",
+            "tests/ImageContentTest.php",
+            "tests/run.php"
+          ]
+        },
+        {
+          "commit": "b7a70493e49c36d600e6a6bb01f9a7b302c8fac9",
+          "subject": "feat(images): bind attachments to verified signed publication",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+            "src/ForumRewrite/Write/LocalWriteService.php",
+            "tests/WriteApiSmokeTest.php"
+          ]
+        },
+        {
+          "commit": "dd80b84ce19344b130d02d2d9ce20ef8ebd771fb",
+          "subject": "feat(images): add shared signed image compose flow",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "public/assets/browser_signing.js",
+            "public/assets/lazy_compose_signing.js",
+            "public/assets/outbox_compose.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/partials/image_compose_fields.php",
+            "templates/partials/reply_form.php",
+            "templates/partials/thread_compose_form.php",
+            "tests/browser/image_compose_transport.cjs"
+          ]
+        },
+        {
+          "commit": "0618e6459afbf751b711984b1f52fc900a2d458c",
+          "subject": "feat(images): protect image delivery and gate generated rendering",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "public/.htaccess",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Host/FrontController.php",
+            "src/ForumRewrite/Http/ImageController.php",
+            "src/ForumRewrite/View/MediaEmbedRenderer.php",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/layout.php",
+            "tests/ImageContentTest.php",
+            "tests/LocalAppSmokeTest.php",
+            "tests/WebServerRoutingTest.php",
+            "tests/WriteApiSmokeTest.php"
+          ]
+        },
+        {
+          "commit": "b6823a516d1ccbaa52faa73033bf7d1d1570b923",
+          "subject": "feat(images): export complete revision-bound backup pairs",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "src/ForumRewrite/Application.php",
+            "src/ForumRewrite/Http/InstancePageController.php",
+            "src/ForumRewrite/Images/ImageBackup.php",
+            "templates/pages/instance.php",
+            "tests/ImageContentTest.php"
+          ]
+        },
+        {
+          "commit": "c804f199b4f68dba19f176e7cadd653762bcafaf",
+          "subject": "feat(images): verify and restore portable image backup pairs",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "docs/reference/v3_cli.md",
+            "docs/runbooks/image_backup.md",
+            "scripts/restore_images.php",
+            "src/ForumRewrite/Images/ImageRestore.php",
+            "tests/ImageContentTest.php",
+            "v3"
+          ]
+        },
+        {
+          "commit": "0a4ce8c8c357614ef27de052bca7e50598a3ba43",
+          "subject": "feat(images): explain media availability across imports and offline views",
+          "files": [
+            "README.md",
+            "docs/examples/env.production.example",
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "docs/runbooks/production_deploy.md",
+            "public/assets/offline_reader.js",
+            "scripts/import_instance.php",
+            "scripts/import_repository_archive.php",
+            "src/ForumRewrite/Http/ApiTextController.php",
+            "src/ForumRewrite/Http/RssFeed.php",
+            "src/ForumRewrite/Import/ContentImportRunner.php",
+            "templates/pages/offline_reader.php",
+            "templates/pages/sqlite_viewer.php",
+            "tests/OfflineSnapshotPresentationTest.php"
+          ]
+        },
+        {
+          "commit": "1e6ee048670566f53bff97d452c2e39cb05cab79",
+          "subject": "test(images): verify browser publication backup recovery and Apache gates",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "public/assets/browser_signing.js",
+            "src/ForumRewrite/Http/WritePostAndIdentityApiController.php",
+            "src/ForumRewrite/Images/ImageStore.php",
+            "src/ForumRewrite/Write/LocalWriteService.php",
+            "templates/standalone_layout.php",
+            "tests/ImageContentTest.php",
+            "tests/Support/image_browser_fixture.php",
+            "tests/Support/image_browser_router.php",
+            "tests/browser/image_compose_transport.cjs",
+            "tests/browser/image_content_browser.mjs",
+            "tests/image_content_apache_test.py"
+          ]
+        },
+        {
+          "commit": "f84fb41f5812e444dccd8d698dc91763a736e8aa",
+          "subject": "fix(images): make attachment descriptions optional",
+          "files": [
+            "docs/plans/image_content/image_content_step4_implementation_summary.md",
+            "docs/runbooks/image_backup.md",
+            "docs/specs/canonical_post_record_v1.md",
+            "public/assets/browser_signing.js",
+            "public/assets/offline_reader.js",
+            "src/ForumRewrite/Images/ImageReference.php",
+            "src/ForumRewrite/View/MediaEmbedRenderer.php",
+            "templates/partials/image_compose_fields.php",
+            "tests/ImageContentTest.php",
+            "tests/browser/image_compose_transport.cjs",
+            "tests/browser/image_content_browser.mjs"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 52
+    },
+    {
+      "name": "compose_thread_declutter",
+      "proposed_score": 1.1,
+      "planned_stages": 7,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/compose_thread_declutter/compose_thread_declutter_step2_feature_description.md",
+          "sha256": "cc9bb022447a096d460286a53691e35b82ac6d4e884fcbd79688448eb9019eed",
+          "lines": 50
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/compose_thread_declutter/compose_thread_declutter_step3_development_plan.md",
+          "sha256": "bafc2f88723c26f474329540c2509b1826d58c7f8cc0e4dc228da0b69a3b9feb",
+          "lines": 88
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+          "sha256": "c197e9eaba0f0b8c13c0ce69acff5dac9d26316d5b12cbb0629f2c6a2017823e",
+          "lines": 101
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "439314d0fb9e8b3361c20ccbc7e92967729ac9f0",
+          "subject": "feat(stage 1): trim compose thread header and intro",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "templates/pages/compose_thread.php",
+            "tests/Support/ProfileRegressionContract.php"
+          ]
+        },
+        {
+          "commit": "9936523158d44de746b75d0b94c943a25b836140",
+          "subject": "feat(stage 2): collapse tags and subject under the body",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose.css",
+            "templates/partials/thread_compose_form.php",
+            "tests/LocalAppSmokeTest.php"
+          ]
+        },
+        {
+          "commit": "4275936dfed6036e5be6c106dd02cead57ecdc45",
+          "subject": "feat(stage 3): collapse event fields into an expando",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "templates/partials/thread_compose_form.php",
+            "tests/LocalAppSmokeTest.php"
+          ]
+        },
+        {
+          "commit": "c2cfabe71aa4dd7d104c86ecec05aa71895a7017",
+          "subject": "feat(stage 4): auto-open and summarize compose expandos",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose_disclosure.js",
+            "src/ForumRewrite/View/TemplateRenderer.php",
+            "templates/layout.php",
+            "tests/LocalAppSmokeTest.php",
+            "tests/browser/compose_disclosure.mjs"
+          ]
+        },
+        {
+          "commit": "eb4e961f4b4f54266d88929231f2f8d5827cd274",
+          "subject": "feat(stage 5): compact image widget and remove optional labels",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose.css",
+            "public/assets/image_upload.js",
+            "templates/pages/compose_thread.php",
+            "templates/partials/image_compose_fields.php",
+            "templates/partials/thread_compose_form.php",
+            "tests/browser/image_content_browser.mjs"
+          ]
+        },
+        {
+          "commit": "bf668ed42160a1760c15a369db9a657da67a64bb",
+          "subject": "feat(stage 6): move secondary compose actions into a ... menu",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose.css",
+            "public/assets/compose_disclosure.js",
+            "templates/partials/thread_compose_form.php",
+            "tests/LocalAppSmokeTest.php",
+            "tests/browser/compose_disclosure.mjs",
+            "tests/browser/image_content_browser.mjs"
+          ]
+        },
+        {
+          "commit": "ebda5135b89ecb8b932ce09dffa32993c22d86ee",
+          "subject": "feat(stage 7): verify compose surfaces and move outbox action into menu",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose.css",
+            "public/assets/outbox_compose.js",
+            "todo.txt"
+          ]
+        },
+        {
+          "commit": "b2480422902b9159a11f28a33ad16fb02d37b916",
+          "subject": "fix: keep the ... menu last in compose action rows",
+          "files": [
+            "docs/plans/compose_thread_declutter/compose_thread_declutter_step4_implementation_summary.md",
+            "public/assets/compose.css"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 15
+    },
+    {
+      "name": "local_server_dependency_install",
+      "proposed_score": 0.9,
+      "planned_stages": 5,
+      "sources": [
+        {
+          "path": "/home/wsl/v3/docs/plans/local_server_dependency_install/local_server_dependency_install_step2_feature_description.md",
+          "sha256": "01a4f555925ef7904979d1614b1061a77e183bc55e11aed3c705e48c554214ac",
+          "lines": 50
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/local_server_dependency_install/local_server_dependency_install_step3_development_plan.md",
+          "sha256": "bbb7a68c260909112de4a11a3c6c8da3f28d5782a9c7fb0b93a8c23a080376db",
+          "lines": 55
+        },
+        {
+          "path": "/home/wsl/v3/docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+          "sha256": "12f63dadaa07aab975bba145ef77c261a07dcc195468e7a45d5b447c0ebc23d2",
+          "lines": 67
+        }
+      ],
+      "reviewed_stage_and_followup_commits": [
+        {
+          "commit": "f58f25e9cd01bb8bf5b437be4536a177c92445ad",
+          "subject": "feat(stage 1): review verified local dependency package batches",
+          "files": [
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "scripts/check_local_server_dependencies.php",
+            "scripts/local_server_dependency_install.sh",
+            "tests/local_server_dependency_install_test.sh",
+            "v3"
+          ]
+        },
+        {
+          "commit": "e266a5bb9287be1018c49aa9155605920e0f9923",
+          "subject": "feat(stage 2): confirm install and recheck required dependencies",
+          "files": [
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "scripts/local_server_dependency_install.sh",
+            "tests/local_server_dependency_install_test.sh"
+          ]
+        },
+        {
+          "commit": "1b1d80e51f0c3b16fe4d153fffcf21a0e6beab0e",
+          "subject": "feat(stage 3): select optional packages and report interrupted recovery",
+          "files": [
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "scripts/local_server_dependency_install.sh",
+            "tests/local_server_dependency_install_test.sh"
+          ]
+        },
+        {
+          "commit": "9fc56c4980db8e7f4183a3249b0a01af87cd9f0f",
+          "subject": "test(stage 4): prove disposable dependency installation and server recovery",
+          "files": [
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_test_evidence.json",
+            "scripts/local_server_dependency_install.sh",
+            "tests/local_server_dependency_install_confirmation_test.py",
+            "tests/local_server_dependency_install_integration_test.py",
+            "tests/local_server_dependency_install_test.sh"
+          ]
+        },
+        {
+          "commit": "f9a30c78bfe3857b7002bdd2383aca87c4761bf8",
+          "subject": "docs(stage 5): publish dependency installation recovery and evidence",
+          "files": [
+            "README.md",
+            "docs/plans/README.md",
+            "docs/plans/dependency_fallback_checklist.md",
+            "docs/plans/local_server_dependency_install/local_server_dependency_install_step4_implementation_summary.md",
+            "docs/plans/local_server_dependency_install/local_server_dependency_platform_support_checklist.md",
+            "docs/reference/v3_cli.md",
+            "scripts/local_server_dependencies.sh",
+            "v3"
+          ]
+        }
+      ],
+      "unique_files_across_these_commits": 14
+    }
+  ],
+  "supporting_sources": [
+    {
+      "path": "/home/wsl/v3/docs/plans/startup_dependency_recovery/acceptance_evidence.md",
+      "sha256": "187a1a63e00119d10ace11badcb7826eab0ff503c3c110f66d0320ac8b56ff72",
+      "lines": 87
+    },
+    {
+      "path": "/home/wsl/v3/docs/plans/private_message_history_sync/evidence/release_verification_results.json",
+      "sha256": "4936095aa3e4f2e1d55f69d5aa4cade692d1a2396c0c22d38b11ca5229b46e4c",
+      "lines": 41
+    },
+    {
+      "path": "/home/wsl/v3/docs/plans/local_server_dependency_recovery_railspike_failure_report.md",
+      "sha256": "ec2d691c9e65664dd863a089d5ebdc1ed1e9a1d974c8af5465370a8c38dca94a",
+      "lines": 95
+    },
+    {
+      "path": "/home/wsl/v3/docs/plans/local_server_dependency_install/local_server_dependency_install_debug_log.md",
+      "sha256": "abf5f4354d4b54832b5cb8659740aed95b6ca3f51cd0704445155bf427dd243c",
+      "lines": 130
+    },
+    {
+      "path": "/home/wsl/railspike/RAILSPIKE.md",
+      "sha256": "8dd25deeb39d6c8c9fee84c0b9e65c2486861d570d32867ac1604f85588f2d15",
+      "lines": 167
+    },
+    {
+      "path": "inbox/railspike_effort_estimation_handoff.txt",
+      "sha256": "303a2d88e6aabfc7ce1dc2b4ccaf6b3d85b28fdae62d6807567d0d469f911593",
+      "lines": 61
+    },
+    {
+      "path": "/home/wsl/agent/v3-codex-3/docs/plans/zenmemes_meta_feedback_summary.md",
+      "sha256": "ef335604ecd5b51e5c04067d88e4d6f01cb4fdb21b8f4d7dba7b5b90e4012bfc",
+      "lines": 120
+    }
+  ],
+  "supporting_source_scope": "Dependency installer debug log reviewed through targeted excerpts; remaining supporting sources read for report claims. Commit manifests establish changed file scope, not runtime execution."
+}
