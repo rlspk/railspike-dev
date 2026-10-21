@@ -1,0 +1,215 @@
+{
+  "captured_at_utc": "2026-10-21T17:55:53.674555+00:00",
+  "roots": [
+    {
+      "root": "/home/wsl/v3",
+      "head": "e690c0d2fa4a892b6e68b5925125c6e9ff7172f5",
+      "branch": "feat/reply-composer-focus-layout",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    },
+    {
+      "root": "/home/wsl/agent/v3-claude",
+      "head": "269b44ac310f0f844771148c8ff891b216b9e03b",
+      "branch": "main",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    },
+    {
+      "root": "/home/wsl/agent/v3-claude-2",
+      "head": "f1deed8706c304a714d1d3f32eaff444793e3585",
+      "branch": "feat/agent-api-docs",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex",
+      "head": "957e786ae7805bb4c92671b20ee5c53d1cab3938",
+      "branch": "feature/markdown-dependency-removal",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex-2",
+      "head": "8f5f0e928344019c358d53aa9a79244e14c92229",
+      "branch": "feature/high-traffic-mode",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex-3",
+      "head": "e192cfa3e31c8d6929b9d26ea1257623bbfef6ac",
+      "branch": "feature/same-author-collapse-toggle",
+      "sources": [
+        {
+          "path": "docs/plans/effort_estimation_trial.md",
+          "sha256": "e750e9068729a592ec0bd962301e3254a2d42c019aaa405aca2860265b4b5ec7"
+        },
+        {
+          "path": "docs/plans/effort_estimation_trial_maintainer_checklist.md",
+          "sha256": "2252813d79192cda09fd1db64f1acf6f35ebcf9104a1c915c24f41ba530465ec"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_debug_log.md",
+          "sha256": "d5574adfd71d24dec9a36f58925b907cda96fc84b1f90ce51f6645a2625eba59"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step1_solution_assessment.md",
+          "sha256": "528679706c2f561e1202a68d0ccf069cf7a000aa6d2d3060ae43074105e51334"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step2_feature_description.md",
+          "sha256": "81bf6baacaea5a7a30d6899a5ddb182ae90346898b259158674bf79559bf1486"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step3_development_plan.md",
+          "sha256": "c76556450ed013c04337540e19b96b80f73c1494c0b1be808e1adbd962cec744"
+        },
+        {
+          "path": "docs/plans/fastmod_rubric_actions/fastmod_rubric_actions_step4_implementation_summary.md",
+          "sha256": "0dae3ad0113b66b749f120dd447efdb069c39f5a0a79d8349dd8f6a58b45984a"
+        }
+      ]
+    }
+  ]
+}
