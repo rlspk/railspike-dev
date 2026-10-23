@@ -103,5 +103,125 @@
   "product_installations_changed": false,
   "host_branches_switched": false,
   "host_commits_created": false,
-  "application_files_written": false
+  "application_files_written": false,
+  "final_verification": {
+    "recorded_at_utc": "2026-10-23T17:48:00.644267+00:00",
+    "host_results": [
+      {
+        "root": "/home/wsl/v3",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-claude",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-claude-2",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-2",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-3",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-4",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/v3-test-kris",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      }
+    ],
+    "relocated_hosts_passed": 8,
+    "missing_or_tampered_source_checks_passed": 48,
+    "method": "Disposable relocated copies containing only the host ledger, three snapshots and manifest; verifier uses no Git, original paths or network."
+  }
 }

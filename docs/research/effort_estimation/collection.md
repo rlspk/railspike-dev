@@ -10,6 +10,8 @@ Keep canonical snapshots in each feature's existing artifacts and index them bel
 
 The v3 ledger remains at `docs/plans/effort_estimation_trial.md` in that project. Its records and this project's records belong to the same study, indexed by project/cycle identity. Integrate changes through normal Git review; compare cycle/checkpoint and content identity before aggregating. No background synchronization or upload is configured. A future review must rescan all available worktrees and retain conflicting revisions, rather than treating clones as extra trials. Six accepted outcomes are a review checkpoint, not a collection limit.
 
+Recovered R1 sources are retained locally with [portable provenance](./references/R1/manifest.json): [calibration report](./references/R1/calibration-report.txt), [implementation diff review](./references/R1/implementation-diff-review.txt), and [historical feedback](./references/R1/user-feedback.txt). All three hashes match the original R1 identities. The eight v3 host ledgers now use equivalent host-local copies; earlier missing checkpoints remain historical. [Per-host recovery and relocated-copy verification](./2026-10-23-reference-recovery-verification.json).
+
 ## Dataset index
 
 | Project / record | Source | Status |
@@ -18,5 +20,7 @@ The v3 ledger remains at `docs/plans/effort_estimation_trial.md` in that project
 | v3 / E01–E06 | `~/v3/docs/plans/effort_estimation_trial.md`, mirrored in `~/agent/v3-*` | Six proposals; no cycle outcomes |
 | v3 / E07 | Same ledger; `docs/plans/fastmod_rubric_actions/` | Reduced v3 technically complete; 0.85 projection, 0.90 retrospective; maintainer acceptance pending |
 | Collection administration | [2026-10-21 review](./2026-10-21-review.md) | Protocol/product integration, not an independently observed trial outcome |
+
+| `railspike/frozen_reference_recovery` | [Scope and snapshots](../../plans/frozen_reference_recovery/frozen_reference_recovery_step2_feature_description.md), [implementation](../../plans/frozen_reference_recovery/frozen_reference_recovery_step4_implementation_summary.md), [verification](./2026-10-23-reference-recovery-verification.json) | R1/P2 v1; 0.65 projected / 0.65 retrospective, not measured labor; three stages technically complete, eight hosts repaired; direct maintenance authorized; maintainer comfortable-fit/acceptance pending |
 
 Append one row per new development cycle with links to canonical snapshots; retain abandoned/replaced records. Keep this index within the cycle's documentation scope, respecting the planning-commit allowance and closeout cadence. Earlier source reports and frozen R1 bytes are preserved.
