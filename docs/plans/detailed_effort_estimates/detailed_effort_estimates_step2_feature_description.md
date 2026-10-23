@@ -1,4 +1,4 @@
-> **Feature plan:** [Step 1](./detailed_effort_estimates_step1_solution_assessment.md) · [Step 2](./detailed_effort_estimates_step2_feature_description.md) · [Step 3](./detailed_effort_estimates_step3_development_plan.md) · Step 4 (not yet started)
+> **Feature plan:** [Step 1](./detailed_effort_estimates_step1_solution_assessment.md) · [Step 2](./detailed_effort_estimates_step2_feature_description.md) · [Step 3](./detailed_effort_estimates_step3_development_plan.md) · [Step 4](./detailed_effort_estimates_step4_implementation_summary.md)
 
 Debug mode: enabled
 
