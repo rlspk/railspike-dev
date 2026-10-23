@@ -31,3 +31,10 @@ No stage is renumbered or reconstructed; material revisions will be appended bef
 - Verification: product links (15 files), development links (157 files with historical baseline), existing Git-workflow fixture, frozen source hashes, scoped-file and whitespace checks passed. Definitions reviewed against the approved scope; no R1 bytes or ordinary gates changed.
 - Stage estimate history, 2026-10-23T20:01:45.263742+00:00: original 0.15 [0.10–0.25] retained; unchanged total-stage estimate reaffirmed before completion; retrospective stage-work assessment **0.15**, separate from the projection and not measured time. No material revision or new scope. Whole-cycle total **0.60 reaffirmed**.
 - Notes: product commit `2116050ab6e176e0e64d2fdd9fa0d4abea3e8d8f`; three scoped Markdown files, zero dependencies. Application/runtime/UI, deployment, host upgrades and release checks inapplicable/excluded. Stage 2 remains pending.
+
+## Stage 2 - Option and planned-stage estimates
+
+- Changes: Step 1 requires every alternative’s whole-cycle estimate/driver/uncertainty only in enabled mode; Step 2 carries mode; Step 3 before/do/after restore mode, add the conditional stage-work field and check identities/shared ownership. Fictional guide examples cover different option outcomes, a freshly rated combination and two stages with owned shared checks.
+- Verification: product/development links and whitespace passed; six changed Markdown files are within scope. Reviewed mode-off omission, absence of new selection/approval prompts, separate recommended-option checkpoint, non-additive totals and shared overhead. Current templates retain their original fields when the extension is off.
+- Stage estimate history, 2026-10-23T20:03:04.411903+00:00: original 0.20 [0.10–0.30] retained; total-stage estimate unchanged; retrospective stage work **0.20**, not measured time. No material revision or scope change; whole-cycle total **0.60 reaffirmed**.
+- Notes: Stage 1 development commit `d33be39`; product Stage 2 commit `b6ebea2751e1aea668e65e080e281789e1f68fdd`. No new dependencies, runtime/UI/deployment or release claims; Step 4 execution hooks remain Stage 3.
