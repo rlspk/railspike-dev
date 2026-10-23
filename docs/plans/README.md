@@ -27,3 +27,5 @@
 - [Railspike slides polish](./railspike_slides_polish/railspike_slides_polish_step2_feature_description.md): follow-up cycle on the slide deck: opening promise, statement titles, a conclusion slide, sans-serif type, and a keynote voice; still unlinked and unpublished.
 
 - [Debug log process improvements](./debug_log_process_improvements/debug_log_process_improvements_step1_solution_assessment.md): turn recurring debug feedback into bounded changes; first cycle makes a known user's recovery an acceptance condition and requires honest completion reporting.
+
+- [Frozen reference recovery](./frozen_reference_recovery/frozen_reference_recovery_step2_feature_description.md): preserve exact R1 sources and repair portable host-ledger recovery.
