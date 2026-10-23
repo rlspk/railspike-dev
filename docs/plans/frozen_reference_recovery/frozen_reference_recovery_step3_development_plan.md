@@ -1,4 +1,4 @@
-> **Feature plan:** [Step 2](./frozen_reference_recovery_step2_feature_description.md) · [Step 3](./frozen_reference_recovery_step3_development_plan.md) · Step 4 (created after planning commit)
+> **Feature plan:** [Step 2](./frozen_reference_recovery_step2_feature_description.md) · [Step 3](./frozen_reference_recovery_step3_development_plan.md) · [Step 4](./frozen_reference_recovery_step4_implementation_summary.md)
 
 Debug mode: enabled
 
