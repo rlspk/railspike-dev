@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-10-23T20:26:13.833868+00:00",
+  "authorized_version": "v0.3.0-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.3.0-beta.1",
+  "release_id": 422278872,
+  "published_at_utc": "2026-10-23T20:25:28Z",
+  "prerelease": true,
+  "draft": false,
+  "product_branch": "feature/detailed-effort-estimates",
+  "product_commit": "c336536f88d1ce471b4f582a7d87203864f8526e",
+  "tag_object": "01c4e306c8dcb50f0d1beb9a91f2c17e6d0e67c2",
+  "tag_signed": false,
+  "stable_latest": "v0.1.0",
+  "default_branch": "main",
+  "default_branch_commit_unchanged": "579c0c13956be36c308e50df60b1849f9e213da6",
+  "release_body_matches_notes": true,
+  "public_evidence_branch": "release/v0.3.0-beta.1",
+  "public_evidence_head": "5cf849212756552984c887df5b59fc7243966c95",
+  "immutable_verification_commit": "6fdca80394086986283c28c346b56ba5c543e4aa",
+  "publication_method": "GitHub Releases REST API with prerelease=true, make_latest=false; exact annotated tag verified before creation. Local gh release create lacks --verify-tag and created no release.",
+  "host_installations_updated": false,
+  "main_merged": false
+}

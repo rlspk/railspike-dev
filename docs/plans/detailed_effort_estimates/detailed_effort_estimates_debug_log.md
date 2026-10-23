@@ -102,3 +102,7 @@ Application/runtime/UI, deployment, installation migration, host upgrades and re
 - Audit confirms one planning-only development commit followed by four stage commits, each with the summary; product has four corresponding commits. Product and development checkouts were clean before this log addition and are intended clean after its commit.
 - Original stage work 0.15/0.20/0.20/0.15 retained; retrospective stage work 0.15/0.20/0.25/0.15 is independently labeled. Neither sequence is a sum defining the cycle total. No material projection revisions were needed; all histories remain available.
 - Stage-level calibration, forecast accuracy and measured work time remain unknown. Maintainer comfortable-fit/study acceptance pending, accepted-outcome count unchanged. Optional extension is implemented locally; no published beta or downstream adoption is implied.
+
+## 2026-10-23T20:26:13.833868+00:00 Authorized publication administration
+
+User authorized a beta release and explicitly named `v0.3.0-beta.1`. Exact-candidate product links/Git fixture/whitespace and installation/migration fixture passed, as did published evidence reachability. The old gh release command rejected unsupported flags without creating a release; the documented GitHub Releases API was used after verifying the remote annotated tag/object/commit. Published pre-release and exact body read back successfully; stable Latest v0.1.0 and default main unchanged. No host writes or stage-score/acceptance changes. Publication record retains tag/source identities and actual timestamp.
