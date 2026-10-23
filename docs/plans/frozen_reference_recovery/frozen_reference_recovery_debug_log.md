@@ -72,3 +72,14 @@ Application/runtime/UI, deployment, installation migration, Git-history migratio
 - Product links (15 Markdown files), development links (152 files with unchanged historical baseline), README Git-workflow fixture, product/development whitespace and all eight scoped host-ledger whitespace checks passed.
 - Product branch is clean. Host ledger/reference changes remain uncommitted for their normal integration workflow. Earlier development research rows/files remain uncommitted and were not swept into this cycle's commits. No merge, push, tag, upload or release.
 - Study projected total 0.65 preserved; retrospective scope assessment 0.65 is not measured labor. Maintainer comfortable-fit/study acceptance remain pending; earlier missing checkpoints and guessed supplement are untouched. Active clones may continue unrelated work after this capture.
+
+## 2026-10-23T18:38:25.296655+00:00 Four-clone reconciliation follow-up
+
+User explicitly requested remedying the four remaining dirty clones. Canonical source commit `76c5852b7ea9c6cface68dff2e153c4976c199da` supplied the four reference documents. Each current branch received a documentation-only integration commit, without a broad main merge or branch switching. Isolated indexes and compare-and-swap branch updates kept unrelated staging and ledger entries out of those commits. Clone-specific original manifests are retained in the verification record; current manifests match the canonical bytes. Original recovery notices/timestamps remain intact.
+
+- `v3-claude`: `e95866a3bdaee72d83101769fbed929d7e94779f`.
+- `v3-claude-2`: `a2884009f2958ba67583a90617179363bf912226`.
+- `v3-codex`: `569820e4d5f54517fa5ddef9cba3bcb6d5d55b22`.
+- `v3-codex-2`: `366ed5e36b4f7db44823d00f3929073e439ec85e`.
+
+All twelve source hashes, local ledger routes, canonical manifest bytes and per-commit whitespace checks passed. No recovery-file changes remain pending in these four clones; any remaining ledger changes belong to other work and were preserved. No push, release or application test run. Source/reference meanings, scores, study acceptance and product instructions are unchanged.
