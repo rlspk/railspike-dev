@@ -46,3 +46,29 @@ No supported findings.
 ### Uncertain assessments
 
 Source-snapshot copies retain exact Markdown bytes under `.txt` filenames. This preserves hashes and makes them readable without pretending their old relative links form a newly maintained documentation tree. The manifest records original names and source provenance.
+
+## 2026-10-23T17:49:06Z Step 4 completed handoff
+
+Debug mode: enabled; scope v1/R1/P2; direct user maintenance authorization retained. Planning `f1076bc`; development stages `50399b2`, `e15372f`, `6e7ffa1`. Product stage commit `742d1d7`. No completed commits amended. Three stages delivered, with paired product evidence recorded in the summary. Final diagnostic saved after the final stage for its separate log-only commit.
+
+### Necessary and useful instructions
+
+- `RAILSPIKE.md`, frozen reference recovery: expected hashes prevented changed current feedback from becoming the reference. Exact historical bytes were retrieved without moving host branches. Retain.
+- `step4_implementation_do.md`, stage boundary protocol: one planning commit plus three stage commits retain source recovery, actual host edits and failure/relocation evidence separately. Each stage includes its summary update. Retain.
+- `step4_implementation_after.md`, qualified verification and study closeout: distinguishes eight successful local repairs from release publication, predictive validity and maintainer acceptance. Retain.
+
+### Redundant and unnecessary instructions
+
+No supported findings about removal of a verification requirement. The earlier approval-token pause did delay a directly requested source repair; the user's renewed maintenance instruction was followed without manufacturing literal step approvals. Consider clearer routine-maintenance guidance separately from this recovery fix.
+
+### Inapplicable instructions
+
+Application/runtime/UI, deployment, installation migration, Git-history migration and release publication do not apply to the named documentation-only scope. Installed product files in the hosts were not upgraded. No application tests or production outcomes are claimed.
+
+### Verification and limitations
+
+- All three frozen sources match R1 in the development cache and all eight host caches. Ledger source targets resolve locally; normalized ledger content outside the inserted recovery notice and three routing substitutions is unchanged. Current feedback hashes are unchanged.
+- Eight isolated relocated copies verify without Git, network or the original source checkout. Repeated reuse changes no files. Missing and tampered versions of all three sources are detected in each copy (48 negative cases).
+- Product links (15 Markdown files), development links (152 files with unchanged historical baseline), README Git-workflow fixture, product/development whitespace and all eight scoped host-ledger whitespace checks passed.
+- Product branch is clean. Host ledger/reference changes remain uncommitted for their normal integration workflow. Earlier development research rows/files remain uncommitted and were not swept into this cycle's commits. No merge, push, tag, upload or release.
+- Study projected total 0.65 preserved; retrospective scope assessment 0.65 is not measured labor. Maintainer comfortable-fit/study acceptance remain pending; earlier missing checkpoints and guessed supplement are untouched. Active clones may continue unrelated work after this capture.
