@@ -31,3 +31,20 @@
 
 ### Uncertain assessments
 - Stage sizing is a planning judgment; remote publication failures could extend Stage 2. Such failure must remain explicit rather than being counted as completion.
+
+## 2026-10-24T23:23:06.879242+00:00 — Step 4 completed
+
+### Necessary/useful instructions
+- Release policy preserved non-default branch publication, immutable annotated tag, pre-release status and stable Latest; exact remote readback passed.
+- Stage cadence verified: planning `a7093ca`, Stage 1 `d7e8296` paired with product `14981be`, Stage 2 `d897d35ac2059232a7aa0dd7e4881250e49a9dfd`. Summary created after planning and updated in each stage commit. Product diff remains within the four allowed Markdown files.
+- Canonical recovery rules guided 13 reviewed scenarios, retaining explicit opt-outs and legacy state. Append-only scope/score history and separate retrospectives remain intact; acceptance stays pending.
+
+### Redundant/unnecessary instructions
+- No supported findings.
+
+### Inapplicable instructions
+- Application runtime/UI/deployment tests are inapplicable to instruction-only changes. Publication and installation/migration checks were applicable and passed.
+
+### Uncertain assessments
+- Static review and fixtures do not establish live-agent adherence or forecast accuracy. Beta promotion retains real-cycle and known-user recovery criteria.
+- Initial installation fixture invocation used the candidate where a legacy revision was required. Reading its argument contract and rerunning against an exact-candidate disposable clone resolved the failure without changing tooling or product scope.
