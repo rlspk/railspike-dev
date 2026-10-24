@@ -31,3 +31,5 @@
 - [Frozen reference recovery](./frozen_reference_recovery/frozen_reference_recovery_step2_feature_description.md): preserve exact R1 sources and repair portable host-ledger recovery.
 
 - [Detailed effort estimates](./detailed_effort_estimates/detailed_effort_estimates_step1_solution_assessment.md): optional estimates for every solution option and planned stage, carried through execution revisions and retrospective assessments.
+
+- [Extended estimates default](./extended_estimates_default/extended_estimates_default_step2_feature_description.md): default-on estimates for new enrolled cycles and v0.3.0-beta.2 publication.
