@@ -22,6 +22,12 @@ Step 2 and Step 3 explicitly approved; default-on change and beta-2 publication 
 
 ## Stage 2 - Beta publication
 
-- Changes: pending Stage 1 completion.
-- Verification: pending.
-- Stage work: original 0.10, unchanged; retrospective pending.
+- Changes: Stage 1 development commit `d7e8296` complete; exact product candidate `14981be1a2b8944c481740cf683a96712e5c44f0` published on its feature branch. Published annotated unsigned `v0.3.0-beta.2` as a GitHub pre-release, with release notes and immutable public verification evidence.
+- Verification: exact-candidate installation/migration fixture passed after correcting invocation (initial legacy-argument misuse failed ancestry check); release/tag/body readback passed; stable Latest v0.1.0, default main and its commit unchanged. Product/development links, whitespace and allowed-file review passed. [Release evidence](../../maintainers/releases/v0.3.0-beta.2-verification.md), [publication readback](../../maintainers/releases/v0.3.0-beta.2-publication.json).
+- Stage work: original S2 v1 0.10 (0.05–0.20), unchanged; 2026-10-24T23:22:54.086563+00:00 retrospective stage work **0.10**, separately judged after publication, not measured labor.
+
+## Closeout
+
+2026-10-24T23:22:54.086563+00:00 — Both planned stages technically complete, no splits or new scope; corrective work was the fixture invocation correction documented in verification. Whole-cycle projection remains 0.35; separate retrospective scope assessment **0.35** under R1/P2, same exposed rater, not measured labor. Actual labor unknown. Maintainer comfortable-fit judgment and study acceptance pending. Intake missing; no history reconstructed. Runtime/UI/deployment checks inapplicable to this instruction-only release; live-agent adherence and predictive calibration remain unverified.
+
+Product final: `14981be1a2b8944c481740cf683a96712e5c44f0` (four allowed Markdown files). Stage 1 development: `d7e8296`; Stage 2 development is this closeout commit. Public evidence commits: `3283241` (verification), `54cc0cc` (notes); publication record published separately. Planning commit `a7093ca` precedes both stage commits; Step 4 summary first appears in Stage 1. No merging, host updates or frozen-reference changes. Publication authorization fulfilled; no outstanding implementation work.
