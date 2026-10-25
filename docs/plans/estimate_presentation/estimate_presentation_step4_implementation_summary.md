@@ -34,6 +34,22 @@ User authorized a one-shot combining reviewed estimate presentation, agent signa
 
 **Original estimate: 0.10**
 
-- Changes: pending Stage 1 completion.
-- Verification: pending.
-- Revisions: none; retrospective pending.
+- Changes: published `v0.3.0-beta.3` on the exact candidate with annotated unsigned tag, notes and public verification evidence. Stage 1 development commit: `5d7c63d`; product commit: `690c596307b2087515b7c258008e5835af89048b`.
+- Verification: exact tag/commit, release body, pre-release status and unchanged stable Latest/default main read back successfully; [publication record](../../maintainers/releases/v0.3.0-beta.3-publication.json). Public evidence fetched and compared byte-for-byte before release. Development links/whitespace passed; installation unchanged and fixture not rerun.
+- Revisions: none.
+
+**Retrospective stage work: 0.10**
+
+2026-10-25T00:53:54.307184+00:00 — separately judged after publication; same exposed rater, not measured labor.
+
+*— Codex · 2026-10-25 UTC*
+
+## Closeout
+
+**Retrospective cycle scope: 0.30**
+
+2026-10-25T00:53:54.307184+00:00 — Both planned stages technically complete. Scope v1 0.25 retained; authorized v2 0.30 projection and original stage estimates unchanged. Retrospective cycle scope judged independently, not a stage sum. R1/P2, same exposed Codex rater; exact model/settings unavailable; measured labor unknown. Intake remains missing; maintainer comfortable-fit/study acceptance pending. No splits, host upgrades or merges. Minor corrections clarified Step 1 paragraph placement and Markdown example spacing; no new scope after attribution was authorized.
+
+Product final `690c596307b2087515b7c258008e5835af89048b`; planning `199fc3a`, Stage 1 development `5d7c63d`, Stage 2 development is this closeout commit. Public evidence `5d22910` and notes `bd676ce`; publication record published separately. The user-authorized one-shot replaced intermediate approval pauses for this cycle only; normal reusable approval rules remain unchanged. Runtime/UI/deployment checks inapplicable; live-agent compliance and forecast accuracy remain unverified. All scoped implementation/publication work complete.
+
+*— Codex · 2026-10-25 UTC*
