@@ -1,4 +1,4 @@
-> **Feature plan:** [Step 1](./one_shot_cycles_step1_solution_assessment.md) · [Step 2](./one_shot_cycles_step2_feature_description.md) · [Step 3](./one_shot_cycles_step3_development_plan.md) · Step 4 (pending)
+> **Feature plan:** [Step 1](./one_shot_cycles_step1_solution_assessment.md) · [Step 2](./one_shot_cycles_step2_feature_description.md) · [Step 3](./one_shot_cycles_step3_development_plan.md) · [Step 4](./one_shot_cycles_step4_implementation_summary.md)
 
 Debug mode: enabled
 
