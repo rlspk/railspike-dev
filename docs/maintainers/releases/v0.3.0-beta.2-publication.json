@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-24T23:22:54.086563+00:00",
+  "authorized_version": "v0.3.0-beta.2",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.3.0-beta.2",
+  "release_id": 423039021,
+  "published_at_utc": "2026-10-24T23:22:34Z",
+  "prerelease": true,
+  "draft": false,
+  "product_branch": "feature/extended-estimates-default",
+  "product_commit": "14981be1a2b8944c481740cf683a96712e5c44f0",
+  "tag_object": "dda40fafe0824b52546693506272f5d2e764d33f",
+  "tag_signed": false,
+  "stable_latest": "v0.1.0",
+  "default_branch": "main",
+  "default_branch_commit_unchanged": "579c0c13956be36c308e50df60b1849f9e213da6",
+  "release_body_matches_notes": true,
+  "public_evidence_branch": "release/v0.3.0-beta.2",
+  "immutable_verification_commit": "32832418898a1e7e62c785793311bdd56c368023",
+  "publication_method": "GitHub Releases REST API; verified existing annotated tag; prerelease=true, make_latest=false",
+  "host_installations_updated": false,
+  "main_merged": false
+}

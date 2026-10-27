@@ -15,3 +15,16 @@ Add prominent, clear, and easy uninstallation instructions.
 Set up a dedicated maintainer release-signing key and register its public key with GitHub.
 	Document key backup, rotation, and verification; then require signed annotated tags for future releases.
 	Do not use the throwaway testing or forum-user keys, or rewrite previously published tags.
+
+How do we estimate development time/effort better so that we can give a more useful estimate than "hours of work" at step 3?
+
+Add skills format
+	Test with vettd
+
+Once we have a little bit of a railspike unit estimator, we can add the rule to AGENTS.md about thresholds
+	for example: if < 0.1 railspikes, one-shot it, if 0.2 - 0.5, ask, otherwise assume railspike, if > 1.1 start building a checklist plan
+
+I don't like that our process is designed to jump to step 2, skipping step 1.
+	Just not a great concept ideologically.
+
+Should we make a skills.md?

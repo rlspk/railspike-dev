@@ -25,3 +25,15 @@
 
 - [Railspike slides](./railspike_slides/railspike_slides_step1_solution_assessment.md): self-contained HTML slide deck explaining Railspike and how to use it; created in the website checkout, not yet linked or published.
 - [Railspike slides polish](./railspike_slides_polish/railspike_slides_polish_step2_feature_description.md): follow-up cycle on the slide deck: opening promise, statement titles, a conclusion slide, sans-serif type, and a keynote voice; still unlinked and unpublished.
+
+- [Debug log process improvements](./debug_log_process_improvements/debug_log_process_improvements_step1_solution_assessment.md): turn recurring debug feedback into bounded changes; first cycle makes a known user's recovery an acceptance condition and requires honest completion reporting.
+
+- [Frozen reference recovery](./frozen_reference_recovery/frozen_reference_recovery_step2_feature_description.md): preserve exact R1 sources and repair portable host-ledger recovery.
+
+- [Detailed effort estimates](./detailed_effort_estimates/detailed_effort_estimates_step1_solution_assessment.md): optional estimates for every solution option and planned stage, carried through execution revisions and retrospective assessments.
+
+- [Extended estimates default](./extended_estimates_default/extended_estimates_default_step2_feature_description.md): default-on estimates for new enrolled cycles and v0.3.0-beta.2 publication.
+
+- [Estimate presentation and plan attribution](./estimate_presentation/estimate_presentation_step2_feature_description.md): standalone estimate lines and agent signatures with verified model/settings; beta 3.
+
+- [One-shot cycles](./one_shot_cycles/one_shot_cycles_step1_solution_assessment.md): bounded upfront authorization with equivalent development evidence in one evolving record.

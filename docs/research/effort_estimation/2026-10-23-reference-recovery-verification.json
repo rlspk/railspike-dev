@@ -1,0 +1,514 @@
+{
+  "recorded_at_utc": "2026-10-23T17:46:53.201487+00:00",
+  "study_id": "railspike-effort",
+  "reference_version": "R1",
+  "hosts": [
+    {
+      "root": "/home/wsl/v3",
+      "recorded_at_utc": "2026-10-23T17:46:53.140733+00:00",
+      "ledger_sha256_before": "9cc7a60e04c7972b6b9fd5a720fd1b02793be2ad2a981e70a625afc044661bef",
+      "ledger_sha256_after": "f618df3adac92befdb791aa92e68b794380a74177dff43d74a53fef6a56b475b",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "c7796cac1bc684e2c0260925ceb8b74c48f0242a"
+    },
+    {
+      "root": "/home/wsl/agent/v3-claude",
+      "recorded_at_utc": "2026-10-23T17:46:53.148870+00:00",
+      "ledger_sha256_before": "f67702a303955f9428fb5676c3ecbbd493b0179f291dccf17466777a2937fb88",
+      "ledger_sha256_after": "a11d3479d82fb414cc2b48c60df9da3bda23029dd93ae2f56559af7f8f8bf248",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "8a2d59c177303aed7a9f5b01852518992584fee1"
+    },
+    {
+      "root": "/home/wsl/agent/v3-claude-2",
+      "recorded_at_utc": "2026-10-23T17:46:53.156055+00:00",
+      "ledger_sha256_before": "74f8619715d31916ce7dc0099ac8088add00526ab66e6d33fcb2e7db133f4b61",
+      "ledger_sha256_after": "024ec7d47dede4b95ec6c56103d4349bb1b4751a2548a82a9e9591f7eb0f96e9",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "e061eea967ad71f0ec91d0dc328d5522b684536b"
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex",
+      "recorded_at_utc": "2026-10-23T17:46:53.163861+00:00",
+      "ledger_sha256_before": "f1597357006e444f96a46dde45afc1593cde0f0b82241e0a9fc246c24c8fd1ec",
+      "ledger_sha256_after": "6cd96b08efcf13859bf97ace66a1db9e1f363561af5b5ca1f5b2ed007448d9d0",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "ee0f5b17337dcbcaffcc6f425e7ec8caaca1d698"
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex-2",
+      "recorded_at_utc": "2026-10-23T17:46:53.169621+00:00",
+      "ledger_sha256_before": "8aa11735391759cab5c8e2d52b64971bf213a6e0f5334cdd421639e6369363c7",
+      "ledger_sha256_after": "efde467f8d69e05d4d5ab934a9cd4b84f03e82e097f60eeed8d0e5af9bdd8156",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "11e7f26fdb3013f3c78ffde7c539e89bdf0be851"
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex-3",
+      "recorded_at_utc": "2026-10-23T17:46:53.176405+00:00",
+      "ledger_sha256_before": "84be6d74ea4ed34acd6f7b5d37809f96c40efb9cc0399f316f938ca3f60191ec",
+      "ledger_sha256_after": "25724a181b85b8ac880fb08ba03e1134d4fa971d1c0693726a50375e69fdd09c",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "e8d66daaea774dd0cab55efcf68f69e4edd5b7da"
+    },
+    {
+      "root": "/home/wsl/agent/v3-codex-4",
+      "recorded_at_utc": "2026-10-23T17:46:53.185127+00:00",
+      "ledger_sha256_before": "7864065b327c2170143d756c8e7d478c7c65d1954e85103db360b2ecdff365f2",
+      "ledger_sha256_after": "d0cccc124d5b0c72c94172fc48e5be9d8bf2b2820f2af3ee79626a38c33e791c",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "b438fe9d9198f29999b1fa112ed7b9f94a3f500f"
+    },
+    {
+      "root": "/home/wsl/v3-test-kris",
+      "recorded_at_utc": "2026-10-23T17:46:53.192203+00:00",
+      "ledger_sha256_before": "b7393c73be6fcd1ea8b521f5c16dbfe2032798de6ad1836bf6bd4dba661cfd62",
+      "ledger_sha256_after": "b522db600045aeaee60e76bd88e146ef0d186835d42b2c10d7f148f2ca0bd5a4",
+      "current_feedback_sha256": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+      "sources_verified": 3,
+      "only_ledger_changes": "three link targets and one inserted recovery notice; normalized remainder byte-identical",
+      "feedback_unchanged": true,
+      "host_committed": false,
+      "head_observed": "c86b89314602a17cf435448bb66053f4d750150f"
+    }
+  ],
+  "product_installations_changed": false,
+  "host_branches_switched": false,
+  "host_commits_created": false,
+  "application_files_written": false,
+  "final_verification": {
+    "recorded_at_utc": "2026-10-23T17:48:00.644267+00:00",
+    "host_results": [
+      {
+        "root": "/home/wsl/v3",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-claude",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-claude-2",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-2",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-3",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/agent/v3-codex-4",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      },
+      {
+        "root": "/home/wsl/v3-test-kris",
+        "current_ledger_links_and_hashes": "passed",
+        "relocated_copy_without_original_git_or_checkout": "passed",
+        "repeated_reuse_no_file_changes": "passed",
+        "negative_checks": [
+          "calibration-report:missing rejected",
+          "calibration-report:tamper rejected",
+          "implementation-diff-review:missing rejected",
+          "implementation-diff-review:tamper rejected",
+          "user-feedback:missing rejected",
+          "user-feedback:tamper rejected"
+        ]
+      }
+    ],
+    "relocated_hosts_passed": 8,
+    "missing_or_tampered_source_checks_passed": 48,
+    "method": "Disposable relocated copies containing only the host ledger, three snapshots and manifest; verifier uses no Git, original paths or network."
+  },
+  "reconciliation_events": [
+    {
+      "recorded_at_utc": "2026-10-23T18:38:25.296655+00:00",
+      "canonical_source_commit": "76c5852b7ea9c6cface68dff2e153c4976c199da",
+      "backup_directory": "/tmp/railspike-four-clone-backup-8476pkur",
+      "clones": [
+        {
+          "clone": "/home/wsl/agent/v3-claude",
+          "branch": "refs/heads/feat/username-rename-collision",
+          "old_head": "d3d8775995123abfb5cdd2148321e843708ad1bd",
+          "integration_commit": "e95866a3bdaee72d83101769fbed929d7e94779f",
+          "canonical_source_commit": "76c5852b7ea9c6cface68dff2e153c4976c199da",
+          "changed_commit_paths": [
+            "docs/plans/effort_estimation_trial.md",
+            "docs/research/effort_estimation/references/R1/calibration-report.txt",
+            "docs/research/effort_estimation/references/R1/implementation-diff-review.txt",
+            "docs/research/effort_estimation/references/R1/manifest.json",
+            "docs/research/effort_estimation/references/R1/user-feedback.txt"
+          ],
+          "reference_status_clean": true,
+          "unrelated_ledger_content_preserved": true,
+          "ledger_still_has_unrelated_work": true,
+          "original_manifest": {
+            "schema_version": 1,
+            "study_id": "railspike-effort",
+            "reference_version": "R1",
+            "recovered_at_utc": "2026-10-23T17:45:28.297785+00:00",
+            "sources": [
+              {
+                "label": "calibration-report",
+                "original_filename": "report.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/report.md",
+                "expected_sha256": "d3a30b6400b83bb25283b4234b41ba07515df9a696ea44de59c10186103771b0",
+                "cached_path": "calibration-report.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "implementation-diff-review",
+                "original_filename": "diff_review.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/diff_review.md",
+                "expected_sha256": "068b3519326e08a939df40b5abe0106ddcbab80bd796616c76b5084a21462b84",
+                "cached_path": "implementation-diff-review.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "user-feedback",
+                "original_filename": "zenmemes_meta_feedback_2026-10-18_summary.md",
+                "original_repository": "local v3 project; public repository identity not asserted",
+                "original_revision": "4f6cfe2b436fae8d939b1349fe724a3879ee0a0e",
+                "original_path": "docs/plans/zenmemes_meta_feedback_2026-10-18_summary.md",
+                "expected_sha256": "ef335604ecd5b51e5c04067d88e4d6f01cb4fdb21b8f4d7dba7b5b90e4012bfc",
+                "cached_path": "user-feedback.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              }
+            ],
+            "ledger_recovery": {
+              "recorded_at_utc": "2026-10-23T17:46:53.148870+00:00",
+              "ledger_path": "docs/plans/effort_estimation_trial.md",
+              "original_source_link_targets": {
+                "Calibration report": "../../../railspike-dev/docs/research/effort_estimation/report.md",
+                "Implementation diff review": "../../../railspike-dev/docs/research/effort_estimation/diff_review.md",
+                "User feedback": "./zenmemes_meta_feedback_2026-10-18_summary.md"
+              },
+              "ledger_sha256_before": "f67702a303955f9428fb5676c3ecbbd493b0179f291dccf17466777a2937fb88",
+              "current_feedback_sha256_before": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+              "source_routing_only": true
+            }
+          },
+          "original_manifest_sha256": "fae02138d6717dde4724d36ab033582b69b2aea372e64b134287a703eb372a7b",
+          "canonical_manifest_sha256": "3d2044fdb8c4593a566f8f1753f6a92d94d6b55d6e2ba2aed9abad39f6034d19"
+        },
+        {
+          "clone": "/home/wsl/agent/v3-claude-2",
+          "branch": "refs/heads/feat/unsigned-attribution",
+          "old_head": "5b451fe007fa3707a9527f0ab1128afc02c5f0a2",
+          "integration_commit": "a2884009f2958ba67583a90617179363bf912226",
+          "canonical_source_commit": "76c5852b7ea9c6cface68dff2e153c4976c199da",
+          "changed_commit_paths": [
+            "docs/plans/effort_estimation_trial.md",
+            "docs/research/effort_estimation/references/R1/calibration-report.txt",
+            "docs/research/effort_estimation/references/R1/implementation-diff-review.txt",
+            "docs/research/effort_estimation/references/R1/manifest.json",
+            "docs/research/effort_estimation/references/R1/user-feedback.txt"
+          ],
+          "reference_status_clean": true,
+          "unrelated_ledger_content_preserved": true,
+          "ledger_still_has_unrelated_work": false,
+          "original_manifest": {
+            "schema_version": 1,
+            "study_id": "railspike-effort",
+            "reference_version": "R1",
+            "recovered_at_utc": "2026-10-23T17:45:28.297785+00:00",
+            "sources": [
+              {
+                "label": "calibration-report",
+                "original_filename": "report.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/report.md",
+                "expected_sha256": "d3a30b6400b83bb25283b4234b41ba07515df9a696ea44de59c10186103771b0",
+                "cached_path": "calibration-report.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "implementation-diff-review",
+                "original_filename": "diff_review.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/diff_review.md",
+                "expected_sha256": "068b3519326e08a939df40b5abe0106ddcbab80bd796616c76b5084a21462b84",
+                "cached_path": "implementation-diff-review.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "user-feedback",
+                "original_filename": "zenmemes_meta_feedback_2026-10-18_summary.md",
+                "original_repository": "local v3 project; public repository identity not asserted",
+                "original_revision": "4f6cfe2b436fae8d939b1349fe724a3879ee0a0e",
+                "original_path": "docs/plans/zenmemes_meta_feedback_2026-10-18_summary.md",
+                "expected_sha256": "ef335604ecd5b51e5c04067d88e4d6f01cb4fdb21b8f4d7dba7b5b90e4012bfc",
+                "cached_path": "user-feedback.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              }
+            ],
+            "ledger_recovery": {
+              "recorded_at_utc": "2026-10-23T17:46:53.156055+00:00",
+              "ledger_path": "docs/plans/effort_estimation_trial.md",
+              "original_source_link_targets": {
+                "Calibration report": "../../../railspike-dev/docs/research/effort_estimation/report.md",
+                "Implementation diff review": "../../../railspike-dev/docs/research/effort_estimation/diff_review.md",
+                "User feedback": "./zenmemes_meta_feedback_2026-10-18_summary.md"
+              },
+              "ledger_sha256_before": "74f8619715d31916ce7dc0099ac8088add00526ab66e6d33fcb2e7db133f4b61",
+              "current_feedback_sha256_before": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+              "source_routing_only": true
+            }
+          },
+          "original_manifest_sha256": "27528ad0b94e6554cc1d217afc9dac199fa512fe1af04b0a8c82190f0dbe0828",
+          "canonical_manifest_sha256": "3d2044fdb8c4593a566f8f1753f6a92d94d6b55d6e2ba2aed9abad39f6034d19"
+        },
+        {
+          "clone": "/home/wsl/agent/v3-codex",
+          "branch": "refs/heads/feature/markdown-task-lists",
+          "old_head": "f685e2a6d0d33d201e3d858ed67497dd05367e5b",
+          "integration_commit": "569820e4d5f54517fa5ddef9cba3bcb6d5d55b22",
+          "canonical_source_commit": "76c5852b7ea9c6cface68dff2e153c4976c199da",
+          "changed_commit_paths": [
+            "docs/plans/effort_estimation_trial.md",
+            "docs/research/effort_estimation/references/R1/calibration-report.txt",
+            "docs/research/effort_estimation/references/R1/implementation-diff-review.txt",
+            "docs/research/effort_estimation/references/R1/manifest.json",
+            "docs/research/effort_estimation/references/R1/user-feedback.txt"
+          ],
+          "reference_status_clean": true,
+          "unrelated_ledger_content_preserved": true,
+          "ledger_still_has_unrelated_work": false,
+          "original_manifest": {
+            "schema_version": 1,
+            "study_id": "railspike-effort",
+            "reference_version": "R1",
+            "recovered_at_utc": "2026-10-23T17:45:28.297785+00:00",
+            "sources": [
+              {
+                "label": "calibration-report",
+                "original_filename": "report.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/report.md",
+                "expected_sha256": "d3a30b6400b83bb25283b4234b41ba07515df9a696ea44de59c10186103771b0",
+                "cached_path": "calibration-report.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "implementation-diff-review",
+                "original_filename": "diff_review.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/diff_review.md",
+                "expected_sha256": "068b3519326e08a939df40b5abe0106ddcbab80bd796616c76b5084a21462b84",
+                "cached_path": "implementation-diff-review.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "user-feedback",
+                "original_filename": "zenmemes_meta_feedback_2026-10-18_summary.md",
+                "original_repository": "local v3 project; public repository identity not asserted",
+                "original_revision": "4f6cfe2b436fae8d939b1349fe724a3879ee0a0e",
+                "original_path": "docs/plans/zenmemes_meta_feedback_2026-10-18_summary.md",
+                "expected_sha256": "ef335604ecd5b51e5c04067d88e4d6f01cb4fdb21b8f4d7dba7b5b90e4012bfc",
+                "cached_path": "user-feedback.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              }
+            ],
+            "ledger_recovery": {
+              "recorded_at_utc": "2026-10-23T17:46:53.163861+00:00",
+              "ledger_path": "docs/plans/effort_estimation_trial.md",
+              "original_source_link_targets": {
+                "Calibration report": "../../../railspike-dev/docs/research/effort_estimation/report.md",
+                "Implementation diff review": "../../../railspike-dev/docs/research/effort_estimation/diff_review.md",
+                "User feedback": "./zenmemes_meta_feedback_2026-10-18_summary.md"
+              },
+              "ledger_sha256_before": "f1597357006e444f96a46dde45afc1593cde0f0b82241e0a9fc246c24c8fd1ec",
+              "current_feedback_sha256_before": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+              "source_routing_only": true
+            }
+          },
+          "original_manifest_sha256": "6e69b70978231093cb1668c9702a778e0634af7878a1d982d8056ca6c6822ccd",
+          "canonical_manifest_sha256": "3d2044fdb8c4593a566f8f1753f6a92d94d6b55d6e2ba2aed9abad39f6034d19"
+        },
+        {
+          "clone": "/home/wsl/agent/v3-codex-2",
+          "branch": "refs/heads/feature/account-key-revocation",
+          "old_head": "6dc2464b786da5aa1879d86945daa875e28a8a7f",
+          "integration_commit": "366ed5e36b4f7db44823d00f3929073e439ec85e",
+          "canonical_source_commit": "76c5852b7ea9c6cface68dff2e153c4976c199da",
+          "changed_commit_paths": [
+            "docs/plans/effort_estimation_trial.md",
+            "docs/research/effort_estimation/references/R1/calibration-report.txt",
+            "docs/research/effort_estimation/references/R1/implementation-diff-review.txt",
+            "docs/research/effort_estimation/references/R1/manifest.json",
+            "docs/research/effort_estimation/references/R1/user-feedback.txt"
+          ],
+          "reference_status_clean": true,
+          "unrelated_ledger_content_preserved": true,
+          "ledger_still_has_unrelated_work": false,
+          "original_manifest": {
+            "schema_version": 1,
+            "study_id": "railspike-effort",
+            "reference_version": "R1",
+            "recovered_at_utc": "2026-10-23T17:45:28.297785+00:00",
+            "sources": [
+              {
+                "label": "calibration-report",
+                "original_filename": "report.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/report.md",
+                "expected_sha256": "d3a30b6400b83bb25283b4234b41ba07515df9a696ea44de59c10186103771b0",
+                "cached_path": "calibration-report.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "implementation-diff-review",
+                "original_filename": "diff_review.md",
+                "original_repository": "https://github.com/rlspk/railspike-dev.git",
+                "original_revision": "557f9a0a178a4661e5c3de1c839df9ff33330c3b",
+                "original_path": "docs/research/effort_estimation/diff_review.md",
+                "expected_sha256": "068b3519326e08a939df40b5abe0106ddcbab80bd796616c76b5084a21462b84",
+                "cached_path": "implementation-diff-review.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              },
+              {
+                "label": "user-feedback",
+                "original_filename": "zenmemes_meta_feedback_2026-10-18_summary.md",
+                "original_repository": "local v3 project; public repository identity not asserted",
+                "original_revision": "4f6cfe2b436fae8d939b1349fe724a3879ee0a0e",
+                "original_path": "docs/plans/zenmemes_meta_feedback_2026-10-18_summary.md",
+                "expected_sha256": "ef335604ecd5b51e5c04067d88e4d6f01cb4fdb21b8f4d7dba7b5b90e4012bfc",
+                "cached_path": "user-feedback.txt",
+                "retrieval_method": "git show exact revision:path without changing source checkout"
+              }
+            ],
+            "ledger_recovery": {
+              "recorded_at_utc": "2026-10-23T17:46:53.169621+00:00",
+              "ledger_path": "docs/plans/effort_estimation_trial.md",
+              "original_source_link_targets": {
+                "Calibration report": "../../../railspike-dev/docs/research/effort_estimation/report.md",
+                "Implementation diff review": "../../../railspike-dev/docs/research/effort_estimation/diff_review.md",
+                "User feedback": "./zenmemes_meta_feedback_2026-10-18_summary.md"
+              },
+              "ledger_sha256_before": "8aa11735391759cab5c8e2d52b64971bf213a6e0f5334cdd421639e6369363c7",
+              "current_feedback_sha256_before": "6f5a07426cf0624bde554b0d8034f32313481a0a8ca7387ce085386f2bdef31c",
+              "source_routing_only": true
+            }
+          },
+          "original_manifest_sha256": "4d3040349ef6ccac160c7ea51b7dbdf8ae16ea5b343832dff9098b5fa8f0e405",
+          "canonical_manifest_sha256": "3d2044fdb8c4593a566f8f1753f6a92d94d6b55d6e2ba2aed9abad39f6034d19"
+        }
+      ],
+      "method": "Documentation-only integration commits with isolated indexes and guarded branch updates; no unrelated main changes merged. Preserve original recovery timestamps and all non-reference ledger content.",
+      "published": false
+    }
+  ]
+}

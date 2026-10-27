@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-25T18:06:52.755988+00:00",
+  "authorized_version": "v0.3.0-beta.4",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.3.0-beta.4",
+  "release_id": 423571153,
+  "published_at_utc": "2026-10-25T18:06:50Z",
+  "prerelease": true,
+  "draft": false,
+  "product_branch": "fix/step3-attribution-footer",
+  "product_commit": "f8c8d2588a4a849a12acc7c425d99f533e218f8d",
+  "tag_object": "8ddb8ef880c6e2bf3424ef71967b5a0bbbde43f0",
+  "tag_signed": false,
+  "stable_latest": "v0.1.0",
+  "default_branch": "main",
+  "default_branch_commit_unchanged": "579c0c13956be36c308e50df60b1849f9e213da6",
+  "release_body_matches_notes": true,
+  "public_evidence_branch": "release/v0.3.0-beta.4",
+  "immutable_verification_commit": "29b0778f7a1d065ff23ea2b268d80f2901f2e3a3",
+  "publication_method": "GitHub Releases REST API; existing annotated tag verified; prerelease=true, make_latest=false",
+  "host_installations_updated": false,
+  "main_merged": false
+}
