@@ -41,3 +41,15 @@ Runtime/UI/deployment/migration/release checks are inapplicable to this document
 - Notes: 2026-10-27 UTC, v1/R1/P2, original 0.15 reaffirmed and retrospective assessed separately; same exposed rater, no scope change. Whole-cycle 0.65 unchanged. Runtime/UI/deployment/migration/release checks inapplicable. Stage 2 development commit recorded in next update.
 
 *— Codex · 2026-10-27 UTC*
+
+## Stage 3 — Discovery and user guidance
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes: README explicit-use example and lifecycle explanation, welcome routing and optional host guidance, documentation index, and mode-qualified central rules. Product commit `ecc8c90271802f0e68c7986b12a2212729e68464`; Stage 2 development commit `3a16e14`.
+- Verification: product link checker passed (16 files), whitespace and file-scope review passed. Reviewed entry routes and staged-rule qualifications; explicit one-shot selection leaves ordinary small tasks outside cycles and preserves active staged authority. Installation/update command blocks unchanged. Local plan links checked.
+- Notes: 2026-10-27 UTC, v1/R1/P2, original 0.10 reaffirmed; retrospective 0.10 separately assessed, same exposed rater. Cycle estimate 0.65 unchanged. No host edits or runtime enforcement claims. Runtime/UI/deployment/migration/release checks inapplicable; no publication. Stage 3 development commit recorded next.
+
+*— Codex · 2026-10-27 UTC*
