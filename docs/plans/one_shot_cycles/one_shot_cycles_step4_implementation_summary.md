@@ -29,3 +29,15 @@ Runtime/UI/deployment/migration/release checks are inapplicable to this document
 - Notes: 2026-10-27 UTC, v1/R1/P2, same exposed rater; original estimate reaffirmed, separate retrospective 0.20 is not measured effort. No new requests or scope expansion. Runtime/UI/deployment/migration/release checks inapplicable; live agent compliance unverified. Navigation now links to this summary. Development commit recorded after creation in the next stage update.
 
 *— Codex · 2026-10-27 UTC*
+
+## Stage 2 — Recovery and study behavior
+
+**Original estimate: 0.15**
+
+**Retrospective stage work: 0.15**
+
+- Changes: resumption, staged transition and cycle identity; one-shot study checkpoints; debug handoff timing; confirmed commit-reference recording without amendment. Product commit `7dd1924c9b7db103f0e189d2a87bf0f3982a9fab`; Stage 1 development commit `5436ad0`.
+- Verification: product link checker passed (16 files), whitespace and scoped diff passed. Manual document review covered interruption (restore state), missing authority (stop dependent work), expanded scope (renew authority or staged transition), abandonment (retain outcome), unavailable checks (honest status), transition (same identity/retained history), and all four enrollment/debug combinations (independent policies). Local plan links checked. These are document reviews, not agent runtime tests.
+- Notes: 2026-10-27 UTC, v1/R1/P2, original 0.15 reaffirmed and retrospective assessed separately; same exposed rater, no scope change. Whole-cycle 0.65 unchanged. Runtime/UI/deployment/migration/release checks inapplicable. Stage 2 development commit recorded in next update.
+
+*— Codex · 2026-10-27 UTC*
