@@ -69,3 +69,34 @@ No supported findings.
 - Four bounded documentation stages are planned; timing is not measured. If an individual stage exceeds the sizing guidance on inspection, split it before executing dependent work and preserve estimate history.
 
 *— Codex · 2026-10-27 UTC*
+
+## 2026-10-27T02:39:21Z — Step 4 closeout
+
+### Necessary/useful instructions
+
+- `step4_implementation_before.md`, planning-doc gate: isolated planning commit `337b1e1` excluded summary, ledger and unrelated discussion note. Four later development stage commits each include the summary; retain.
+- `step4_implementation_do.md`, stage boundaries and paired repository records: product/development changes stayed separate and each dependent stage followed verified commits. Retain.
+- `step4_implementation_after.md`, evidence boundary: final scenario reviews establish documentation consistency; Kiro Web/CLI execution and programmatic enforcement remain unverified. Retain.
+- `RAILSPIKE.md`, study closeout: original 0.65 projections and stage estimates retained, separate retrospective cycle 0.65, fit/acceptance pending, no invented missing intake. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions
+
+- Runtime/UI/deployment/migration/release checks are outside this documentation-only contract. No publication, host upgrade or external write occurred.
+
+### Uncertain assessments
+
+- Live compliance improvement cannot be inferred from the document matrix. A later explicitly scoped runtime evaluation would be needed.
+- The cycle's detailed planning records exceeded the one-page target to retain required provenance and scenario boundaries; implementation did not resolve that general documentation-design tension.
+
+### Handoff evidence
+
+- Product final `3e79249`, clean, on `feature/one-shot-cycles`; four product stage commits.
+- Development Stage 4 closeout `6bccde0`; prior planning/stage commits verified in order, each stage summary present. This log-only handoff preserves the final revision without amending the closeout.
+- Checks passed: product links (16 files), development links (183 files, 80 acknowledged historical targets), whitespace, eight-file product scope, unchanged README update block, existing Git-workflow fixture, scenario/evidence review.
+- The separate `docs/research/2026-10-26-instruction-clarity-and-approval-gating.md` remains uncommitted as requested. Final log commit contains only this diagnostic log.
+
+*— Codex · 2026-10-27 UTC*
