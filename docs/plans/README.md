@@ -35,3 +35,5 @@
 - [Extended estimates default](./extended_estimates_default/extended_estimates_default_step2_feature_description.md): default-on estimates for new enrolled cycles and v0.3.0-beta.2 publication.
 
 - [Estimate presentation and plan attribution](./estimate_presentation/estimate_presentation_step2_feature_description.md): standalone estimate lines and agent signatures with verified model/settings; beta 3.
+
+- [One-shot cycles](./one_shot_cycles/one_shot_cycles_step1_solution_assessment.md): bounded upfront authorization with equivalent development evidence in one evolving record.
