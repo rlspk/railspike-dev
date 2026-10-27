@@ -53,3 +53,23 @@ Runtime/UI/deployment/migration/release checks are inapplicable to this document
 - Notes: 2026-10-27 UTC, v1/R1/P2, original 0.10 reaffirmed; retrospective 0.10 separately assessed, same exposed rater. Cycle estimate 0.65 unchanged. No host edits or runtime enforcement claims. Runtime/UI/deployment/migration/release checks inapplicable; no publication. Stage 3 development commit recorded next.
 
 *— Codex · 2026-10-27 UTC*
+
+## Stage 4 — Contract validation and closeout
+
+**Original estimate: 0.15**
+
+**Retrospective stage work: 0.15**
+
+- Changes: retained [acceptance evidence](./one_shot_cycles_verification.md); corrected estimate presentation and same-cycle branch continuation in the staged gate. Product final `3e79249400b99efc60741972c42b81d55d4e53c3`; Stage 3 development commit `957d12e`.
+- Verification: 24 manual document scenarios, four enrollment/debug combinations and ten evidence-category mappings passed review. Product local links (16 files), development local links (including the historical baseline), whitespace, eight-file product scope and existing Git-workflow fixture passed. README update block is byte-identical to starting revision. Full commands, evidence boundaries and corrections are in the linked report. Final development link readback: 183 Markdown files, 80 acknowledged historical targets.
+- Notes: 2026-10-27 UTC, v1/R1/P2, original 0.15 reaffirmed; separate retrospective 0.15, same exposed rater. Corrections remain within approved scope; no additions, splits or changed requirements. Live Kiro runs remain unverified. Runtime/UI/deployment/migration/release checks inapplicable. The Stage 4 development commit contains this summary, verification and authorized ledger closeout; its ID is reported after creation.
+
+## Cycle closeout
+
+**Retrospective cycle scope: 0.65**
+
+2026-10-27 UTC — All four planned stages completed. Original scope v1 and prospective 0.65 snapshots retained; retrospective 0.65 is an independent whole-cycle scope judgment, not measured labor or a sum of stage assessments. Same single exposed Codex rater, R1/P2. Starting product/development revisions remain those in Step 1; product final `3e79249400b99efc60741972c42b81d55d4e53c3`. Planning commit `337b1e1`; Stage 1 development `5436ad0`, Stage 2 `3a16e14`, Stage 3 `957d12e`, Stage 4 is this closeout commit. Each paired product revision is recorded above. No work-unit revisions, splits or historical backfills. Maintainer comfortable-fit and study acceptance remain **pending**.
+
+Delivered one-shot documentation from explicit entry through execution, recovery, evidence and closeout, plus ordinary/staged routing. No product implementation requirements remain pending. Commit status: product stages committed; development closeout committed with this entry. Merge/push/release/host upgrade not performed. The earlier instruction-clarity/gating discussion note is preserved uncommitted; its separate formal-enforcement proposal remains future work.
+
+*— Codex · 2026-10-27 UTC*
