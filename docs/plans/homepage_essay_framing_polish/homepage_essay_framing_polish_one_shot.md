@@ -72,10 +72,12 @@ Status: technically complete; committed on unmerged branches; next permitted act
   - Disposition: already satisfied in the repo. The product README has "Ask your agent to upgrade Railspike" (`README.md` line 287 at `5952bfd`), with a copyable upgrade prompt, a tagged-release example, rollback guidance, and separate copy and submodule procedures.
   - Possible homepage follow-up (not done; outside this one-shot's bounds): retarget the "Updating an installation" link from `#reusing-across-projects` to `#ask-your-agent-to-upgrade-railspike` and rename it "Upgrade with your agent".
   - Approval status: pending maintainer choice.
+- 2026-10-28: Renewed authorization. The maintainer replied: *"Is there an upgrade prompt already? Either way, I trust you to do it right."* This is read as authorizing the proposed homepage link change only: retarget and rename the existing link. No new homepage prompt box, since the maintainer said "maybe not on the homepage". Execution follows below.
+- 2026-10-28: Implemented in `rlspk.github.io` `7bed800`. In the "Read more" list, "Updating an installation" (`#reusing-across-projects`) is now "Upgrade with your agent" (`#ask-your-agent-to-upgrade-railspike`). Verification: the essay is identical; the prompt and excerpt checks pass; the new anchor exists in the README heading "Ask your agent to upgrade Railspike"; `git diff --check` is clean. This is an addition, not a correction. The cycle estimate is unchanged at 0.20: a one-line link change is within the original estimate's range.
 
 ## Outcome
 
-- All three authorized changes were delivered. The upgrade request is recorded, with a pending homepage link option.
+- All three authorized changes were delivered. The upgrade request was already satisfied by the README; the homepage link now points directly at that README section (renewed authorization).
 
 ## Verification
 
@@ -95,8 +97,8 @@ All passed unless stated otherwise:
 
 ## Commit/merge/publication status
 
-- `rlspk.github.io` `ae7c95f` on `feature/homepage-essay-framing` (unmerged, unpushed).
-- `railspike-dev` record commit: this commit (hash reported in the handoff).
+- `rlspk.github.io` `ae7c95f` and `7bed800` on `feature/homepage-essay-framing` (unmerged, unpushed).
+- `railspike-dev` record commits: `6d030f6`, plus this update (hash reported in the handoff).
 - `railspike`: unchanged at `5952bfd`.
 - Release order is unchanged: product first, then website, each with explicit authorization.
 
