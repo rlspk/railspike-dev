@@ -1,0 +1,36 @@
+{
+  "verified_at_utc": "2026-10-28T04:13:47.086391+00:00",
+  "authorized_version": "v0.4.0-beta.2",
+  "authorization": "Maintainer: 'Please promote current state, including uninstall tags, to new beta' (2026-10-28)",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.4.0-beta.2",
+  "release_id": 426253677,
+  "published_at_utc": "2026-10-28T04:11:28Z",
+  "prerelease": true,
+  "draft": false,
+  "product_branch": "main",
+  "product_commit": "5952bfddba579ca3e76bbf397e7a0a5bbf150785",
+  "previous_beta": {
+    "tag": "v0.4.0-beta.1",
+    "commit": "0dcab22380874e53dae641b3d82a24c703241ac9"
+  },
+  "tag_object": "2ca4fe090819e47fc4fa5ef7ec67b565b376a9cc",
+  "tag_signed": false,
+  "stable_latest": "v0.1.0",
+  "default_branch": "main",
+  "main_merged": true,
+  "policy_exception": "Maintainer requested the beta on current main, which already contained the README-only change (merged earlier on 2026-10-28 for the homepage release).",
+  "release_body_matches_notes": "true: notes file minus its heading line; the published body has one extra trailing blank line",
+  "public_evidence_branch": null,
+  "public_evidence_note": "Release notes are self-contained; railspike-dev records were not pushed because local main has unpushed maintainer commits.",
+  "checks": {
+    "markdown_links_py_pl_mjs": "pass, 16 files",
+    "git_workflow_fixture": "pass",
+    "diff_check_vs_beta1": "pass",
+    "repository_separation_fixture": "pass, legacy baseline b59f7df89842ba17f710ae1f2dc955bb361cc620, 18 product files",
+    "uninstall_fixtures": "pass (procedure run as shell commands; 5 fixtures; see homepage_essay_framing Stage 1)"
+  },
+  "publication_method": "Annotated unsigned tag pushed first; GitHub Releases REST API with prerelease=true, make_latest=false (installed gh 2.4.0 lacks --verify-tag)",
+  "host_installations_updated": false,
+  "live_agent_uninstall": "unverified",
+  "live_kiro_compliance": "unverified"
+}
