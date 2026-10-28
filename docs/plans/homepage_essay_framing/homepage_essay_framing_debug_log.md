@@ -49,3 +49,22 @@
 ### Uncertain assessments
 - **Multi-repository cycles**: the commit cadence ("1 + stages commits on the branch") assumes one branch. With a dev planning branch plus two implementation repositories, it is unclear whether a paired dev summary commit per stage satisfies "stage commit with its Step 4 summary update". I planned for the implementation commit first, then the dev summary commit that records its ID, matching prior website cycles.
 - **Merge-order dependencies across repositories** (the website links to an anchor that only exists after the product merge) aren't addressed by the Completion Contract template.
+
+## 2026-10-28T04:50Z — Step 4
+
+### Necessary/useful instructions
+- **step4_implementation_before.md, Planning Docs Commit Gate**: the organization rule moved the `docs/plans/README.md` entry into the planning commit, earlier than Step 3 had placed it. That was correct and easy to record. Retain.
+- **step4_implementation_do.md, Stage Boundary Protocol**: verification before each commit caught three real defects (submodule leftovers, the copy button overlapping the prompt, the number alignment) before they were committed. Retain.
+- **RAILSPIKE.md, Key Rules ("Prefer shared components")** and **the Step 2 shared component inventory**: these led to one prompt-box pattern and to prompts generated from the README, which made exact parity checkable. Retain.
+- **step4_implementation_after.md, item 7 (report unverified items first)**: this kept the live-agent uninstall gap and the browser-coverage gap visible. Retain.
+
+### Redundant/unnecessary instructions
+- **step4_implementation_after.md, Effort estimation paragraph** and **step4_implementation_do.md, Effort estimation**: they overlap heavily with RAILSPIKE.md and the guide's presentation rules. Suggest one pointer each.
+
+### Inapplicable instructions
+- **Documentation-only verification items**: the work type is an application change.
+- **Database/migration checks**: no database.
+
+### Uncertain assessments
+- **Multi-repository stage commits**: each stage produced an implementation commit plus a paired dev summary commit. Stage 4 had no implementation change, so its stage commit is dev-only. The instructions don't say whether "stage commit including the summary update" means the same commit, which is impossible across repositories. I used paired commits that record the IDs. Suggest stating this pattern explicitly for website and product work driven from `railspike-dev`.
+- **Headless rendering limits** (minimum window width of 485 px; anchor-scrolled screenshots coming out blank) needed workarounds (an iframe, a probe copy). This is not a Railspike instruction issue, but a short note on render verification could help future website cycles.
