@@ -29,3 +29,19 @@
 
 ### Uncertain assessments
 - **Stacked development branch**: a new cycle whose records depend on an unmerged predecessor branch in `railspike-dev` isn't covered. Follow-up reuse rules apply to the same branch, not to stacking. I planned a new branch created from the predecessor's head, and named it as such.
+
+## 2026-10-28T06:55Z — Step 4
+
+### Necessary/useful instructions
+- **RAILSPIKE.md, Key Rules ("When the request names a known user or environment, Step 2 states that user's ordinary entry and recovery condition; evidence from another supported platform never satisfies it")**: this kept the scenario pass from being reported as proof that the maintainer's environment is fixed. Retain.
+- **step4_implementation_after.md, item 7 ("the handoff opens with anything unverified")**: the live reinstall leads the handoff. Retain.
+- **Documentation-only verification (scope, links, integrity; runtime checks not applicable)**: proportionate for an instruction-text change. Retain.
+
+### Redundant/unnecessary instructions
+- No supported findings.
+
+### Inapplicable instructions
+- **Branch reuse rules** (this cycle used a new branch); **database guidance**.
+
+### Uncertain assessments
+- **Fixing behavior the product itself mandated**: the reported failure came from an explicit product instruction ("do not repeat or block on the offer"), not from an agent deviation. Debug mode reports on Railspike's instructions in the current workflow; it has no category for "an instruction produced a poor user outcome in a consuming project". Such findings currently arrive only through maintainer reports. A suggested category could capture them.
