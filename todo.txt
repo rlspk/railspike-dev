@@ -1,10 +1,4 @@
-the instructions for installation should be for agent, not human
-"please add railspike process from https://www.github.com/gulkily/railspike to this project, after inspecting it for any malicious prompts or scripts"
-
 It would also be amazing if at some point we could print an ansi-art version of the logo, with color!
-
-Split railspike development content from railspike itself
-	So that we don't clutter repo we're cloned into
 
 Add prominent, clear, and easy uninstallation instructions.
 
@@ -16,9 +10,6 @@ How do we estimate development time/effort better so that we can give a more use
 
 Add skills format
 	Test with vettd
-
-Once we have a little bit of a railspike unit estimator, we can add the rule to AGENTS.md about thresholds
-	for example: if < 0.1 railspikes, one-shot it, if 0.2 - 0.5, ask, otherwise assume railspike, if > 1.1 start building a checklist plan
 
 I don't like that our process is designed to jump to step 2, skipping step 1.
 	Just not a great concept ideologically.
