@@ -6,10 +6,6 @@ It would also be amazing if at some point we could print an ansi-art version of 
 Split railspike development content from railspike itself
 	So that we don't clutter repo we're cloned into
 
-Remove the requirement to reprint step instructions
-	Read the current step's instructions before starting work. Do not reprint them unless the user requests it.
-	Reprinting duplicates content already read into context, wasting tokens and cluttering the conversation.
-
 Add prominent, clear, and easy uninstallation instructions.
 
 Set up a dedicated maintainer release-signing key and register its public key with GitHub.
