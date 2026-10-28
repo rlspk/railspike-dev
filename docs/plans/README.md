@@ -41,3 +41,5 @@
 - [Homepage essay framing](./homepage_essay_framing/homepage_essay_framing_step1_solution_assessment.md): first-screen install box and four-step diagram around the unchanged essay, with reference material and a canonical README uninstall prompt.
 
 - [Homepage essay framing polish](./homepage_essay_framing_polish/homepage_essay_framing_polish_one_shot.md): one-shot follow-up with copy buttons in the prompt corner, a rail-track divider before the essay, and a formatted plan-prompt example with a raw toggle.
+
+- [Homepage uninstall concealment](./homepage_uninstall_concealment/homepage_uninstall_concealment_one_shot.md): one-shot follow-up hiding the uninstall prompt behind a toggle with a distinct outline copy button.
