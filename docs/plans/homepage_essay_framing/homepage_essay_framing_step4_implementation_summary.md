@@ -110,3 +110,50 @@ Original stage-work estimates were copied from Step 3 (not new ratings): Stage 1
 - Estimate details: original scope unchanged; no revision.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Stage 4 - Final verification and records
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes: no page changes were needed. This stage records the closeout and the ledger row (`docs/research/effort_estimation/collection.md`). The `docs/plans/README.md` entry was already made in the planning commit (see Setup).
+- Verification (all passed unless stated otherwise):
+  - WCAG contrast:
+    - light: text 17.2, muted 8.1, link 8.0, button 8.0, excerpt 15.7, diagram line 3.4 (non-text, meets 3:1);
+    - dark: 14.9, 8.4, 8.8, 8.8, 13.7, and 7.8.
+  - The head metadata block (title, description, canonical, icon, Open Graph, Twitter, color-scheme, theme-color) is byte-identical to `c8043fc`.
+  - No third-party scripts, styles or images. The only absolute URL in a `link` element is the canonical `https://railspike.dev/`.
+  - Final essay check: identical, 4,970 characters. Final prompt, excerpt and anchor parity: passed (Stage 3 run on the final page).
+  - 360 px overflow: none (345/345).
+  - Dev link check: 191 files valid, with the 80 baseline historical targets acknowledged. Product link check: 16 files valid. `git diff --check`: clean in all three repositories.
+  - Renders for maintainer review (scratchpad, not committed): `/tmp/claude-1000/-home-wsl-railspike-dev/9fd75d22-de96-465a-96b4-bf61e5f5a5b9/scratchpad/site/renders/final` — first screen at 1280 light and dark and 500 dark; after-essay at 1280 light and 500 dark.
+- Notes: none.
+- Estimate details: original scope unchanged; no revision.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Closeout
+
+- **Delivered scope:** Step 2 v1 in full. Commits:
+  - `railspike` `5952bfd`, on `feature/homepage-essay-framing` from `0dcab22`;
+  - `rlspk.github.io` `26f8bf4` and `d219728`, on `feature/homepage-essay-framing` from `946438e`;
+  - `railspike-dev` planning commit `0d78557`, stage summaries `2c12914`, `f5c0ec4` and `c34b11c`, plus this closeout commit.
+- **Completion Contract:**
+  - The normal-entry outcome was verified by local render and scripted checks.
+  - Recovery: prompts are selectable without JavaScript; the uninstall procedure was fixture-tested; the site reverts by restoring `index.html`.
+- **Not verified or pending:**
+  - A live coding agent has not followed the uninstall prompt (fixtures exercised the documented procedure only).
+  - The page has not been tested on a real phone or in Safari or Firefox (headless Chrome only).
+  - Post-merge live check of railspike.dev: pending merge authorization.
+  - Maintainer review of the renders: pending.
+- **Release dependency:** merge `railspike` `feature/homepage-essay-framing` before the website, so that `README#uninstall` resolves. Each merge needs explicit authorization. No tag is planned.
+- **Corrections versus additions:** three ordinary corrections within stages (submodule leftovers in the uninstall wording, the diagram number alignment and copy-button overlap, the note spacing). No added scope. The Readings were declined for now, as recorded in Step 1.
+- **Stages:** four planned, four completed.
+
+**Retrospective cycle scope: 0.60**
+
+- Separately judged at closeout; this is not a replacement projection and not measured labor. The delivered slice matched the Step 3 plan. The corrections were ordinary, and verification took the expected share of the work. Single exposed Claude Code rater, R1/P2.
+- Maintainer comfortable-fit and acceptance: **pending**.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
