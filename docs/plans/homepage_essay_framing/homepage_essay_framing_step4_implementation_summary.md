@@ -167,3 +167,11 @@ Received 2026-10-28 after the Step 4 handoff. The maintainer called the result "
 | Move the copy button into the bottom-right corner of the prompt text area | Changed scope after completion. It reverses a Stage 2 correction (the overlaid button covered text at 360 px), so the field must reserve space for it. | Approved as one-shot, 2026-10-28 | [Follow-up `homepage_essay_framing_polish`](../homepage_essay_framing_polish/homepage_essay_framing_polish_one_shot.md) |
 | Add a stronger divider between the top part and the essay | Changed scope after completion; a visual refinement | Approved as one-shot, 2026-10-28 | Same follow-up |
 | Add a formatted version of the Markdown prompt, shown by default | Changed scope after completion. It adds a second view of the example excerpt; the maintainer confirmed: formatted by default, with a raw toggle. | Approved as one-shot, 2026-10-28 | Same follow-up |
+
+## Release
+
+- 2026-10-28: The maintainer asked to "release to the live site" and chose **"Merge README + site (Recommended)"**: fast-forward and push both repositories, with no tag.
+- Product: `railspike` `main` fast-forwarded `0dcab22..5952bfd` and pushed. Checks rerun first: product link check (16 files valid), the Git workflow fixture (passed), and `git diff --check` (clean). Fresh default installs now include the Uninstall section. No tag; the latest tag remains `v0.4.0-beta.1`.
+- Website: `rlspk.github.io` `main` fast-forwarded `946438e..711ad38`, including the polish follow-up, and pushed. The essay and parity checks were rerun first and passed.
+- Live check: see the follow-up record.
+- Not pushed: the `railspike-dev` records. Local `main` has two maintainer commits (`1ca0e5e`, `d696751`) that aren't on `origin`; publishing the development records is a separate decision. The homepage's dev link (`8e89733`) is already public.

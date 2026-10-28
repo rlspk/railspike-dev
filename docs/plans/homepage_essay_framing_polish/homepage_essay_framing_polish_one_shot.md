@@ -8,7 +8,7 @@ Extended estimates: enabled (no real alternatives or work units, so there are no
 
 **Cycle estimate: 0.20**
 
-Status: technically complete; committed on unmerged branches; next permitted action: maintainer review (merge, push and publication are not authorized).
+Status: released to railspike.dev on 2026-10-28 by maintainer request; live check recorded below.
 
 ## Original request
 
@@ -110,7 +110,7 @@ All passed unless stated otherwise:
 - `rlspk.github.io` `ae7c95f`, `7bed800` and `711ad38` on `feature/homepage-essay-framing` (unmerged, unpushed).
 - `railspike-dev` record commits: `6d030f6`, `2780300`, plus this update (hash reported in the handoff).
 - `railspike`: unchanged at `5952bfd`.
-- Release order is unchanged: product first, then website, each with explicit authorization.
+- 2026-10-28 release (maintainer: "Please release to the live site", then chose to merge the README and the site): `railspike` `main` → `5952bfd`, then `rlspk.github.io` `main` → `711ad38`, both fast-forward pushes, no tag. Details are in the [predecessor release note](../homepage_essay_framing/homepage_essay_framing_step4_implementation_summary.md#release).
 
 ## Study closeout
 
