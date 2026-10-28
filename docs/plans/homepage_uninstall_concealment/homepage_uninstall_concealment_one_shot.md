@@ -8,7 +8,7 @@ Extended estimates: enabled (no real alternatives or work units)
 
 **Cycle estimate: 0.10**
 
-Status: technically complete on `feature/uninstall-prompt-concealed` (unmerged, unpushed); next permitted action: publish only on the maintainer's explicit request.
+Status: released to railspike.dev on 2026-10-28 by maintainer request ("Great, you can push this change").
 
 ## Original request
 
@@ -70,11 +70,12 @@ Status: technically complete on `feature/uninstall-prompt-concealed` (unmerged, 
 ## Outcome
 
 - Delivered as authorized.
-- Publication pending: the live site still serves `711ad38`, which shows the uninstall prompt openly.
+- Published: `rlspk.github.io` `main` fast-forwarded `711ad38..189733b` and pushed, after rerunning the essay and parity checks. The live check is recorded below.
+- Live check (2026-10-28): railspike.dev served the new page after ~45s after the push, byte-identical to `189733b`. Passed.
 
 ## Commit/merge/publication status
 
-- `rlspk.github.io` `189733b` on `feature/uninstall-prompt-concealed`, created from `main` `711ad38`; not merged or pushed.
+- `rlspk.github.io` `189733b`, fast-forward merged to `main` and pushed on 2026-10-28.
 - `railspike-dev`: this record commit (hash in the handoff).
 
 ## Study closeout
