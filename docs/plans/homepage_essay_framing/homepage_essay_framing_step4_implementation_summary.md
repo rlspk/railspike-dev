@@ -50,3 +50,32 @@ Original stage-work estimates were copied from Step 3 (not new ratings): Stage 1
 - Estimate details: original scope unchanged; no revision. The retrospective matches the original, because the fixture correction was ordinary correction within the stage.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Stage 2 - First screen, typography and diagram
+
+**Original estimate: 0.20**
+
+**Retrospective stage work: 0.20**
+
+- Changes (`rlspk.github.io` `26f8bf4`, `index.html`):
+  - New header with the logo and a "Railspike" `h1`, plus a lede using the essay's first sentence.
+  - The compact install box comes first, followed by the "Four steps, three approvals" line diagram: an ordered list of Assess (dashed and optional), Define, Plan and Build, with the `Approved Step N` gates on the segments. The line is horizontal from 34rem up and vertical, drawn per segment, below that. The line color is the logo's spike amber (`#c47a02` light, `#e09a2a` dark). Below it is a one-sentence note about `docs/plans/` and approvals.
+  - The essay is wrapped in `<article id="essay">`. Its title is now an `h2`, and its paragraphs were moved by script, not retyped.
+  - One shared prompt pattern (`.prompt`) with one script loop now serves every prompt box. The copy button moved under the field with a "Copy prompt" label, because at 360 px the old overlaid button covered prompt text. The field sizes itself to its content (`field-sizing`, with a min-height fallback).
+  - System sans is used for the UI and diagram, and the serif is kept for prose. The head metadata block was copied unchanged.
+  - The old after-essay install section was kept, on the shared pattern, until Stage 3.
+- Verification:
+  - Essay check (`essay_check.py`, scratchpad): text identical to `c8043fc`, 4,970 characters.
+  - Prompt text was built from the README Quick start block (`railspike` `5952bfd`) and is identical.
+  - Renders: 1280×720 light, and 360 px light and dark. The first render showed the step numbers sitting high in their circles and the copy button overlapping the prompt text at 360 px; both were fixed and re-rendered. Dark mode was emulated with `--blink-settings=preferredColorScheme=0`.
+  - Fold: at 1280×720 the diagram note ends at 622 px, so the one-liner, install box and diagram are all above the fold.
+  - Overflow: inside a 360 px iframe, `scrollWidth` equals `clientWidth` (345/345). A headless window can't go below 485 px, so the iframe method was used.
+  - Without JavaScript, the copy buttons stay `hidden` and the prompt remains selectable text in the markup. With JavaScript, two buttons are shown.
+  - External references: only the logo, GitHub links and the canonical URL; no third-party requests.
+  - `git diff --check`: clean.
+- Notes:
+  - The scratchpad build script assembles the page from the preserved head, the template, the extracted essay and the README prompts. It is a development aid and is not committed to the site.
+  - Contrast and metadata checks are owned by Stage 4.
+- Estimate details: original scope unchanged; no revision.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
