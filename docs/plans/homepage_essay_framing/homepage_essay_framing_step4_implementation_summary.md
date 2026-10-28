@@ -79,3 +79,34 @@ Original stage-work estimates were copied from Step 3 (not new ratings): Stage 1
 - Estimate details: original scope unchanged; no revision.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Stage 3 - After the essay
+
+**Original estimate: 0.15**
+
+**Retrospective stage work: 0.15**
+
+- Changes (`rlspk.github.io` `d219728`, `index.html`):
+  - Replaced the old after-essay install section. In order, the page now has:
+    - "Get started": the repeated install box, a one-line note on what the agent does, and a link to the full instructions.
+    - "What a plan-prompt looks like": the Original Query, Problem and Option B of `one_shot_cycles` Step 1 as raw Markdown, with `[…]` marking omissions and a link to the full file at `8e89733`.
+    - "Small tasks": one-shot mode in two sentences, linking to the README.
+    - "Uninstall": the shared prompt box with the README prompt and a link to `README#uninstall`.
+    - "Read more": full installation, the four steps, failure modes, updating, and GitHub.
+  - Footer: MIT License link and the GitHub link.
+  - All three prompt boxes use the shared `.prompt` pattern; no new script.
+- Verification:
+  - Essay check: identical to `c8043fc`, 4,970 characters.
+  - `parity_check.py` (scratchpad):
+    - The two install prompts and one uninstall prompt match the README blocks on `railspike` `5952bfd` exactly.
+    - The excerpt's three sections are verbatim from `git show 8e89733:…`, and `8e89733` is an ancestor of `origin/main`.
+    - All five README anchors exist (`quick-start`, `the-four-steps`, `reusing-across-projects`, `one-shot-work-with-a-development-record`, `uninstall`).
+    - `docs/failure-modes.md` and `LICENSE` exist on product `main`.
+  - Renders of the after-essay sections: 1280 px light, and 500 px dark. The note under each copy button sat too close to it; spacing was added and the page re-checked. Anchor-scrolled headless screenshots came out blank, so a probe copy hiding the earlier sections was rendered instead.
+  - 360 px iframe: `scrollWidth` 345 equals `clientWidth` 345. `git diff --check`: clean.
+- Notes:
+  - `README#uninstall` exists only on the unmerged `railspike` branch. If the website were merged first, that link would land on the top of the README. The product must therefore be merged first; this is recorded for closeout.
+  - The prompts keep the README's hard line breaks, so they wrap raggedly in narrow boxes. Parity with the README took priority over reflowing the text.
+- Estimate details: original scope unchanged; no revision.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
