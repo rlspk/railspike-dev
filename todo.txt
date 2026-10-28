@@ -15,3 +15,8 @@ I don't like that our process is designed to jump to step 2, skipping step 1.
 	Just not a great concept ideologically.
 
 Should we make a skills.md?
+
+Make a short "upgrade railspike" request safe, since that is what people actually type.
+	Add an upgrade pointer to RAILSPIKE.md (and the AGENTS.md guidance) that sends agents to the README upgrade procedure: identify install type, preserve local edits, verify, leave committing to the user.
+	Lead the README with a short upgrade prompt; keep the detailed one as an example and for picking a tag.
+	Test with a live agent given only "upgrade railspike". Existing installs need one full upgrade to get the pointer.
