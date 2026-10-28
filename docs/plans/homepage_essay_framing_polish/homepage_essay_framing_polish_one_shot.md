@@ -75,6 +75,16 @@ Status: technically complete; committed on unmerged branches; next permitted act
 - 2026-10-28: Renewed authorization. The maintainer replied: *"Is there an upgrade prompt already? Either way, I trust you to do it right."* This is read as authorizing the proposed homepage link change only: retarget and rename the existing link. No new homepage prompt box, since the maintainer said "maybe not on the homepage". Execution follows below.
 - 2026-10-28: Implemented in `rlspk.github.io` `7bed800`. In the "Read more" list, "Updating an installation" (`#reusing-across-projects`) is now "Upgrade with your agent" (`#ask-your-agent-to-upgrade-railspike`). Verification: the essay is identical; the prompt and excerpt checks pass; the new anchor exists in the README heading "Ask your agent to upgrade Railspike"; `git diff --check` is clean. This is an addition, not a correction. The cycle estimate is unchanged at 0.20: a one-line link change is within the original estimate's range.
 
+- 2026-10-28: Renewed authorization: *"Please change the show raw markdown toggle to tabs."* Scope: replace the `<details>` toggle with two tabs ("Formatted", selected by default, and "Markdown") for the example only. Approach: progressive enhancement. Without JavaScript, both views stay visible, stacked, with a "Raw Markdown" label. With JavaScript, an accessible tablist (ARIA roles, arrow keys and Home/End) shows one panel at a time. No other changes.
+  - Process note: this entry was meant to be written before implementation. The command that wrote it stalled (a stray `cat` waiting on input) while the edit ran in parallel, so it was written just after the uncommitted edit. Nothing was committed before this entry existed.
+- 2026-10-28: Implemented in `rlspk.github.io` `711ad38`. The `<details>` toggle was replaced by a `.views` block: a tablist (hidden until the script runs), the formatted panel, and the raw panel with a "Raw Markdown" label. The script assigns the `tablist`, `tab` and `tabpanel` roles, `aria-selected`, roving `tabIndex`, arrow and Home/End keys, and hides the unselected panel. Selected-tab styling uses the excerpt background with an amber underline. Verification:
+  - Essay identical; prompt, raw-excerpt and rendered-fidelity checks pass (the check regex now allows the panel's `id`).
+  - Renders at 1280: Formatted tab selected by default; Markdown tab after a scripted click; with scripts disabled, both views are stacked under a "Raw Markdown" label and the tablist is hidden.
+  - DOM probe after clicking Markdown: `aria-selected=true`, `role=tab`, formatted panel hidden, raw panel shown, `role=tablist` present.
+  - 360 px iframe: no overflow (345/345). `git diff --check`: clean.
+  - Not verified: actual keyboard arrow navigation and a screen reader (only scripted clicks were exercised).
+  - The cycle estimate stays at 0.20; a revision isn't warranted for a single-component swap within the same scope area. Retrospective: see below.
+
 ## Outcome
 
 - All three authorized changes were delivered. The upgrade request was already satisfied by the README; the homepage link now points directly at that README section (renewed authorization).
@@ -97,8 +107,8 @@ All passed unless stated otherwise:
 
 ## Commit/merge/publication status
 
-- `rlspk.github.io` `ae7c95f` and `7bed800` on `feature/homepage-essay-framing` (unmerged, unpushed).
-- `railspike-dev` record commits: `6d030f6`, plus this update (hash reported in the handoff).
+- `rlspk.github.io` `ae7c95f`, `7bed800` and `711ad38` on `feature/homepage-essay-framing` (unmerged, unpushed).
+- `railspike-dev` record commits: `6d030f6`, `2780300`, plus this update (hash reported in the handoff).
 - `railspike`: unchanged at `5952bfd`.
 - Release order is unchanged: product first, then website, each with explicit authorization.
 
@@ -106,7 +116,7 @@ All passed unless stated otherwise:
 
 **Retrospective cycle scope: 0.20**
 
-- Judged separately; not measured labor. The delivered scope matched the authorization, and the fidelity check went in without trouble. Single exposed Claude Code rater, R1/P2.
+- Judged separately; not measured labor. Revised at closeout to include two renewed authorizations (the upgrade link and the tabs). The delivered scope matched each authorization. **Revised retrospective cycle scope: 0.25** (the original 0.20 retrospective is retained above). Single exposed Claude Code rater, R1/P2.
 - Maintainer fit/acceptance: pending.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
