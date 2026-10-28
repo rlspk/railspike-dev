@@ -59,3 +59,42 @@ The original stage estimates are copied from Step 3 and are not new ratings: Sta
 - Estimate details: original scope unchanged. The retrospective is lower than the original because the existing consent rules moved over nearly as they were.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Stage 2 - README alignment and transcript replay
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes:
+  - `railspike` `ea1ad5b`, `README.md`:
+    - Quick start step 1: the welcome "asks one yes/no question" about adding the optional guidance to `AGENTS.md`.
+    - Step 2: describe a task "after you answer the guidance question". A task reply leaves `AGENTS.md` unchanged, reports that the guidance was not added, and starts the task.
+  - `railspike-dev`: [scenario verification](./welcome_guidance_question_verification.md), with a replay of the maintainer's transcript and seven reply scenarios.
+- Verification:
+  - Transcript replay: under the revised text the welcome turn ends at the guidance question, with no task question. The reported failure no longer follows from the instructions (passed, against the written text).
+  - Seven scenarios passed: yes, no, task instead, existing section, task supplied with the install request, "later" or a question, and an explicit opt-out.
+  - The README and `WELCOME.md` were cross-checked. No "unanswered" or "block your task" phrasing remains.
+  - Product link check (16 files), Git-workflow fixture, and `git diff --check`: passed. Product changes are limited to `WELCOME.md` and the two README sentences.
+  - Runtime, UI, and deployment checks: not applicable.
+  - **Pending:** a live agent reinstall by the maintainer.
+- Estimate details: original scope unchanged.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Closeout
+
+- **Delivered:** Step 2 v1 in full on `railspike` `feature/welcome-guidance-question` (`a35f0d5`, `ea1ad5b`, from `5952bfd`).
+  - `railspike-dev` commits: planning `1e61d96`, Stage 1 summary `f54c767`, and this closeout.
+  - Two planned stages, two completed. No corrections or added scope.
+- **Not verified or pending:**
+  - Live agent compliance: the maintainer's reinstall in a disposable project, including any Kiro use.
+  - Merge, tag, or beta: not requested. If released, this would be `v0.4.0-beta.3` with documentation-only changes.
+- **Known user condition:** the reported failure was replayed against the written text and no longer follows from it. Live confirmation remains open.
+
+**Retrospective cycle scope: 0.25**
+
+- Judged separately; not measured labor. Lower than the 0.30 projection because the projection included a possible beta, which was not requested. Single exposed Claude Code rater, R1/P2.
+- Maintainer comfortable fit and acceptance: **pending**.
+
+*— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
