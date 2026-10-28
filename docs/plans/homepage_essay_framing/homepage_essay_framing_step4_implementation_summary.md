@@ -157,3 +157,13 @@ Original stage-work estimates were copied from Step 3 (not new ratings): Stage 1
 - Maintainer comfortable-fit and acceptance: **pending**.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Post-completion enhancement requests
+
+Received 2026-10-28 after the Step 4 handoff. The maintainer called the result "great".
+
+| Request | Disposition and reason | Approval status | Outcome |
+| --- | --- | --- | --- |
+| Move the copy button into the bottom-right corner of the prompt text area | Changed scope after completion. It reverses a Stage 2 correction (the overlaid button covered text at 360 px), so the field must reserve space for it. | Approved as one-shot, 2026-10-28 | [Follow-up `homepage_essay_framing_polish`](../homepage_essay_framing_polish/homepage_essay_framing_polish_one_shot.md) |
+| Add a stronger divider between the top part and the essay | Changed scope after completion; a visual refinement | Approved as one-shot, 2026-10-28 | Same follow-up |
+| Add a formatted version of the Markdown prompt, shown by default | Changed scope after completion. It adds a second view of the example excerpt; the maintainer confirmed: formatted by default, with a raw toggle. | Approved as one-shot, 2026-10-28 | Same follow-up |

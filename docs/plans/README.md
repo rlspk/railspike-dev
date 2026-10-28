@@ -39,3 +39,5 @@
 - [One-shot cycles](./one_shot_cycles/one_shot_cycles_step1_solution_assessment.md): bounded upfront authorization with equivalent development evidence in one evolving record.
 
 - [Homepage essay framing](./homepage_essay_framing/homepage_essay_framing_step1_solution_assessment.md): first-screen install box and four-step diagram around the unchanged essay, with reference material and a canonical README uninstall prompt.
+
+- [Homepage essay framing polish](./homepage_essay_framing_polish/homepage_essay_framing_polish_one_shot.md): one-shot follow-up with copy buttons in the prompt corner, a rail-track divider before the essay, and a formatted plan-prompt example with a raw toggle.
