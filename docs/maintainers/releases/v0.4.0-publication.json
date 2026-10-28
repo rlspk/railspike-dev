@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-10-28T04:53:23.082249+00:00",
+  "authorized_version": "v0.4.0",
+  "authorization": "Maintainer: 'Please cut a stable release' (2026-10-28); asked to merge first; release resumed after live checks",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.4.0",
+  "release_id": 426275044,
+  "published_at_utc": "2026-10-28T04:53:10Z",
+  "prerelease": false,
+  "draft": false,
+  "latest": true,
+  "previous_stable": "v0.1.0",
+  "promoted_from": {
+    "tag": "v0.4.0-beta.3",
+    "commit": "ea1ad5b524c2b447d3e61b15ccd3cd412ce6ecef"
+  },
+  "product_branch": "main",
+  "main_fast_forward": "5952bfddba579ca3e76bbf397e7a0a5bbf150785..ea1ad5b524c2b447d3e61b15ccd3cd412ce6ecef",
+  "product_commit": "ea1ad5b524c2b447d3e61b15ccd3cd412ce6ecef",
+  "tag_object": "2887b2fc33052b537af6c4119dd9a63e471be0ae",
+  "tag_signed": false,
+  "release_body_matches_notes": true,
+  "checks": {
+    "markdown_links_py_pl_mjs": "pass, 16 files (clean clone of main)",
+    "git_workflow_fixture": "pass",
+    "diff_check_vs_v0.1.0": "pass",
+    "repository_separation_fixture": "pass, legacy baseline b59f7df89842ba17f710ae1f2dc955bb361cc620, product revision ea1ad5b, 18 files"
+  },
+  "live_checks_by_maintainer": {
+    "welcome_guidance_question_reinstall": "pass",
+    "uninstall_copied_installation": "pass",
+    "uninstall_submodule_installation": "not run live (fixture only)",
+    "interrupted_one_shot_resume": "pass (OpenAI Codex v0.164.0, prompt 'Please resume', record shows resumption verification; commit ba2aa0d in the test project; no effort study enrolled there)"
+  },
+  "dropped_checks": {
+    "estimates_off": "maintainer decision: estimates assumed on; turning them off to be deprecated later"
+  },
+  "not_exercised": [
+    "mid-stage estimate revision",
+    "study opt-outs",
+    "legacy cycle recovery"
+  ],
+  "publication_method": "main fast-forwarded and pushed; clean-clone checks; annotated unsigned tag pushed; GitHub Releases REST API with prerelease=false, make_latest=true",
+  "host_installations_updated": false
+}
