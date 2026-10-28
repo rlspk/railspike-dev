@@ -43,3 +43,5 @@
 - [Homepage essay framing polish](./homepage_essay_framing_polish/homepage_essay_framing_polish_one_shot.md): one-shot follow-up with copy buttons in the prompt corner, a rail-track divider before the essay, and a formatted plan-prompt example with a raw toggle.
 
 - [Homepage uninstall concealment](./homepage_uninstall_concealment/homepage_uninstall_concealment_one_shot.md): one-shot follow-up hiding the uninstall prompt behind a toggle with a distinct outline copy button.
+
+- [Welcome guidance question](./welcome_guidance_question/welcome_guidance_question_step2_feature_description.md): the welcome asks the optional AGENTS.md question on its own and reports whether guidance was added, declined, or not answered.
