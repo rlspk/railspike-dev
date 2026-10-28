@@ -37,3 +37,5 @@
 - [Estimate presentation and plan attribution](./estimate_presentation/estimate_presentation_step2_feature_description.md): standalone estimate lines and agent signatures with verified model/settings; beta 3.
 
 - [One-shot cycles](./one_shot_cycles/one_shot_cycles_step1_solution_assessment.md): bounded upfront authorization with equivalent development evidence in one evolving record.
+
+- [Homepage essay framing](./homepage_essay_framing/homepage_essay_framing_step1_solution_assessment.md): first-screen install box and four-step diagram around the unchanged essay, with reference material and a canonical README uninstall prompt.
