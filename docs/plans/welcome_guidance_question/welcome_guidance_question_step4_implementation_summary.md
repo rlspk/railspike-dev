@@ -98,3 +98,12 @@ The original stage estimates are copied from Step 3 and are not new ratings: Sta
 - Maintainer comfortable fit and acceptance: **pending**.
 
 *— Claude Code · 2026-10-28 UTC · Model: Claude Opus 5.5 (claude-opus-5-5)*
+
+## Release
+
+- 2026-10-28: The maintainer said "Cut the beta".
+- Following the default beta policy, `feature/welcome-guidance-question` was pushed. The annotated, unsigned `v0.4.0-beta.3` tag (object `d87f3f8`) was created on `ea1ad5b` and pushed, and a GitHub pre-release was published with `make_latest=false`.
+- `main` is unchanged at `5952bfd`. Stable Latest remains `v0.1.0`.
+- Records: [notes](../../maintainers/releases/v0.4.0-beta.3.md) and [publication record](../../maintainers/releases/v0.4.0-beta.3-publication.json).
+- Checks were rerun on a clean clone and passed. The repository-separation fixture was not rerun; the reason is in the notes.
+- Live agent compliance is still pending.
