@@ -56,3 +56,5 @@ Confirmed completion references: product `bc9e431`, paired host completion `5b24
 **Revised cycle estimate: 0.35**
 
 Whole-cycle v2 projection/entry, R1/P2, Codex single exposed rater; original v1 0.30 retained. Added release verification/publication scope, not remaining work or measured labor. Public notes self-contained; development evidence stays local. Commit this release plan before publication work.
+
+Version correction: user stopped publication, then explicitly requested “just bump the minor version please”. Use `v0.6.0-beta.1`, overriding the generic major-version policy for this release. Earlier v1.0.0 proposal remains history only; no corresponding tag/release was created. Feature branch push had completed before stop. Publication now authorized at the corrected minor version; scope v2 estimate remains 0.35.
