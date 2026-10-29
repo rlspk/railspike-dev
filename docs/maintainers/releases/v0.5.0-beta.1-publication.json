@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-29T02:10:08.156034+00:00",
+  "authorization": "User: Please correct the beta version to v0.5.0-beta.1, rewrite history",
+  "cycle": "railspike/concept_inventory",
+  "scope_version": "v2 release follow-up",
+  "tag": "v0.5.0-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.5.0-beta.1",
+  "release_id": 427337086,
+  "published_at": "2026-10-29T00:32:36Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "583e69da722e37d6993dfc017b140473d143c554",
+  "tag_object": "49462870357ca143bfd54946182b696b50e1d418",
+  "tag_signed": false,
+  "branch": "feat/concept-inventory",
+  "main_unchanged": "ea1ad5b524c2b447d3e61b15ccd3cd412ce6ecef",
+  "stable_latest": "v0.4.0",
+  "body_matches_notes": true,
+  "method": "Annotated tag pushed and verified; existing prerelease renamed via GitHub REST PATCH with make_latest=false; superseded tag removed under explicit rewrite authorization.",
+  "checks": {
+    "product_links": "pass, 17 files",
+    "git_workflow_fixture": "pass",
+    "whitespace": "pass",
+    "static_scenarios": "pass, five scenarios; recorded in cycle verification",
+    "live_agent_compliance": "unverified"
+  },
+  "development_records_pushed": false,
+  "evidence_note": "Self-contained public release notes; no unpublished development evidence links.",
+  "host_installations_updated": false,
+  "version_correction_verified": true
+}

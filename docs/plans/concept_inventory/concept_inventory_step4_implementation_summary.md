@@ -57,3 +57,23 @@ All three stages technically complete; original projection and stage estimates r
 Implementation is on `feat/concept-inventory` in both repositories. Product commits: `1a709b3`, `583e69d`; development planning `5086b45`, Stage 1 `f99e96f`, Stage 2 `4233e1a`, Stage 3 commit pending at this write. Review the branch diffs; corrections can revise affected documents through the normal workflow. No merge, push, tag or publication performed. Next permitted action: maintainer review/handoff.
 
 *— Codex · 2026-10-29 UTC*
+
+## Release authorization — 2026-10-29
+
+The user subsequently requested “Please mint a new beta,” authorizing beta preparation and publication for the completed cycle. Implementation scope remains v1; Stage 3 development commit confirmed as `4afe2ee`, diagnostic handoff `d7057f2`. Release preparation uses [v0.5.0-beta.1 notes](../../maintainers/releases/v0.5.0-beta.1.md). The maintainer explicitly selected v0.5.0-beta.1 and authorized rewriting release history; stable v0.4.0 already exists. No merge or host upgrade authorized.
+
+**Revised cycle projection: 0.45**
+
+Append-only release scope v2: same concept change plus authorized tag, GitHub prerelease, verification and publication record. Single exposed Codex rater, R1/P2; prior 0.40 implementation projection and retrospective retained, not replaced. Driver: release bookkeeping and remote verification, with no additional product changes. Publication pending at this entry.
+
+*— Codex · 2026-10-29 UTC*
+
+## Published — 2026-10-29
+
+Published [v0.5.0-beta.1](https://github.com/rlspk/railspike/releases/tag/v0.5.0-beta.1) from product `583e69da722e37d6993dfc017b140473d143c554`; unsigned annotated tag `49462870357ca143bfd54946182b696b50e1d418`. Remote tag, release body, prerelease/non-draft status, unchanged main and stable Latest v0.4.0 verified. See [publication record](../../maintainers/releases/v0.5.0-beta.1-publication.json). Product links, workflow fixture and whitespace checks passed again for release. Development records remain local; public notes are self-contained. No host upgrade or merge.
+
+**Retrospective cycle scope v2: 0.45**
+
+Release scope complete; prior v1 estimates and retrospective retained. Single exposed Codex rater, R1/P2; measured labor unknown, maintainer study acceptance pending, live agent compliance unverified.
+
+*— Codex · 2026-10-29 UTC*
