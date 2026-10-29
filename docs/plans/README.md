@@ -47,3 +47,5 @@
 - [Welcome guidance question](./welcome_guidance_question/welcome_guidance_question_step2_feature_description.md): the welcome asks the optional AGENTS.md question on its own and reports whether guidance was added, declined, or not answered.
 
 - [Concept inventory](./concept_inventory/concept_inventory_step2_feature_description.md): lazy concept inventory maintenance and concepts-touched lists in plans.
+
+- [Shared implementation standards](./shared_implementation_standards/shared_implementation_standards_step1_solution_assessment.md): shared staged/one-shot safeguards and host guidance for Direct work; Steps 1–2 approved, [Step 3](./shared_implementation_standards/shared_implementation_standards_step3_development_plan.md) awaiting approval.
