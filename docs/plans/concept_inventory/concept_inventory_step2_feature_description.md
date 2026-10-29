@@ -65,3 +65,9 @@ Acceptance evidence: walkthroughs for an absent inventory, an existing multi-fil
 2026-10-28: the user confirmed lazy maintenance rather than a comprehensive project sweep, then explicitly replied “Approved Step 2.” Scope v1 is unchanged. The intervening “Approved Step 1” was clarified and was not treated as Step 2 approval. Step 3 planning is authorized; implementation remains pending.
 
 *— Codex · 2026-10-28 UTC*
+
+## Implemented inventory references
+
+2026-10-29, Stage 3: [Concept inventory](../../concepts/inventory.md) — created; [Planning record](../../concepts/planning.md#planning-record) — changed; [Approval and scope boundary](../../concepts/planning.md#approval-and-scope-boundary) — used unchanged. These entries document the delivered instructions; the original approved scope and estimates above are preserved. Step 3 was subsequently approved in conversation; implementation followed that approval.
+
+*— Codex · 2026-10-29 UTC*

@@ -65,3 +65,9 @@ Concept inventory — created; Planning record — changed; Approval/scope bound
 - Commit each completed stage with its host summary before proceeding; pair product and development commits where both change. Preserve append-only scope/score history. At closeout record actual checks, omissions, revisions, and retrospective assessments; maintainer fit/acceptance stays pending unless supplied. No merge or release is authorized.
 
 *— Codex · 2026-10-28 UTC*
+
+## Implemented inventory references
+
+2026-10-29, Stage 3: [Concept inventory](../../concepts/inventory.md) — created; [Planning record](../../concepts/planning.md#planning-record) — changed; [Approval and scope boundary](../../concepts/planning.md#approval-and-scope-boundary) — used unchanged. These entries document the delivered instructions; the original approved scope and estimates above are preserved. Step 3 was subsequently approved in conversation; implementation followed that approval.
+
+*— Codex · 2026-10-29 UTC*
