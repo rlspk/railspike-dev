@@ -95,3 +95,21 @@ Application/runtime/UI/device/migration/deployment/release checks are inapplicab
 Passed: product links (18 Markdown files), development links (218 files with unchanged 80-target historical baseline), Git-workflow fixture, source-obligation/record/consent scenarios, touched concept paths, and authorized file scope. Final commit audit confirms one planning commit plus three stage commits in development, each stage containing the summary; product has three corresponding stage commits. Both trees were clean before this log-only handoff update. Required outcome complete; no unresolved implementation requests. Product revision `2d537f7`; development S3 `4077d9e4dacaa2cbe23314613d42d098ba25bd06`. Maintainer fit/acceptance pending; cycle projection and retrospective both 0.50, not measured time. Nothing merged, pushed, tagged, published, or installed in consumers.
 
 *— Codex · 2026-10-29 UTC*
+
+## 2026-10-29T19:28:56.133861+00:00 — Release follow-up closeout
+
+### Necessary/useful instructions
+
+Release policy required remote tag inspection, exact-revision verification, annotation/signing evidence, and prerelease/Latest readback. These established beta 2's identity and preserved main. Shared scope rules retained explicit user publication authority separately from earlier implementation-only scope. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Corrections and uncertainty
+
+The repository-separation fixture expects a legacy revision, not a candidate argument. Initial prerequisite failure did not test the candidate; a disposable remote clone pinned to the candidate then passed with the historical legacy baseline. Installed gh rejected --verify-tag; after verifying tag IDs and absence of a release, REST publication succeeded with prerelease=true and make_latest=false. No tag moved/reused. Live agent compliance remains unverified.
+
+Status: beta published; tag/release/body verified; main and stable Latest unchanged. Product branch/tag pushed; local development release records committed separately. No consumer update, stable promotion, or study acceptance inferred.
+
+*— Codex · 2026-10-29 UTC*

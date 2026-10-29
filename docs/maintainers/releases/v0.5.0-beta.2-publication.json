@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-29T19:28:56.133861+00:00",
+  "authorization": "User: Great job! Please cut a new beta",
+  "cycle": "railspike/shared_implementation_standards",
+  "scope_version": "v2 release follow-up",
+  "tag": "v0.5.0-beta.2",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.5.0-beta.2",
+  "release_id": 428305932,
+  "published_at": "2026-10-29T19:28:20Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "2d537f7ba3c992c3506a6fab08a4a7b9eb086918",
+  "tag_object": "86aec35ced7bc85ee5ba4ddb661e2a0daf0b31ad",
+  "tag_signed": false,
+  "branch": "feat/shared-implementation-standards",
+  "main_unchanged": "ea1ad5b524c2b447d3e61b15ccd3cd412ce6ecef",
+  "stable_latest": "v0.4.0",
+  "body_matches_notes": true,
+  "method": "Annotated tag pushed and remote peeled commit verified. Installed gh lacks --verify-tag, so create exited before publication; verified release absent (404), then POSTed via GitHub REST with make_latest=false and read back.",
+  "checks": {
+    "product_links": "pass, 18 files",
+    "development_links": "pass, 220 files, historical baseline 80",
+    "git_workflow_fixture": "pass",
+    "repository_separation_fixture": "pass on exact published candidate, 20 product files; corrected initial legacy-argument error",
+    "whitespace": "pass",
+    "live_agent_compliance": "unverified"
+  },
+  "development_records_pushed": false,
+  "evidence_note": "Self-contained release notes; no unpublished development links.",
+  "host_installations_updated": false
+}

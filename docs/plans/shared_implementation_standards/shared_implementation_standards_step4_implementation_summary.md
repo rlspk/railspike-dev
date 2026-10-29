@@ -52,3 +52,17 @@ Planning staged diff check flagged six Markdown hard-break trailing spaces but t
 2026-10-29T18:44:22Z — All three stages technically complete; original independent cycle projection 0.50 and scope v1/R1/P2 retained. Codex, single exposed rater; retrospective is scoped work, not measured labor or the sum of stage values. Maintainer comfortable-fit/acceptance pending. Intake remains missing. No unresolved implementation requests; host adoption and release remain separate future actions. Required documentation checks passed; live agent behavior was not tested. Both repositories retain their own commits on `feat/shared-implementation-standards`; nothing merged, pushed, tagged, published, or installed in consumers. Recovery: review/revert these local feature commits under normal authorization; do not rewrite unrelated history. Final commit/gate audit follows in the debug handoff.
 
 *— Codex · 2026-10-29 UTC*
+
+## Release follow-up — scope v2
+
+2026-10-29T19:26:41Z — User: “Great job! Please cut a new beta.” Authorizes release preparation, verification, product branch/tag push and GitHub prerelease publication for this delivered change. Publish `v0.5.0-beta.2` from the current reviewed product commit, retaining stable `v0.4.0` and unchanged `main`; no consumer updates. Release notes/publication evidence belong under `docs/maintainers/releases/`. This extends the prior no-publication boundary explicitly; implementation scope v1 and all original estimates remain intact.
+
+**Revised cycle estimate: 0.55**
+
+R1/P2, Codex single exposed rater: whole-cycle v2 projection includes release verification, notes and publication; it is not remaining work or measured time. Earlier projection/retrospective 0.50 remain scope v1. Release entry 0.55; follow-up in progress. Existing completed feature branches continue for release bookkeeping; no implementation-stage rework. Public notes will be self-contained, with no unpublished development links.
+
+### Release closeout — 2026-10-29T19:28:56.133861+00:00
+
+**Retrospective cycle scope v2: 0.55**
+
+Published [v0.5.0-beta.2](https://github.com/rlspk/railspike/releases/tag/v0.5.0-beta.2) from product `2d537f7ba3c992c3506a6fab08a4a7b9eb086918`; unsigned annotated tag `86aec35ced7bc85ee5ba4ddb661e2a0daf0b31ad`. Prerelease/body readback passed, main unchanged and stable Latest still v0.4.0. Product links/Git fixture/whitespace and exact-candidate installation fixture passed. Initial fixture argument error corrected; installed gh lacked --verify-tag, so publication used REST only after verifying remote tag and absent release. [Publication record](../../maintainers/releases/v0.5.0-beta.2-publication.json) retains evidence. Whole-cycle scope v2 retrospective 0.55, original v1 histories retained; not measured labor. Maintainer study fit/acceptance pending, live compliance unverified. No consumer updates or merges. Release notes self-contained; development records remain local. Release follow-up complete.
