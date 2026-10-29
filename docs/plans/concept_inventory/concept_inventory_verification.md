@@ -10,3 +10,11 @@
 Stage 1 checks: product Markdown links passed (17 files); whitespace checks passed in both repositories. Changed product files are the shared guide, entry point, documentation index and approved workflow Markdown. Source inspection confirms each phase points to the same guide; the guide is 27 lines, with brief additions to individual steps. Runtime, UI, deployment, migration and release checks are inapplicable to this instruction-only scope.
 
 *— Codex · 2026-10-28 UTC*
+
+## Stage 2
+
+- One-shot scenario — **Pass**: Entry and authorization includes concepts and proposed updates in bounded scope; the template has the same field. Execution and evidence references the shared maintenance/verification rule. Existing consent, scope and completion-commit requirements remain in force, without invented stages.
+- No-concept maintenance scenario — **Pass**: shared Planning permits “none”; Implementation and verification expressly requires no inventory file when no concept is relevant. The one-shot template carries this choice, and staged instructions use the same guide.
+- Product links passed (17 files); whitespace checks passed in both repositories; product changes restricted to `docs/workflow/one_shot.md`. No runtime checks apply. Live compliance remains unverified.
+
+*— Codex · 2026-10-28 UTC*

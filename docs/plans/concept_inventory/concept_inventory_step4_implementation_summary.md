@@ -25,3 +25,15 @@ Branches: `feat/concept-inventory` in development and product. Planning-only com
 - Notes: 2026-10-28, scope/estimate unchanged; entry and stage estimates retained. Live compliance unverified; runtime/deployment/migration/release checks inapplicable. No new requests or scope additions.
 
 *— Codex · 2026-10-28 UTC*
+
+## Stage 2 - One-shot inventory lifecycle
+
+**Original estimate: 0.07**
+
+**Retrospective stage work: 0.07**
+
+- Changes: one-shot entry, execution and record template reference the same guide. Product commit `583e69d`; Stage 1 development commit confirmed as `f99e96f`.
+- Verification: one-shot and no-concept walkthroughs passed; product links and both whitespace checks passed; allowed-path review passed. Evidence appended to the verification record.
+- Notes: 2026-10-28, scope/estimate unchanged; no extra approval prompts or new requests. Live compliance remains unverified; runtime checks inapplicable.
+
+*— Codex · 2026-10-28 UTC*
