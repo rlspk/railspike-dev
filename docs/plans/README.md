@@ -49,3 +49,5 @@
 - [Concept inventory](./concept_inventory/concept_inventory_step2_feature_description.md): lazy concept inventory maintenance and concepts-touched lists in plans.
 
 - [Shared implementation standards](./shared_implementation_standards/shared_implementation_standards_step1_solution_assessment.md): shared staged/one-shot safeguards and host guidance for Direct work; three stages complete; [implementation summary](./shared_implementation_standards/shared_implementation_standards_step4_implementation_summary.md); unmerged and unpublished.
+
+- [One-shot plan commit](./one_shot_plan_commit/one_shot_plan_commit_one_shot.md): branch and committed plan before implementation, followed by implementation and updated plan.
