@@ -7,7 +7,7 @@ Extended estimates: enabled.
 
 **Cycle estimate: 0.30**
 
-Status: planned; next action: commit this plan before product edits.
+Status: technically complete; next action: maintainer review, publication not authorized.
 
 ## Request, authorization and scope
 
@@ -23,10 +23,26 @@ Risks: stale exceptions permit bypass (search all product instructions); unrelat
 
 Concepts touched: [Planning record](../../concepts/planning.md#planning-record) changed; [Approval and scope boundary](../../concepts/planning.md#approval-and-scope-boundary) and [Shared implementation standards](../../concepts/implementation.md) used unchanged and checked. Only the planning entry needs editing.
 
-Starting revisions: development `99f2918717abb634bc056e75ff37714548609d35`; product `df980a0aeeb717bdba434000ff46030f3559cbed`. Fresh branches: `feat/one-shot-plan-commit` in both repositories. Plan commit: pending creation.
+Starting revisions: development `99f2918717abb634bc056e75ff37714548609d35`; product `df980a0aeeb717bdba434000ff46030f3559cbed`. Fresh branches: `feat/one-shot-plan-commit` in both repositories. Plan commit: `9b682fb`, confirmed before any product edits.
 
 ## Study history
 
 2026-10-29T22:46:32.697612+00:00 — Scope v1/R1/P2; Codex, single exposed rater, model/settings unavailable. Intake missing: inspection occurred before recording. Execution-entry whole-cycle projection 0.30, including documentation alignment, verification and correction; all three frozen R1 hashes verified. Comparable to modest integration references; uncertainty in recovery/compatibility wording. No artificial work units. Not measured labor; no retrospective or maintainer acceptance yet.
+
+*— Codex · 2026-10-29 UTC*
+
+## Outcome and verification — 2026-10-29T22:47:50.999237+00:00
+
+Implemented branch → plan → planning-only commit → implementation/verification → implementation plus updated plan commit. Updated six product instruction surfaces, including no-commit overrides, old-cycle recovery, split-repository pairing, template evidence and the default README example. Planning concept updated; approval/scope and shared-standards entries verified unchanged. No additions beyond authorized scope.
+
+- Passed: `python scripts/check-markdown-links.py ../railspike` (18 files), development equivalent with historical baseline (221 files, 80 known targets), `bash scripts/check-railspike-git-workflow.sh ../railspike`, product/development diff checks.
+- Passed: product-wide search finds no obsolete “no planning commit”/single-completion-commit exceptions. Reviewed new-cycle ordering, commit-failure blocking, explicit no-commit override, historical missing-plan recovery, paired repositories, and unchanged staged-transition approval gates.
+- Planning commit `9b682fb` contains only this plan and its index. Product implementation `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574` follows it; host completion commit includes this updated plan and touched concept/ledger/debug evidence. No unrelated files staged.
+- Inapplicable: application runtime/UI/migration checks; no installation mechanics or checker code changed. Live agent adherence unverified; no consumer updates, pushes, merges or releases.
+- Compatibility: this intentionally changes a required commit contract; under `docs/maintainers/RELEASES.md`, future version selection must account for the major-change policy rather than silently publish it as a patch. No version/tag selected here.
+
+**Retrospective cycle scope: 0.30**
+
+R1/P2 v1, Codex single exposed rater; original projection 0.30 retained, no scope/score revisions. Not measured labor. Maintainer comfortable-fit/acceptance pending. Recovery: review or revert this feature's local commits under normal authorization; preserve unrelated history. Host completion hash pending creation; confirm in the next record-only handoff update.
 
 *— Codex · 2026-10-29 UTC*
