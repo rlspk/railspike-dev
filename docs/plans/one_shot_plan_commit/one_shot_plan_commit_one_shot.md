@@ -46,3 +46,5 @@ Implemented branch → plan → planning-only commit → implementation/verifica
 R1/P2 v1, Codex single exposed rater; original projection 0.30 retained, no scope/score revisions. Not measured labor. Maintainer comfortable-fit/acceptance pending. Recovery: review or revert this feature's local commits under normal authorization; preserve unrelated history. Host completion hash pending creation; confirm in the next record-only handoff update.
 
 *— Codex · 2026-10-29 UTC*
+
+Confirmed completion references: product `bc9e431`, paired host completion `5b2477e`; host planning commit `9b682fb` precedes both. This record-only handoff preserves those references without amending implementation history.
