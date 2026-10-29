@@ -66,3 +66,32 @@ Function signatures, schemas, runtime/device checks, and deployment are inapplic
 Stage sizing is a planning target, not measured labor. Document scenarios can verify rule coverage and consent boundaries but not live compliance. Checker failures must be recorded or resolved within scope rather than silently expanding into checker-source work.
 
 Status: Step 2 explicitly approved; Step 3 awaiting approval. Product unchanged; no branch creation, commits, or implementation.
+
+## 2026-10-29T18:45:01Z — Step 4 final handoff
+
+### Necessary/useful instructions
+
+- `step4_implementation_before.md`, planning commit gate: `664dcf9` contains only approved plans, prior debug log and index; summary appears only in S1. Retain.
+- `step4_implementation_do.md`, stage-scoped summary commits: paired product/development commits keep each evidence checkpoint reviewable. S1 `75630a8` / `6926943`; S2 `b3bab41` / `5e8852d`; S3 `2d537f7` / `4077d9e4dacaa2cbe23314613d42d098ba25bd06`. Retain.
+- `step4_implementation_after.md`, honest evidence and final gates: document-path scenarios were distinguished from live agent compliance and runtime behavior. All three stage summaries and the four-commit planning-plus-stages lower bound verified before this log-only commit. Retain.
+- Shared standards' reuse/source-path and documentation-only alternatives allowed the instruction surfaces to serve as the reusable components without inventing application work. Retain; future observed compliance remains needed.
+
+### Redundant/unnecessary instructions
+
+No supported findings. Remaining staged field requirements place shared evidence at specific handoffs; their presence is not a second substantive standard.
+
+### Inapplicable instructions
+
+Application/runtime/UI/device/migration/deployment/release checks are inapplicable to this documentation-only slice. No source-install mechanics or checker implementation changed; migration fixtures and alternate checker runtimes were not needed. No consumer update or publication authorized.
+
+### Uncertain assessments and correction history
+
+- Live agent compliance remains unverified; passing document scenarios and link checks cannot establish it.
+- The planning staged diff check exposed six Markdown trailing-space hard breaks, but a shell sequence continued to commit. Stage 1 corrected them without amending history; later stage commits used successful staged checks as gates. Prior checks of untracked plans had not covered their content. Final whole-cycle diffs in both repositories pass `--check`. This was an execution mistake, not permission to skip a failed check.
+- Final review corrected paragraph/list spacing from S2 in S3; no scope expansion.
+
+### Final audit and state
+
+Passed: product links (18 Markdown files), development links (218 files with unchanged 80-target historical baseline), Git-workflow fixture, source-obligation/record/consent scenarios, touched concept paths, and authorized file scope. Final commit audit confirms one planning commit plus three stage commits in development, each stage containing the summary; product has three corresponding stage commits. Both trees were clean before this log-only handoff update. Required outcome complete; no unresolved implementation requests. Product revision `2d537f7`; development S3 `4077d9e4dacaa2cbe23314613d42d098ba25bd06`. Maintainer fit/acceptance pending; cycle projection and retrospective both 0.50, not measured time. Nothing merged, pushed, tagged, published, or installed in consumers.
+
+*— Codex · 2026-10-29 UTC*
