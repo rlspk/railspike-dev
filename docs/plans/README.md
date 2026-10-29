@@ -48,4 +48,4 @@
 
 - [Concept inventory](./concept_inventory/concept_inventory_step2_feature_description.md): lazy concept inventory maintenance and concepts-touched lists in plans.
 
-- [Shared implementation standards](./shared_implementation_standards/shared_implementation_standards_step1_solution_assessment.md): shared staged/one-shot safeguards and host guidance for Direct work; Steps 1–2 approved, [Step 3](./shared_implementation_standards/shared_implementation_standards_step3_development_plan.md) awaiting approval.
+- [Shared implementation standards](./shared_implementation_standards/shared_implementation_standards_step1_solution_assessment.md): shared staged/one-shot safeguards and host guidance for Direct work; three stages complete; [implementation summary](./shared_implementation_standards/shared_implementation_standards_step4_implementation_summary.md); unmerged and unpublished.
