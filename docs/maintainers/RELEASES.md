@@ -2,6 +2,8 @@
 
 Railspike uses semantic versioning for published releases.
 
+**Version confirmation (required).** For every beta or stable release, complete candidate verification and release-note preparation, then propose the exact version (including any beta suffix) and stop for explicit user confirmation before creating any tag or publishing a release. A generic request to mint a release, a requested major/minor/patch increment, or permission to merge does not confirm the exact version. Record the confirmed version and approval in the release evidence. If the proposed version changes, obtain fresh confirmation; do not ask again for an unchanged version already explicitly confirmed for that publication.
+
 Current ownership: releases and tags belong to `rlspk/railspike`; development records/checks live in `rlspk/railspike-dev`; the website is `https://railspike.dev/`. The rename note below is historical; current installation is a reviewed copy by default, with submodules on explicit request.
 
 - **Patch:** clarifications, examples, and fixes that do not change the workflow contract.

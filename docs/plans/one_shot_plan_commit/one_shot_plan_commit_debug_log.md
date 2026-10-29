@@ -21,3 +21,17 @@ No staged Step 1–3 artifacts or stage commits are needed for this explicitly b
 Document scenarios and Git history establish this change's consistency and execution order, not future agent adherence. Keep live compliance unverified. Earlier missing intake remains missing; no historical scores fabricated.
 
 Status: implementation and document checks complete; completion evidence accompanies the paired host commit. Study acceptance pending.
+
+## 2026-10-29 — release preparation handoff awaiting version confirmation
+
+### Necessary/useful instructions
+
+Explicit latest user instructions superseded generic version selection and no-merge defaults: minor version proposed, product branch merged/pushed to main, and mandatory exact-version confirmation recorded in AGENTS.md and release policy. Candidate checks and prepared notes make confirmation the final publication prerequisite. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Uncertain assessments
+
+Live agent compliance remains unverified. Version confirmation is pending; no new tag/release exists. Product main equals tested candidate bc9e431, while stable Latest remains v0.4.0. Proposed v1.0.0-beta.1 was canceled before tag creation; proposed v0.6.0-beta.1 is not yet approved. Study outcome remains incomplete for release scope v2.
