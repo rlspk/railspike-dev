@@ -44,3 +44,31 @@
 - `step3_development_plan_after.md`, one-page target: three stages with required risk, estimate, evidence, and study fields exceed a literal printed page. The plan retains required fields; consolidating repeated fields in future guidance may improve brevity.
 
 *— Codex · 2026-10-28 UTC*
+
+## 2026-10-29T00:08:16Z — Step 4 closeout
+
+### Necessary/useful instructions
+
+- `RAILSPIKE.md`, Repository Boundary and Planning Artifacts: kept host entries and study data outside the shipped product; the initial commit contains approved plans, index and existing debug log only. Retain.
+- `step4_implementation_do.md`, Stage Boundary Protocol: three development stage commits each contain their summary/evidence, with paired product revisions for Stages 1 and 2. Retain.
+- `step4_implementation_after.md`, evidence limits: static scenarios and fixtures were reported separately from unverified live agent compliance. Retain.
+
+### Redundant/unnecessary instructions
+
+- No supported findings.
+
+### Inapplicable instructions
+
+- Runtime/UI/deployment/migration/release verification: this cycle changes Markdown instructions only; none of those outcomes was requested.
+
+### Uncertain assessments
+
+- The lazy-maintenance guide has been checked against five scenarios and used to document three touched concepts, but repeated-cycle behavior by live agents remains untested. Gather experience before adding more process.
+
+### Final evidence
+
+- All three stages complete. Product `583e69d`; development Stage 3 `4afe2ee`. Planning `5086b45`, Stage 1 `f99e96f`, Stage 2 `4233e1a`: required planning-plus-three-stage cadence confirmed.
+- Product links, host links (explicit historical baseline), Git workflow fixture and whitespace checks passed. Host links rechecked after closeout record additions; 210 Markdown files passed. Both repositories were clean before this log-only update.
+- Final records retain original estimates, stage retrospectives and the independent 0.40 cycle retrospective; study acceptance remains pending. No merge or publication.
+
+*— Codex · 2026-10-29 UTC*
