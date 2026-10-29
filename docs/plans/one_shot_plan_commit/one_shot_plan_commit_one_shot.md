@@ -48,3 +48,11 @@ R1/P2 v1, Codex single exposed rater; original projection 0.30 retained, no scop
 *— Codex · 2026-10-29 UTC*
 
 Confirmed completion references: product `bc9e431`, paired host completion `5b2477e`; host planning commit `9b682fb` precedes both. This record-only handoff preserves those references without amending implementation history.
+
+## Release follow-up — scope v2
+
+2026-10-29T22:57:27.853538+00:00 — User: “great, please mint a new beta.” Authorizes release notes, exact-candidate verification, product branch/tag push and prerelease publication. Continue this cycle's feature branches for release bookkeeping; no product implementation change. Release files under `docs/maintainers/releases/` are now in scope. Publish `v1.0.0-beta.1` under the release policy's major-change rule for required commits; candidate `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574`. Includes the prior Step 1 reminder. Preserve main, stable Latest v0.4.0, and existing published tags. No consumer updates or stable promotion.
+
+**Revised cycle estimate: 0.35**
+
+Whole-cycle v2 projection/entry, R1/P2, Codex single exposed rater; original v1 0.30 retained. Added release verification/publication scope, not remaining work or measured labor. Public notes self-contained; development evidence stays local. Commit this release plan before publication work.
