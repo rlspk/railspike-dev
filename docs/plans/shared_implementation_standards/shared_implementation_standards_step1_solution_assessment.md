@@ -1,7 +1,7 @@
-> **Feature plan:** [Step 1](./shared_implementation_standards_step1_solution_assessment.md) · [Step 2](./shared_implementation_standards_step2_feature_description.md) · [Step 3](./shared_implementation_standards_step3_development_plan.md) · Step 4 (pending)
+> **Feature plan:** [Step 1](./shared_implementation_standards_step1_solution_assessment.md) · [Step 2](./shared_implementation_standards_step2_feature_description.md) · [Step 3](./shared_implementation_standards_step3_development_plan.md) · [Step 4](./shared_implementation_standards_step4_implementation_summary.md)
 
-Debug mode: enabled (host marker present at intake).  
-Effort study: `railspike-effort` / `railspike/shared_implementation_standards`; [standing enrollment and ledger](../../research/effort_estimation/collection.md).  
+Debug mode: enabled (host marker present at intake).
+Effort study: `railspike-effort` / `railspike/shared_implementation_standards`; [standing enrollment and ledger](../../research/effort_estimation/collection.md).
 Extended estimates: enabled.
 
 **Cycle estimate: 0.50**
