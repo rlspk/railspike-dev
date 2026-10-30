@@ -110,3 +110,30 @@ Interpretation: retaining the correction prevents loss of its rationale, but app
 All three selections are retained. We have not discovered a fresh developer's behavior, measured reconstruction accuracy, or established complete historical authorization. Source timestamps and commit counts are not effort measurements. Reported pending states are anchored to retained records, not assertions about today's deployments. Missing transcripts cannot be repaired by agent-written summaries.
 
 The article may describe these technical decisions and bounded omissions. Do not reproduce unrelated application records, user identities, or credentials. A1 is private/local provenance until the maintainer decides otherwise; safe technical excerpts above support review without promising a public repository. The appendix and article remain local drafts. Human coding review and public disclosure approval are pending.
+
+## Article claim map
+
+| Article passage | Supporting evidence | Claim type / limit |
+| --- | --- | --- |
+| Opening and correction-at-bottom case | A1 Feasibility, Stage 2, Stage 5, Risks And Decisions; G3 static diff | Inspected text and code change. The fresh-session response is explicitly hypothetical. |
+| Pool and selection | P0; Selection and capture boundary above | Three purposefully selected records from one context; no new independent sample. |
+| Scope split and bootstrap | D1 Recommendation; D2 Delivery scope; D3 Completion Contract; D4 Handoff | Preserved decisions and reported approval/verification. No proof of actual handoff success. |
+| Homepage pending gates | H2 Completion boundary; H3 Completion Contract; H4 Stage 6; G2 | Pending at retained-record cutoff. Not a claim about current deployment. |
+| Unstored example approval | H4 Stage 2 | Report about the worked example, not a finding that all approvals were lost. |
+| Last-touch versus repository-head distinction | A1 and G3 | Semantic inference grounded in the original and changed lookup; no measured speedup. |
+| Stale final approval gate | A1 Approval Gate versus implemented-status entries | Text inconsistency, not evidence of unauthorized implementation. |
+| Checklist/current-state suggestion | Synthesis of C002/C005/C024 | Author's proposal, not a validated intervention or delivered product feature. |
+| ADR precedent | W1 below | Existing documentation practice; no novelty claim. |
+| Oversight context | W2 below | Related interview research; not evaluation of this workflow. |
+| Future experiment | Author's proposal | Not launched, preregistered, or powered; no outcomes asserted. |
+
+## Verified related work
+
+Accessed 2026-10-30 using web search followed by opening the primary source pages. This is a targeted context check, not a systematic literature review.
+
+- **W1:** Michael Nygard, [Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions), 2011-11-15. Full blog text inspected. Relevant sections: Decision (retain reversed decisions and mark them superseded; context/status/consequences fields). Supports the narrow precedent in the article. No quotation reproduced.
+- **W2:** Shipi Dhanorkar, Samir Passi, Mihaela Vorvoreanu, [Human oversight of agentic systems in practice](https://arxiv.org/abs/2606.05391), submitted 2026-06-03, v1. Author abstract and metadata inspected, not full methodological review. Abstract describes interviews with 17 experienced developers, planning/review forms of oversight, and use of tests as correctness assurances. Article makes only these broad contextual claims and does not adopt an effect estimate or generalize to Railspike.
+
+## Stage 2 editorial and verification record
+
+Article body: 2,000 whitespace-delimited words before the editorial footer at initial drafting, within the approved 1,500–2,500 target. The prose uses actual decisions as examples, qualifies source-author reports, and labels imagined successor actions. No personal experience, participant behavior, or experimental result is invented. The proposed checklist and experiment are author synthesis; the article carries agent attribution and pending human review. Public citations were verified at primary sources; local links lead to this appendix, which labels the local-only application source.

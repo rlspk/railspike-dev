@@ -25,3 +25,17 @@ Runtime, UI, deployment, migration, and release checks are inapplicable to this 
 - Notes: C024's Railspike execution is unknown and explicitly not claimed; its stale approval gate and superseded semantics remain counterevidence. Human review and public disclosure remain pending. No scope expansion or projection revision; R1/P2 v1, Codex single exposed rater, 2026-10-30. Values are scope judgments, not measured time.
 
 *— Codex · 2026-10-30 UTC*
+
+Stage 1 commit: `525b6e1` (recorded after creation, no amendment).
+
+## Stage 2 - Complete article
+
+**Original estimate: 0.20**
+
+**Retrospective stage work: 0.20**
+
+- Changes: drafted the 2,000-word article body with three cases, five-question checklist, evidence limits, and an unrun comparative-study sketch; added article claim mappings and two verified primary related-work citations to the appendix.
+- Verification: all three cases point to the appendix and its five-dimensional coding; word count within target; related citations checked against the original ADR article and the oversight paper's author abstract (full paper methodology not reviewed). Local link and whitespace checks passed. Editorial pass replaced a promotional thesis with concrete decisions and proposed successor questions; no invented human experience or experimental result.
+- Notes: writing refinement requested before approval is implemented here; source attribution distinguishes local/private provenance from public references. No scope or estimate revision; R1/P2 v1, Codex exposed rater, 2026-10-30. Independent human review pending.
+
+*— Codex · 2026-10-30 UTC*
