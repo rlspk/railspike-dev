@@ -1,4 +1,4 @@
-> **Feature plan:** [Step 1](./durable_handoffs_step1_solution_assessment.md) · [Step 2](./durable_handoffs_step2_feature_description.md) · [Step 3](./durable_handoffs_step3_development_plan.md) · Step 4 (pending)
+> **Feature plan:** [Step 1](./durable_handoffs_step1_solution_assessment.md) · [Step 2](./durable_handoffs_step2_feature_description.md) · [Step 3](./durable_handoffs_step3_development_plan.md) · [Step 4](./durable_handoffs_step4_implementation_summary.md)
 
 Debug mode: enabled.
 Effort study: `railspike-effort` / `railspike/durable_handoffs`; [ledger](../../research/effort_estimation/collection.md), standing enrollment.
