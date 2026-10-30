@@ -137,3 +137,12 @@ Accessed 2026-10-30 using web search followed by opening the primary source page
 ## Stage 2 editorial and verification record
 
 Article body: 2,000 whitespace-delimited words before the editorial footer at initial drafting, within the approved 1,500–2,500 target. The prose uses actual decisions as examples, qualifies source-author reports, and labels imagined successor actions. No personal experience, participant behavior, or experimental result is invented. The proposed checklist and experiment are author synthesis; the article carries agent attribution and pending human review. Public citations were verified at primary sources; local links lead to this appendix, which labels the local-only application source.
+
+## Final audit and corrections — 2026-10-30
+
+- All 12 inventoried source hashes still match capture; no selected source drift detected. The three selected IDs were recomputed from the report's classifications and remain C002/C005/C024.
+- Reviewed article claims against the map and inspected source passages. Original source versions remain unchanged. Pending release and approval statements remain historical, and the nonstandard application record is not presented as a confirmed Railspike execution.
+- Editorial corrections: replaced an unspecified human-sounding attribution with attribution to the summary itself; explicitly labeled the hypothetical ten-/twenty-minute maintenance example as illustrative rather than measured. No study conclusion or case selection changed.
+- Existing planning/approval concept descriptions were reviewed and remain accurate for this unchanged workflow; no inventory change needed.
+- Local navigation, article-to-appendix anchors, external citation support, word target, allowed documentation paths, and preservation of unrelated untracked candidate/title documents checked. Runtime checks remain inapplicable; publication, independent human review, and measured handoff outcomes remain absent.
+- This is self-review by the same author, not an independent coding assessment. Further substantive corrections should append the affected claim, reason, and source identity here rather than silently rewriting the captured evidence.

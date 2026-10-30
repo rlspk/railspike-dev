@@ -32,7 +32,7 @@ The homepage case provides a different kind of handoff. Its records describe a r
 
 The implementation summary reports local layout checks, source comparisons, and link checks. It also leaves the maintainer's copy and visual review, the merge, and a check of the deployed URL pending. The commit titled “record release verification” changes the summary alone. It does not establish that the page was released. [Case C005](./evidence.md#c005--a-locally-checked-page-with-an-open-release-boundary).
 
-That distinction survives because somebody wrote it down beside the positive results. A reader does not have to infer deployment from the last stage's name. The record says which boundary the work had reached.
+The summary records that distinction beside the positive results. A reader does not have to infer deployment from the last stage's name. The record says which boundary the work had reached.
 
 For a new session, the sensible next question would be whether those remaining gates were subsequently closed. Starting more implementation might duplicate finished work; publishing immediately would assume authority the record does not supply. This is a proposed reading of the evidence, not a report that an agent actually made either mistake. The review did not investigate today's deployment state.
 
@@ -80,7 +80,7 @@ A useful comparison would stop several tasks at defined points and give fresh ag
 
 Measure whether the successor reconstructs the active scope, makes an authorized next move, repeats completed investigation, or introduces a mistake. Keep the model, tools, time budget, and task difficulty controlled. Use independent assessment of outcomes where practical, with reviewers unaware of which package produced a result. Repeat across tasks and runs; one convincing continuation would be a demonstration, not a reliable estimate.
 
-Information quantity needs its own treatment. If the plan package includes facts omitted from the handoff, a better result may simply reflect having those facts. A matched-information comparison could test presentation and organization, while a separate realistic comparison could include the full packages people actually maintain. Preparation and update costs belong in that second comparison too. A document that saves the receiver ten minutes may have taken the author twenty minutes to maintain.
+Information quantity needs its own treatment. If the plan package includes facts omitted from the handoff, a better result may simply reflect having those facts. A matched-information comparison could test presentation and organization, while a separate realistic comparison could include the full packages people actually maintain. Preparation and update costs belong in that second comparison too. For example, a document might save its receiver ten minutes after taking its author twenty minutes to maintain; those are illustrative numbers, not measurements from these cases.
 
 Human handoffs would require a separate human study. Results from fresh agents should not be presented as evidence about how quickly another developer can understand the work. None of these comparisons has been run here, and the three historical cases are too selected and related to support a general failure rate.
 

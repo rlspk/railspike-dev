@@ -39,3 +39,27 @@ Stage 1 commit: `525b6e1` (recorded after creation, no amendment).
 - Notes: writing refinement requested before approval is implemented here; source attribution distinguishes local/private provenance from public references. No scope or estimate revision; R1/P2 v1, Codex exposed rater, 2026-10-30. Independent human review pending.
 
 *— Codex · 2026-10-30 UTC*
+
+Stage 2 commit: `566ba03` (recorded after creation, no amendment); includes the requested editorial refinement.
+
+## Stage 3 - Audit and local handoff
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes: audited source/claim mappings and corrected two editorial ambiguities (record attribution; hypothetical time example). Added appendix audit record and study closeout. Existing planning concepts checked against unchanged workflow; no inventory changes required.
+- Verification: 12/12 captured source hashes unchanged; exact category-selection rule recomputed to C002/C005/C024; three case links and five-dimensional case tables present; body remains within 1,500–2,500 words. Local Markdown links and `git diff --check` pass. Branch diff confined to approved documentation. Unrelated candidate/title files remain untracked, unchanged, and excluded from commits. External sources verified during Stage 2; only supported contextual claims retained.
+- Notes: no handoff experiment, runtime reproduction, human coding review, publication, or efficacy estimate. Known omissions are explicit and do not prevent the approved local-draft handoff. R1/P2 v1, Codex single exposed rater, 2026-10-30; no stage projection revisions. Same-author review is not independent verification.
+
+## Closeout
+
+**Original cycle projection: 0.65**
+
+**Retrospective cycle scope: 0.65**
+
+All three planned stages delivered; no scope additions, splits, or abandoned stages. Corrections were editorial within the approved writing scope. Active labor remains unmeasured; retrospective ratings are scope judgments. Maintainer comfortable-fit judgment and study acceptance remain pending. Technical draft completion is separate from publication or academic acceptance.
+
+Deliverables: [article](../../research/durable_handoffs/article.md), [evidence appendix](../../research/durable_handoffs/evidence.md). Planning commit f378c94; Stage 1 525b6e1; Stage 2 566ba03; Stage 3 is the commit containing this closeout. No merge or push performed. Article/evidence changes can be revised through ordinary review; original source records were not altered.
+
+*— Codex · 2026-10-30 UTC*
