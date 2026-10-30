@@ -68,3 +68,31 @@ Only planning records and the study index changed. No article, experiment, commi
 - Stages are bounded to one evidence appendix, one article, and one audit, intended as roughly hour-scale work units; actual duration is unknown. Unexpected source volume or unavailable evidence requires rescoping before expanding work.
 
 Step 2 approval is recorded. Step 3 remains uncommitted and awaits approval; no Step 4 artifacts, branch, article, experiment, or publication were created.
+
+## 2026-10-30 — Step 4 completed handoff
+
+### Necessary/useful instructions
+
+- `step4_implementation_before.md`, planning commit gate: commit `f378c94` contains only this cycle's organized plans/debug log and index entry. The summary was created afterward. Retain this concrete separation.
+- `step4_implementation_do.md`, stage boundary protocol: evidence, draft, and audit were committed sequentially with summary updates (`525b6e1`, `566ba03`, `8fad1df`). Retain traceable boundaries for research writing.
+- `implementation_standards.md`, evidence and verification boundary: led to preserving the nonstandard C024 record without claiming Railspike execution, distinguishing hypothetical handoff behavior, and labeling private/local provenance. Retain these requirements.
+- `RAILSPIKE.md`, scope protection: two unrelated untracked candidate documents remained unchanged and excluded from all cycle commits. Retain scoped staging.
+
+### Redundant/unnecessary instructions
+
+- No supported findings.
+
+### Inapplicable instructions
+
+- Runtime, UI, deployment, migration, and release tests: no such behavior changed and no corresponding result was asserted. Historical test outcomes are attributed reports. Documentation links, source identity, claim review, word count, and diff scope were checked instead.
+
+### Uncertain assessments
+
+- No independent human review or live handoff experiment was performed. This completed draft cannot establish usability, faster resumption, or authorization adherence by a successor.
+- The plain-language editorial pass removed two ambiguities during final audit, but reader judgments of voice and engagement remain pending. No detector or objective “AI-written” classification was used.
+
+### Final verification and disposition
+
+Passed: three distinct cases selected by the approved rule; 12/12 retained hashes unchanged; 2,007-word article body; 232 Markdown files checked against the explicit 80-target historical baseline; whitespace; source-backed citations; approved-file boundary; planning plus three stage commits with stage summaries. No new baseline failures reproduced. Independent human review, comfortable-fit judgment, study acceptance, and publication remain pending; runtime checks inapplicable for this documentation-only deliverable. The article and appendix fulfill the approved local-draft contract.
+
+Stage 3 commit is `8fad1df`; original and retrospective cycle scope remain 0.65, not measured labor. Final diagnostics use the permitted separate log-only handoff commit. No push, merge, deployment, or publication performed.
