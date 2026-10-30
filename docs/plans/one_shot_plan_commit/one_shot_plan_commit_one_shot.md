@@ -64,3 +64,11 @@ Version correction: user stopped publication, then explicitly requested “just 
 User requires exact version confirmation before every future beta/stable tag or publication, and explicitly authorizes merging this product branch into main. Recorded the standing rule in development `AGENTS.md` and `docs/maintainers/RELEASES.md`. Product main fast-forwarded from `ea1ad5b` to verified candidate `bc9e431` and pushed; this explicit instruction overrides the prior unchanged-main boundary for this release. Default installs from main now receive the changes; stable Latest remains v0.4.0. No beta tag or release created.
 
 Candidate checks passed: product links 18 files, Git workflow fixture, change-range whitespace; exact-candidate separation fixture with historical legacy baseline passed for 20 files in a disposable clone. Main's tree is the exact verified candidate. Prepared self-contained [v0.6.0-beta.1 notes](../../maintainers/releases/v0.6.0-beta.1.md). Publication is pending explicit confirmation of `v0.6.0-beta.1`; an increment request or merge authorization is not that confirmation. Scope v2 projection 0.35 retained; release outcome incomplete pending confirmation, no new retrospective or study acceptance claimed.
+
+### Confirmed release closeout — 2026-10-30T07:30:52.433886+00:00
+
+User explicitly answered “Confirm” to proposed `v0.6.0-beta.1`. Published [the prerelease](https://github.com/rlspk/railspike/releases/tag/v0.6.0-beta.1) from `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574`, already merged/pushed to main under separate authorization. Unsigned annotated tag `86d446e235f78752ed8f0e43e29bed540a67355f`; remote tag, release body/prerelease flags and stable Latest `v0.4.0` verified. [Publication evidence](../../maintainers/releases/v0.6.0-beta.1-publication.json). Exact version was confirmed before tag creation; no v1.0.0 tag was created. No consumer upgrades or stable promotion.
+
+**Retrospective cycle scope v2: 0.35**
+
+R1/P2, Codex single exposed rater; original v1 0.30 and v2 projection 0.35 retained; not measured labor. Release scope complete; live agent adherence unverified and maintainer study fit/acceptance pending. Development release records remain local; public notes are self-contained.

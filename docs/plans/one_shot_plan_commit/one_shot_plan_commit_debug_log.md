@@ -35,3 +35,19 @@ No supported findings.
 ### Uncertain assessments
 
 Live agent compliance remains unverified. Version confirmation is pending; no new tag/release exists. Product main equals tested candidate bc9e431, while stable Latest remains v0.4.0. Proposed v1.0.0-beta.1 was canceled before tag creation; proposed v0.6.0-beta.1 is not yet approved. Study outcome remains incomplete for release scope v2.
+
+## 2026-10-30T07:30:52.433886+00:00 — release follow-up final closeout
+
+### Necessary/useful instructions
+
+Exact-version confirmation gate held publication until the user's explicit “Confirm”. Release policy required annotated tag/peeled revision and prerelease/body/Latest readback; all verified. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions and uncertainty
+
+No runtime application changes or consumer upgrades; live agent adherence remains unverified. Generic non-default-branch beta policy was superseded by explicit main-merge authorization for this release; minor increment also explicitly selected. No stable promotion inferred.
+
+Status: v0.6.0-beta.1 published with unsigned annotated tag, main at bc9e431, stable Latest v0.4.0; release follow-up complete, study acceptance pending.

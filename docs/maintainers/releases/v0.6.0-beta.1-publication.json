@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-10-30T07:30:52.433886+00:00",
+  "authorization": "User explicitly confirmed v0.6.0-beta.1 with Confirm after exact-version prompt; separately authorized product main merge and minor increment.",
+  "cycle": "railspike/one_shot_plan_commit",
+  "scope_version": "v2 release follow-up",
+  "tag": "v0.6.0-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.6.0-beta.1",
+  "release_id": 428753972,
+  "published_at": "2026-10-30T07:30:10Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574",
+  "tag_object": "86d446e235f78752ed8f0e43e29bed540a67355f",
+  "tag_signed": false,
+  "product_main": "bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574",
+  "stable_latest": "v0.4.0",
+  "body_matches_notes": true,
+  "method": "Verified annotated tag and remote peeled commit, then GitHub REST POST with prerelease=true and make_latest=false; readback verified. Installed gh does not support --verify-tag.",
+  "checks": {
+    "product_links": "passed, 18 files",
+    "git_workflow_fixture": "passed",
+    "whitespace": "passed",
+    "repository_separation_fixture": "passed, exact candidate, 20 files; legacy baseline b59f7df89842ba17f710ae1f2dc955bb361cc620",
+    "live_agent_compliance": "unverified"
+  },
+  "development_records_pushed": false,
+  "evidence_note": "Public notes self-contained; development links not required.",
+  "host_installations_updated": false
+}
