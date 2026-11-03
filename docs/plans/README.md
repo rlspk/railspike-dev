@@ -53,3 +53,5 @@
 - [One-shot plan commit](./one_shot_plan_commit/one_shot_plan_commit_one_shot.md): branch and committed plan before implementation, followed by implementation and updated plan.
 
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
+
+- [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
