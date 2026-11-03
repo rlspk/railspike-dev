@@ -39,3 +39,29 @@ Enhancement requests: Option C (fielded snapshot template) remains deferred as s
 - Estimate details: original scope: section plus warning-line edit and the word-count check; uncertainty: example cost; no revision; retrospective judged separately after completion, not measured time.
 
 *— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
+
+## Stage 2 - Link the rule from every artifact instruction
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes:
+  - `step1_solution_assessment.md` Guardrails: two bullets became one no-code bullet and one link.
+  - `step2_feature_description.md` Guardrails: "verbose descriptions" became the link; "lightweight enough to consume at a glance" removed.
+  - `step3_development_plan_do.md`: "Prefer bullets over prose" became the link; "verbose explanations" dropped from the no-code bullet.
+  - `step4_implementation_do.md`: link appended to the header-plus-bullets paragraph.
+  - `one_shot.md` Record template: one linking sentence added.
+  - `README.md`: one sentence naming the rule in the plan-format description (the optional change, taken).
+- Verification:
+  - `grep -c verbose` on the five workflow files: 0, 0, 0, 0, 0. Passed.
+  - No-code limits reread in the Step 1, 2 and 3 files after editing: all present. Passed.
+  - Markdown link checker on the product checkout: 18 files, local links valid, so all six new relative links resolve. Passed. `git diff --check`: clean. Passed.
+  - Diff: 6 files, 8 insertions, 9 deletions; only allowed files. Passed.
+  - Runtime, UI, deployment, migration, website and release checks: inapplicable, documentation-only.
+- Notes:
+  - The one-shot link was kept; its record template paragraph had no brevity wording to replace, so the sentence is an addition.
+  - Product commit `5d54e06` on `feat/plain-language-plans` in `railspike`.
+- Estimate details: original scope: five small edits and the optional README sentence; uncertainty: the one-shot file; no revision; retrospective judged separately, not measured time.
+
+*— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
