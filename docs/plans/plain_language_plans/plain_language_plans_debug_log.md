@@ -73,3 +73,30 @@ Steps 1–2 and this log remain uncommitted. Step 3 awaits "Approved Step 2."
 - The 130-word section target is a self-imposed number inside the approved 150-word bound, not a measured limit.
 
 Steps 1–3 and this log remain uncommitted. Step 4 awaits "Approved Step 3."
+
+## 2026-11-03T08:49:50Z — Step 4
+
+### Necessary/useful instructions
+
+- `docs/workflow/step4_implementation_before.md`, Planning Docs Commit Gate: the staged-contents inspection kept the modified ledger and the user's `todo.txt` edit out of the planning commit. Retain.
+- `docs/workflow/step4_implementation_do.md`, Stage Boundary Protocol step 2 (document-integrity checks for documentation scope): the word-count check at Stage 1 caught a 153-word overrun and the rule's own passive intro sentence before commit. Retain.
+- `docs/workflow/implementation_standards.md`, final diff review: listing every changed file across both checkouts against the allowed list was a one-command check that confirmed scope. Retain.
+- `RAILSPIKE.md`, Repository Boundary (paired commits across `railspike` and `railspike-dev`): recording product commit hashes inside each stage section made the two-repository cycle auditable. Retain.
+
+### Redundant/unnecessary instructions
+
+- `docs/workflow/step4_implementation_do.md`, effort-estimation block on splitting/replacing stages and blocked/skipped states: four paragraphs read at every stage, none applicable to a three-stage documentation cycle that ran as planned. Consider moving the exceptional-case rules to `docs/effort-estimation.md` and leaving one sentence here.
+- `docs/workflow/step4_implementation_after.md` and `_do.md` both restate the retrospective-assessment requirement. One statement would do.
+
+### Inapplicable instructions
+
+- Runtime, UI, deployment, migration and release checks: documentation-only; recorded as inapplicable per stage.
+- One-shot transition and branch-reuse rules: fresh staged cycle on new branches.
+
+### Uncertain assessments
+
+- The dev branch was based on the unmerged `feat/durable-handoffs` rather than `main`, because the ledger rows this cycle appends sit beneath rows that exist only there. Railspike does not say which base to use when the predecessor is unmerged; the choice is recorded in the summary. Worth one sentence in Follow-up Cycles Before Merge.
+- The replay table is self-review. Whether the rewritten example reads plainly to the maintainer is the real test and is pending their review.
+- Whether a live agent follows the new section remains unverified; the Codex-in-v3 replay is pending.
+
+Cycle complete: planning commit plus three stage commits in `railspike-dev`, two product commits in `railspike`. This log entry is committed in a separate log-only handoff commit.
