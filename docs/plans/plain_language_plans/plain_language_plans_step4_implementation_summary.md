@@ -65,3 +65,44 @@ Enhancement requests: Option C (fielded snapshot template) remains deferred as s
 - Estimate details: original scope: five small edits and the optional README sentence; uncertainty: the one-shot file; no revision; retrospective judged separately, not measured time.
 
 *— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
+
+## Stage 3 - Concept entry, replay and closeout
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes:
+  - `docs/concepts/planning.md`: the Planning record entry now says every artifact is written to the shared writing style and links the section.
+  - Ledger rows for Steps 1–3 and this closeout appended to `docs/research/effort_estimation/collection.md`.
+- Verification:
+  - Manual replay of the evidence sentence, self-review by the implementing agent, not independent verification:
+
+    | Rule | Before (v3 sentence) | After (example in the section) |
+    | --- | --- | --- |
+    | One idea, ≤25 words | Fails: 30 words, four ideas | Passes: 14 and 14 words, one idea each |
+    | One term per thing | Fails: "result contract" elsewhere "result format", "result lifecycle" | Passes: "result", "name" |
+    | Verb over nominalization | Fails: "retain", "score transfer" | Passes: "change", "keep" |
+    | No noun string over three words | Fails: "shared result contract", "companion name" borderline | Passes |
+    | Real name anchors a decision | Fails: four files hidden behind abstractions | Passes: two files named, no code |
+    | Active voice, concrete subject | Passes (imperative) | Passes |
+
+  - Known-user replay: the live check with Codex in the v3 project is **pending**; it needs a new Step 1 request after the updated Railspike is installed there. Manual recovery in the meantime: quote the failing sentence and the rule, ask for a revision.
+  - Markdown link checker: product 18 files valid; dev concepts 3 files valid; this folder 5 files valid (the Step 4 link now resolves). Passed.
+  - `git diff --check` in both checkouts: clean. Passed.
+  - Scope review: product diff `bc9e431..HEAD` touches exactly the seven allowed files; dev diff `d9426c1..HEAD` plus this commit touches only this folder, the plan index, the concept entry and the ledger. Passed.
+  - Runtime, UI, deployment, migration, website and release checks: inapplicable, documentation-only.
+- Notes:
+  - No product commit in this stage; product work ended with Stage 2.
+  - Unrelated local work left untouched: `todo.txt`, two untracked research notes and the screenshot.
+- Estimate details: original scope: concept entry, replay and bookkeeping; no revision; retrospective judged separately.
+
+*— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
+
+## Closeout
+
+**Retrospective cycle scope: 0.40**
+
+2026-11-03T08:49:29Z — R1/P2 v1; Claude Code (claude-fable-5-1), single exposed rater. Delivered scope matches Option B as approved. Planned stages 3, completed 3. Product commits `57e2ce3` (Stage 1) and `5d54e06` (Stage 2) on `feat/plain-language-plans` in `railspike`, from `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574`. Dev commits: planning `d6e438c`, stages `a38dd9c`, `0c2bd67`, and this one. Corrections versus additions: two word-count trims and one passive-voice fix inside Stage 1; no new requests. Omissions: live agent compliance unverified; the Codex-in-v3 replay pending. Original projection 0.40 retained; retrospective scope 0.40, a judgment, not measured labor. Maintainer comfortable-fit judgment and study acceptance: pending. Unmerged, unpushed, unpublished.
+
+*— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
