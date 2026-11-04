@@ -118,3 +118,9 @@ Release scope: draft release notes, verify the exact product candidate, record v
 Preparation checks: product links pass (18 files), README Git-workflow fixture passes, range whitespace check passes, product checkout clean, seven changed files reviewed, word growth 148. Remote tags/releases inspected: newest beta v0.6.0-beta.1; stable Latest v0.4.0. Proposed **v0.6.1-beta.1** is unused and classed as a patch clarification, with no change to approval/artifact/branch/commit requirements. Notes: `docs/maintainers/releases/v0.6.1-beta.1.md`. Live compliance and Codex-in-v3 replay remain pending.
 
 Status: release prepared; exact-version confirmation pending. No tag created or release published. Publication closeout and retrospective v2 scope remain pending; maintainer comfortable-fit and study acceptance remain pending.
+
+### Release v2 closeout
+
+2026-11-04T15:18:43.273221+00:00 — User explicitly confirmed **v0.6.1-beta.1** after the exact-version prompt. Pushed the product feature branch and unsigned annotated tag `30c5f83176e8ecb6fa11ac3a757e1dbe1a8823d7`, pointing to verified product `5d54e065fa5f9f6e2555977034b5073456dd104c`. Published GitHub prerelease [v0.6.1-beta.1](https://github.com/rlspk/railspike/releases/tag/v0.6.1-beta.1); API readback confirms published/non-draft/prerelease, body identical to prepared notes. Stable Latest remains v0.4.0; remote main remains `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574`. No host upgrades or main merge. Publication evidence: `docs/maintainers/releases/v0.6.1-beta.1-publication.json`.
+
+R1/P2; Codex, model/settings unverified, single exposed rater. V2 projection **0.45** preserved; retrospective whole-cycle scope **0.45**, not measured labor. V1 projection/retrospective **0.40** unchanged. Release follow-up complete; no corrective product changes or added requests. Live Codex-in-v3 replay, maintainer comfortable-fit and study acceptance remain pending. Untracked work checklist preserved.

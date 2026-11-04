@@ -104,3 +104,7 @@ Cycle complete: planning commit plus three stage commits in `railspike-dev`, two
 ## Release preparation — 2026-11-04T15:07:33.011072+00:00
 
 User requested a beta from this branch. The earlier no-release scope is extended by that request; main merge and host upgrades remain outside it. The release policy requires exact-version confirmation after preparation, so publication stops at that gate. Product links, Git-workflow fixture, range whitespace and scope review pass. The word-count check confirms net growth of 148. Remote tag/release inspection supports unused patch beta v0.6.1-beta.1. No shared checker or installation changes require expanded runtime checks. Live agent compliance remains unverified. No new instruction defect was established during preparation.
+
+## Release publication — 2026-11-04T15:18:43.273221+00:00
+
+Exact version confirmed by user before tag creation. Remote annotated tag and peeled product commit verified; release body and prerelease flags verified by API readback. Installed gh lacks --verify-tag, so publication used the REST API after explicit remote tag verification. Stable Latest and product main unchanged. No new instruction defects established. Live compliance remains unverified.

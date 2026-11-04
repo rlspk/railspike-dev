@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-11-04T15:18:43.273221+00:00",
+  "authorization": "User explicitly replied confirm after the exact v0.6.1-beta.1 publication prompt. No main merge or host upgrade authorized.",
+  "cycle": "railspike/plain_language_plans",
+  "scope_version": "v2 release follow-up",
+  "tag": "v0.6.1-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.6.1-beta.1",
+  "release_id": 434093491,
+  "published_at": "2026-11-04T15:17:59Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "5d54e065fa5f9f6e2555977034b5073456dd104c",
+  "tag_object": "30c5f83176e8ecb6fa11ac3a757e1dbe1a8823d7",
+  "tag_signed": false,
+  "product_main": "bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574",
+  "stable_latest": "v0.4.0",
+  "body_matches_notes": true,
+  "method": "Pushed feature branch and unsigned annotated tag; verified remote tag and peeled commit. Installed gh lacks --verify-tag; used GitHub REST POST with prerelease=true and make_latest=false, then verified release readback.",
+  "checks": {
+    "product_links": "passed, 18 files",
+    "git_workflow_fixture": "passed",
+    "range_whitespace": "passed",
+    "changed_product_files": 7,
+    "instruction_word_growth": 148,
+    "live_agent_compliance": "unverified",
+    "Codex_in_v3_replay": "pending"
+  },
+  "host_installations_updated": false,
+  "development_evidence": "Release notes self-contained; no development links required. Local publication record committed on feature branch."
+}
