@@ -20,3 +20,6 @@ Make a short "upgrade railspike" request safe, since that is what people actuall
 	Add an upgrade pointer to RAILSPIKE.md (and the AGENTS.md guidance) that sends agents to the README upgrade procedure: identify install type, preserve local edits, verify, leave committing to the user.
 	Lead the README with a short upgrade prompt; keep the detailed one as an example and for picking a tag.
 	Test with a live agent given only "upgrade railspike". Existing installs need one full upgrade to get the pointer.
+
+we should change the process to commit step 1 on approve step 1, and 2 also (3 and 4 already do it)
+	what to do about the subdirectory?
