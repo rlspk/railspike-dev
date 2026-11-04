@@ -25,3 +25,15 @@ Documentation-only within Step 2/3 allowed paths. Product scripts/tests/runtime,
 - Notes: consumer step instructions still carry old rules until Stage 2; this intermediate product commit is not a completed release. Live adherence unverified. No scope or estimate revisions; retrospective judged separately, not measured labor.
 
 *— Codex · 2026-11-04 UTC*
+
+## Stage 2 - Step handoffs and recovery guidance
+
+**Original estimate: 0.15**
+
+**Retrospective stage work: 0.15**
+
+- Changes: connected Step 1/2 approval handoffs and Step 2/3 resumption to the gate; Step 4 now verifies existing planning commits and permits disclosed recovery/waivers. Reconciled README, welcome/host proposal, failure guide, one-shot transition and effort snapshot references. Kept the historical Step 4 gate anchor so existing links remain valid. Product commit `3cd8580569cc6665bcdd21ca2e85422182a724e0`.
+- Verification: product links passed (18 files); README Git-workflow fixture passed; product whitespace passed. Scan found three stale README passages and one snapshot reference; corrected them and reran checks. No remaining late-organization/duplicate-Step-4/minimum-four-commit instructions found in live product Markdown. Manual entry review covers approved Step 1 then verified commit before Step 2; approved Step 2 before Step 3; approved Step 3 before summary; split repository host plan commits and product branch before implementation. One-shot transition retains prior record/implementation, saves each new approved staged plan and avoids duplicate planning commits.
+- Notes: only approved documentation paths changed; installation/update block and all checkers unchanged. Earlier stage dev commit `c1673e1`; Stage 1 product `2fea419`. No scope/estimate revision; self-review and fixture passes do not establish live agent compliance.
+
+*— Codex · 2026-11-04 UTC*
