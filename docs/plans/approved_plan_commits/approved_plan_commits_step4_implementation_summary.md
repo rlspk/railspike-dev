@@ -37,3 +37,41 @@ Documentation-only within Step 2/3 allowed paths. Product scripts/tests/runtime,
 - Notes: only approved documentation paths changed; installation/update block and all checkers unchanged. Earlier stage dev commit `c1673e1`; Stage 1 product `2fea419`. No scope/estimate revision; self-review and fixture passes do not establish live agent compliance.
 
 *— Codex · 2026-11-04 UTC*
+
+## Stage 3 - Concepts and final verification
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes: updated Planning record and Approval and scope boundary in `docs/concepts/planning.md`; recorded final scenario review and append-only study closeout. Stage 2 dev commit `1e9922d`; final product revision `3cd8580`.
+- Verification: product Markdown links passed (18 files), unchanged README Git-workflow fixture passed, touched concept links passed (3 files), cycle links passed (5 files). Working-tree and full change-range whitespace checks passed in both repositories. Allowed-path review passed: 14 product documentation files; dev changes limited to this cycle, plan index, touched concept file and study ledger. No product scripts, tests, installation commands, runtime, CI or website changes.
+- Notes: no product change in Stage 3. Runtime/UI/deployment/migration/publication checks are inapplicable to this documentation-only outcome. Live agent adherence remains unverified.
+
+### Final scenario review
+
+Manual instruction tracing, by the implementing agent; these are coverage checks, not live behavioral experiments.
+
+| Case | Expected sequence and inspected source | Result |
+| --- | --- | --- |
+| Ordinary Steps 1–3 | Step 1 handoff → shared gate creates host branch/folder and commits approved Step 1 → Step 2; Step 2 handoff/Step 3 Before verify Step 2 commit; Step 3 After saves approved Step 3 before Step 4 setup. | Passed |
+| Skipped Step 1 | Step 2 starts as an uncommitted top-level draft; approval creates branch/folder and commits Step 2; Step 3 follows in that folder. Step 2 guidance and shared organization rule agree. | Passed |
+| Unapproved artifacts and shared ledger | Shared gate excludes later drafts, substantive unapproved revisions, implementation and concept edits. Only authorized checkpoint ledger hunks and the cycle's existing log enter the approval commit. | Passed |
+| Renewed approval | Shared gate keeps substantive revisions uncommitted until approved, then creates a new commit before dependent work without amending history or approving later steps. | Passed |
+| Failed commit | Shared gate and failure guide stop dependent progression; repair and verify the commit, or obtain an explicit waiver. Attempted commits are insufficient. | Passed |
+| Explicit no-commit | Shared gate retains branch, written plans, actual approvals and recorded override; Step 4 retains verification/summary requirements and discloses waived commits. | Passed |
+| Older or interrupted cycle | Shared recovery and Step 4 Before inspect approved content/history, reuse valid commits, save missing current approved plans, and disclose omissions without fabricating approval commits. | Passed |
+| Branch reuse | Shared follow-up rules require an unmerged branch, explicit reuse request, fresh cycle identity/approvals and cycle-specific commits. Merged branches remain ineligible. | Passed |
+| Separate repositories | Shared gate saves plans in host; Step 4 Before establishes product branch before product edits. No empty product planning commit. Stage summaries record paired product commits. | Passed |
+| One-shot transition | One-shot recovery retains record, authority and existing implementation; each new staged approval follows the shared gate. Normal one-shot plan/implementation sequence stays unchanged. | Passed |
+| Folder conflict or future navigation | Shared organization/failure guidance stops collisions and substantive changes; missing future-step links are reported pending rather than creating unapproved artifacts. Existing links pass after summary creation. | Passed |
+
+## Closeout
+
+**Retrospective cycle scope: 0.50**
+
+2026-11-04T22:54:56.771771+00:00 — R1/P2 v1; Codex, single exposed rater, model/settings unavailable. Original and entry projection **0.50** retained; separately judged retrospective scope **0.50**, not measured labor. Three planned stages, three completed. Original/retrospective stage work S1 **0.20/0.20**, S2 **0.15/0.15**, S3 **0.10/0.10** retained. Intake remains missing. Starts: product `5d54e065fa5f9f6e2555977034b5073456dd104c`, dev `4c64dd52b354807842e611c0b3c67be84aa2c94f`. Planning commit `2b1c24c`; product stages `2fea419`, `3cd8580`; dev stages `c1673e1`, `1e9922d`, and this Stage 3 commit (recorded in final debug handoff after creation). No new scope, splits or added requests; corrections were stale README rules and the shared snapshot wording found during Stage 2. Maintainer comfortable-fit and study acceptance pending.
+
+Documentation implementation and required verification complete on `feat/approved-plan-commits` in both repositories; unmerged and unpublished. Live behavior unverified. Existing todo.txt edits and untracked work checklist preserved. No earlier approval commits were fabricated for this cycle, which began under the previous contract.
+
+*— Codex · 2026-11-04 UTC*
