@@ -55,3 +55,5 @@
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
 
 - [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
+
+- [Approved planning commits](./approved_plan_commits/approved_plan_commits_step1_solution_assessment.md): commit each approved staged plan before drafting the next; organize at the first approval.
