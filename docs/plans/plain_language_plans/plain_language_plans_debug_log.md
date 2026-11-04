@@ -100,3 +100,7 @@ Steps 1–3 and this log remain uncommitted. Step 4 awaits "Approved Step 3."
 - Whether a live agent follows the new section remains unverified; the Codex-in-v3 replay is pending.
 
 Cycle complete: planning commit plus three stage commits in `railspike-dev`, two product commits in `railspike`. This log entry is committed in a separate log-only handoff commit.
+
+## Release preparation — 2026-11-04T15:07:33.011072+00:00
+
+User requested a beta from this branch. The earlier no-release scope is extended by that request; main merge and host upgrades remain outside it. The release policy requires exact-version confirmation after preparation, so publication stops at that gate. Product links, Git-workflow fixture, range whitespace and scope review pass. The word-count check confirms net growth of 148. Remote tag/release inspection supports unused patch beta v0.6.1-beta.1. No shared checker or installation changes require expanded runtime checks. Live agent compliance remains unverified. No new instruction defect was established during preparation.

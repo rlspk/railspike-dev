@@ -106,3 +106,15 @@ Enhancement requests: Option C (fielded snapshot template) remains deferred as s
 2026-11-03T08:49:29Z — R1/P2 v1; Claude Code (claude-fable-5-1), single exposed rater. Delivered scope matches Option B as approved. Planned stages 3, completed 3. Product commits `57e2ce3` (Stage 1) and `5d54e06` (Stage 2) on `feat/plain-language-plans` in `railspike`, from `bc9e4319db18de4bd9a8dc3bd4fdc87ac8aa0574`. Dev commits: planning `d6e438c`, stages `a38dd9c`, `0c2bd67`, and this one. Corrections versus additions: two word-count trims and one passive-voice fix inside Stage 1; no new requests. Omissions: live agent compliance unverified; the Codex-in-v3 replay pending. Original projection 0.40 retained; retrospective scope 0.40, a judgment, not measured labor. Maintainer comfortable-fit judgment and study acceptance: pending. Unmerged, unpushed, unpublished.
 
 *— Claude Code · 2026-11-03 UTC · Model: claude-fable-5-1*
+
+## Release follow-up — scope v2
+
+2026-11-04T15:07:33.011072+00:00 — User requested: “please mint a beta from this branch.” This authorizes beta preparation and publication after the required exact-version confirmation; it does not authorize a main merge or host upgrade. Product candidate: `5d54e065fa5f9f6e2555977034b5073456dd104c` on `feat/plain-language-plans`; dev starting revision: `9bed7a55f2f29d4b0400b54ce91de7de21d7ea99`.
+
+R1/P2; Codex, model/settings unverified, single exposed rater. All three frozen reference hashes verified. Intake for this follow-up is missing: source and checks were inspected before this snapshot. Original v1 projection and retrospective scope **0.40** remain unchanged. Revised whole-cycle v2 projection: **0.45**, including release preparation, verification and publication; this is a scope judgment, not hours or an additive stage total. Reason: user added release work to the completed documentation cycle.
+
+Release scope: draft release notes, verify the exact product candidate, record version approval and publication evidence, and publish a beta from the non-default product branch. Development changes are limited to these appended summary/debug/ledger records and the release notes/evidence. Preserve the untracked work checklist and unrelated local work. No product edits, main merge, or installed-copy changes are needed.
+
+Preparation checks: product links pass (18 files), README Git-workflow fixture passes, range whitespace check passes, product checkout clean, seven changed files reviewed, word growth 148. Remote tags/releases inspected: newest beta v0.6.0-beta.1; stable Latest v0.4.0. Proposed **v0.6.1-beta.1** is unused and classed as a patch clarification, with no change to approval/artifact/branch/commit requirements. Notes: `docs/maintainers/releases/v0.6.1-beta.1.md`. Live compliance and Codex-in-v3 replay remain pending.
+
+Status: release prepared; exact-version confirmation pending. No tag created or release published. Publication closeout and retrospective v2 scope remain pending; maintainer comfortable-fit and study acceptance remain pending.
