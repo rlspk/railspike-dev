@@ -1,14 +1,17 @@
 # Releases and Versioning
 
-Railspike uses semantic versioning for published releases.
+Railspike uses `MAJOR.MINOR.REVISION` release numbers, with maintainer-controlled increments.
 
 **Version confirmation (required).** For every beta or stable release, complete candidate verification and release-note preparation, then propose the exact version (including any beta suffix) and stop for explicit user confirmation before creating any tag or publishing a release. A generic request to mint a release, a requested major/minor/patch increment, or permission to merge does not confirm the exact version. Record the confirmed version and approval in the release evidence. If the proposed version changes, obtain fresh confirmation; do not ask again for an unchanged version already explicitly confirmed for that publication.
 
 Current ownership: releases and tags belong to `rlspk/railspike`; development records/checks live in `rlspk/railspike-dev`; the website is `https://railspike.dev/`. The rename note below is historical; current installation is a reviewed copy by default, with submodules on explicit request.
 
-- **Patch:** clarifications, examples, and fixes that do not change the workflow contract.
-- **Minor:** backwards-compatible new guidance, templates, or optional workflow capabilities.
-- **Major:** a changed approval, artifact, branch, or commit requirement that requires consumers to alter their process.
+- **Major:** never increment unless the user specifically asks. A workflow-contract change does not authorize a major increment.
+- **Minor:** avoid incrementing unless the user specifically asks; retain it by default.
+- **Revision (patch component):** increment only for a new functionality addition. Clarifications and fixes alone do not justify incrementing it.
+- **Beta suffix:** continue the requested beta series by incrementing `beta.N`, preserving the base version unless the user requests or authorizes a qualifying base-version change. Explain compatibility changes in release notes without deriving major/minor increments from them.
+
+These maintainer rules supersede the earlier automatic compatibility-based increment policy. The exact-version confirmation requirement still applies. In particular, a request for `beta.2` after `v0.6.1-beta.1` prepares `v0.6.1-beta.2`, not a new major or minor series.
 
 Publish an annotated Git tag as `vMAJOR.MINOR.PATCH` after the README links, examples, and Markdown checks pass. Signing is optional until a maintainer signing identity is established; an unsigned annotated tag is permitted. Record whether the tag is signed, its object ID, and the exact product commit ID. An unsigned tag identifies a revision but does not provide cryptographic signer authentication. Create a GitHub release from that tag with a concise list of workflow-contract changes and any migration note. Consumers pinned through a submodule choose when to update; they should review release notes before updating.
 

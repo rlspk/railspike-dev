@@ -91,3 +91,7 @@ All product links (18 files), concept links (3 files), cycle links (5 files), ex
 ## 2026-11-05T00:34:48.779126+00:00 — Release preparation
 
 User added beta publication to the completed cycle. Candidate links, existing fixture, range whitespace and clean product checkout verified. Release policy classifies the required commit/branch changes as major; prepared v1.0.0-beta.2 notes preserving the requested beta.2 suffix. Exact-version confirmation required before tagging/publication. No main merge or host upgrade authorized. Original study history preserved; unrelated todo.txt/checklist untouched. No new supported instruction defects; live agent behavior remains unverified.
+
+## 2026-11-05T05:36:53.337760+00:00 — Revision: rejected major-version proposal
+
+The user rejected v1.0.0-beta.2 and supplied persistent version rules. This supersedes the previous release-preparation entry's version choice and major-increment rationale. AGENTS.md and release policy now prohibit unrequested major increments, retain minor by default, and limit revision increments to functionality additions. Prepared notes renamed to v0.6.1-beta.2. Earlier scope/score history retained with repaired evidence links. No tag/release exists; exact-version confirmation remains pending.
