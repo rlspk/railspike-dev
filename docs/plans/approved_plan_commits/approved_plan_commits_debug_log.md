@@ -95,3 +95,7 @@ User added beta publication to the completed cycle. Candidate links, existing fi
 ## 2026-11-05T05:36:53.337760+00:00 — Revision: rejected major-version proposal
 
 The user rejected v1.0.0-beta.2 and supplied persistent version rules. This supersedes the previous release-preparation entry's version choice and major-increment rationale. AGENTS.md and release policy now prohibit unrequested major increments, retain minor by default, and limit revision increments to functionality additions. Prepared notes renamed to v0.6.1-beta.2. Earlier scope/score history retained with repaired evidence links. No tag/release exists; exact-version confirmation remains pending.
+
+## 2026-11-05T05:38:00.880044+00:00 — Release publication
+
+Exact v0.6.1-beta.2 confirmed before tag creation. Product links, existing Git fixture and whitespace rechecked. Remote annotated tag/peeled commit and release readback verified. Stable Latest v0.4.0 and product main unchanged. Notes self-contained. No v1.0.0 tag/release created. User's major/minor/revision policy retained in AGENTS.md and release policy. Live compliance remains unverified; no new supported instruction defects.

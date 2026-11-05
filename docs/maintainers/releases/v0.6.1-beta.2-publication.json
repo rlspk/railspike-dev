@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-11-05T05:38:00.880044+00:00",
+  "authorization": "User replied confirmed after exact v0.6.1-beta.2 prompt, following rejection of v1.0.0-beta.2 and explicit persistent version-policy correction.",
+  "cycle": "railspike/approved_plan_commits",
+  "scope_version": "v3 release follow-up",
+  "tag": "v0.6.1-beta.2",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.6.1-beta.2",
+  "release_id": 434821395,
+  "published_at": "2026-11-05T05:37:59Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "3cd8580569cc6665bcdd21ca2e85422182a724e0",
+  "tag_object": "48991d1e35dad0f1a2c6664dc87ac42079492fc0",
+  "tag_signed": false,
+  "product_main": "5d54e065fa5f9f6e2555977034b5073456dd104c",
+  "stable_latest": "v0.4.0",
+  "body_matches_notes": true,
+  "method": "Verified remote annotated tag and peeled candidate, then REST POST with prerelease=true and make_latest=false; release readback verified. Installed gh lacks --verify-tag.",
+  "checks": {
+    "product_links": "passed, 18 files",
+    "git_workflow_fixture": "passed, unchanged",
+    "range_whitespace": "passed",
+    "approved_file_review": "passed, 14 product documentation files",
+    "manual_scenario_review": "passed, implementing-agent instruction coverage only",
+    "live_agent_compliance": "unverified"
+  },
+  "main_merged": false,
+  "host_installations_updated": false,
+  "development_records": "Committed and pushed separately on feat/approved-plan-commits; public release notes self-contained."
+}
