@@ -75,3 +75,13 @@ Manual instruction tracing, by the implementing agent; these are coverage checks
 Documentation implementation and required verification complete on `feat/approved-plan-commits` in both repositories; unmerged and unpublished. Live behavior unverified. Existing todo.txt edits and untracked work checklist preserved. No earlier approval commits were fabricated for this cycle, which began under the previous contract.
 
 *— Codex · 2026-11-04 UTC*
+
+## Release follow-up — scope v2
+
+2026-11-05T00:34:48.779126+00:00 — User requested “please mint beta.2.” Release preparation is authorized; exact-version confirmation is pending. No main merge or host upgrade requested. Product candidate `3cd8580569cc6665bcdd21ca2e85422182a724e0` on `feat/approved-plan-commits`; dev follow-up start `2fa28080c2bebf67c65acdfb9a07649ccf0ffc49`.
+
+R1/P2, all three frozen hashes verified; Codex, single exposed rater, model/settings unavailable. Follow-up intake missing: candidate/status/release inspection preceded this snapshot. Original v1 projection/retrospective **0.50** retained. V2 whole-cycle projection **0.55**, including release checks, notes and publication; scope judgment, not hours or a stage sum. New scope is release work only: notes/evidence, appended summary/debug/ledger records, and beta publication after exact-version confirmation. No product edits, main merge, host updates or unrelated changes.
+
+Product links (18 files), unchanged Git-workflow fixture and change-range whitespace pass; clean product candidate and 14-file documentation diff verified. Published tags/releases checked: latest beta v0.6.1-beta.1. Proposed **v1.0.0-beta.2** is unused. Policy requires a major increment for changed branch/commit requirements; beta.2 preserves the user's requested suffix, without implying a published 1.0.0-beta.1. [Prepared notes](../../maintainers/releases/v1.0.0-beta.2.md) include migration, evidence limits and beta exit criteria. Live compliance remains unverified.
+
+Status: release prepared; exact version awaits confirmation. No tag created or release published. Publication closeout, retrospective v2 scope, maintainer fit and study acceptance pending.

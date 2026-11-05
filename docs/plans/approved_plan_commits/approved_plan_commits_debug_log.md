@@ -87,3 +87,7 @@ Runtime, UI, deployment and migration checks are inapplicable to the documentati
 ### Uncertain assessments
 
 All product links (18 files), concept links (3 files), cycle links (5 files), existing Git fixture, whitespace and scoped-file review passed. Manual instruction tracing covers eleven cases in the summary, but does not establish live agent compliance. Maintainer comfortable-fit and study acceptance remain pending. Cycle 0.50 projection/retrospective and all original stage estimates are retained; no measured labor is claimed.
+
+## 2026-11-05T00:34:48.779126+00:00 — Release preparation
+
+User added beta publication to the completed cycle. Candidate links, existing fixture, range whitespace and clean product checkout verified. Release policy classifies the required commit/branch changes as major; prepared v1.0.0-beta.2 notes preserving the requested beta.2 suffix. Exact-version confirmation required before tagging/publication. No main merge or host upgrade authorized. Original study history preserved; unrelated todo.txt/checklist untouched. No new supported instruction defects; live agent behavior remains unverified.
