@@ -56,3 +56,23 @@ No supported findings.
 ### Uncertain assessments
 
 - `step3_development_plan_after.md`, keep Steps 1–3 uncommitted: this repository's stop hook requires pushed commits, so planning is committed before approval again.
+
+## 2026-11-06T21:16:40Z - Step 4
+
+### Necessary/useful instructions
+
+- `RAILSPIKE.md`, documentation-only scope: the rule to return for approval before touching an unlisted file caught `step4_implementation_do.md`. The maintainer approved a one-line extension instead of silent drift. Retain.
+- `step4_implementation_do.md`, stage boundary protocol with paired commits: recording product commit IDs in this repository's summary kept the two branches traceable. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions
+
+- Known user or environment replay: none named.
+- Release steps: no release requested.
+
+### Uncertain assessments
+
+- `step3_development_plan_do.md`, file inventory: the Step 2 inventory searched only for "maintainer" in closeout tables and paragraphs, and missed a one-line mention in `step4_implementation_do.md`. A wording search across all product files during Step 2 would have caught it. Consider recommending that search for contract-wording changes.
