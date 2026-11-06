@@ -55,3 +55,4 @@
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
 
 - [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
+- [Merge acceptance](./merge_acceptance/merge_acceptance_step1_solution_assessment.md): the effort study counts a merge or release as acceptance, and the implementing agent records the fit judgment.

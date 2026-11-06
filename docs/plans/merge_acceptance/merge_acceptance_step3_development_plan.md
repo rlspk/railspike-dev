@@ -1,12 +1,12 @@
 > **Feature plan:** [Step 1](./merge_acceptance_step1_solution_assessment.md) · [Step 2](./merge_acceptance_step2_feature_description.md) · [Step 3](./merge_acceptance_step3_development_plan.md) · [Step 4](./merge_acceptance_step4_implementation_summary.md)
 
 Debug mode: enabled (host marker present).
-Effort study: `railspike-effort` / `railspike/merge_acceptance`; [standing enrollment and ledger](../research/effort_estimation/collection.md). No parent cycle.
+Effort study: `railspike-effort` / `railspike/merge_acceptance`; [standing enrollment and ledger](../../research/effort_estimation/collection.md). No parent cycle.
 Extended estimates: enabled.
 
 **Cycle estimate: 0.45**
 
-Concepts touched: none in the [concept inventory](../concepts/inventory.md); this cycle adds none.
+Concepts touched: none in the [concept inventory](../../concepts/inventory.md); this cycle adds none.
 
 ## Completion Contract
 
