@@ -12,6 +12,20 @@ The v3 ledger remains at `docs/plans/effort_estimation_trial.md` in that project
 
 Recovered R1 sources are retained locally with [portable provenance](./references/R1/manifest.json): [calibration report](./references/R1/calibration-report.txt), [implementation diff review](./references/R1/implementation-diff-review.txt), and [historical feedback](./references/R1/user-feedback.txt). All three hashes match the original R1 identities. The eight v3 host ledgers now use equivalent host-local copies; earlier missing checkpoints remain historical. [Per-host recovery and relocated-copy verification](./2026-10-23-reference-recovery-verification.json).
 
+## Protocol P3 — merge or release accepts a cycle (2026-11-06)
+
+Maintainer request on 2026-11-06: the study should not depend on a separate maintainer judgment that nobody asks for. Under P2, one cycle in the v3 ledger was accepted out of 85 recorded, and nearly every row below says acceptance is pending. Planned in [merge acceptance](../../plans/merge_acceptance/merge_acceptance_step1_solution_assessment.md).
+
+From this date, cycles in this project and in v3 follow the product's closeout rule:
+
+- The implementing agent writes the comfortable-fit judgment at closeout and names itself as the judge.
+- Acceptance is **awaiting merge** at closeout, **accepted** once the delivered work is merged into the host's main branch or published in a release, or **not accepted** when the work is closed, replaced or abandoned without either.
+- Any later agent that updates this index or the v3 ledger, and any study review, records merge or release evidence for earlier cycles it can check.
+- A maintainer judgment, when given, is recorded beside the agent's and decides the count.
+- Study reviews count agent-judged and maintainer-judged outcomes separately, so agent self-judgment is never presented as human agreement.
+
+R1 is unchanged. P2 records keep their wording; "maintainer acceptance pending" in a P2 row means the evidence has not been checked yet. Updating those rows is a separate follow-up cycle.
+
 ## Dataset index
 
 | Project / record | Source | Status |
@@ -87,3 +101,5 @@ Append one row per new development cycle with links to canonical snapshots; reta
 | `railspike/merge_acceptance` — Step 2 checkpoint | [Step 2 and snapshot](../../plans/merge_acceptance/merge_acceptance_step2_feature_description.md) | 2026-11-06T16:51:41Z; R1/P2 v1; Step 1 explicitly approved, Option A; whole-cycle 0.40 → 0.45 (new understanding: closeout precedes merge, so merge evidence is recorded later); documentation-only across product and this repository; Claude, single exposed rater; Step 2 approval pending; no implementation or accepted outcome |
 
 | `railspike/merge_acceptance` — Step 3 checkpoint | [Step 3 and snapshot](../../plans/merge_acceptance/merge_acceptance_step3_development_plan.md) | 2026-11-06T20:08:21Z; R1/P2 v1; Step 2 explicitly approved; whole-cycle 0.45 reaffirmed; stage work S1 0.20 / S2 0.15, not additive; Claude, single exposed rater; Step 3 approval pending; no implementation or accepted outcome |
+
+| `railspike/merge_acceptance` — entry and closeout | [Summary](../../plans/merge_acceptance/merge_acceptance_step4_implementation_summary.md) | 2026-11-06T21:16:19Z; Steps 1–3 explicitly approved; R1/P2 at entry, P3 from this closeout; entry 0.45 reaffirmed / retrospective scope 0.45; S1/S2 original 0.20/0.15, retrospective 0.20/0.15, non-additive; one-line scope extension approved; product `89abd90` + `febaa40` on `claude/merge-acceptance`, unmerged; fit judged comfortable by the implementing Claude agent; acceptance awaiting merge |
