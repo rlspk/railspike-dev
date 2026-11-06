@@ -37,3 +37,22 @@ No supported findings.
 ### Uncertain assessments
 
 - `step2_feature_description.md`, Completion boundary for documentation-only work: it does not say how to handle product edits that live in another repository. This project's README covers paired commits, but the product step file does not mention it.
+
+## 2026-11-06T20:08:21Z - Step 3
+
+### Necessary/useful instructions
+
+- `step3_development_plan_do.md`, Completion Contract for documentation-only work: listing allowed files exposed that `one_shot.md` needed no change, after a search. Retain.
+- `RAILSPIKE.md`, unresolved risks block dependents: the push-access check is placed at Step 4 entry, before any product edit. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions
+
+- `step3_development_plan_do.md`, known user or environment replay stage: none named.
+
+### Uncertain assessments
+
+- `step3_development_plan_after.md`, keep Steps 1–3 uncommitted: this repository's stop hook requires pushed commits, so planning is committed before approval again.
