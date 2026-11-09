@@ -23,3 +23,7 @@ Make a short "upgrade railspike" request safe, since that is what people actuall
 
 we should change the process to commit step 1 on approve step 1, and 2 also (3 and 4 already do it)
 	what to do about the subdirectory?
+
+Put each Step 3 stage's goal in its heading (e.g. "## Stage 4 - Queued rebuilds lose no writes"), so a reviewer can scan the plan from headings alone.
+	Update the stage template in step3_development_plan_do.md; keep the Goal bullet or drop it as redundant.
+	Step 4 summaries already use "## Stage N - title"; match that.
