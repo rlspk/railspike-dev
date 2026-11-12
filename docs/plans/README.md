@@ -55,3 +55,5 @@
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
 
 - [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
+
+- [Debug log agent field](./debug_log_agent_field/debug_log_agent_field_one_shot.md): one-shot adding an attribution line to each new debug log entry.
