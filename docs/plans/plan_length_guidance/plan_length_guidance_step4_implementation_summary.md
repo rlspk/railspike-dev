@@ -22,6 +22,7 @@ Step 3 approved 2026-11-12 ("approved step 3").
 | --- | ---: | --- |
 | 2026-11-12 — Step 3 handoff | 0.30 | See [Step 3](./plan_length_guidance_step3_development_plan.md#study-history). |
 | 2026-11-12 — Step 4 entry | 0.30 | Reaffirmed after the planning commit. Exposed single Claude rater, R1/P2. |
+| 2026-11-12 — Retrospective closeout | 0.30 | Delivered as planned in three stages; no scope change. Not measured labor. |
 
 ## Stage 1 - Shared length rule and Steps 1–2
 
@@ -70,3 +71,34 @@ Step 3 approved 2026-11-12 ("approved step 3").
 - Estimate details: original scope as Step 3; uncertainty low; no revisions.
 
 *— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
+
+## Stage 3 - Ledger note and closeout
+
+**Original estimate: 0.05**
+
+**Retrospective stage work: 0.05**
+
+- Changes:
+  - `docs/research/effort_estimation/collection.md` gains a dated protocol note above the dataset index. It names product `7fe2ef8`, states R1, P2 and stage size are unchanged, and says to split drift comparisons at 2026-11-12.
+  - The same ledger gains this cycle's dataset row.
+  - This summary records the retrospective cycle scope.
+- Verification:
+  - Passed: `git diff --check`.
+  - Passed with known failures: the `railspike-dev` link check reports 18 broken links. All point at sibling `v3` and `agent` checkouts missing from this environment. None involve this cycle or the ledger.
+  - Inapplicable: runtime, deployment and release checks.
+- Notes:
+  - Drift analysis is out of scope; the note only marks where to split.
+- Estimate details: original scope as Step 3; uncertainty low; no revisions.
+
+*— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
+
+## Closeout
+
+**Retrospective cycle scope: 0.30**
+
+- Outcome: no product file mentions a page limit. Steps 1 and 2 state a reading-time goal with a word figure; Step 3 states a per-stage text budget. All three link to one shared rule that excludes metadata.
+- Final diff review: seven product line groups across six files, all within Step 2 scope. No attribution or debug rule restated. No concept inventory change.
+- Commits: product `036abd3`, `7fe2ef8` on `feat/plan-length-guidance`. Development `7bb6df9` (plans), `b22d929`, `93212f9` and the Stage 3 commit on `feat/plan-length-guidance`.
+- Status: technically complete. Not pushed, merged or released.
+- Unverified: whether agents follow the new goals, and whether the 200-word figure fits typical plans. Both need real cycles.
+- Maintainer comfortable-fit judgment: pending.
