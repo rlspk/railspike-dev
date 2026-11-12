@@ -23,3 +23,12 @@ Make a short "upgrade railspike" request safe, since that is what people actuall
 
 we should change the process to commit step 1 on approve step 1, and 2 also (3 and 4 already do it)
 	what to do about the subdirectory?
+
+the "original query" needs to strip anything sensitive such as:
+	names
+	server names
+	usernames
+	hostnames
+	etc
+
+the step documents should be committed AFTER approval, not before
