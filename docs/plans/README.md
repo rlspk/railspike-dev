@@ -55,3 +55,5 @@
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
 
 - [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
+
+- [Plan length guidance](./plan_length_guidance/plan_length_guidance_step1_solution_assessment.md): reading-time goals for Steps 1–2, a per-stage text budget for Step 3, metadata excluded.
