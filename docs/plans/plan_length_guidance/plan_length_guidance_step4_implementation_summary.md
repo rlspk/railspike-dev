@@ -45,3 +45,28 @@ Step 3 approved 2026-11-12 ("approved step 3").
 - Estimate details: original scope as Step 3; uncertainty low; no revisions.
 
 *— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
+
+## Stage 2 - Step 3 per-stage budget and README
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes (`railspike` `7fe2ef8`):
+  - `docs/workflow/step3_development_plan_do.md` deliverable: a text budget of about 200 words per stage and no whole-plan limit, linked to Plan length.
+  - The same file's Additional requirements gain one sentence separating text budget from stage size. A stage that cannot fit its required fields is a split candidate, raised like the eight-stage limit.
+  - `docs/workflow/step3_development_plan_after.md` checklist item 1 checks each stage against its text budget instead of "<=1 page".
+  - `RAILSPIKE.md` Warning Signs for Step 3: "stages well past their text budget".
+  - `README.md` replaces the one-page sentence with the new goals in plain words.
+  - Stage size ("about <=1 hour or <=50 lines") is unchanged.
+- Verification:
+  - Passed: `python3 scripts/check-markdown-links.py ../railspike`, 18 files valid.
+  - Passed: `git diff --check`.
+  - Passed: a search of the whole product for "1 page", "one page", "<=1 page", "≤1 page" and ">1 page" finds nothing.
+  - Passed: the stage size and text budget rules read side by side in the Do file without overlap.
+  - Inapplicable: runtime, deployment and release checks.
+- Notes:
+  - The README sentence now names figures. If the figures change, the README must change with them.
+- Estimate details: original scope as Step 3; uncertainty low; no revisions.
+
+*— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
