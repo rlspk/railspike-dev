@@ -8,7 +8,7 @@ Extended estimates: enabled (no real alternatives or work units)
 
 **Cycle estimate: 0.10**
 
-Status: planning commit pending; next permitted action: commit this record, then edit the product.
+Status: technically complete on unmerged branches; next permitted action: maintainer review, then push or merge on request.
 
 ## Original request
 
@@ -62,7 +62,7 @@ None. The concept inventory has no entry for debug mode or attribution.
 - `railspike` `5d54e06` on `main`; branch `feat/debug-log-agent-field`
 - `railspike-dev` `4e2c538` on `main`; branch `feat/debug-log-agent-field`
 
-Planning commit: pending
+Planning commit: `7ca739b` in `railspike-dev`, before any product edit.
 
 ## Study history
 
@@ -70,9 +70,33 @@ Planning commit: pending
 | --- | ---: | --- |
 | 2026-11-12 — Intake | 0.10 | Two-sentence instruction change plus checks. Exposed rater: the scope was discussed and v3 debug logs were inspected first. Single Claude rater, R1/P2. |
 | 2026-11-12 — Execution entry | 0.10 | Reaffirmed. |
+| 2026-11-12 — Retrospective closeout | 0.10 | Delivered as planned: two sentences, one commit. Not measured labor. |
 
 ## Execution history
 
 - 2026-11-12: Record created before implementation.
+- 2026-11-12: Planning commit `7ca739b` confirmed with Git.
+- 2026-11-12: Product commit `4ae392b1bc633899156346d94d7ade0872da76f6`. `RAILSPIKE.md` Persistent debug log now requires one attribution line under each new entry's timestamp and step, linked to Agent attribution, with no backfill. `docs/workflow/one_shot.md` Study and debug state says the same for one-shot reports.
+
+## Outcome
+
+New debug log entries in staged and one-shot cycles carry one attribution line. Existing logs and plan attribution are unchanged. Live agent compliance is unverified until the next real cycle writes a log.
+
+## Verification
+
+- `python3 scripts/check-markdown-links.py ../railspike`: 18 files, all local links valid, including the new `#agent-attribution` anchors.
+- `git diff --check` in the product: clean.
+- The `railspike-dev` link check reports only failures from sibling checkouts missing in this environment and from the separate, unreviewed plan length Step 1. None come from this cycle.
+- Not run: the full check set and the repository separation fixture; neither covers this text change.
+
+## Final review
+
+The product diff touches two sentences in two files and restates no attribution rule. File scope matches the record. No concept inventory change.
+
+## Commit, merge and publication status
+
+- `railspike` `4ae392b` on `feat/debug-log-agent-field`: committed, not pushed or merged.
+- `railspike-dev` completion commit contains this record update, its debug log and the ledger row: committed, not pushed or merged.
+- No tag or release.
 
 *— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
