@@ -56,3 +56,24 @@ No supported findings.
 Source: approval gate. The first approval arrived truncated ("approved ste"); the plan waited until "approved step 2" arrived. Suggestion: none; the gate worked.
 
 Source: step3_development_plan_do.md, "Numbered plan (<=1 page)". This plan's stages run 112–223 words. A first draft proposed 120 words per stage, which this plan itself broke; raised to about 200 before handoff. Suggestion: recheck the figure against the next few real plans.
+
+Timestamp: 2026-11-12T21:45:00Z
+Step: 4 handoff
+*— Claude · 2026-11-12 UTC · Model: claude-opus-5-5*
+Debug mode: enabled (inherited)
+
+## Necessary/useful instructions
+
+Source: step4_implementation_before.md, Planning Docs Commit Gate. Contribution: plans moved into the feature folder with links repaired before any product edit. Suggestion: retain.
+
+Source: step4_implementation_after.md, final diff review. Contribution: caught a miscounted diff size in the closeout, corrected here by labeled revision. Suggestion: retain.
+
+## Redundant/unnecessary instructions
+
+No supported findings.
+
+## Uncertain assessments
+
+Source: step4_implementation_do.md, "Commit the stage artifact plus the Step 4 summary update for that stage in the same commit". Product and summary live in different repositories, so each stage needed two commits. Suggestion: state the paired-commit pattern for split product/development checkouts.
+
+Source: README Checks, dev link checker. 18 failures come from absent sibling checkouts in every cloud run. Suggestion: same as the debug_log_agent_field finding.

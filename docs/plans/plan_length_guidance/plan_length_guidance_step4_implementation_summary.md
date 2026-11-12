@@ -102,3 +102,5 @@ Step 3 approved 2026-11-12 ("approved step 3").
 - Status: technically complete. Not pushed, merged or released.
 - Unverified: whether agents follow the new goals, and whether the 200-word figure fits typical plans. Both need real cycles.
 - Maintainer comfortable-fit judgment: pending.
+
+Revision (2026-11-12, closeout): "seven product line groups" should read eight change groups across six files (`git diff --stat 5d54e06..HEAD`: 13 insertions, 8 deletions). Scope is unchanged.
