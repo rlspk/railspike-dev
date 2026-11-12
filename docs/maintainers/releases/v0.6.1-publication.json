@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-11-12T21:56:25.958238+00:00",
+  "authorized_version": "v0.6.1",
+  "authorization": "Maintainer: 'move stable to the previous beta' (2026-11-12); confirmed 'yes, both correct' to the exact proposal: stable v0.6.1 from the v0.6.1-beta.2 commit, merged to main, published before v0.7.0-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.6.1",
+  "release_id": 443555263,
+  "published_at_utc": "2026-11-12T21:55:49Z",
+  "prerelease": false,
+  "draft": false,
+  "latest": true,
+  "previous_stable": "v0.4.0",
+  "promoted_from": {
+    "tag": "v0.6.1-beta.2",
+    "commit": "3cd8580569cc6665bcdd21ca2e85422182a724e0"
+  },
+  "product_branch": "main",
+  "main_fast_forward": "5d54e065fa5f9f6e2555977034b5073456dd104c..3cd8580569cc6665bcdd21ca2e85422182a724e0",
+  "product_commit": "3cd8580569cc6665bcdd21ca2e85422182a724e0",
+  "tag_object": "e9c854f2f92a7f8419ff7f1b99b35630e014c793",
+  "tag_signed": false,
+  "release_body_matches_notes": true,
+  "checks": {
+    "markdown_links_py_pl_mjs": "pass, 18 files (clean clone of main)",
+    "git_workflow_fixture": "pass",
+    "diff_check_vs_v0.4.0": "pass",
+    "repository_separation_fixture": "pass, legacy baseline b59f7df89842ba17f710ae1f2dc955bb361cc620, product revision 3cd8580, 20 files"
+  },
+  "beta_exit_criteria": "not recorded as met; maintainer promoted directly. Live agent compliance unverified.",
+  "publication_method": "main fast-forwarded and pushed; clean-clone checks; annotated unsigned tag pushed and peeled commit verified; GitHub Releases REST API with prerelease=false, make_latest=true; readback verified (installed gh 2.4.0 lacks --verify-tag)",
+  "host_installations_updated": false
+}
