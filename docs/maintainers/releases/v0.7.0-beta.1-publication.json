@@ -1,0 +1,27 @@
+{
+  "verified_at_utc": "2026-11-12T21:56:25.958238+00:00",
+  "authorization": "Maintainer replied 'yes, that's the number i want' to the exact v0.7.0-beta.1 proposal after the minor-increment policy was raised (2026-11-12); then directed publication after stable v0.6.1 with updated notes",
+  "tag": "v0.7.0-beta.1",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.7.0-beta.1",
+  "release_id": 443555546,
+  "published_at": "2026-11-12T21:56:05Z",
+  "prerelease": true,
+  "draft": false,
+  "product_branch": "feat/plan-length-and-agent-field",
+  "product_commit": "50a4a79d4a1547e0240a99d66f788be2826516f3",
+  "tag_object": "4c2f2367304445b4e67a03490e39d90cec0ce92d",
+  "tag_signed": false,
+  "product_main": "3cd8580569cc6665bcdd21ca2e85422182a724e0",
+  "stable_latest": "v0.6.1",
+  "body_matches_notes": true,
+  "notes_changes_after_draft": "Stable references moved from v0.4.0 to v0.6.1; rollback target is stable v0.6.1; tag no longer described as proposed",
+  "method": "Annotated unsigned tag created locally and pushed; remote peeled commit verified; REST POST with prerelease=true and make_latest=false; release readback verified. Installed gh 2.4.0 lacks --verify-tag.",
+  "checks": {
+    "product_links": "passed, 18 files",
+    "git_workflow_fixture": "passed",
+    "range_whitespace": "passed",
+    "live_agent_compliance": "unverified"
+  },
+  "main_merged": false,
+  "host_installations_updated": false
+}
