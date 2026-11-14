@@ -29,3 +29,8 @@ Put each Step 3 stage's goal in its heading (e.g. "## Stage 4 - Queued rebuilds 
 	Step 4 summaries already use "## Stage N - title"; match that.
 
 Make a graph-based representation and approval process?
+
+Suggest an AGENTS.md paragraph to hosts that makes every committed change a Railspike cycle, so "small change" wording can't skip it.
+	Seen in v3: "Small, straightforward changes can proceed directly" let a 1,370-file mechanical edit run as Direct work with no plan; RAILSPIKE.md's "size alone does not select a mode" is only read after an agent has already chosen Railspike.
+	v3's replacement (gulkily/v3#218): every committed change runs as a cycle (one-shot by default, staged when review is needed); Direct only for questions, uncommitted exploration or an explicit opt-out; the first reply names the mode and why.
+	Put it in the install guidance / AGENTS.md snippet the README tells hosts to add.
