@@ -1,6 +1,6 @@
 # Railspike development guidance
 
-Product changes belong in `../railspike`; development records belong here. Preserve unrelated local work. Follow the release policy in `docs/maintainers/RELEASES.md`.
+Product changes belong in `../railspike`; development records belong here. Preserve unrelated local work. Follow the release policy in `docs/maintainers/RELEASES.md`. When a change spans the product and a consuming project's `AGENTS.md`, follow `docs/maintainers/cross-repo-changes.md`.
 
 Before minting any beta or stable release, finish preparation, propose the exact version number, and stop for the user's explicit confirmation before creating a tag or publishing. A generic request for a new release or a version increment is not confirmation of an exact version.
 
