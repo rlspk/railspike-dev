@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-11-24T18:12:00Z",
+  "authorization": "User replied \"confirm\" after the exact v0.7.0-beta.2 proposal. Separately asked to merge the plan-length changes into main. No stable promotion or host upgrade authorized.",
+  "cycle": "railspike/epic_checklists",
+  "tag": "v0.7.0-beta.2",
+  "release_url": "https://github.com/rlspk/railspike/releases/tag/v0.7.0-beta.2",
+  "release_id": 457151610,
+  "published_at": "2026-11-24T18:10:49Z",
+  "prerelease": true,
+  "draft": false,
+  "product_commit": "4c0072ba72f4b0c3315ca4b8f16b3f3f25699636",
+  "product_branch": "feat/v0.7.0-beta.2",
+  "tag_object": "51eb7733e66b7e3830b7da754e7d60d5ed5c8183",
+  "tag_signed": false,
+  "tagger": "Ilya Gulko",
+  "product_main": "50a4a79d4a1547e0240a99d66f788be2826516f3",
+  "stable_latest": "v0.6.1",
+  "body_matches_notes": "yes, except one trailing newline",
+  "method": "Claude's session could push branches but not tags (connection cut twice) and could not create tags or releases via the API (HTTP 403). The maintainer created and pushed the annotated tag locally, then created the release with gh api (prerelease=true, make_latest=false). Claude verified the remote tag type, peeled commit and release readback.",
+  "checks": {
+    "product_links": "passed, 19 files",
+    "git_workflow_fixture": "passed",
+    "range_whitespace": "passed",
+    "changed_product_files_from_v0.7.0-beta.1": 8,
+    "instruction_word_growth": 137,
+    "live_handoff_in_new_chat": "unverified"
+  },
+  "host_installations_updated": false
+}
