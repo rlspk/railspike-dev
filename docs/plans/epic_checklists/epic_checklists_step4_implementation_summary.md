@@ -59,3 +59,25 @@ Documentation-only, within the Step 2 file list. Runtime, UI, deployment, migrat
 - Estimate details: original scope as in Step 3; no revision; retrospective judged after completion, not measured time.
 
 *— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
+
+## Stage 3 - Wiring
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes:
+  - `railspike`: `RAILSPIKE.md` handoff section links the epic checklist, and Workflows gains an Epic line; Step 1's Recommendation bullet suggests an epic above 1.0 and creates one only on request; `one_shot.md` says an epic's mode mark is a lean; `effort-estimation.md` counts each epic cycle as its own outcome; index lines in `README.md` and `docs/README.md`.
+  - `railspike-dev`: `docs/concepts/planning.md` gains Epic checklist and Handoff prompt entries; Approval and scope boundary gains the handoff push and labeled-draft rule.
+- Verification:
+  - `wc -w RAILSPIKE.md`: 5,557, net growth 137 of 150. Passed.
+  - The split rule in `RAILSPIKE.md` ("do not silently count child cycles") is unchanged. Passed.
+  - Link checker: product 19 files valid; `docs/concepts` 3 files valid (sibling checkout linked as `../railspike`). Passed.
+  - `git diff --check`: clean in both, after removing a trailing blank line in `planning.md`. Passed.
+  - Changed files within the Step 2 list. Passed.
+  - Runtime, UI, deployment, migration and release checks: inapplicable.
+- Notes:
+  - Product commit `a6e96e2`.
+- Estimate details: original scope as in Step 3; no revision; retrospective judged after completion, not measured time.
+
+*— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*

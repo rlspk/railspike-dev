@@ -10,6 +10,22 @@
 
 **Purpose:** keep implementation within the work the user authorized.
 
-**Operational principle:** approving a staged plan allows the next prescribed step; a bounded one-shot request permits execution within its recorded authority. If implementation requires expanded scope, the agent records the discovery and seeks the required renewed approval before dependent work. Updating a concept description does not authorize changing behavior.
+**Operational principle:** approving a staged plan allows the next prescribed step; a bounded one-shot request permits execution within its recorded authority. If implementation requires expanded scope, the agent records the discovery and seeks the required renewed approval before dependent work. Updating a concept description does not authorize changing behavior. A handoff prompt request also authorizes committing and pushing the cycle's plans to its feature branch, with unapproved drafts in a separate commit labeled "draft, not approved"; it never approves a step.
 
-**Where it lives:** [mode selection](../../../railspike/RAILSPIKE.md#choose-the-execution-mode), [enhancement requests](../../../railspike/RAILSPIKE.md#enhancement-requests), and [one-shot scope changes](../../../railspike/docs/workflow/one_shot.md#resumption-and-scope-changes).
+**Where it lives:** [mode selection](../../../railspike/RAILSPIKE.md#choose-the-execution-mode), [enhancement requests](../../../railspike/RAILSPIKE.md#enhancement-requests), and [one-shot scope changes](../../../railspike/docs/workflow/one_shot.md#resumption-and-scope-changes), and [handoff prompts](../../../railspike/RAILSPIKE.md#handoff-prompts).
+
+# Epic checklist
+
+**Purpose:** coordinate one outcome delivered in several one-shot and staged cycles.
+
+**Operational principle:** the checklist lists each cycle with a stable ID, a mode lean and a layered status, and opens with Resume here. It approves nothing; each item gets its own authorization when it starts. Cut and superseded items stay visible.
+
+**Where it lives:** [epic checklist](../../../railspike/docs/workflow/epic_checklist.md).
+
+# Handoff prompt
+
+**Purpose:** carry a cycle or epic into a new chat without a long chat.
+
+**Operational principle:** on request, the agent pushes the plans and gives one code block naming the branch, plan path, step and recorded approvals. The new chat restores state from the pushed record, which wins over the prompt.
+
+**Where it lives:** [handoff prompts](../../../railspike/RAILSPIKE.md#handoff-prompts), [resume failure case](../../../railspike/docs/failure-modes.md#a-handoff-prompt-points-at-a-missing-or-stale-branch).
