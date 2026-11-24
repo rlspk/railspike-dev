@@ -38,3 +38,24 @@ Documentation-only, within the Step 2 file list. Runtime, UI, deployment, migrat
 - Estimate details: original scope as in Step 3; uncertainty: gate wording; no revision; retrospective judged after completion, not measured time.
 
 *— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
+
+## Stage 2 - Epic checklist file
+
+**Original estimate: 0.20**
+
+**Retrospective stage work: 0.20**
+
+- Changes:
+  - New `docs/workflow/epic_checklist.md` in `railspike`: what an epic is, when to suggest and create one, eleven rules, and a template.
+- Verification:
+  - Text before the template: 424 words, under one page. Passed.
+  - Every gap from the Step 1 review maps to a rule: mode lean, stable IDs (gap 4), status layers, approver, cut/superseded/replan, follow-ups nest (gap 6), estimates not summed, MVP line, backlinks, effort-study counting. Passed.
+  - Only Resume here and Items are required. Passed.
+  - Link checker: 19 files valid. `git diff --check`: clean. File within the Step 2 list. Passed.
+  - Runtime, UI, deployment, migration and release checks: inapplicable.
+- Notes:
+  - "Follow-ups nest" was added during the gap check; the first draft missed gap 6.
+  - Product commit `95c29f6`.
+- Estimate details: original scope as in Step 3; no revision; retrospective judged after completion, not measured time.
+
+*— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
