@@ -38,3 +38,23 @@ Revises the 17:10 entry; earlier findings stand.
 ## 2026-11-24T17:25:00Z — Step 1 (Revision)
 
 Wording-only rename ("prompt block" → "handoff prompt"). No new instruction findings; earlier entries stand.
+
+## 2026-11-24T17:30:00Z — Step 2
+
+### Necessary/useful instructions
+
+- `step2_feature_description.md`, Known user or environment: forced a named failure for the new chat (no pushed branch, or a stale one) and its unaided next action. Retain.
+- `RAILSPIKE.md`, approval commit gate ("Keep drafts and substantive revisions uncommitted until approval"): exposed that v3 already pushes unapproved drafts for handoffs (pledge_fills Step 1 on `plan/pledge-fills`). The scope now names a labeled exception. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions
+
+- Branch reuse under Follow-up Cycles Before Merge: new branch created at Step 1 approval.
+
+### Uncertain assessments
+
+- Step 1 was committed locally only; nothing in Railspike requires a push, and the session has read-only access to `rlspk/railspike-dev`. That is the gap this cycle addresses.
+- Step 2 limits core requirements to 3–5 bullets; the fourth bullet groups four decisions to stay inside it.

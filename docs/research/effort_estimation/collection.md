@@ -87,3 +87,5 @@ Append one row per new development cycle with links to canonical snapshots; reta
 | `railspike/epic_checklists` — Step 1 revision | [Step 1](../../plans/epic_checklists/epic_checklists_step1_solution_assessment.md) | 2026-11-24T17:20:00Z; scope v2 adds a prompt-block handoff for every cycle and an epic "Resume here" section; B 0.45 → 0.55, A 0.15 and C 0.85 reaffirmed; v1 retained; Step 1 approval pending |
 
 | `railspike/epic_checklists` — Step 1 rename | [Step 1](../../plans/epic_checklists/epic_checklists_step1_solution_assessment.md) | 2026-11-24T17:25:00Z; "prompt block" renamed "handoff prompt", code-block format made a rule; scope v2 unchanged; estimates reaffirmed; Step 1 approval pending |
+
+| `railspike/epic_checklists` — Step 2 checkpoint | [Step 2](../../plans/epic_checklists/epic_checklists_step2_feature_description.md) | 2026-11-24T17:30:00Z; R1/P2; Step 1 approved and committed `9f8f994`; scope v3 adds labeled draft commits and settles four decisions; projection 0.55 → 0.60; Step 2 approval pending; no implementation |
