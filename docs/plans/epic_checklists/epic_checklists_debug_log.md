@@ -77,3 +77,24 @@ No supported findings.
 ### Uncertain assessments
 
 - Stage 4 replays are self-review of recorded artifacts; a live new-chat handoff cannot run inside this cycle.
+
+## 2026-11-24T18:00:00Z — Step 4
+
+### Necessary/useful instructions
+
+- `step4_implementation_do.md`, Stage Boundary Protocol step 2 (validate local links): the checker caught a link to a file the next stage creates, and a wrong relative depth in the verification file. Retain.
+- `RAILSPIKE.md`, Repository Boundary (paired commits): recording each product hash in the dev stage record kept the two branches auditable. Retain.
+- `implementation_standards.md`, final diff review: one `git diff --stat main..HEAD` per repository confirmed scope. Retain.
+
+### Redundant/unnecessary instructions
+
+- `step4_implementation_do.md`, blocked/skipped/split estimate paragraph: read at every stage, inapplicable to a cycle that ran as planned. Same finding as `plain_language_plans`; still open.
+
+### Inapplicable instructions
+
+- Runtime, UI, deployment, migration and release checks: documentation-only.
+
+### Uncertain assessments
+
+- The link checker resolves `../../../railspike` sibling links only when the product checkout is named `railspike`; a symlink was needed here. Worth one line in the dev `README.md`.
+- Push could not be exercised: the new handoff rule's main action is untested in this session.
