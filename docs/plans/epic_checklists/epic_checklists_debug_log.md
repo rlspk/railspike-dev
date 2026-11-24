@@ -58,3 +58,22 @@ No supported findings.
 
 - Step 1 was committed locally only; nothing in Railspike requires a push, and the session has read-only access to `rlspk/railspike-dev`. That is the gap this cycle addresses.
 - Step 2 limits core requirements to 3–5 bullets; the fourth bullet groups four decisions to stay inside it.
+
+## 2026-11-24T17:40:00Z — Step 3
+
+### Necessary/useful instructions
+
+- `step3_development_plan_do.md`, known-user replay requirement: produced the Stage 4 failure replays (unpushed and stale branch). Retain.
+- `RAILSPIKE.md`, Repository Boundary (paired commits): set the two-branch shape in the Completion Contract. Retain.
+
+### Redundant/unnecessary instructions
+
+No supported findings.
+
+### Inapplicable instructions
+
+- Database, function-signature and deployment guidance: documentation-only cycle.
+
+### Uncertain assessments
+
+- Stage 4 replays are self-review of recorded artifacts; a live new-chat handoff cannot run inside this cycle.
