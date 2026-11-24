@@ -55,3 +55,5 @@
 - [Durable plans and handoffs](./durable_handoffs/durable_handoffs_step1_solution_assessment.md): evidence-backed article and three-case appendix.
 
 - [Plain-language plans](./plain_language_plans/plain_language_plans_step1_solution_assessment.md): one shared writing rule in `RAILSPIKE.md`, linked from every artifact instruction, replacing the "verbose" guardrails.
+
+- [Epic checklists and handoff prompts](./epic_checklists/epic_checklists_step1_solution_assessment.md): a handoff prompt that lets any cycle resume in a new chat, and an epic checklist for work across several one-shot and staged cycles.
