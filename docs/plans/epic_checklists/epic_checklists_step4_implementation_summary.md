@@ -81,3 +81,35 @@ Documentation-only, within the Step 2 file list. Runtime, UI, deployment, migrat
 - Estimate details: original scope as in Step 3; no revision; retrospective judged after completion, not measured time.
 
 *— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
+
+## Stage 4 - Replays and final review
+
+**Original estimate: 0.10**
+
+**Retrospective stage work: 0.10**
+
+- Changes:
+  - New [`epic_checklists_verification.md`](./epic_checklists_verification.md): four handoff prompts built from hn_theme Step 1 and the notifications, pledges and backlog checklists; template fit for the three checklists; three failure replays; the gap table.
+- Verification:
+  - Every prompt has all required fields and claims no approval its record lacks. In two cases a later session had approved more than the record at `2d7805c8` shows; the prompts follow the record. Passed.
+  - All three checklists fit the template without losing information. Passed.
+  - Unpushed branch, stale branch and unrecorded approval each have a stated next action in `failure-modes.md`. Passed.
+  - Every Step 1 gap maps to a rule. Passed.
+  - Final diff review: `railspike` `main..HEAD` changes 8 files, all in the Step 2 list; `railspike-dev` changes only this folder, `docs/plans/README.md`, `docs/concepts/planning.md` and ledger rows. No duplicate rule text; the split rule is unchanged. Passed.
+  - Link checker: product 19 files, this folder 6 files, concepts 3 files, all valid. `git diff --check` clean in both. Passed.
+  - Live handoff in a new chat: pending, not testable here. Push: not exercised; this session has read-only access to both remotes.
+  - Runtime, UI, deployment, migration and release checks: inapplicable.
+- Notes:
+  - Finding: the hn_theme Step 1 record does not name its branch. A future cycle could have first artifacts record it.
+  - No product commit in this stage; product head `a6e96e2`.
+- Estimate details: original scope as in Step 3; no revision; retrospective judged after completion, not measured time.
+
+*— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
+
+## Closeout
+
+**Retrospective cycle scope: 0.60**
+
+All four stages complete. Planning commits `9f8f994`, `1fba406`, `fc996e9`; stage pairs (product / dev): `f32c7aa` / `3635de5`, `95c29f6` / `22123ac`, `a6e96e2` / `040968a`, and this stage in `railspike-dev` only. `RAILSPIKE.md` grew 137 words. Unverified: a live handoff in a new chat, and the push step. Nothing pushed, merged or released. The retrospective matches the 0.60 projection as a scope judgment, not measured labor. Maintainer comfortable-fit judgment and study acceptance: pending.
+
+*— Claude · 2026-11-24 UTC · Model: claude-opus-5-5*
